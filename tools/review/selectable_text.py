@@ -137,6 +137,25 @@ class SelectableTextBuilder:
             for child in list(parent):
                 if child.tag==f'{{{SVG}}}path' and child.get('id','').startswith('font_'):
                     parent.remove(child)
+        # Keep the proof link on the relevant source section in text mode.
+        if chapter == 4:
+            linked = 0
+            for parent in list(root.iter()):
+                for child in list(parent):
+                    if child.tag == f'{{{SVG}}}text' and ''.join(child.itertext()) == 'Uniform Circular Motion':
+                        position = list(parent).index(child)
+                        parent.remove(child)
+                        link = ET.Element(f'{{{SVG}}}a', {
+                            'href':'centripetal-acceleration-proof.html',
+                            'class':'section-proof-link',
+                            'aria-label':'Uniform Circular Motion: open the interactive centripetal acceleration proof',
+                        })
+                        ET.SubElement(link,f'{{{SVG}}}title').text = 'Centripetal acceleration: interactive proof'
+                        link.append(child)
+                        parent.insert(position,link)
+                        linked += 1
+            if piece['page'] == 118:
+                assert linked == 1, 'The Uniform Circular Motion heading must link to the proof'
         root.attrib.update({'class':'regenerated-page','width':f'{piece["width"]:.3f}','height':f'{piece["height"]:.3f}','viewBox':f'{crop.x0:.3f} {crop.y0:.3f} {crop.width:.3f} {crop.height:.3f}','data-column':f'{page.rect.width/2:.3f}','aria-label':f'Selectable textbook excerpt, chapter {chapter}, PDF page {piece["page"]}'})
         raw=ET.tostring(root,encoding='unicode')
         # Inline SVGs share the document ID namespace. Prefix every retained ID.
