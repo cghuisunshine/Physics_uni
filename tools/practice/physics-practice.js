@@ -147,10 +147,10 @@ function syncStatus(kind,error){
   if(kind==='synced'&&$('storage-message').textContent==='Saving and syncing…')$('storage-message').textContent='Progress saved and synced.';
 }
 function startSync(){if(!student)return;students.start(student,{getLocal:()=>students.loadLocal(student),onStatus:syncStatus,
-  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
+  onRemote:data=>{const s=readPayload(data);if(!s)return;const previous=JSON.stringify(practiceSelection());cancelGeneration();resetFollowUp();state=s;updatedAt=data.updatedAt||'';students.saveLocal(student,{version:1,student,updatedAt,state:typeof data.state==='string'?data.state:JSON.stringify(data.state)});
     restorePracticeSelection();
     if(activeAttempt)activeAttempt=state.attempts.find(a=>a.at===activeAttempt.at&&a.id===activeAttempt.id)||null;dashboard();
-    if(previous!==JSON.stringify(practiceSelection())&&live.role!=='follower')next(true,false);
+    if(previous!==JSON.stringify(practiceSelection())&&live.role!=='follower')next(true,false);else restoreFollowUp(current);
     $('storage-message').textContent='Loaded the latest progress from another device.';}});}
 // A shared question link refers to its stable chapter/question ID.
 function shareURL(p){const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('q',p.id);if(p.generatedData)u.hash=new URLSearchParams({practice:JSON.stringify(p.generatedData)}).toString();return u.toString();}
@@ -168,7 +168,7 @@ $('share-question').onclick=async()=>{
   try{await navigator.clipboard.writeText(url);done('Link copied');}catch(e){window.prompt('Copy this link to share the question:',url);}
 };
 function useStudent(name){
-  cancelGeneration();coachPresented=new Set();
+  resetFollowUp();cancelGeneration();coachPresented=new Set();
   cancelReview();student=students.login(name);state={version:1,attempts:[],items:{}};updatedAt='';
   const local=students.loadLocal(student),s=readPayload(local);
   if(local&&typeof local.student==='string'&&local.student!==student&&students.idFor(local.student)===students.idFor(student))student=students.login(local.student);
@@ -191,7 +191,7 @@ $('login-form').onsubmit=e=>{e.preventDefault();const name=$('login-name').value
 $('login-cancel').onclick=hideLogin;$('student-button').onclick=showLogin;
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('login-overlay').hidden&&student)hideLogin();});
 // ☰ settings menu (like the family to-do page) holds the Firebase sync settings.
-const setSettings=open=>{$('settings-panel').hidden=!open;$('settings-button').setAttribute('aria-expanded',String(open));if(open)setTimeout(()=>$('firebase-key').focus(),0);};
+const setSettings=open=>{$('settings-panel').hidden=!open;$('settings-button').setAttribute('aria-expanded',String(open));if(open)setTimeout(()=>$('followup-enabled').focus(),0);};
 $('settings-button').onclick=e=>{e.stopPropagation();setSettings($('settings-panel').hidden);};
 document.addEventListener('click',e=>{if(!$('settings-panel').hidden&&!e.target.closest('.settings-wrap'))setSettings(false);});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('settings-panel').hidden){setSettings(false);$('settings-button').focus();}});
@@ -487,7 +487,7 @@ function buildAnswerInput(problem){
   syncAnswerTools();
 }
 function show(p,reason,fromLive=false){
-  cancelGeneration();
+  resetFollowUp();cancelGeneration();
   if(live.role==='follower'&&!fromLive){p=followedQuestion;reason='Following live — your answers and progress are your own.';}
   if(p?.generatedData){state.generated=state.generated||{};state.generated[p.id]=p.generatedData;}
   $('adaptive-panel').hidden=$('mode').value!=='coach'||live.role==='follower';
@@ -503,11 +503,11 @@ function show(p,reason,fromLive=false){
   $('badge').hidden=false;$('question-title').textContent=p.title;
   $('question-meta').textContent=`Chapter ${p.chapterNumber}: ${p.chapterTitle} · ${p.topicTitle||p.topic} · ${P.levels[p.level-1]} (estimated)`;
   $('statement').innerHTML=p.html;$('source').href=p.url;$('source').hidden=false;$('source').textContent=p.generatedData?'Open related textbook collection ↗':'Open question collection ↗';flagButton();
-  buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();
+  buildAnswerInput(p);$('photo-section').hidden=false;openDrawing();restoreFollowUp(p);
 }
 function next(reset=false,persistSelection=true){
   if(live.role==='follower')return;
-  cancelGeneration();
+  resetFollowUp();cancelGeneration();
   if(persistSelection)rememberPracticeSelection();
   const mode=$('mode').value;
   $('adaptive-panel').hidden=mode!=='coach';
@@ -542,7 +542,7 @@ function next(reset=false,persistSelection=true){
 }
 $('check').onclick=()=>{
   if(!current||checked||revealed)return;
-  cancelGeneration();
+  resetFollowUp();cancelGeneration();
   cancelReview();stopCamera();drawing.finish();
   try{submittedAnswer=captureAnswer();}catch(error){$('feedback').hidden=false;$('feedback').className='wrong';$('feedback').textContent=error.message;return;}
   revealed=true;selected=submittedAnswer.choice;
@@ -582,6 +582,7 @@ function recordSubmittedAnswer(correct,assessment='self',verification=null){
   $('feedback').textContent=(verification?'AI checked against the model answer: '+verdict+'. '+(verification.answer_check||verification.feedback).slice(0,400):correct?'Self-rated correct.':'Self-rated as needing practice.')+(correct?' Saved.':' Saved to your review queue.')+' Time spent: '+describeDuration(activeAttempt.seconds)+'.';
   $('next').hidden=false;$('skip').hidden=true;updatePhotoControls();
   if($('mode').value==='coach')$('adaptive-status').textContent='Answer saved. Choose Next question for practice based on this result.';
+  if(!correct&&current.kind==='textbook'&&live.role!=='follower'&&$('followup-enabled').checked)startFollowUp(activeAttempt);
   return true;
 }
 function rateWork(correct){
@@ -976,6 +977,7 @@ if('IntersectionObserver' in window)new IntersectionObserver(([e])=>{above=!e.is
 new MutationObserver(()=>{if(!dock.hidden)refresh();}).observe($('statement'),{childList:true,subtree:true});
 new MutationObserver(update).observe(document.querySelector('.question-card'),{attributes:true,attributeFilter:['class']});
 $('question-dock-top').onclick=()=>{document.querySelector('.question-card').scrollIntoView({behavior:'smooth',block:'start'});};})();
+// FOLLOWUP_CONTROLS
 dashboard();if(!followRequested)next();else show(null,'Connecting to the live session…',true);
 if(followRequested){
   const id=liveParams.get('follow'),key=new URLSearchParams(location.hash.slice(1)).get('liveKey')||students.getApiKey();

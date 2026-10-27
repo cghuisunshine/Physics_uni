@@ -6,7 +6,7 @@
 
 The practice layout and controls reuse the Physics11 practice studio. The content comes from `Physics text (TOC).pdf`; original worked solutions come from `Physics answer (TOC).pdf`. Shared table exercises remain individually selectable. Expand **Original pages, diagrams & tables** to see context and diagrams that lie outside the problem crop.
 
-Open the HTML files with the `assets/practice/` directory alongside them, or serve this repository as a static site. Problems and model answers are local assets; online AI checks, generation, and optional Firebase sync require internet access. University progress and sync collections use a separate `physicsUni` namespace.
+Open the HTML files with the `assets/practice/` directory alongside them, or serve this repository as a static site. Problems and model answers are local assets; online AI checks, generation, and optional Firebase sync require internet access. University progress and sync collections use a separate `physicsUni` namespace. After a missed or partly correct textbook answer, a similar AI question appears automatically, using the original problem and worked solution. Its multiple-choice retries and explanation are saved with the missed attempt without changing the textbook score. Turn automatic follow-ups on or off in the top-right practice settings.
 
 ## Rebuild
 
@@ -22,6 +22,7 @@ After interface-only edits, rebuild with `--html-only`. Browser checks run with:
 
 ```sh
 node tools/practice/check_practice.mjs
+node --test tools/practice/physics-followup.test.cjs
 ```
 
 These checks use an installed Google Chrome and keep test history in a temporary browser profile. AI and sync controls retain the reference studio's service integration; browser checks do not submit student work to those services.

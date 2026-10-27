@@ -24,7 +24,7 @@ HERE = Path(__file__).resolve().parent
 WORK = ROOT / 'tmp/practice'
 ASSETS = ROOT / 'assets/practice'
 FLAGS = fitz.TEXTFLAGS_DICT & ~fitz.TEXT_PRESERVE_IMAGES
-SCRIPTS = ['physics-activity.js', 'physics-adaptive.js', 'physics-practice-core.js',
+SCRIPTS = ['physics-activity.js', 'physics-adaptive.js', 'physics-followup.js', 'physics-practice-core.js',
            'physics-photo-review.js', 'physics-drawing-pad.js', 'physics-students.js',
            'physics-live-share.js', 'physics-practice.js']
 
@@ -305,7 +305,11 @@ def build_inventory(chapters):
 
 
 def embedded_script(name):
-    return '<script>\n'+(HERE/name).read_text()+'\n</script>\n'
+    source = (HERE/name).read_text()
+    if name == 'physics-practice.js':
+        assert source.count('// FOLLOWUP_CONTROLS') == 1
+        source = source.replace('// FOLLOWUP_CONTROLS', (HERE/'physics-followup-ui.js').read_text())
+    return '<script>\n'+source+'\n</script>\n'
 
 
 def build_html(bank):
