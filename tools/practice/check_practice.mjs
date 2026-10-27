@@ -1,0 +1,116 @@
+/* Browser verification of original content, practice controls and persistence.
+   Run with node tools/practice/check_practice.mjs (requires installed Chrome). */
+import {spawn} from 'node:child_process';
+import {readFile,writeFile,mkdtemp} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {resolve} from 'node:path';
+const root=resolve(import.meta.dirname,'../..');
+const base=process.argv[2]||process.env.PRACTICE_BASE_URL||`file://${root}/`;
+const profile=await mkdtemp(`${tmpdir()}/university-physics-qa-`);
+const chrome=spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',[
+ '--headless=new','--disable-gpu','--disable-background-networking','--disable-default-apps',
+ '--no-first-run','--no-default-browser-check',`--user-data-dir=${profile}`,'--remote-debugging-port=0','about:blank'
+],{stdio:'ignore'});
+let socket;const checks=[],errors=[];
+const delay=ms=>new Promise(r=>setTimeout(r,ms));
+function check(condition,message){if(!condition)throw Error(message);checks.push(message);console.log('PASS '+message);}
+try{
+ let port;
+ for(let i=0;i<200;i++){try{port=(await readFile(`${profile}/DevToolsActivePort`,'utf8')).split('\n')[0];break}catch{}await delay(100);}
+ if(!port)throw Error('Chrome test endpoint unavailable');
+ const targets=await(await fetch(`http://127.0.0.1:${port}/json/list`)).json();
+ socket=new WebSocket(targets.find(t=>t.type==='page').webSocketDebuggerUrl);
+ await new Promise((ok,fail)=>{socket.addEventListener('open',ok,{once:true});socket.addEventListener('error',fail,{once:true});});
+ let sequence=0;const pending=new Map();
+ socket.addEventListener('message',e=>{const d=JSON.parse(e.data);if(d.method==='Runtime.exceptionThrown')errors.push(d.params.exceptionDetails.exception?.description||d.params.exceptionDetails.text);if(d.id){const p=pending.get(d.id);pending.delete(d.id);d.error?p.reject(Error(d.error.message)):p.resolve(d.result);}});
+ const cdp=(method,params={})=>new Promise((resolve,reject)=>{const id=++sequence;pending.set(id,{resolve,reject});socket.send(JSON.stringify({id,method,params}));});
+ const evaluate=async expression=>{const r=await cdp('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
+ const waitFor=async expression=>{for(let i=0;i<250;i++){if(await evaluate(expression))return;await delay(100);}throw Error('Timed out: '+expression);};
+ const change=async(id,value)=>evaluate(`document.getElementById(${JSON.stringify(id)}).value=${JSON.stringify(value)};document.getElementById(${JSON.stringify(id)}).dispatchEvent(new Event('change'))`);
+ const click=async id=>evaluate(`document.getElementById(${JSON.stringify(id)}).click()`);
+ const screenshot=async name=>{await evaluate('window.scrollTo(0,0)');await delay(300);const r=await cdp('Page.captureScreenshot',{format:'png'});await writeFile(`${root}/tmp/practice/${name}.png`,Buffer.from(r.data,'base64'));};
+ await cdp('Page.enable');await cdp('Runtime.enable');
+ await cdp('Page.addScriptToEvaluateOnNewDocument',{source:'Object.defineProperty(navigator,"onLine",{value:false,configurable:true});'});
+ await cdp('Emulation.setDeviceMetricsOverride',{width:1440,height:1100,deviceScaleFactor:1,mobile:false});
+ await cdp('Page.navigate',{url:`${base}physics-practice.html`});
+ await waitFor('document.readyState==="complete" && window.Practice && !document.getElementById("login-overlay").hidden');
+ const inventory=JSON.parse(await readFile(`${root}/content/physics-practice-bank.json`,'utf8'));
+ check(await evaluate(`JSON.parse(document.getElementById('question-bank').textContent).length===${inventory.length}`),'Complete textbook bank embedded in practice page');
+ check(await evaluate('document.querySelectorAll("#practice-chapter option").length===45'),'All 44 textbook chapters available');
+ await evaluate('document.getElementById("login-name").value="Practice QA";document.getElementById("login-form").dispatchEvent(new Event("submit",{cancelable:true}))');
+ check(await evaluate('document.getElementById("login-overlay").hidden && document.getElementById("student-name-label").textContent==="Practice QA"'),'Student sign-in works');
+ await change('mode','chapter');await change('practice-chapter','uni-ch1');
+ check(await evaluate('[...document.querySelectorAll("#chapter-question option")].filter(o=>o.value).length===60'),'Chapter 1 contains all 60 numbered problems');
+ await change('chapter-question','uni-ch1-p1');
+ await waitFor('[...document.querySelectorAll("#statement img:not([data-context])")].every(i=>i.complete&&i.naturalWidth>0)');
+ check(await evaluate('document.getElementById("statement").textContent.includes("Earth")'),'Original first textbook problem retained');
+ await screenshot('practice-desktop');
+ await evaluate('document.querySelector("#statement details").open=true');
+ await waitFor('[...document.querySelectorAll("#statement img")].every(i=>i.complete&&i.naturalWidth>0)');
+ check(await evaluate('document.querySelector("#statement img[data-context]").naturalWidth>1000'),'Original page context with figures and tables is available');
+ await evaluate('document.querySelector("#statement details").open=false;document.getElementById("response-input").value="C = 4.00 × 10^4 km";document.getElementById("response-input").dispatchEvent(new Event("input"))');
+ await click('check');
+ await waitFor('!document.getElementById("solution").hidden && !document.getElementById("self-rating").hidden');
+ await waitFor('[...document.querySelectorAll("#solution-body img")].every(i=>i.complete&&i.naturalWidth>0)');
+ check(await evaluate('document.getElementById("solution-body").textContent.includes("Physics answer (TOC).pdf")'),'Show answer reveals original matching worked solution');
+ await screenshot('practice-solution');
+ await click('rate-practice');
+ check(await evaluate('JSON.parse(JSON.parse(localStorage.getItem("physicsUniPractice.v1:practice%20qa")).state).attempts.length===1'),'Self-rating saves progress in the university namespace');
+ check(await evaluate('document.getElementById("review-count").textContent==="1"'),'Missed problem enters the review queue');
+ await click('next');
+ check(await evaluate('document.getElementById("question-title").textContent.startsWith("Problem 2")'),'Next problem advances in textbook order');
+ await click('chapter-previous');
+ check(await evaluate('document.getElementById("question-title").textContent.startsWith("Problem 1")'),'Previous problem navigates in textbook order');
+ await click('sidebar-toggle');
+ check(await evaluate('!document.getElementById("sidebar-body").hidden'),'Progress sidebar can be unfolded');
+ await click('sidebar-toggle');
+ check(await evaluate('document.getElementById("sidebar-body").hidden'),'Progress sidebar can be folded');
+ await click('question-toggle');
+ check(await evaluate('document.getElementById("question-toggle").getAttribute("aria-expanded")==="false"'),'Question can be folded while drawing');
+ await click('question-toggle');
+ check(await evaluate('document.getElementById("drawing-canvas").width===1200'),'Reference drawing pad retained');
+ await change('practice-chapter','uni-ch34');await change('chapter-question','uni-ch34-p9');
+ await waitFor('[...document.querySelectorAll("#statement img:not([data-context])")].every(i=>i.complete&&i.naturalWidth>0)');
+ check(await evaluate('document.getElementById("statement").textContent.includes("problem 9") && document.getElementById("statement").textContent.includes("9–16")'),'Shared optics exercises retain their data and selected problem number');
+ await evaluate('document.querySelector("#statement details").open=true');
+ await waitFor('[...document.querySelectorAll("#statement img")].every(i=>i.complete&&i.naturalWidth>0)');
+ await screenshot('practice-shared-optics');
+ await change('practice-chapter','uni-ch44');await change('chapter-question','uni-ch44-p54');
+ await waitFor('[...document.querySelectorAll("#statement img:not([data-context])")].every(i=>i.complete&&i.naturalWidth>0)');
+ check(await evaluate('document.getElementById("question-title").textContent.startsWith("Problem 54")'),'Last textbook problem is reachable');
+ await screenshot('practice-last-chapter');
+ await cdp('Page.reload');await waitFor('document.readyState==="complete" && document.getElementById("student-name-label").textContent==="Practice QA"');
+ check(await evaluate('document.getElementById("practice-chapter").value==="uni-ch44"'),'Chapter preference survives reload');
+ if(base.startsWith('http')){
+  await change('practice-chapter','uni-ch1');await change('chapter-question','uni-ch1-p2');
+  await evaluate(`Object.defineProperty(navigator,'onLine',{value:true,configurable:true});window.__referenceLabels=[];const originalFillText=CanvasRenderingContext2D.prototype.fillText;CanvasRenderingContext2D.prototype.fillText=function(text,...args){window.__referenceLabels.push(text);return originalFillText.call(this,text,...args)};window.fetch=async(url,options)=>{window.__mockSubmission=JSON.parse(options.body);return {ok:true,json:async()=>({verdict:'correct',confidence:'high',feedback:'Checked against the original model answer.',answer_check:'The answer agrees with the reference.',steps:[],weak_points:[]})}};document.getElementById('response-input').value='0.18 point²';document.getElementById('response-input').dispatchEvent(new Event('input'));document.getElementById('drawing-canvas').scrollIntoView({block:'center'})`);
+  const point=await evaluate('(()=>{const r=document.getElementById("drawing-canvas").getBoundingClientRect();return {x:r.left+40,y:r.top+40}})()');
+  await cdp('Input.dispatchMouseEvent',{type:'mousePressed',x:point.x,y:point.y,button:'left',buttons:1,clickCount:1,pointerType:'pen'});
+  await cdp('Input.dispatchMouseEvent',{type:'mouseMoved',x:point.x+90,y:point.y+30,button:'left',buttons:1,pointerType:'pen'});
+  await cdp('Input.dispatchMouseEvent',{type:'mouseReleased',x:point.x+90,y:point.y+30,button:'left',buttons:0,clickCount:1,pointerType:'pen'});
+  check(await evaluate('!document.getElementById("drawing-undo").disabled'),'Pen input creates a real drawing stroke');
+  await click('check');await waitFor('document.getElementById("feedback").textContent.includes("AI checked against the model answer")');
+  check(await evaluate('window.__referenceLabels.some(t=>t.startsWith("MODEL ANSWER")) && window.__referenceLabels.some(t=>t.startsWith("STUDENT WORK"))'),'AI composite separates original model-answer images from student working');
+  check(await evaluate('window.__mockSubmission.message.includes("university physics") && window.__mockSubmission.image.length>1000'),'University-level verification prepares a readable image payload (service mocked)');
+  check(await evaluate('JSON.parse(JSON.parse(localStorage.getItem("physicsUniPractice.v1:practice%20qa")).state).attempts.at(-1).answerInk.strokes.length>0'),'Handwritten working persists with the checked answer');
+  await evaluate('Object.defineProperty(navigator,"onLine",{value:false,configurable:true})');
+ }
+ await cdp('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+ await change('practice-chapter','uni-ch1');await change('chapter-question','uni-ch1-p1');
+ await waitFor('[...document.querySelectorAll("#statement img:not([data-context])")].every(i=>i.complete&&i.naturalWidth>0)');
+ check(await evaluate('document.documentElement.scrollWidth<=window.innerWidth'),'Mobile page fits the viewport');
+ await screenshot('practice-mobile');
+ await evaluate('document.getElementById("response-input").value="test";document.getElementById("response-input").dispatchEvent(new Event("input"));document.getElementById("check").click()');
+ await waitFor('!document.getElementById("self-rating").hidden');
+ check(await evaluate('document.documentElement.scrollWidth<=window.innerWidth'),'Mobile solution fits the viewport');
+ await cdp('Page.navigate',{url:`${base}physics-problems.html#uni-ch34-p9`});
+ await waitFor('document.readyState==="complete" && document.getElementById("heading").textContent.includes("Problem 9")');
+ check(await evaluate('document.getElementById("worked").querySelectorAll("img").length>0'),'Direct question collection links retain matching solutions');
+ await cdp('Page.navigate',{url:`${base}physics-monitor.html`});
+ await waitFor('document.readyState==="complete"');
+ check(await evaluate('!!document.getElementById("activity-form") && document.title.includes("University Physics")'),'Student monitoring page is available');
+ check(errors.length===0,'No browser JavaScript exceptions');
+ await writeFile(`${root}/tmp/practice/browser-checks.json`,JSON.stringify({passed:checks.length,checks,errors},null,2));
+ console.log(JSON.stringify({passed:checks.length,errors},null,2));
+ await cdp('Browser.close').catch(()=>{});
+}finally{socket?.close();chrome.kill('SIGTERM');}

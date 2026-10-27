@@ -1,0 +1,930 @@
+[
+  {
+    "number": 1,
+    "title": "Measurement",
+    "problemCount": 60,
+    "textbookPages": [
+      44,
+      48
+    ],
+    "answerPages": [
+      9,
+      30
+    ],
+    "sections": {
+      "1-1": "Measuring Things, Including Lengths",
+      "1-2": "Time",
+      "1-3": "Mass"
+    }
+  },
+  {
+    "number": 2,
+    "title": "Motion Along a Straight Line",
+    "problemCount": 119,
+    "textbookPages": [
+      68,
+      75
+    ],
+    "answerPages": [
+      31,
+      89
+    ],
+    "sections": {
+      "2-1": "Position, Displacement, And Average Velocity",
+      "2-2": "Instantaneous Velocity And Speed",
+      "2-3": "Acceleration",
+      "2-4": "Constant Acceleration",
+      "2-5": "Free-Fall Acceleration",
+      "2-6": "Graphical Integration In Motion Analysis"
+    }
+  },
+  {
+    "number": 3,
+    "title": "Vectors",
+    "problemCount": 79,
+    "textbookPages": [
+      93,
+      97
+    ],
+    "answerPages": [
+      90,
+      130
+    ],
+    "sections": {
+      "3-1": "Vectors And Their Components",
+      "3-2": "Unit Vectors, Adding Vectors By Components",
+      "3-3": "Multiplying Vectors"
+    }
+  },
+  {
+    "number": 4,
+    "title": "Motion in Two and Three Dimensions",
+    "problemCount": 138,
+    "textbookPages": [
+      120,
+      129
+    ],
+    "answerPages": [
+      131,
+      202
+    ],
+    "sections": {
+      "4-1": "Position And Displacement",
+      "4-2": "Average Velocity And Instantaneous Velocity",
+      "4-3": "Average Acceleration And Instantaneous Acceleration",
+      "4-4": "Projectile Motion",
+      "4-5": "Uniform Circular Motion",
+      "4-6": "Relative Motion In One Dimension",
+      "4-7": "Relative Motion In Two Dimensions"
+    }
+  },
+  {
+    "number": 5,
+    "title": "Force and Motion—I",
+    "problemCount": 97,
+    "textbookPages": [
+      152,
+      159
+    ],
+    "answerPages": [
+      203,
+      250
+    ],
+    "sections": {
+      "5-1": "Newton’S First And Second Laws",
+      "5-2": "Some Particular Forces",
+      "5-3": "Applying Newton’S Laws"
+    }
+  },
+  {
+    "number": 6,
+    "title": "Force and Motion—II",
+    "problemCount": 105,
+    "textbookPages": [
+      176,
+      184
+    ],
+    "answerPages": [
+      251,
+      308
+    ],
+    "sections": {
+      "6-1": "Friction",
+      "6-2": "The Drag Force And Terminal Speed",
+      "6-3": "Uniform Circular Motion"
+    }
+  },
+  {
+    "number": 7,
+    "title": "Kinetic Energy and Work",
+    "problemCount": 85,
+    "textbookPages": [
+      206,
+      212
+    ],
+    "answerPages": [
+      309,
+      345
+    ],
+    "sections": {
+      "7-1": "Kinetic Energy",
+      "7-2": "Work And Kinetic Energy",
+      "7-3": "Work Done By The Gravitational Force",
+      "7-4": "Work Done By A Spring Force",
+      "7-5": "Work Done By A General Variable Force",
+      "7-6": "Power"
+    }
+  },
+  {
+    "number": 8,
+    "title": "Potential Energy and Conservation of Energy",
+    "problemCount": 136,
+    "textbookPages": [
+      238,
+      249
+    ],
+    "answerPages": [
+      346,
+      421
+    ],
+    "sections": {
+      "8-1": "Potential Energy",
+      "8-2": "Conservation Of Mechanical Energy",
+      "8-3": "Reading A Potential Energy Curve",
+      "8-4": "Work Done On A System By An External Force",
+      "8-5": "Conservation Of Energy"
+    }
+  },
+  {
+    "number": 9,
+    "title": "Center of Mass and Linear Momentum",
+    "problemCount": 128,
+    "textbookPages": [
+      282,
+      292
+    ],
+    "answerPages": [
+      422,
+      484
+    ],
+    "sections": {
+      "9-1": "Center Of Mass",
+      "9-2": "Newton’S Second Law For A System Of Particles",
+      "9-3": "Linear Momentum",
+      "9-4": "Collision And Impulse",
+      "9-5": "Conservation Of Linear Momentum",
+      "9-6": "Momentum And Kinetic Energy In Collisions",
+      "9-7": "Elastic Collisions In One Dimension",
+      "9-8": "Collisions In Two Dimensions",
+      "9-9": "Systems With Varying Mass: A Rocket"
+    }
+  },
+  {
+    "number": 10,
+    "title": "Rotation",
+    "problemCount": 108,
+    "textbookPages": [
+      323,
+      330
+    ],
+    "answerPages": [
+      485,
+      529
+    ],
+    "sections": {
+      "10-1": "Rotational Variables",
+      "10-2": "Rotation With Constant Angular Acceleration",
+      "10-3": "Relating The Linear And Angular Variables",
+      "10-4": "Kinetic Energy Of Rotation",
+      "10-5": "Calculating The Rotational Inertia",
+      "10-6": "Torque",
+      "10-7": "Newton’S Second Law For Rotation",
+      "10-8": "Work And Rotational Kinetic Energy"
+    }
+  },
+  {
+    "number": 11,
+    "title": "Rolling, Torque, and Angular Momentum",
+    "problemCount": 86,
+    "textbookPages": [
+      356,
+      362
+    ],
+    "answerPages": [
+      530,
+      577
+    ],
+    "sections": {
+      "11-1": "Rolling As Translation And Rotation Combined",
+      "11-2": "Forces And Kinetic Energy Of Rolling",
+      "11-3": "The Yo-Yo",
+      "11-4": "Torque Revisited",
+      "11-5": "Angular Momentum",
+      "11-6": "Newton’S Second Law In Angular Form",
+      "11-7": "Angular Momentum Of A Rigid Body",
+      "11-8": "Conservation Of Angular Momentum",
+      "11-9": "Precession Of A Gyroscope"
+    }
+  },
+  {
+    "number": 12,
+    "title": "Equilibrium and Elasticity",
+    "problemCount": 88,
+    "textbookPages": [
+      381,
+      389
+    ],
+    "answerPages": [
+      578,
+      625
+    ],
+    "sections": {
+      "12-1": "Equilibrium",
+      "12-2": "Some Examples Of Static Equilibrium",
+      "12-3": "Elasticity"
+    }
+  },
+  {
+    "number": 13,
+    "title": "Gravitation",
+    "problemCount": 101,
+    "textbookPages": [
+      414,
+      421
+    ],
+    "answerPages": [
+      626,
+      674
+    ],
+    "sections": {
+      "13-1": "Newton’S Law Of Gravitation",
+      "13-2": "Gravitation And The Principle Of Superposition",
+      "13-3": "Gravitation Near Earth’S Surface",
+      "13-4": "Gravitation Inside Earth",
+      "13-5": "Gravitational Potential Energy",
+      "13-6": "Planets And Satellites: Kepler’S Laws",
+      "13-7": "Satellites: Orbits And Energy",
+      "13-8": "Einstein And Gravitation"
+    }
+  },
+  {
+    "number": 14,
+    "title": "Fluids",
+    "problemCount": 90,
+    "textbookPages": [
+      442,
+      448
+    ],
+    "answerPages": [
+      675,
+      707
+    ],
+    "sections": {
+      "14-1": "Fluids, Density, And Pressure",
+      "14-2": "Fluids At Rest",
+      "14-3": "Measuring Pressure",
+      "14-4": "Pascal’S Principle",
+      "14-5": "Archimedes’ Principle",
+      "14-6": "The Equation Of Continuity",
+      "14-7": "Bernoulli’S Equation"
+    }
+  },
+  {
+    "number": 15,
+    "title": "Oscillations",
+    "problemCount": 116,
+    "textbookPages": [
+      472,
+      479
+    ],
+    "answerPages": [
+      708,
+      759
+    ],
+    "sections": {
+      "15-1": "Simple Harmonic Motion",
+      "15-2": "Energy In Simple Harmonic Motion",
+      "15-3": "An Angular Simple Harmonic Oscillator",
+      "15-4": "Pendulums, Circular Motion",
+      "15-5": "Damped Simple Harmonic Motion",
+      "15-6": "Forced Oscillations And Resonance"
+    }
+  },
+  {
+    "number": 16,
+    "title": "Waves—I",
+    "problemCount": 96,
+    "textbookPages": [
+      508,
+      514
+    ],
+    "answerPages": [
+      760,
+      806
+    ],
+    "sections": {
+      "16-1": "Transverse Waves",
+      "16-2": "Wave Speed On A Stretched String",
+      "16-3": "Energy And Power Of A Wave Traveling Along A String",
+      "16-4": "The Wave Equation",
+      "16-5": "Interference Of Waves",
+      "16-6": "Phasors",
+      "16-7": "Standing Waves And Resonance"
+    }
+  },
+  {
+    "number": 17,
+    "title": "Waves—II",
+    "problemCount": 111,
+    "textbookPages": [
+      542,
+      549
+    ],
+    "answerPages": [
+      807,
+      848
+    ],
+    "sections": {
+      "17-1": "Speed Of Sound",
+      "17-2": "Traveling Sound Waves",
+      "17-3": "Interference",
+      "17-4": "Intensity And Sound Level",
+      "17-5": "Sources Of Musical Sound",
+      "17-6": "Beats",
+      "17-7": "The Doppler Effect",
+      "17-8": "Supersonic Speeds, Shock Waves"
+    }
+  },
+  {
+    "number": 18,
+    "title": "Temperature, Heat, and the First Law of Thermodynamics",
+    "problemCount": 108,
+    "textbookPages": [
+      577,
+      584
+    ],
+    "answerPages": [
+      849,
+      888
+    ],
+    "sections": {
+      "18-1": "Temperature",
+      "18-2": "The Celsius And Fahrenheit Scales",
+      "18-3": "Thermal Expansion",
+      "18-4": "Absorption Of Heat",
+      "18-5": "The First Law Of Thermodynamics",
+      "18-6": "Heat Transfer Mechanisms"
+    }
+  },
+  {
+    "number": 19,
+    "title": "The Kinetic Theory of Gases",
+    "problemCount": 97,
+    "textbookPages": [
+      613,
+      618
+    ],
+    "answerPages": [
+      889,
+      932
+    ],
+    "sections": {
+      "19-1": "Avogadro’S Number",
+      "19-2": "Ideal Gases",
+      "19-3": "Pressure, Temperature, And Rms Speed",
+      "19-4": "Translational Kinetic Energy",
+      "19-5": "Mean Free Path",
+      "19-6": "The Distribution Of Molecular Speeds",
+      "19-7": "The Molar Specific Heats Of An Ideal Gas",
+      "19-8": "Degrees Of Freedom And Molar Specific Heats",
+      "19-9": "The Adiabatic Expansion Of An Ideal Gas"
+    }
+  },
+  {
+    "number": 20,
+    "title": "Entropy and the Second Law of Thermodynamics",
+    "problemCount": 79,
+    "textbookPages": [
+      640,
+      644
+    ],
+    "answerPages": [
+      933,
+      972
+    ],
+    "sections": {
+      "20-1": "Entropy",
+      "20-2": "Entropy In The Real World: Engines",
+      "20-3": "Refrigerators And Real Engines",
+      "20-4": "A Statistical View Of Entropy"
+    }
+  },
+  {
+    "number": 21,
+    "title": "Coulomb’s Law",
+    "problemCount": 75,
+    "textbookPages": [
+      660,
+      665
+    ],
+    "answerPages": [
+      973,
+      1006
+    ],
+    "sections": {
+      "21-1": "Coulomb’S Law",
+      "21-2": "Charge Is Quantized",
+      "21-3": "Charge Is Conserved"
+    }
+  },
+  {
+    "number": 22,
+    "title": "Electric Fields",
+    "problemCount": 87,
+    "textbookPages": [
+      688,
+      694
+    ],
+    "answerPages": [
+      1007,
+      1047
+    ],
+    "sections": {
+      "22-1": "The Electric Field",
+      "22-2": "The Electric Field Due To A Charged Particle",
+      "22-3": "The Electric Field Due To A Dipole",
+      "22-4": "The Electric Field Due To A Line Of Charge",
+      "22-5": "The Electric Field Due To A Charged Disk",
+      "22-6": "A Point Charge In An Electric Field",
+      "22-7": "A Dipole In An Electric Field"
+    }
+  },
+  {
+    "number": 23,
+    "title": "Gauss’ Law",
+    "problemCount": 81,
+    "textbookPages": [
+      715,
+      720
+    ],
+    "answerPages": [
+      1048,
+      1080
+    ],
+    "sections": {
+      "23-1": "Electric Flux",
+      "23-2": "Gauss’ Law",
+      "23-3": "A Charged Isolated Conductor",
+      "23-4": "Applying Gauss’ Law: Cylindrical Symmetry",
+      "23-5": "Applying Gauss’ Law: Planar Symmetry",
+      "23-6": "Applying Gauss’ Law: Spherical Symmetry"
+    }
+  },
+  {
+    "number": 24,
+    "title": "Electric Potential",
+    "problemCount": 103,
+    "textbookPages": [
+      746,
+      752
+    ],
+    "answerPages": [
+      1081,
+      1122
+    ],
+    "sections": {
+      "24-1": "Electric Potential",
+      "24-2": "Equipotential Surfaces And The Electric Field",
+      "24-3": "Potential Due To A Charged Particle",
+      "24-4": "Potential Due To An Electric Dipole",
+      "24-5": "Potential Due To A Continuous Charge Distribution",
+      "24-6": "Calculating The Field From The Potential",
+      "24-7": "Electric Potential Energy Of A System Of Charged Particles",
+      "24-8": "Potential Of A Charged Isolated Conductor"
+    }
+  },
+  {
+    "number": 25,
+    "title": "Capacitance",
+    "problemCount": 80,
+    "textbookPages": [
+      775,
+      780
+    ],
+    "answerPages": [
+      1123,
+      1154
+    ],
+    "sections": {
+      "25-1": "Capacitance",
+      "25-2": "Calculating The Capacitance",
+      "25-3": "Capacitors In Parallel And In Series",
+      "25-4": "Energy Stored In An Electric Field",
+      "25-5": "Capacitor With A Dielectric",
+      "25-6": "Dielectrics And Gauss’ Law"
+    }
+  },
+  {
+    "number": 26,
+    "title": "Current and Resistance",
+    "problemCount": 85,
+    "textbookPages": [
+      801,
+      806
+    ],
+    "answerPages": [
+      1155,
+      1180
+    ],
+    "sections": {
+      "26-1": "Electric Current",
+      "26-2": "Current Density",
+      "26-3": "Resistance And Resistivity",
+      "26-4": "Ohm’S Law",
+      "26-5": "Power, Semiconductors, Superconductors"
+    }
+  },
+  {
+    "number": 27,
+    "title": "Circuits",
+    "problemCount": 105,
+    "textbookPages": [
+      831,
+      838
+    ],
+    "answerPages": [
+      1181,
+      1225
+    ],
+    "sections": {
+      "27-1": "Single-Loop Circuits",
+      "27-2": "Multiloop Circuits",
+      "27-3": "The Ammeter And The Voltmeter",
+      "27-4": "Rc Circuits"
+    }
+  },
+  {
+    "number": 28,
+    "title": "Magnetic Fields",
+    "problemCount": 92,
+    "textbookPages": [
+      865,
+      871
+    ],
+    "answerPages": [
+      1226,
+      1260
+    ],
+    "sections": {
+      "28-1": "Magnetic Fields And The Definition Of B",
+      "28-2": "Crossed Fields: Discovery Of The Electron",
+      "28-3": "Crossed Fields: The Hall Effect",
+      "28-4": "A Circulating Charged Particle",
+      "28-5": "Cyclotrons And Synchrotrons",
+      "28-6": "Magnetic Force On A Current-Carrying Wire",
+      "28-7": "Torque On A Current Loop",
+      "28-8": "The Magnetic Dipole Moment"
+    }
+  },
+  {
+    "number": 29,
+    "title": "Magnetic Fields Due to Currents",
+    "problemCount": 88,
+    "textbookPages": [
+      892,
+      899
+    ],
+    "answerPages": [
+      1261,
+      1298
+    ],
+    "sections": {
+      "29-1": "Magnetic Field Due To A Current",
+      "29-2": "Force Between Two Parallel Currents",
+      "29-3": "Ampere’S Law",
+      "29-4": "Solenoids And Toroids",
+      "29-5": "A Current-Carrying Coil As A Magnetic Dipole"
+    }
+  },
+  {
+    "number": 30,
+    "title": "Induction and Inductance",
+    "problemCount": 101,
+    "textbookPages": [
+      931,
+      938
+    ],
+    "answerPages": [
+      1299,
+      1340
+    ],
+    "sections": {
+      "30-1": "Faraday’S Law And Lenz’S Law",
+      "30-2": "Induction And Energy Transfers",
+      "30-3": "Induced Electric Fields",
+      "30-4": "Inductors And Inductance",
+      "30-5": "Self-Induction",
+      "30-6": "Rl Circuits",
+      "30-7": "Energy Stored In A Magnetic Field",
+      "30-8": "Energy Density Of A Magnetic Field",
+      "30-9": "Mutual Induction"
+    }
+  },
+  {
+    "number": 31,
+    "title": "Electromagnetic Oscillations and Alternating Current",
+    "problemCount": 93,
+    "textbookPages": [
+      971,
+      976
+    ],
+    "answerPages": [
+      1341,
+      1385
+    ],
+    "sections": {
+      "31-1": "Lc Oscillations",
+      "31-2": "Damped Oscillations In An Rlc Circuit",
+      "31-3": "Forced Oscillations Of Three Simple Circuits",
+      "31-4": "The Series Rlc Circuit",
+      "31-5": "Power In Alternating-Current Circuits",
+      "31-6": "Transformers"
+    }
+  },
+  {
+    "number": 32,
+    "title": "Maxwell’s Equations; Magnetism of Matter",
+    "problemCount": 76,
+    "textbookPages": [
+      1003,
+      1007
+    ],
+    "answerPages": [
+      1386,
+      1416
+    ],
+    "sections": {
+      "32-1": "Gauss’ Law For Magnetic Fields",
+      "32-2": "Induced Magnetic Fields",
+      "32-3": "Displacement Current",
+      "32-4": "Magnets",
+      "32-5": "Magnetism And Electrons",
+      "32-6": "Diamagnetism",
+      "32-7": "Paramagnetism",
+      "32-8": "Ferromagnetism"
+    }
+  },
+  {
+    "number": 33,
+    "title": "Electromagnetic Waves",
+    "problemCount": 110,
+    "textbookPages": [
+      1037,
+      1045
+    ],
+    "answerPages": [
+      1417,
+      1462
+    ],
+    "sections": {
+      "33-1": "Electromagnetic Waves",
+      "33-2": "Energy Transport And The Poynting Vector",
+      "33-3": "Radiation Pressure",
+      "33-4": "Polarization",
+      "33-5": "Reflection And Refraction",
+      "33-6": "Total Internal Reflection",
+      "33-7": "Polarization By Reflection"
+    }
+  },
+  {
+    "number": 34,
+    "title": "Images",
+    "problemCount": 141,
+    "textbookPages": [
+      1074,
+      1082
+    ],
+    "answerPages": [
+      1463,
+      1522
+    ],
+    "sections": {
+      "34-1": "Images And Plane Mirrors",
+      "34-2": "Spherical Mirrors",
+      "34-3": "Spherical Refracting Surfaces",
+      "34-4": "Thin Lenses",
+      "34-5": "Optical Instruments",
+      "34-6": "Three Proofs"
+    }
+  },
+  {
+    "number": 35,
+    "title": "Interference",
+    "problemCount": 105,
+    "textbookPages": [
+      1110,
+      1116
+    ],
+    "answerPages": [
+      1523,
+      1564
+    ],
+    "sections": {
+      "35-1": "Light As A Wave",
+      "35-2": "Young’S Interference Experiment",
+      "35-3": "Interference And Double-Slit Intensity",
+      "35-4": "Interference From Thin Films",
+      "35-5": "Michelson’S Interferometer"
+    }
+  },
+  {
+    "number": 36,
+    "title": "Diffraction",
+    "problemCount": 114,
+    "textbookPages": [
+      1144,
+      1151
+    ],
+    "answerPages": [
+      1565,
+      1606
+    ],
+    "sections": {
+      "36-1": "Single-Slit Diffraction",
+      "36-2": "Intensity In Single-Slit Diffraction",
+      "36-3": "Diffraction By A Circular Aperture",
+      "36-4": "Diffraction By A Double Slit",
+      "36-5": "Diffraction Gratings",
+      "36-6": "Gratings: Dispersion And Resolving Power",
+      "36-7": "X-Ray Diffraction"
+    }
+  },
+  {
+    "number": 37,
+    "title": "Relativity",
+    "problemCount": 103,
+    "textbookPages": [
+      1181,
+      1188
+    ],
+    "answerPages": [
+      1607,
+      1654
+    ],
+    "sections": {
+      "37-1": "Simultaneity And Time Dilation",
+      "37-2": "The Relativity Of Length",
+      "37-3": "The Lorentz Transformation",
+      "37-4": "The Relativity Of Velocities",
+      "37-5": "Doppler Effect For Light",
+      "37-6": "Momentum And Energy"
+    }
+  },
+  {
+    "number": 38,
+    "title": "Photons and Matter Waves",
+    "problemCount": 90,
+    "textbookPages": [
+      1217,
+      1221
+    ],
+    "answerPages": [
+      1655,
+      1694
+    ],
+    "sections": {
+      "38-1": "The Photon, The Quantum Of Light",
+      "38-2": "The Photoelectric Effect",
+      "38-3": "Photons, Momentum, Compton Scattering, Light Interference",
+      "38-4": "The Birth Of Quantum Physics",
+      "38-5": "Electrons And Matter Waves",
+      "38-6": "Schrödinger’S Equation",
+      "38-7": "Heisenberg’S Uncertainty Principle",
+      "38-8": "Reflection From A Potential Step",
+      "38-9": "Tunneling Through A Potential Barrier"
+    }
+  },
+  {
+    "number": 39,
+    "title": "More About Matter Waves",
+    "problemCount": 73,
+    "textbookPages": [
+      1250,
+      1254
+    ],
+    "answerPages": [
+      1695,
+      1726
+    ],
+    "sections": {
+      "39-1": "Energies Of A Trapped Electron",
+      "39-2": "Wave Functions Of A Trapped Electron",
+      "39-3": "An Electron In A Finite Well",
+      "39-4": "Two- And Three-Dimensional Electron Traps",
+      "39-5": "The Hydrogen Atom"
+    }
+  },
+  {
+    "number": 40,
+    "title": "All About Atoms",
+    "problemCount": 79,
+    "textbookPages": [
+      1283,
+      1287
+    ],
+    "answerPages": [
+      1727,
+      1756
+    ],
+    "sections": {
+      "40-1": "Properties Of Atoms",
+      "40-2": "The Stern-Gerlach Experiment",
+      "40-3": "Magnetic Resonance",
+      "40-4": "Exclusion Principle And Multiple Electrons In A Trap",
+      "40-5": "Building The Periodic Table",
+      "40-6": "X Rays And The Ordering Of The Elements",
+      "40-7": "Lasers"
+    }
+  },
+  {
+    "number": 41,
+    "title": "Conduction of Electricity in Solids",
+    "problemCount": 53,
+    "textbookPages": [
+      1308,
+      1311
+    ],
+    "answerPages": [
+      1757,
+      1780
+    ],
+    "sections": {
+      "41-1": "The Electrical Properties Of Metals",
+      "41-2": "Semiconductors And Doping",
+      "41-3": "The P-N Junction And The Transistor"
+    }
+  },
+  {
+    "number": 42,
+    "title": "Nuclear Physics",
+    "problemCount": 97,
+    "textbookPages": [
+      1338,
+      1344
+    ],
+    "answerPages": [
+      1781,
+      1820
+    ],
+    "sections": {
+      "42-1": "Discovering The Nucleus",
+      "42-2": "Some Nuclear Properties",
+      "42-3": "Radioactive Decay",
+      "42-4": "Alpha Decay",
+      "42-5": "Beta Decay",
+      "42-6": "Radioactive Dating",
+      "42-7": "Measuring Radiation Dosage",
+      "42-8": "Nuclear Models"
+    }
+  },
+  {
+    "number": 43,
+    "title": "Energy from the Nucleus",
+    "problemCount": 58,
+    "textbookPages": [
+      1366,
+      1369
+    ],
+    "answerPages": [
+      1821,
+      1843
+    ],
+    "sections": {
+      "43-1": "Nuclear Fission",
+      "43-2": "The Nuclear Reactor",
+      "43-3": "A Natural Nuclear Reactor",
+      "43-4": "Thermonuclear Fusion: The Basic Process",
+      "43-5": "Thermonuclear Fusion In The Sun And Other Stars",
+      "43-6": "Controlled Thermonuclear Fusion"
+    }
+  },
+  {
+    "number": 44,
+    "title": "Quarks, Leptons, and the Big Bang",
+    "problemCount": 54,
+    "textbookPages": [
+      1399,
+      1404
+    ],
+    "answerPages": [
+      1844,
+      1866
+    ],
+    "sections": {
+      "44-1": "General Properties Of Elementary Particles",
+      "44-2": "Leptons, Hadrons, And Strangeness",
+      "44-3": "Quarks And Messenger Particles",
+      "44-4": "Cosmology"
+    }
+  }
+]
