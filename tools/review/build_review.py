@@ -119,10 +119,11 @@ def build(chapters):
                           f'PDF page {piece["page"]}."></div><div class="regenerated-version" data-piece="{piece_index-1}" style="aspect-ratio:{piece["width"]}/{piece["height"]}" hidden></div></div></div>'
                           f'<div class="page-label">PDF PAGE {piece["page"]}</div></div>')
         page_label = ', '.join(str(p['page']) for p in c['pieces'])
+        resource = ('<p class="chapter-resource" style="margin-top:8px"><a href="centripetal-acceleration-proof.html">Centripetal acceleration: interactive proof</a></p>' if n == 4 else '')
         articles.append(f'<article id="chapter-{n}" data-chapter="{n}" aria-labelledby="title-{n}">'
                         f'<div class="chapter-heading"><div><div class="eyebrow">Chapter {n:02}</div>'
                         f'<h2 id="title-{n}">{html.escape(title)}</h2>'
-                        f'<p>Review &amp; Summary · PDF {"pages" if len(c["pieces"]) > 1 else "page"} {page_label}</p></div>'
+                        f'<p>Review &amp; Summary · PDF {"pages" if len(c["pieces"]) > 1 else "page"} {page_label}</p>{resource}</div>'
                         f'<button class="review-button" aria-pressed="false" aria-label="Mark chapter {n} reviewed">Mark reviewed</button></div>'
                         + ''.join(images) + '</article>')
         search_index.append({'title': c['title'], 'search':
