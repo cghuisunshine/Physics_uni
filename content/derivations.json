@@ -5,6 +5,14 @@
     "title": "Why unit conversions work",
     "file": "derivations/units-and-dimensions.html",
     "summaryAnchor": "chapter-1--units-and-dimensions",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/units-and-dimensions-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "One length, two units"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -45,6 +53,14 @@
     "title": "Density: a definition and its consequences",
     "file": "derivations/density.html",
     "summaryAnchor": "chapter-1--density",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/density-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Mass within the same volume"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -85,6 +101,14 @@
     "title": "Derive the constant-acceleration equations",
     "file": "derivations/constant-acceleration.html",
     "summaryAnchor": "chapter-2--constant-acceleration",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/constant-acceleration-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Displacement is an area"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -125,6 +149,14 @@
     "title": "Velocity and acceleration from derivatives",
     "file": "derivations/rates-of-change.html",
     "summaryAnchor": "chapter-2--rates-of-change",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/rates-of-change-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A rate is a tangent slope"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -165,6 +197,14 @@
     "title": "Why vector components use sine and cosine",
     "file": "derivations/vector-components.html",
     "summaryAnchor": "chapter-3--vector-components",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/vector-components-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Resolve one vector into two components"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -205,6 +245,14 @@
     "title": "Dot and cross products: what they measure",
     "file": "derivations/vector-products.html",
     "summaryAnchor": "chapter-3--vector-products",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/vector-products-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Parallel projection and perpendicular area"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -245,6 +293,14 @@
     "title": "Derive the projectile trajectory",
     "file": "derivations/projectile-motion.html",
     "summaryAnchor": "chapter-4--projectile-motion",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/projectile-motion-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Separate horizontal and vertical motion"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -285,6 +341,20 @@
     "title": "Why circular acceleration is v²/r",
     "file": "derivations/centripetal-acceleration.html",
     "summaryAnchor": "chapter-4--centripetal-acceleration",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/centripetal-acceleration-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Velocity tangent, acceleration inward"
+      },
+      {
+        "file": "derivations/assets/diagrams/centripetal-acceleration-velocity-change.svg",
+        "step": 2,
+        "key": "velocity-change",
+        "title": "The velocity difference"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -325,6 +395,14 @@
     "title": "What Newton’s second law assumes",
     "file": "derivations/newtons-second-law.html",
     "summaryAnchor": "chapter-5--newtons-second-law",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/newtons-second-law-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A free-body diagram"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -360,6 +438,14 @@
     "title": "Derive the acceleration down an incline",
     "file": "derivations/inclined-plane.html",
     "summaryAnchor": "chapter-5--inclined-plane",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/inclined-plane-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Resolve weight on an incline"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -399,6 +485,14 @@
     "title": "Static and kinetic friction on an incline",
     "file": "derivations/friction.html",
     "summaryAnchor": "chapter-6--friction",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/friction-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Friction opposes the tendency to slide"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -439,6 +533,14 @@
     "title": "Derive terminal speed with quadratic drag",
     "file": "derivations/terminal-speed.html",
     "summaryAnchor": "chapter-6--terminal-speed",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/terminal-speed-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Balance at terminal speed"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -474,6 +576,14 @@
     "title": "Derive the work–kinetic energy theorem",
     "file": "derivations/work-energy.html",
     "summaryAnchor": "chapter-7--work-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/work-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Force acting through a displacement"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -514,6 +624,20 @@
     "title": "Why spring work contains ½kx²",
     "file": "derivations/spring-work.html",
     "summaryAnchor": "chapter-7--spring-work",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/spring-work-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A restoring force grows with extension"
+      },
+      {
+        "file": "derivations/assets/diagrams/spring-work-work-area.svg",
+        "step": 3,
+        "key": "work-area",
+        "title": "Spring work is a triangular area"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -558,6 +682,14 @@
     "title": "Derive force from potential energy",
     "file": "derivations/potential-energy.html",
     "summaryAnchor": "chapter-8--potential-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/potential-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Force follows the potential-energy slope"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -593,6 +725,14 @@
     "title": "When is mechanical energy conserved?",
     "file": "derivations/mechanical-energy.html",
     "summaryAnchor": "chapter-8--mechanical-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/mechanical-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Potential energy can become kinetic energy"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -633,6 +773,14 @@
     "title": "Derive impulse and momentum conservation",
     "file": "derivations/momentum-and-impulse.html",
     "summaryAnchor": "chapter-9--momentum-and-impulse",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/momentum-and-impulse-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Two carts exchange momentum"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -673,6 +821,14 @@
     "title": "Why a system’s centre of mass obeys Newton’s law",
     "file": "derivations/center-of-mass.html",
     "summaryAnchor": "chapter-9--center-of-mass",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/center-of-mass-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A mass-weighted balance point"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -717,6 +873,14 @@
     "title": "Derive rotational kinetic energy and moment of inertia",
     "file": "derivations/rotational-energy.html",
     "summaryAnchor": "chapter-10--rotational-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/rotational-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Different radii have different speeds"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -757,6 +921,14 @@
     "title": "Derive the parallel-axis theorem",
     "file": "derivations/parallel-axis.html",
     "summaryAnchor": "chapter-10--parallel-axis",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/parallel-axis-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Shift the axis away from the centre of mass"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -797,6 +969,14 @@
     "title": "Derive torque as the rate of angular momentum",
     "file": "derivations/angular-momentum.html",
     "summaryAnchor": "chapter-11--angular-momentum",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/angular-momentum-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A perpendicular force changes angular momentum"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -837,6 +1017,14 @@
     "title": "Derive the speed of an object rolling downhill",
     "file": "derivations/rolling.html",
     "summaryAnchor": "chapter-11--rolling",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/rolling-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Rolling combines translation and rotation"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -877,6 +1065,14 @@
     "title": "Why equilibrium needs both force and torque balance",
     "file": "derivations/static-equilibrium.html",
     "summaryAnchor": "chapter-12--static-equilibrium",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/static-equilibrium-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Balance forces and turning effects"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -917,6 +1113,14 @@
     "title": "Derive the elastic extension of a rod",
     "file": "derivations/elasticity.html",
     "summaryAnchor": "chapter-12--elasticity",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/elasticity-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A small tensile deformation"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -957,6 +1161,14 @@
     "title": "Derive circular-orbit speed and Kepler’s third law",
     "file": "derivations/orbital-speed.html",
     "summaryAnchor": "chapter-13--orbital-speed",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/orbital-speed-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Gravity supplies the inward force"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -997,6 +1209,14 @@
     "title": "Derive gravitational potential and escape speed",
     "file": "derivations/escape-speed.html",
     "summaryAnchor": "chapter-13--escape-speed",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/escape-speed-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Escape requires enough total energy"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -1037,6 +1257,14 @@
     "title": "Derive pressure with depth and buoyancy",
     "file": "derivations/hydrostatic-pressure.html",
     "summaryAnchor": "chapter-14--hydrostatic-pressure",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/hydrostatic-pressure-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Pressure differences create buoyancy"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1077,6 +1305,14 @@
     "title": "Derive continuity and Bernoulli’s equation",
     "file": "derivations/bernoulli.html",
     "summaryAnchor": "chapter-14--bernoulli",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/bernoulli-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "The same volume flow passes every section"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1112,6 +1348,14 @@
     "title": "Derive simple harmonic motion from a spring",
     "file": "derivations/simple-harmonic-motion.html",
     "summaryAnchor": "chapter-15--simple-harmonic-motion",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/simple-harmonic-motion-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "The force always restores toward equilibrium"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1152,6 +1396,14 @@
     "title": "Derive the small-angle pendulum period",
     "file": "derivations/pendulum.html",
     "summaryAnchor": "chapter-15--pendulum",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/pendulum-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Weight supplies the pendulum torque"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1192,6 +1444,14 @@
     "title": "Derive wave speed on a stretched string",
     "file": "derivations/wave-speed.html",
     "summaryAnchor": "chapter-16--wave-speed",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/wave-speed-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Wave motion differs from material motion"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -1227,6 +1487,14 @@
     "title": "Derive the allowed frequencies of a fixed string",
     "file": "derivations/standing-waves.html",
     "summaryAnchor": "chapter-16--standing-waves",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/standing-waves-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Fixed nodes select allowed wavelengths"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -1267,6 +1535,14 @@
     "title": "Why sound speed is √(B/ρ)",
     "file": "derivations/sound-speed.html",
     "summaryAnchor": "chapter-17--sound-speed",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/sound-speed-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Sound carries a compression pattern"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -1302,6 +1578,14 @@
     "title": "Derive the sound Doppler formula",
     "file": "derivations/doppler.html",
     "summaryAnchor": "chapter-17--doppler",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/doppler-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "An approaching source crowds its wavefronts"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -1337,6 +1621,20 @@
     "title": "The first law and work by an expanding gas",
     "file": "derivations/first-law.html",
     "summaryAnchor": "chapter-18--first-law",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/first-law-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Energy can enter as heat and leave as work"
+      },
+      {
+        "file": "derivations/assets/diagrams/first-law-free-expansion.svg",
+        "step": 5,
+        "key": "free-expansion",
+        "title": "Zero heat and work can still accompany expansion"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1386,6 +1684,14 @@
     "title": "Derive the logarithm in isothermal gas work",
     "file": "derivations/isothermal-work.html",
     "summaryAnchor": "chapter-18--isothermal-work",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/isothermal-work-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Expansion work is area under the actual path"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -1430,6 +1736,20 @@
     "title": "Derive pV = nRT from molecular collisions",
     "file": "derivations/ideal-gas.html",
     "summaryAnchor": "chapter-19--ideal-gas",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/ideal-gas-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Microscopic collisions produce pressure"
+      },
+      {
+        "file": "derivations/assets/diagrams/ideal-gas-thermal-energy.svg",
+        "step": 4,
+        "key": "thermal-energy",
+        "title": "Temperature enters through three kinetic components"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -1475,6 +1795,14 @@
     "title": "Derive pVᵞ = constant for an ideal gas",
     "file": "derivations/adiabatic-gas.html",
     "summaryAnchor": "chapter-19--adiabatic-gas",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/adiabatic-gas-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Adiabatic expansion cools a reversible ideal gas"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -1515,6 +1843,20 @@
     "title": "Why entropy uses δQrev/T",
     "file": "derivations/entropy.html",
     "summaryAnchor": "chapter-20--entropy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/entropy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Expansion opens more accessible positions"
+      },
+      {
+        "file": "derivations/assets/diagrams/entropy-reversible-reference.svg",
+        "step": 1,
+        "key": "reversible-reference",
+        "title": "Entropy is defined using reversible heat transfer"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -1555,6 +1897,20 @@
     "title": "Derive the Carnot heat ratio and efficiency",
     "file": "derivations/carnot.html",
     "summaryAnchor": "chapter-20--carnot",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/carnot-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Heat flow and useful work in an engine"
+      },
+      {
+        "file": "derivations/assets/diagrams/carnot-pv-cycle.svg",
+        "step": 3,
+        "key": "pv-cycle",
+        "title": "The four reversible Carnot legs"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -1603,6 +1959,14 @@
     "title": "Coulomb’s law and superposition",
     "file": "derivations/coulomb.html",
     "summaryAnchor": "chapter-21--coulomb",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/coulomb-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Charge signs determine attraction or repulsion"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1643,6 +2007,14 @@
     "title": "Charge conservation and quantization",
     "file": "derivations/charge-conservation.html",
     "summaryAnchor": "chapter-21--charge-conservation",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/charge-conservation-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Charge is signed and interactions preserve its total"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1687,6 +2059,14 @@
     "title": "Derive the field on the axis of a charged ring",
     "file": "derivations/electric-field.html",
     "summaryAnchor": "chapter-22--electric-field",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/electric-field-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Symmetry simplifies a ring field"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -1722,6 +2102,14 @@
     "title": "Derive the torque and energy of an electric dipole",
     "file": "derivations/electric-dipole.html",
     "summaryAnchor": "chapter-22--electric-dipole",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/electric-dipole-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A uniform field turns a neutral dipole"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1762,6 +2150,14 @@
     "title": "Use Gauss’s law to derive a spherical electric field",
     "file": "derivations/gauss-sphere.html",
     "summaryAnchor": "chapter-23--gauss-sphere",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/gauss-sphere-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A spherical Gaussian surface matches the symmetry"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1802,6 +2198,14 @@
     "title": "Derive fields of an infinite line and sheet",
     "file": "derivations/gauss-cylinder-plane.html",
     "summaryAnchor": "chapter-23--gauss-cylinder-plane",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/gauss-cylinder-plane-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A sheet has equal normal fields on both sides"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -1842,6 +2246,14 @@
     "title": "Derive potential from an electric field",
     "file": "derivations/electric-potential.html",
     "summaryAnchor": "chapter-24--electric-potential",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/electric-potential-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Equipotentials cut across the field"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -1882,6 +2294,14 @@
     "title": "Build the potential energy of a charge arrangement",
     "file": "derivations/electric-energy.html",
     "summaryAnchor": "chapter-24--electric-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/electric-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Assemble a configuration pair by pair"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -1917,6 +2337,14 @@
     "title": "Derive parallel-plate capacitance",
     "file": "derivations/parallel-plate-capacitance.html",
     "summaryAnchor": "chapter-25--parallel-plate-capacitance",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/parallel-plate-capacitance-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A nearly uniform field fills the plate gap"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -1957,6 +2385,14 @@
     "title": "Derive energy stored in a capacitor",
     "file": "derivations/capacitor-energy.html",
     "summaryAnchor": "chapter-25--capacitor-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/capacitor-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "The field between the plates stores energy"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -1997,6 +2433,14 @@
     "title": "Derive current from carrier drift",
     "file": "derivations/current-drift.html",
     "summaryAnchor": "chapter-26--current-drift",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/current-drift-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Drift direction and conventional current differ"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -2027,6 +2471,14 @@
     "title": "Derive R = ρL/A and Joule heating",
     "file": "derivations/resistance.html",
     "summaryAnchor": "chapter-26--resistance",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/resistance-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Geometry and collisions affect conduction"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -2067,6 +2519,14 @@
     "title": "Derive Kirchhoff rules and equivalent resistance",
     "file": "derivations/kirchhoff.html",
     "summaryAnchor": "chapter-27--kirchhoff",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/kirchhoff-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A junction cannot accumulate charge in steady flow"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -2107,6 +2567,14 @@
     "title": "Derive exponential charging of an RC circuit",
     "file": "derivations/rc-circuit.html",
     "summaryAnchor": "chapter-27--rc-circuit",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/rc-circuit-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "The rising capacitor voltage reduces the current"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -2147,6 +2615,14 @@
     "title": "Derive a charged particle’s magnetic orbit radius",
     "file": "derivations/magnetic-orbit.html",
     "summaryAnchor": "chapter-28--magnetic-orbit",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/magnetic-orbit-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Magnetic force bends a positive charge"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -2191,6 +2667,14 @@
     "title": "Derive force and torque on a current loop",
     "file": "derivations/magnetic-wire.html",
     "summaryAnchor": "chapter-28--magnetic-wire",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/magnetic-wire-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Moving charge makes a magnetic wire force"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -2231,6 +2715,14 @@
     "title": "Derive the magnetic field of a long straight wire",
     "file": "derivations/ampere-wire.html",
     "summaryAnchor": "chapter-29--ampere-wire",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/ampere-wire-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Magnetic field circles a straight current"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -2261,6 +2753,14 @@
     "title": "Derive the ideal solenoid field",
     "file": "derivations/solenoid.html",
     "summaryAnchor": "chapter-29--solenoid",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/solenoid-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Many coil turns reinforce the inside field"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -2291,6 +2791,14 @@
     "title": "Faraday’s law, Lenz’s law, and motional emf",
     "file": "derivations/faraday.html",
     "summaryAnchor": "chapter-30--faraday",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/faraday-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Induction opposes a change of flux"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -2331,6 +2839,14 @@
     "title": "Derive inductance and magnetic energy storage",
     "file": "derivations/inductor-energy.html",
     "summaryAnchor": "chapter-30--inductor-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/inductor-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Current builds a magnetic field"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -2371,6 +2887,14 @@
     "title": "Derive LC oscillation frequency",
     "file": "derivations/lc-oscillations.html",
     "summaryAnchor": "chapter-31--lc-oscillations",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/lc-oscillations-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Electric and magnetic energy trade places"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -2411,6 +2935,14 @@
     "title": "Derive impedance and resonance in a series RLC circuit",
     "file": "derivations/ac-impedance.html",
     "summaryAnchor": "chapter-31--ac-impedance",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/ac-impedance-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Three elements respond with different phases"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -2451,6 +2983,14 @@
     "title": "Why Maxwell added displacement current",
     "file": "derivations/displacement-current.html",
     "summaryAnchor": "chapter-32--displacement-current",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/displacement-current-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A changing electric field bridges the current balance"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -2486,6 +3026,14 @@
     "title": "Derive the electromagnetic wave speed from Maxwell’s equations",
     "file": "derivations/em-wave-equation.html",
     "summaryAnchor": "chapter-32--em-wave-equation",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/em-wave-equation-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Electric and magnetic fields travel together"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -2526,6 +3074,14 @@
     "title": "Derive electromagnetic-wave intensity",
     "file": "derivations/em-intensity.html",
     "summaryAnchor": "chapter-33--em-intensity",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/em-intensity-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "The field cross product gives energy-flow direction"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -2566,6 +3122,14 @@
     "title": "Derive radiation pressure from momentum transfer",
     "file": "derivations/radiation-pressure.html",
     "summaryAnchor": "chapter-33--radiation-pressure",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/radiation-pressure-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "An absorber receives incoming light momentum"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -2606,6 +3170,14 @@
     "title": "Derive the thin-lens imaging equation",
     "file": "derivations/thin-lens.html",
     "summaryAnchor": "chapter-34--thin-lens",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/thin-lens-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Two principal rays locate the image"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -2636,6 +3208,14 @@
     "title": "Derive the paraxial spherical-mirror equation",
     "file": "derivations/spherical-mirror.html",
     "summaryAnchor": "chapter-34--spherical-mirror",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/spherical-mirror-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Reflected rays locate the concave-mirror image"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -2671,6 +3251,20 @@
     "title": "Derive the double-slit interference pattern",
     "file": "derivations/double-slit.html",
     "summaryAnchor": "chapter-35--double-slit",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/double-slit-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Two coherent paths interfere on the screen"
+      },
+      {
+        "file": "derivations/assets/diagrams/double-slit-slit-envelope.svg",
+        "step": 4,
+        "key": "slit-envelope",
+        "title": "Finite slit width adds an envelope"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -2711,6 +3305,14 @@
     "title": "Derive thin-film interference conditions",
     "file": "derivations/thin-film.html",
     "summaryAnchor": "chapter-35--thin-film",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/thin-film-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Two reflected paths can acquire different phases"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -2746,6 +3348,14 @@
     "title": "Derive the single-slit diffraction envelope",
     "file": "derivations/single-slit.html",
     "summaryAnchor": "chapter-36--single-slit",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/single-slit-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Different parts of one opening interfere"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -2781,6 +3391,14 @@
     "title": "Derive grating maxima and resolving power",
     "file": "derivations/diffraction-grating.html",
     "summaryAnchor": "chapter-36--diffraction-grating",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/diffraction-grating-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "More slits sharpen the principal maxima"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -2821,6 +3439,14 @@
     "title": "Derive time dilation with a light clock",
     "file": "derivations/time-dilation.html",
     "summaryAnchor": "chapter-37--time-dilation",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/time-dilation-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A moving light clock has a longer light path"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -2856,6 +3482,14 @@
     "title": "Derive the relativistic energy–momentum relation",
     "file": "derivations/relativistic-energy.html",
     "summaryAnchor": "chapter-37--relativistic-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/relativistic-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "An energy–momentum triangle"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -2901,6 +3535,14 @@
     "title": "Photon energy, momentum and the photoelectric effect",
     "file": "derivations/photons.html",
     "summaryAnchor": "chapter-38--photons",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/photons-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A photon supplies the escape cost and electron motion"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -2941,6 +3583,14 @@
     "title": "Derive the Compton wavelength shift",
     "file": "derivations/compton.html",
     "summaryAnchor": "chapter-38--compton",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/compton-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A scattered photon and recoiling electron share momentum"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -2981,6 +3631,14 @@
     "title": "Derive the energy levels of a particle in a box",
     "file": "derivations/particle-in-box.html",
     "summaryAnchor": "chapter-39--particle-in-box",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/particle-in-box-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Boundary conditions select standing matter waves"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -3021,6 +3679,14 @@
     "title": "Why tunnelling probability decays exponentially",
     "file": "derivations/tunneling.html",
     "summaryAnchor": "chapter-39--tunneling",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/tunneling-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A forbidden region attenuates the wavefunction"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3056,6 +3722,14 @@
     "title": "Derive hydrogen’s energy scale with the Bohr model",
     "file": "derivations/hydrogen.html",
     "summaryAnchor": "chapter-40--hydrogen",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/hydrogen-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "The Bohr orbit is a historical model"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -3096,6 +3770,14 @@
     "title": "From atomic levels to spectral lines",
     "file": "derivations/atomic-transitions.html",
     "summaryAnchor": "chapter-40--atomic-transitions",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/atomic-transitions-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A transition produces a photon of definite energy"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -3131,6 +3813,14 @@
     "title": "Derive conductivity in the Drude model",
     "file": "derivations/drude.html",
     "summaryAnchor": "chapter-41--drude",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/drude-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Field acceleration competes with collisions"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -3171,6 +3861,14 @@
     "title": "Why electrons follow the Fermi–Dirac occupation rule",
     "file": "derivations/fermi-dirac.html",
     "summaryAnchor": "chapter-41--fermi-dirac",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/fermi-dirac-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Thermal energy smooths the occupation edge"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -3211,6 +3909,14 @@
     "title": "Derive exponential radioactive decay and half-life",
     "file": "derivations/radioactive-decay.html",
     "summaryAnchor": "chapter-42--radioactive-decay",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/radioactive-decay-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Equal half-lives remove equal fractions"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3246,6 +3952,14 @@
     "title": "Derive nuclear binding energy from mass defect",
     "file": "derivations/binding-energy.html",
     "summaryAnchor": "chapter-42--binding-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/binding-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A bound nucleus has lower rest energy"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -3281,6 +3995,14 @@
     "title": "Calculate energy released by fission or fusion",
     "file": "derivations/nuclear-energy.html",
     "summaryAnchor": "chapter-43--nuclear-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/nuclear-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Rest-energy differences become released energy"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -3316,6 +4038,14 @@
     "title": "Derive the simplest chain-reaction growth law",
     "file": "derivations/chain-reaction.html",
     "summaryAnchor": "chapter-43--chain-reaction",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/chain-reaction-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Repeated multiplication changes the population"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3351,6 +4081,14 @@
     "title": "Build proton and neutron charge from quarks",
     "file": "derivations/quark-charges.html",
     "summaryAnchor": "chapter-44--quark-charges",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/quark-charges-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Constituent charges add to the nucleon charge"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -3391,6 +4129,14 @@
     "title": "Connect expansion, redshift and Hubble’s law",
     "file": "derivations/cosmological-redshift.html",
     "summaryAnchor": "chapter-44--cosmological-redshift",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/cosmological-redshift-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Expansion increases proper separations"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3426,6 +4172,14 @@
     "title": "Why an integral accumulates a rate",
     "file": "derivations/integrals.html",
     "summaryAnchor": "chapter-2--integrals",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/integrals-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Add many small changes"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3466,6 +4220,14 @@
     "title": "Derive ½kBT per quadratic degree of freedom",
     "file": "derivations/equipartition.html",
     "summaryAnchor": "chapter-19--equipartition",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/equipartition-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Three independent translational motions"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -3515,6 +4277,20 @@
     "title": "Why the reversible Clausius cyclic integral is zero",
     "file": "derivations/clausius.html",
     "summaryAnchor": "chapter-20--clausius",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/clausius-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A reversible cycle balances heat divided by temperature"
+      },
+      {
+        "file": "derivations/assets/diagrams/clausius-reference-cycle.svg",
+        "step": 2,
+        "key": "reference-cycle",
+        "title": "A reversible-engine reference cycle"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -3568,6 +4344,14 @@
     "title": "Derive Galilean relative velocity and acceleration",
     "file": "derivations/relative-motion.html",
     "summaryAnchor": "chapter-4--relative-motion",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/relative-motion-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Compose the positions before differentiating"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -3603,6 +4387,14 @@
     "title": "Derive translational and rotational power",
     "file": "derivations/power.html",
     "summaryAnchor": "chapter-7--power",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/power-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Power is the rate of transferring work"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3638,6 +4430,14 @@
     "title": "Derive one-dimensional elastic collision velocities",
     "file": "derivations/elastic-collisions.html",
     "summaryAnchor": "chapter-9--elastic-collisions",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/elastic-collisions-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Equal masses exchange velocities in the special case shown"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3673,6 +4473,14 @@
     "title": "Derive the ideal rocket equation and momentum flux",
     "file": "derivations/rocket.html",
     "summaryAnchor": "chapter-9--rocket",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/rocket-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Backward exhaust produces forward rocket momentum"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3713,6 +4521,14 @@
     "title": "Derive the rotational kinematic equations",
     "file": "derivations/rotational-kinematics.html",
     "summaryAnchor": "chapter-10--rotational-kinematics",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/rotational-kinematics-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Angular rates connect to linear motion"
+      }
+    ],
     "branches": [
       {
         "step": 2,
@@ -3753,6 +4569,14 @@
     "title": "Derive rolling acceleration and slow gyroscopic precession",
     "file": "derivations/gyroscope.html",
     "summaryAnchor": "chapter-11--gyroscope",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/gyroscope-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Torque changes the direction of a fast spin"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -3793,6 +4617,14 @@
     "title": "Derive spherical gravity and orbital energy",
     "file": "derivations/gravity-sphere-orbits.html",
     "summaryAnchor": "chapter-13--gravity-sphere-orbits",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/gravity-sphere-orbits-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Shell symmetry leaves only the enclosed mass"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3833,6 +4665,20 @@
     "title": "Derive torsion and physical-pendulum periods",
     "file": "derivations/physical-pendulums.html",
     "summaryAnchor": "chapter-15--physical-pendulums",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/physical-pendulums-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "The mass distribution affects the restoring motion"
+      },
+      {
+        "file": "derivations/assets/diagrams/physical-pendulums-torsion.svg",
+        "step": 2,
+        "key": "torsion",
+        "title": "Twisting an elastic support restores the orientation"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3868,6 +4714,14 @@
     "title": "Derive damped oscillations and resonance",
     "file": "derivations/damped-driven.html",
     "summaryAnchor": "chapter-15--damped-driven",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/damped-driven-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Damping reduces the oscillation envelope"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3908,6 +4762,14 @@
     "title": "Derive travelling-wave phase, speed and energy flow",
     "file": "derivations/travelling-wave-energy.html",
     "summaryAnchor": "chapter-16--travelling-wave-energy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/travelling-wave-energy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Transverse velocity and tension transport energy"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3943,6 +4805,26 @@
     "title": "Derive sound intensity, pipe modes, beats and Mach angle",
     "file": "derivations/sound-energy-pipes.html",
     "summaryAnchor": "chapter-17--sound-energy-pipes",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/sound-energy-pipes-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Compression and motion carry sound energy"
+      },
+      {
+        "file": "derivations/assets/diagrams/sound-energy-pipes-beats.svg",
+        "step": 6,
+        "key": "beats",
+        "title": "Nearby frequencies create a slow beat envelope"
+      },
+      {
+        "file": "derivations/assets/diagrams/sound-energy-pipes-mach-cone.svg",
+        "step": 7,
+        "key": "mach-cone",
+        "title": "A supersonic source produces a tangent cone"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -3993,6 +4875,14 @@
     "title": "Derive finite expansion and heat-capacity formulas",
     "file": "derivations/thermal-expansion.html",
     "summaryAnchor": "chapter-18--thermal-expansion",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/thermal-expansion-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Small dimensional changes accumulate"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4028,6 +4918,14 @@
     "title": "Derive heat conduction through a slab",
     "file": "derivations/heat-conduction.html",
     "summaryAnchor": "chapter-18--heat-conduction",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/heat-conduction-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Steady energy flow through a slab"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4063,6 +4961,14 @@
     "title": "Derive Maxwell speeds and mean free path",
     "file": "derivations/gas-statistics.html",
     "summaryAnchor": "chapter-19--gas-statistics",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/gas-statistics-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A distribution gives different characteristic speeds"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -4108,6 +5014,14 @@
     "title": "Derive ideal-gas internal energy and heat capacities",
     "file": "derivations/heat-capacities.html",
     "summaryAnchor": "chapter-19--heat-capacities",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/heat-capacities-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Count active quadratic energy terms"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -4148,6 +5062,14 @@
     "title": "Derive Carnot refrigerator performance",
     "file": "derivations/refrigerator.html",
     "summaryAnchor": "chapter-20--refrigerator",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/refrigerator-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Work moves heat from cold to hot"
+      }
+    ],
     "branches": [
       {
         "step": 3,
@@ -4188,6 +5110,14 @@
     "title": "Derive multiplicity and the logarithmic entropy form",
     "file": "derivations/statistical-entropy.html",
     "summaryAnchor": "chapter-20--statistical-entropy",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/statistical-entropy-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Equal macrostates can contain unequal numbers of microstates"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -4228,6 +5158,14 @@
     "title": "Derive point-charge, dipole and disk fields and potentials",
     "file": "derivations/charge-distributions.html",
     "summaryAnchor": "chapter-22--charge-distributions",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/charge-distributions-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Build a continuous distribution from symmetric elements"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4268,6 +5206,20 @@
     "title": "Derive cylindrical and spherical capacitances",
     "file": "derivations/capacitor-geometries.html",
     "summaryAnchor": "chapter-25--capacitor-geometries",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/capacitor-geometries-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Geometry controls the voltage integral"
+      },
+      {
+        "file": "derivations/assets/diagrams/capacitor-geometries-cylindrical-gap.svg",
+        "step": 2,
+        "key": "cylindrical-gap",
+        "title": "A coaxial gap gives a logarithmic voltage integral"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4303,6 +5255,14 @@
     "title": "Derive capacitor combinations and dielectric Gauss law",
     "file": "derivations/capacitor-networks.html",
     "summaryAnchor": "chapter-25--capacitor-networks",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/capacitor-networks-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Parallel capacitors share a voltage"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4338,6 +5298,14 @@
     "title": "Derive current as charge flux and local continuity",
     "file": "derivations/current-flux.html",
     "summaryAnchor": "chapter-26--current-flux",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/current-flux-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Count charge crossing an oriented area"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4373,6 +5341,14 @@
     "title": "Derive terminal voltage, battery power and RC discharge",
     "file": "derivations/battery-discharge.html",
     "summaryAnchor": "chapter-27--battery-discharge",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/battery-discharge-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Stored capacitor energy drives a discharge"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4408,6 +5384,14 @@
     "title": "Derive arc, toroid, dipole fields and wire forces",
     "file": "derivations/magnetic-geometries.html",
     "summaryAnchor": "chapter-29--magnetic-geometries",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/magnetic-geometries-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Choose geometry to match magnetic symmetry"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4443,6 +5427,14 @@
     "title": "Derive RL transients, mutual emf and magnetic energy density",
     "file": "derivations/rl-mutual.html",
     "summaryAnchor": "chapter-30--rl-mutual",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/rl-mutual-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "An inductor resists changes in the current"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4483,6 +5475,14 @@
     "title": "Derive RLC damping, AC power and transformer ratios",
     "file": "derivations/ac-power-transformers.html",
     "summaryAnchor": "chapter-31--ac-power-transformers",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/ac-power-transformers-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "The same changing flux links two windings"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4523,6 +5523,14 @@
     "title": "Derive orbital and spin magnetic-moment consequences",
     "file": "derivations/magnetic-moments.html",
     "summaryAnchor": "chapter-32--magnetic-moments",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/magnetic-moments-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Circulating charge has a magnetic moment"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4558,6 +5566,14 @@
     "title": "Derive Curie’s law in the weak-field dipole model",
     "file": "derivations/curie-law.html",
     "summaryAnchor": "chapter-32--curie-law",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/curie-law-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Thermal disorder competes with field alignment"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4593,6 +5609,20 @@
     "title": "Derive Malus’s law, Snell’s law and special angles",
     "file": "derivations/polarization-refraction.html",
     "summaryAnchor": "chapter-33--polarization-refraction",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/polarization-refraction-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A polarizer transmits a projection of the field"
+      },
+      {
+        "file": "derivations/assets/diagrams/polarization-refraction-refraction.svg",
+        "step": 3,
+        "key": "refraction",
+        "title": "Refraction changes direction when speed changes"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4633,6 +5663,14 @@
     "title": "Derive spherical refraction, lensmaker and instrument magnification",
     "file": "derivations/refracting-instruments.html",
     "summaryAnchor": "chapter-34--refracting-instruments",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/refracting-instruments-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Image geometry is reused in optical instruments"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4673,6 +5711,20 @@
     "title": "Derive circular diffraction, two-slit envelopes and Bragg angles",
     "file": "derivations/apertures-bragg.html",
     "summaryAnchor": "chapter-36--apertures-bragg",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/apertures-bragg-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A circular aperture produces a diffraction pattern"
+      },
+      {
+        "file": "derivations/assets/diagrams/apertures-bragg-bragg-path.svg",
+        "step": 5,
+        "key": "bragg-path",
+        "title": "Two crystal-plane reflections"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4713,6 +5765,14 @@
     "title": "Derive the Lorentz transform, length contraction and velocity addition",
     "file": "derivations/lorentz-transform.html",
     "summaryAnchor": "chapter-37--lorentz-transform",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/lorentz-transform-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Time and space axes depend on the frame"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4748,6 +5808,14 @@
     "title": "Derive longitudinal and transverse light Doppler shifts",
     "file": "derivations/light-doppler.html",
     "summaryAnchor": "chapter-37--light-doppler",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/light-doppler-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Recession stretches the detected wavelength"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4783,6 +5851,14 @@
     "title": "Derive Planck radiation, Wien’s maximum and the T⁴ law",
     "file": "derivations/planck-radiation.html",
     "summaryAnchor": "chapter-38--planck-radiation",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/planck-radiation-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Heating changes both the strength and the peak wavelength"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4823,6 +5899,14 @@
     "title": "Schrödinger dynamics, matter waves and the uncertainty bound",
     "file": "derivations/quantum-foundations.html",
     "summaryAnchor": "chapter-38--quantum-foundations",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/quantum-foundations-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Localization broadens the momentum distribution"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4863,6 +5947,20 @@
     "title": "Derive wavefunction normalization and multidimensional box states",
     "file": "derivations/quantum-normalization.html",
     "summaryAnchor": "chapter-39--quantum-normalization",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/quantum-normalization-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Total probability is an integral"
+      },
+      {
+        "file": "derivations/assets/diagrams/quantum-normalization-box-states.svg",
+        "step": 2,
+        "key": "box-states",
+        "title": "Box boundaries fix nodes before normalization"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -4898,6 +5996,14 @@
     "title": "Derive angular-momentum eigenvalues and magnetic projections",
     "file": "derivations/quantum-angular.html",
     "summaryAnchor": "chapter-40--quantum-angular",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/quantum-angular-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Angular-momentum magnitude and projection differ"
+      }
+    ],
     "branches": [
       {
         "step": 5,
@@ -4943,6 +6049,14 @@
     "title": "Derive the electron density of states and Fermi energy",
     "file": "derivations/electron-gas-states.html",
     "summaryAnchor": "chapter-41--electron-gas-states",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/electron-gas-states-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Available states and filled states are different"
+      }
+    ],
     "branches": [
       {
         "step": 4,
@@ -4988,6 +6102,14 @@
     "title": "Derive nuclear radius scaling and a fusion confinement criterion",
     "file": "derivations/nuclear-size-fusion.html",
     "summaryAnchor": "chapter-42--nuclear-size-fusion",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/nuclear-size-fusion-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Approximately constant density gives cube-root radius scaling"
+      }
+    ],
     "branches": [],
     "equations": [
       {
@@ -5023,6 +6145,14 @@
     "title": "Derive hydrogen energies from the radial Schrödinger equation",
     "file": "derivations/hydrogen-quantum.html",
     "summaryAnchor": "chapter-39--hydrogen-quantum",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/hydrogen-quantum-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "Normalizable Coulomb states have discrete energies"
+      }
+    ],
     "branches": [
       {
         "step": 1,
@@ -5063,6 +6193,14 @@
     "title": "Derive Boltzmann weights from a thermal reservoir",
     "file": "derivations/boltzmann-weights.html",
     "summaryAnchor": "chapter-19--boltzmann-weights",
+    "diagrams": [
+      {
+        "file": "derivations/assets/diagrams/boltzmann-weights-concept.svg",
+        "step": 0,
+        "key": "concept",
+        "title": "A reservoir supplies different numbers of compatible states"
+      }
+    ],
     "branches": [
       {
         "step": 3,

@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 
 from derivation_content import TOPICS
+from derivation_diagrams import DIAGRAMS, build_diagrams, diagrams_for, figure_html
 from equation_provenance import NOTE_INPUTS, LABELS
 from source_equations import annotate as annotate_source, strip_generated_links, AUDIT as SOURCE_AUDIT
 
@@ -185,6 +186,7 @@ def render_topic(t, chapters):
             + equation(t['formula'], t, 'main', True)
             + '<section class="setup" aria-labelledby="symbols"><h2 id="symbols">What the symbols mean</h2>'
             f'<p>{escape(t["symbols"])}</p><h2>When this applies</h2><p>{escape(t["assumptions"])}</p></section>')
+    body += ''.join(figure_html(d) for d in diagrams_for(t['slug']))
     toc = []
     for i, step in enumerate(t['steps'], 1):
         toc.append(f'<li><a href="#step-{i}">{escape(step["title"])}</a></li>')
@@ -193,6 +195,7 @@ def render_topic(t, chapters):
                  f'<p>{escape(step["text"])}</p>{equation(step["equation"],t,f"step-{i}")}')
         if not step['equation'] and any(c in step['text'] for c in '=≈≥≤'):
             body += '<a class="prose-equation-link" data-proof-link href="#proof-main">Explain the relations used here ↗</a>'
+        body += ''.join(figure_html(d) for d in diagrams_for(t['slug'],i))
         if step['branch']:
             body += branch(*step['branch'], t['slug'], i)
         body += '</section>'
@@ -231,6 +234,7 @@ def validate_content():
 
 def build_pages():
     validate_content()
+    build_diagrams(ROOT, TOPICS)
     chapters = {int(c['title'].split()[0]): c['title'].split(' ', 1)[1]
                 for c in json.loads((ROOT/'content/review-chapters.json').read_text())}
     (OUT/'assets').mkdir(parents=True, exist_ok=True)
@@ -247,7 +251,7 @@ def build_pages():
     body = (f'<div class="hero"><div class="eyebrow">44 chapters · {len(TOPICS)} explanations</div>'
             '<h1>Follow the formula.<br>Understand every step.</h1>'
             '<p class="lead">Start from a chapter summary, open a formula, and follow the question behind any step. '
-            'Each explanation includes assumptions, a derivation or physical starting point, and a worked example.</p></div>'
+            'Each explanation includes a labeled diagram, assumptions, a derivation or physical starting point, and a worked example.</p></div>'
             '<label class="search-label" for="topic-search">Find a formula or question</label>'
             '<input id="topic-search" type="search" placeholder="Try entropy, force, photon…" autocomplete="off">'
             f'<p id="search-status" role="status" aria-live="polite">{len(TOPICS)} explanations</p>'
@@ -255,6 +259,8 @@ def build_pages():
     (OUT/'index.html').write_text(shell('Formula explanations & derivations', body, chapters, index=True))
     manifest = [dict(chapter=t['chapter'], slug=t['slug'], title=t['title'],
                      file=f'derivations/{t["slug"]}.html', summaryAnchor=anchor(t),
+                     diagrams=[dict(file=f'derivations/assets/diagrams/{d.filename}',step=d.step,key=d.key,title=d.title)
+                               for d in DIAGRAMS if d.topic==t['slug']],
                      branches=[dict(step=i, target=s['branch'][1])
                                for i, s in enumerate(t['steps'], 1) if s['branch']],
                      equations=[dict(location=loc,kind=NOTE_INPUTS.get(t['slug'],{}).get(loc,'derived'),proof=f'proof-{loc}')

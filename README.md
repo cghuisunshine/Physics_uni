@@ -2,7 +2,7 @@
 
 - [Practice Studio](physics-practice.html): 4,170 original end-of-chapter problems from all 44 chapters, with matching original worked solutions, chapter/topic selection, drawing tools, progress tracking, review queues, and optional AI assistance.
 - [Review and Summary](Physics_Review_and_Summary_Tutorial.html): the textbook's 44 chapter summaries, with an Original image / Selectable text switch, a Copy text button, and linked formula explanations.
-- [Formula explanations](derivations/index.html): 131 original notes across all 44 chapters, with equation-level proof links, explicit starting assumptions, worked examples, and deeper branches at the steps that use them.
+- [Formula explanations](derivations/index.html): 131 original notes across all 44 chapters, with 146 labeled diagrams, equation-level proof links, explicit starting assumptions, worked examples, and deeper branches at the steps that use them.
 - [Contents](content.html)
 
 The practice layout and controls reuse the Physics11 practice studio. The content comes from `Physics text (TOC).pdf`; original worked solutions come from `Physics answer (TOC).pdf`. Shared table exercises remain individually selectable. Expand **Original pages, diagrams & tables** to see context and diagrams that lie outside the problem crop.
@@ -50,6 +50,10 @@ Edit `tools/review/derivation_content.py` to extend the explanations and their s
 python3 tools/review/build_derivations.py
 node tools/review/check_derivations.mjs
 ```
+
+The original SVG illustrations are generated from `tools/review/derivation_diagrams.py`. Every topic has a concept diagram; 15 additional figures illustrate specific steps. Captions explain how to read each picture and link to its equation proof. The images include accessible descriptions, scale to phones, open at full size, print, and work offline. Curves use their stated mathematical functions; captions identify schematic drawings. To rebuild only the notes and diagrams, use `python3 tools/review/build_derivations.py --pages-only`.
+
+Run `python3 -m unittest discover -s tools/review -p test_derivation_diagrams.py` to check image coverage, accessible descriptions, proof destinations, and scientific geometry (circular forces, lens rays, Carnot paths, terminal force balance, and velocity changes).
 
 In environments where Chrome cannot launch, `node tools/review/check_derivations.mjs --static-only` checks every file, asset and return fragment. With `jsdom` installed, `node --test tools/review/derivation-navigation.test.cjs` additionally checks the actual navigation scripts, search, summary restoration and reader controls without a browser. Browser layout and screenshot checks still require Chrome.
 
