@@ -9,6 +9,7 @@ import subprocess
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from selectable_text import SelectableTextBuilder
+from build_derivations import build_pages, chapter_resources, link_excerpt, write_equation_audit
 
 ROOT = Path(__file__).resolve().parents[2]
 WORK = ROOT / 'tmp/source-check'
@@ -109,14 +110,15 @@ def build(chapters):
         images = []
         text_data[str(n)] = []
         for piece_index, piece in enumerate(c['pieces'], 1):
-            text_data[str(n)].append(rebuilt.excerpt(n, piece, piece_index))
+            linked_text, source_links = link_excerpt(rebuilt.excerpt(n, piece, piece_index), n)
+            text_data[str(n)].append(linked_text)
             encoded = base64.b64encode((ROOT / piece['file']).read_bytes()).decode()
             images.append(f'<div class="excerpt"><div class="page-scroll"><div class="page-inner">'
                           f'<div class="original-version"><img class="source-image" loading="lazy" decoding="async" '
                           f'width="{piece["width"]:.3f}" height="{piece["height"]:.3f}" '
                           f'data-src="data:image/svg+xml;base64,{encoded}" '
                           f'alt="Original Review &amp; Summary excerpt for {html.escape(c["title"], quote=True)}, '
-                          f'PDF page {piece["page"]}."></div><div class="regenerated-version" data-piece="{piece_index-1}" style="aspect-ratio:{piece["width"]}/{piece["height"]}" hidden></div></div></div>'
+                          f'PDF page {piece["page"]}.">{source_links}</div><div class="regenerated-version" data-piece="{piece_index-1}" style="aspect-ratio:{piece["width"]}/{piece["height"]}" hidden></div></div></div>'
                           f'<div class="page-label">PDF PAGE {piece["page"]}</div></div>')
         page_label = ', '.join(str(p['page']) for p in c['pieces'])
         resource = ('<p class="chapter-resource" style="margin-top:8px"><a href="centripetal-acceleration-proof.html">Centripetal acceleration: interactive proof</a></p>' if n == 4 else '')
@@ -125,7 +127,8 @@ def build(chapters):
                         f'<h2 id="title-{n}">{html.escape(title)}</h2>'
                         f'<p>Review &amp; Summary · PDF {"pages" if len(c["pieces"]) > 1 else "page"} {page_label}</p>{resource}</div>'
                         f'<button class="review-button" aria-pressed="false" aria-label="Mark chapter {n} reviewed">Mark reviewed</button></div>'
-                        + ''.join(images) + '</article>')
+                        + f'<!-- derivations:chapter-{n}:start -->' + chapter_resources(n)
+                        + f'<!-- derivations:chapter-{n}:end -->' + ''.join(images) + '</article>')
         search_index.append({'title': c['title'], 'search':
                              (c['title'] + ' ' + ' '.join(p['text'] for p in c['pieces'])).lower()})
     template = (ROOT / 'tools/review/review-template.html').read_text()
@@ -137,6 +140,7 @@ def build(chapters):
     (ROOT/'content/review-text-audit.json').write_text(json.dumps({'chapters':len(chapters),'excerpts':len(rebuilt.audit),'glyphs':sum(p['glyphs'] for p in rebuilt.audit),'fontFaces':len(rebuilt.fonts),'pages':rebuilt.audit},indent=2)+'\n')
     out = ROOT / 'Physics_Review_and_Summary_Tutorial.html'
     out.write_text(result)
+    write_equation_audit()
     print(f'Built {out.name}: {out.stat().st_size / 1024**2:.1f} MB; '
           f'{len(chapters)} chapters, {sum(len(c["pieces"]) for c in chapters)} excerpts.')
 
@@ -148,4 +152,5 @@ if __name__ == '__main__':
     args=parser.parse_args()
     WORK.mkdir(parents=True,exist_ok=True)
     manifest=WORK/'manifest.json'
+    build_pages()
     build(extract() if args.extract or not manifest.exists() else json.loads(manifest.read_text()))

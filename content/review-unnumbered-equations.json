@@ -1,0 +1,1226 @@
+[
+  {
+    "chapter": 2,
+    "page": 66,
+    "column": 1,
+    "baseline": 626.2,
+    "text": "to position xduring a time interval Δt=t−t,its average velocity",
+    "kind": "definition",
+    "topic": "rates-of-change"
+  },
+  {
+    "chapter": 2,
+    "page": 67,
+    "column": 1,
+    "baseline": 340.8,
+    "text": "acceleration.Near Earth’s surface,g=9.8m/s(=32ft/s).",
+    "kind": "reference",
+    "topic": "constant-acceleration"
+  },
+  {
+    "chapter": 3,
+    "page": 91,
+    "column": 1,
+    "baseline": 519.3,
+    "text": "first vector.Note that a·b=b·a,which means that the scalar",
+    "kind": "derived",
+    "topic": "vector-products"
+  },
+  {
+    "chapter": 3,
+    "page": 91,
+    "column": 1,
+    "baseline": 682.1,
+    "text": "Fig.3-19.Note that a×b=−(b×a),which means that the vec-",
+    "kind": "derived",
+    "topic": "vector-products"
+  },
+  {
+    "chapter": 4,
+    "page": 117,
+    "column": 1,
+    "baseline": 555.8,
+    "text": "wherev=dx/dt,v=dy/dt,andv=dz/dt.The instantaneous",
+    "kind": "derived",
+    "topic": "vector-components"
+  },
+  {
+    "chapter": 4,
+    "page": 117,
+    "column": 1,
+    "baseline": 741.4,
+    "text": "wherea=dv/dt,a=dv/dt,anda=dv/dt.",
+    "kind": "derived",
+    "topic": "vector-components"
+  },
+  {
+    "chapter": 5,
+    "page": 150,
+    "column": 1,
+    "baseline": 509.3,
+    "text": "F=−F.",
+    "kind": "law",
+    "topic": "newtons-second-law"
+  },
+  {
+    "chapter": 7,
+    "page": 204,
+    "column": 1,
+    "baseline": 690.9,
+    "text": "IfK=K,then Eq.7-15 reduces to",
+    "kind": "reference",
+    "topic": "work-energy"
+  },
+  {
+    "chapter": 7,
+    "page": 205,
+    "column": 0,
+    "baseline": 287.4,
+    "text": "Ifx=0 and x=x,then Eq.7-25 becomes",
+    "kind": "reference",
+    "topic": "spring-work"
+  },
+  {
+    "chapter": 8,
+    "page": 235,
+    "column": 1,
+    "baseline": 480.7,
+    "text": "elastic object.For a spring that exerts a spring force F=−kxwhen",
+    "kind": "model",
+    "topic": "spring-work"
+  },
+  {
+    "chapter": 8,
+    "page": 235,
+    "column": 1,
+    "baseline": 537.6,
+    "text": "whichx=0 and U=0.",
+    "kind": "reference",
+    "topic": "spring-work"
+  },
+  {
+    "chapter": 8,
+    "page": 235,
+    "column": 0,
+    "baseline": 716.3,
+    "text": "If the reference pointof the particle is set as y=0 and the cor-",
+    "kind": "reference",
+    "topic": "potential-energy"
+  },
+  {
+    "chapter": 8,
+    "page": 235,
+    "column": 0,
+    "baseline": 738.3,
+    "text": "U=0,then the gravitational potential energy Uwhen the parti-",
+    "kind": "reference",
+    "topic": "potential-energy"
+  },
+  {
+    "chapter": 8,
+    "page": 236,
+    "column": 0,
+    "baseline": 192.2,
+    "text": "is a point xat which the particle reverses its motion (there,K=0).",
+    "kind": "derived",
+    "topic": "mechanical-energy"
+  },
+  {
+    "chapter": 8,
+    "page": 236,
+    "column": 0,
+    "baseline": 214.2,
+    "text": "curve is zero (there,F(x)=0).",
+    "kind": "derived",
+    "topic": "mechanical-energy"
+  },
+  {
+    "chapter": 8,
+    "page": 236,
+    "column": 1,
+    "baseline": 218.3,
+    "text": "If the system is isolated (W=0),this gives",
+    "kind": "reference",
+    "topic": "first-law"
+  },
+  {
+    "chapter": 9,
+    "page": 279,
+    "column": 0,
+    "baseline": 682.3,
+    "text": "x=mx, y=my, z=mz,",
+    "kind": "definition",
+    "topic": "center-of-mass"
+  },
+  {
+    "chapter": 9,
+    "page": 279,
+    "column": 0,
+    "baseline": 690.4,
+    "text": "i=1i=1i=1",
+    "kind": "notation",
+    "topic": "center-of-mass"
+  },
+  {
+    "chapter": 9,
+    "page": 279,
+    "column": 0,
+    "baseline": 723.7,
+    "text": "i=1",
+    "kind": "notation",
+    "topic": "center-of-mass"
+  },
+  {
+    "chapter": 9,
+    "page": 280,
+    "column": 0,
+    "baseline": 273.6,
+    "text": "where p−p=Δpis the change in the body’s linear momen-",
+    "kind": "derived",
+    "topic": "momentum-and-impulse"
+  },
+  {
+    "chapter": 9,
+    "page": 280,
+    "column": 0,
+    "baseline": 531.5,
+    "text": "Eqs.9-37 and 9-40,Δv=−vif the bodies stop upon impact and Δv=",
+    "kind": "derived",
+    "topic": "rocket"
+  },
+  {
+    "chapter": 10,
+    "page": 321,
+    "column": 0,
+    "baseline": 466.4,
+    "text": "changes from ωtoωin a time interval Δt=t−t,the average",
+    "kind": "definition",
+    "topic": "rotational-kinematics"
+  },
+  {
+    "chapter": 10,
+    "page": 321,
+    "column": 0,
+    "baseline": 592.5,
+    "text": "erationConstant angular acceleration(α=constant) is an im-",
+    "kind": "reference",
+    "topic": "rotational-kinematics"
+  },
+  {
+    "chapter": 11,
+    "page": 355,
+    "column": 0,
+    "baseline": 274.3,
+    "text": "τ=,",
+    "kind": "derived",
+    "topic": "angular-momentum"
+  },
+  {
+    "chapter": 11,
+    "page": 355,
+    "column": 0,
+    "baseline": 377.3,
+    "text": "i=1",
+    "kind": "notation",
+    "topic": "angular-momentum"
+  },
+  {
+    "chapter": 13,
+    "page": 412,
+    "column": 0,
+    "baseline": 548.4,
+    "text": "andG(=6.67×10N·m/kg) is the gravitational constant.",
+    "kind": "reference",
+    "topic": "orbital-speed"
+  },
+  {
+    "chapter": 13,
+    "page": 412,
+    "column": 0,
+    "baseline": 711.4,
+    "text": "i=2",
+    "kind": "notation",
+    "topic": "gravity-sphere-orbits"
+  },
+  {
+    "chapter": 13,
+    "page": 413,
+    "column": 1,
+    "baseline": 331.5,
+    "text": "The mechanical energy E=K+Uis then",
+    "kind": "definition",
+    "topic": "mechanical-energy"
+  },
+  {
+    "chapter": 15,
+    "page": 470,
+    "column": 1,
+    "baseline": 328.8,
+    "text": "are then said to be damped.If the damping forceis given by F=",
+    "kind": "model",
+    "topic": "damped-driven"
+  },
+  {
+    "chapter": 15,
+    "page": 470,
+    "column": 1,
+    "baseline": 429.9,
+    "text": "If the damping constant is small (b≪√km),then ω′≈ω,where ω",
+    "kind": "derived",
+    "topic": "damped-driven"
+  },
+  {
+    "chapter": 15,
+    "page": 470,
+    "column": 0,
+    "baseline": 440.1,
+    "text": "der the influence of a Hooke’s law restoring force given by F=",
+    "kind": "model",
+    "topic": "simple-harmonic-motion"
+  },
+  {
+    "chapter": 15,
+    "page": 470,
+    "column": 0,
+    "baseline": 551.1,
+    "text": "kinetic energy K=mvand potential energy U=kx.If no fric-",
+    "kind": "derived",
+    "topic": "simple-harmonic-motion"
+  },
+  {
+    "chapter": 15,
+    "page": 470,
+    "column": 0,
+    "baseline": 562.1,
+    "text": "tion is present,the mechanical energy E=K+Uremains con-",
+    "kind": "derived",
+    "topic": "simple-harmonic-motion"
+  },
+  {
+    "chapter": 16,
+    "page": 506,
+    "column": 1,
+    "baseline": 392.5,
+    "text": "Ifϕ=0,the waves are exactly in phase and their interference is",
+    "kind": "reference",
+    "topic": "travelling-wave-energy"
+  },
+  {
+    "chapter": 16,
+    "page": 506,
+    "column": 1,
+    "baseline": 403.5,
+    "text": "fully constructive;if ϕ=πrad,they are exactly out of phase and",
+    "kind": "reference",
+    "topic": "travelling-wave-energy"
+  },
+  {
+    "chapter": 16,
+    "page": 506,
+    "column": 1,
+    "baseline": 716.7,
+    "text": "The oscillation mode corresponding to n=1 is called the funda-",
+    "kind": "notation",
+    "topic": "standing-waves"
+  },
+  {
+    "chapter": 16,
+    "page": 506,
+    "column": 1,
+    "baseline": 738.6,
+    "text": "n=2 is the second harmonic;and so on.",
+    "kind": "notation",
+    "topic": "standing-waves"
+  },
+  {
+    "chapter": 17,
+    "page": 540,
+    "column": 0,
+    "baseline": 321.7,
+    "text": "from equilibrium,k=2π/λ,and ω=2πf,λandfbeing the wave-",
+    "kind": "definition",
+    "topic": "travelling-wave-energy"
+  },
+  {
+    "chapter": 17,
+    "page": 540,
+    "column": 1,
+    "baseline": 328.1,
+    "text": "whereI(=10W/m) is a reference intensity level to whichall",
+    "kind": "reference",
+    "topic": "sound-energy-pipes"
+  },
+  {
+    "chapter": 18,
+    "page": 574,
+    "column": 1,
+    "baseline": 715.0,
+    "text": "T=T+32°.",
+    "kind": "definition",
+    "topic": "thermal-expansion"
+  },
+  {
+    "chapter": 18,
+    "page": 575,
+    "column": 0,
+    "baseline": 204.6,
+    "text": "Hereβ=3αis the material’s coefficient of volume expansion.",
+    "kind": "derived",
+    "topic": "thermal-expansion"
+  },
+  {
+    "chapter": 18,
+    "page": 575,
+    "column": 1,
+    "baseline": 354.0,
+    "text": "adiabatic processes:Q=0,ΔE=−W",
+    "kind": "derived",
+    "topic": "first-law"
+  },
+  {
+    "chapter": 18,
+    "page": 575,
+    "column": 1,
+    "baseline": 372.9,
+    "text": "constant-volume processes:W=0,ΔE=Q",
+    "kind": "derived",
+    "topic": "first-law"
+  },
+  {
+    "chapter": 18,
+    "page": 575,
+    "column": 1,
+    "baseline": 391.9,
+    "text": "cyclical processes:ΔE=0,Q=W",
+    "kind": "derived",
+    "topic": "first-law"
+  },
+  {
+    "chapter": 18,
+    "page": 575,
+    "column": 1,
+    "baseline": 410.9,
+    "text": "free expansions:Q=W=ΔE=0",
+    "kind": "derived",
+    "topic": "first-law"
+  },
+  {
+    "chapter": 18,
+    "page": 575,
+    "column": 1,
+    "baseline": 649.6,
+    "text": "whereσ(=5.6704×10W/m·K) is the Stefan–Boltzmann",
+    "kind": "reference",
+    "topic": "planck-radiation"
+  },
+  {
+    "chapter": 19,
+    "page": 612,
+    "column": 0,
+    "baseline": 343.3,
+    "text": "where v=√(v)is the root-mean-square speedof the mole-",
+    "kind": "definition",
+    "topic": "gas-statistics"
+  },
+  {
+    "chapter": 19,
+    "page": 612,
+    "column": 1,
+    "baseline": 456.4,
+    "text": "energy kTper molecule (=RTper mole).If fis the number of",
+    "kind": "derived",
+    "topic": "heat-capacities"
+  },
+  {
+    "chapter": 19,
+    "page": 612,
+    "column": 1,
+    "baseline": 467.4,
+    "text": "degrees of freedom,then E=(f/2)nRTand",
+    "kind": "derived",
+    "topic": "heat-capacities"
+  },
+  {
+    "chapter": 19,
+    "page": 612,
+    "column": 1,
+    "baseline": 514.6,
+    "text": "For monatomic gases f=3 (three translational degrees);for di-",
+    "kind": "derived",
+    "topic": "heat-capacities"
+  },
+  {
+    "chapter": 19,
+    "page": 612,
+    "column": 1,
+    "baseline": 525.6,
+    "text": "atomic gases f=5 (three translational and two rotational degrees).",
+    "kind": "derived",
+    "topic": "heat-capacities"
+  },
+  {
+    "chapter": 19,
+    "page": 612,
+    "column": 1,
+    "baseline": 558.6,
+    "text": "volume change (a change for which Q=0),",
+    "kind": "definition",
+    "topic": "adiabatic-gas"
+  },
+  {
+    "chapter": 19,
+    "page": 612,
+    "column": 1,
+    "baseline": 592.5,
+    "text": "in which γ(=C/C) is the ratio of molar specific heats for the gas.",
+    "kind": "definition",
+    "topic": "adiabatic-gas"
+  },
+  {
+    "chapter": 19,
+    "page": 612,
+    "column": 1,
+    "baseline": 603.5,
+    "text": "For a free expansion,however,pV=a constant.",
+    "kind": "derived",
+    "topic": "first-law"
+  },
+  {
+    "chapter": 20,
+    "page": 639,
+    "column": 1,
+    "baseline": 254.1,
+    "text": "wherek=1.38×10J/K is the Boltzmann constant.",
+    "kind": "reference",
+    "topic": "statistical-entropy"
+  },
+  {
+    "chapter": 21,
+    "page": 658,
+    "column": 1,
+    "baseline": 708.9,
+    "text": "and proton (≈1.602×10C).",
+    "kind": "reference",
+    "topic": "charge-conservation"
+  },
+  {
+    "chapter": 21,
+    "page": 658,
+    "column": 0,
+    "baseline": 719.2,
+    "text": "where ε=8.85×10C/N·mis the permittivity constant.The",
+    "kind": "reference",
+    "topic": "coulomb"
+  },
+  {
+    "chapter": 21,
+    "page": 658,
+    "column": 0,
+    "baseline": 741.2,
+    "text": "Coulomb constant) k=8.99×10N·m/C.",
+    "kind": "reference",
+    "topic": "coulomb"
+  },
+  {
+    "chapter": 22,
+    "page": 687,
+    "column": 1,
+    "baseline": 197.5,
+    "text": "to E;it is least (U=−pE) when pis aligned with Eand greatest",
+    "kind": "derived",
+    "topic": "electric-dipole"
+  },
+  {
+    "chapter": 22,
+    "page": 687,
+    "column": 1,
+    "baseline": 208.5,
+    "text": "(U=pE) when pis directed opposite E.",
+    "kind": "derived",
+    "topic": "electric-dipole"
+  },
+  {
+    "chapter": 23,
+    "page": 713,
+    "column": 0,
+    "baseline": 490.0,
+    "text": "Within the conductor,E=0.",
+    "kind": "derived",
+    "topic": "gauss-cylinder-plane"
+  },
+  {
+    "chapter": 24,
+    "page": 743,
+    "column": 1,
+    "baseline": 738.5,
+    "text": "In the special case when ΔK=0,the work of an applied force",
+    "kind": "reference",
+    "topic": "electric-potential"
+  },
+  {
+    "chapter": 24,
+    "page": 744,
+    "column": 0,
+    "baseline": 281.1,
+    "text": "ent path along which the integration might be easier.If we choose V=",
+    "kind": "reference",
+    "topic": "electric-potential"
+  },
+  {
+    "chapter": 24,
+    "page": 744,
+    "column": 0,
+    "baseline": 501.9,
+    "text": "i=10i=1i",
+    "kind": "notation",
+    "topic": "electric-potential"
+  },
+  {
+    "chapter": 24,
+    "page": 744,
+    "column": 0,
+    "baseline": 534.0,
+    "text": "an electric dipole with dipole moment magnitude p=qd,the elec-",
+    "kind": "definition",
+    "topic": "electric-potential"
+  },
+  {
+    "chapter": 25,
+    "page": 774,
+    "column": 0,
+    "baseline": 460.9,
+    "text": "j=1",
+    "kind": "notation",
+    "topic": "capacitor-networks"
+  },
+  {
+    "chapter": 25,
+    "page": 774,
+    "column": 0,
+    "baseline": 486.2,
+    "text": "eqj=1j",
+    "kind": "notation",
+    "topic": "capacitor-networks"
+  },
+  {
+    "chapter": 26,
+    "page": 799,
+    "column": 0,
+    "baseline": 640.5,
+    "text": "electric current is the ampere(A):1 A=1C/s.",
+    "kind": "definition",
+    "topic": "current-flux"
+  },
+  {
+    "chapter": 26,
+    "page": 799,
+    "column": 1,
+    "baseline": 702.8,
+    "text": "current.The SI unit of resistance is the ohm(Ω):1 Ω=1V/A.Similar",
+    "kind": "definition",
+    "topic": "resistance"
+  },
+  {
+    "chapter": 27,
+    "page": 829,
+    "column": 1,
+    "baseline": 233.2,
+    "text": "j=1",
+    "kind": "notation",
+    "topic": "kirchhoff"
+  },
+  {
+    "chapter": 27,
+    "page": 829,
+    "column": 1,
+    "baseline": 302.1,
+    "text": "eqj=1j",
+    "kind": "notation",
+    "topic": "kirchhoff"
+  },
+  {
+    "chapter": 27,
+    "page": 829,
+    "column": 1,
+    "baseline": 372.0,
+    "text": "in which Cℰ=qis the equilibrium (final) charge and RC=τis the ca-",
+    "kind": "derived",
+    "topic": "rc-circuit"
+  },
+  {
+    "chapter": 27,
+    "page": 829,
+    "column": 0,
+    "baseline": 438.5,
+    "text": "which reduces to i=ℰ/Rfor an ideal emf device with r=0.",
+    "kind": "derived",
+    "topic": "battery-discharge"
+  },
+  {
+    "chapter": 28,
+    "page": 863,
+    "column": 0,
+    "baseline": 159.9,
+    "text": "The SI unit for Bis the tesla(T):1T=1N/(A·m)=10gauss.",
+    "kind": "definition",
+    "topic": "magnetic-orbit"
+  },
+  {
+    "chapter": 28,
+    "page": 863,
+    "column": 1,
+    "baseline": 282.5,
+    "text": "μ=NiAand direction given by the right-hand rule.",
+    "kind": "derived",
+    "topic": "magnetic-wire"
+  },
+  {
+    "chapter": 29,
+    "page": 890,
+    "column": 0,
+    "baseline": 472.3,
+    "text": "4π×10T·m/A≈1.26×10T·m/A.",
+    "kind": "reference",
+    "topic": "ampere-wire"
+  },
+  {
+    "chapter": 30,
+    "page": 929,
+    "column": 1,
+    "baseline": 102.9,
+    "text": "The SI unit of inductance is the henry(H),where 1 henry=1H =",
+    "kind": "definition",
+    "topic": "rl-mutual"
+  },
+  {
+    "chapter": 30,
+    "page": 929,
+    "column": 0,
+    "baseline": 166.2,
+    "text": "flux is the weber,where 1 Wb=1 T·m.If Bis perpendicular to",
+    "kind": "definition",
+    "topic": "faraday"
+  },
+  {
+    "chapter": 30,
+    "page": 929,
+    "column": 1,
+    "baseline": 316.2,
+    "text": "Hereτ(=L/R) is the inductive time constant.When the source of",
+    "kind": "derived",
+    "topic": "rl-mutual"
+  },
+  {
+    "chapter": 31,
+    "page": 969,
+    "column": 1,
+    "baseline": 674.1,
+    "text": "U(=U+U) remains constant.",
+    "kind": "derived",
+    "topic": "lc-oscillations"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 1,
+    "baseline": 76.5,
+    "text": "For an inductor,V=IX,in which X=ωLis the inductive",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 1,
+    "baseline": 98.5,
+    "text": "(ϕ=+90°=+π/2rad).",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 1,
+    "baseline": 161.4,
+    "text": "I=",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 0,
+    "baseline": 182.2,
+    "text": "ditions (at t=0) of the system.",
+    "kind": "reference",
+    "topic": "lc-oscillations"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 1,
+    "baseline": 273.8,
+    "text": "allows us to write Eq.31-60 as I=ℰ/Z.",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 0,
+    "baseline": 362.0,
+    "text": "thenω′≈ω.",
+    "kind": "derived",
+    "topic": "ac-power-transformers"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 1,
+    "baseline": 364.7,
+    "text": "related to the maximum quantities by I=I/√2,V=V/√2,",
+    "kind": "derived",
+    "topic": "ac-power-transformers"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 1,
+    "baseline": 375.7,
+    "text": "and ℰ=ℰ/√2.The term cos ϕis called the power factorof the",
+    "kind": "derived",
+    "topic": "ac-power-transformers"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 0,
+    "baseline": 500.8,
+    "text": "driven by a sinusoidal external emf is a maximum (I=ℰ/R) when",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 0,
+    "baseline": 522.7,
+    "text": "frequency ωof the circuit (that is,at resonance).Then X=X,",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 0,
+    "baseline": 533.7,
+    "text": "ϕ=0,and the current is in phase with the emf.",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 0,
+    "baseline": 564.7,
+    "text": "across a resistor has amplitude V=IR;the current is inphase",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 0,
+    "baseline": 586.6,
+    "text": "For a capacitor,V=IX,in which X=1/ωCis the capacitive",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 31,
+    "page": 970,
+    "column": 0,
+    "baseline": 608.6,
+    "text": "(ϕ=−90°=−π/2rad).",
+    "kind": "derived",
+    "topic": "ac-impedance"
+  },
+  {
+    "chapter": 32,
+    "page": 1001,
+    "column": 1,
+    "baseline": 102.6,
+    "text": "L=m,",
+    "kind": "derived",
+    "topic": "quantum-angular"
+  },
+  {
+    "chapter": 32,
+    "page": 1001,
+    "column": 0,
+    "baseline": 371.1,
+    "text": "whereh(=6.63×10J·s) is the Planck constant.Similarly,",
+    "kind": "reference",
+    "topic": "magnetic-moments"
+  },
+  {
+    "chapter": 32,
+    "page": 1001,
+    "column": 1,
+    "baseline": 408.1,
+    "text": "a maximum value M=Nμ/V.At low values of the ratio B/T,",
+    "kind": "derived",
+    "topic": "curie-law"
+  },
+  {
+    "chapter": 33,
+    "page": 1035,
+    "column": 0,
+    "baseline": 175.5,
+    "text": "E=Esin(kx−ωt)",
+    "kind": "derived",
+    "topic": "em-wave-equation"
+  },
+  {
+    "chapter": 33,
+    "page": 1035,
+    "column": 0,
+    "baseline": 475.0,
+    "text": "in which E=E/√ 2.A point sourceof electromagnetic waves",
+    "kind": "derived",
+    "topic": "em-intensity"
+  },
+  {
+    "chapter": 34,
+    "page": 1072,
+    "column": 0,
+    "baseline": 504.0,
+    "text": "Aplane mirroris a special case for which r→∞,so that p=−i.",
+    "kind": "derived",
+    "topic": "spherical-mirror"
+  },
+  {
+    "chapter": 35,
+    "page": 1108,
+    "column": 0,
+    "baseline": 178.5,
+    "text": "by assuming that the index of refraction of any medium is n=c/v,",
+    "kind": "definition",
+    "topic": "polarization-refraction"
+  },
+  {
+    "chapter": 35,
+    "page": 1108,
+    "column": 1,
+    "baseline": 311.8,
+    "text": "2L=(m+),  form=0, 1, 2, . . .",
+    "kind": "derived",
+    "topic": "thin-film"
+  },
+  {
+    "chapter": 35,
+    "page": 1108,
+    "column": 1,
+    "baseline": 347.0,
+    "text": "2L=m,  form=0, 1, 2, . . .",
+    "kind": "derived",
+    "topic": "thin-film"
+  },
+  {
+    "chapter": 35,
+    "page": 1108,
+    "column": 0,
+    "baseline": 474.3,
+    "text": "dsinθ=mλ,for m=0,1,2,...",
+    "kind": "derived",
+    "topic": "double-slit"
+  },
+  {
+    "chapter": 35,
+    "page": 1108,
+    "column": 0,
+    "baseline": 502.3,
+    "text": "d sin θ=(m+)λ,  form=0, 1, 2, . . .",
+    "kind": "derived",
+    "topic": "double-slit"
+  },
+  {
+    "chapter": 36,
+    "page": 1143,
+    "column": 1,
+    "baseline": 171.7,
+    "text": "withβ=(πd/λ) sin θandαas for single-slit diffraction.",
+    "kind": "derived",
+    "topic": "apertures-bragg"
+  },
+  {
+    "chapter": 37,
+    "page": 1179,
+    "column": 1,
+    "baseline": 583.2,
+    "text": "x′=γ(x−vt),",
+    "kind": "derived",
+    "topic": "lorentz-transform"
+  },
+  {
+    "chapter": 37,
+    "page": 1179,
+    "column": 1,
+    "baseline": 599.1,
+    "text": "y′=y,",
+    "kind": "derived",
+    "topic": "lorentz-transform"
+  },
+  {
+    "chapter": 37,
+    "page": 1179,
+    "column": 1,
+    "baseline": 615.1,
+    "text": "z′=z,",
+    "kind": "derived",
+    "topic": "lorentz-transform"
+  },
+  {
+    "chapter": 37,
+    "page": 1179,
+    "column": 1,
+    "baseline": 631.1,
+    "text": "t′=γ(t−vx/c).",
+    "kind": "derived",
+    "topic": "lorentz-transform"
+  },
+  {
+    "chapter": 37,
+    "page": 1179,
+    "column": 0,
+    "baseline": 690.3,
+    "text": "Δt==",
+    "kind": "derived",
+    "topic": "time-dilation"
+  },
+  {
+    "chapter": 37,
+    "page": 1179,
+    "column": 0,
+    "baseline": 736.5,
+    "text": "Hereβ=v/cis the speed parameterand γ=1/√1−βis the",
+    "kind": "derived",
+    "topic": "time-dilation"
+  },
+  {
+    "chapter": 37,
+    "page": 1180,
+    "column": 0,
+    "baseline": 183.5,
+    "text": "whereβ=v/candvis the relative radial speed (along a line con-",
+    "kind": "definition",
+    "topic": "light-doppler"
+  },
+  {
+    "chapter": 37,
+    "page": 1180,
+    "column": 0,
+    "baseline": 219.5,
+    "text": "thanc,the magnitude of the Doppler wavelength shift (Δλ=λ−λ)",
+    "kind": "derived",
+    "topic": "light-doppler"
+  },
+  {
+    "chapter": 38,
+    "page": 1216,
+    "column": 1,
+    "baseline": 148.7,
+    "text": "Δx·Δp≥ℏ",
+    "kind": "derived",
+    "topic": "quantum-foundations"
+  },
+  {
+    "chapter": 38,
+    "page": 1216,
+    "column": 1,
+    "baseline": 181.2,
+    "text": "Δz·Δp≥ℏ.",
+    "kind": "derived",
+    "topic": "quantum-foundations"
+  },
+  {
+    "chapter": 38,
+    "page": 1216,
+    "column": 0,
+    "baseline": 210.2,
+    "text": "de Broglie wavelength) is given by λ=h/p,where pis the magni-",
+    "kind": "derived",
+    "topic": "quantum-foundations"
+  },
+  {
+    "chapter": 38,
+    "page": 1216,
+    "column": 1,
+    "baseline": 269.0,
+    "text": "bility of transmission is T= 1−R.",
+    "kind": "derived",
+    "topic": "quantum-foundations"
+  },
+  {
+    "chapter": 38,
+    "page": 1216,
+    "column": 0,
+    "baseline": 385.2,
+    "text": "For a free particle—that is,a particle for which U(x)=0—",
+    "kind": "reference",
+    "topic": "quantum-foundations"
+  },
+  {
+    "chapter": 39,
+    "page": 1249,
+    "column": 0,
+    "baseline": 253.4,
+    "text": "byn=1.The electron can change (jump) from one state to an-",
+    "kind": "notation",
+    "topic": "particle-in-box"
+  },
+  {
+    "chapter": 40,
+    "page": 1282,
+    "column": 1,
+    "baseline": 81.7,
+    "text": "λ=.",
+    "kind": "derived",
+    "topic": "photons"
+  },
+  {
+    "chapter": 41,
+    "page": 1307,
+    "column": 1,
+    "baseline": 405.4,
+    "text": "wherem(=9.109×10kg) is the electron mass,h(= 6.626×",
+    "kind": "reference",
+    "topic": "electron-gas-states"
+  },
+  {
+    "chapter": 41,
+    "page": 1307,
+    "column": 1,
+    "baseline": 449.4,
+    "text": "the right side by e(wheree=1.602×10C).",
+    "kind": "reference",
+    "topic": "fermi-dirac"
+  },
+  {
+    "chapter": 41,
+    "page": 1307,
+    "column": 1,
+    "baseline": 573.8,
+    "text": "forT=0 from E=0 to E=E.The result is",
+    "kind": "reference",
+    "topic": "electron-gas-states"
+  },
+  {
+    "chapter": 41,
+    "page": 1307,
+    "column": 0,
+    "baseline": 588.8,
+    "text": "=",
+    "kind": "derived",
+    "topic": "electron-gas-states"
+  },
+  {
+    "chapter": 41,
+    "page": 1307,
+    "column": 0,
+    "baseline": 662.4,
+    "text": "=",
+    "kind": "derived",
+    "topic": "electron-gas-states"
+  },
+  {
+    "chapter": 41,
+    "page": 1307,
+    "column": 0,
+    "baseline": 690.7,
+    "text": "=",
+    "kind": "derived",
+    "topic": "electron-gas-states"
+  },
+  {
+    "chapter": 42,
+    "page": 1336,
+    "column": 0,
+    "baseline": 673.5,
+    "text": "ofnucleons—protons and neutrons).Thus,A=Z+N.Nuclides",
+    "kind": "definition",
+    "topic": "binding-energy"
+  },
+  {
+    "chapter": 42,
+    "page": 1336,
+    "column": 0,
+    "baseline": 720.4,
+    "text": "wherer≈1.2fm.",
+    "kind": "reference",
+    "topic": "nuclear-size-fusion"
+  },
+  {
+    "chapter": 42,
+    "page": 1337,
+    "column": 1,
+    "baseline": 107.3,
+    "text": "ergies from near zero up to a limit K(=Q=−Δm c).",
+    "kind": "derived",
+    "topic": "binding-energy"
+  },
+  {
+    "chapter": 42,
+    "page": 1337,
+    "column": 1,
+    "baseline": 199.2,
+    "text": "to ionizing radiation.The becquerel(1Bq=1 decay per second)",
+    "kind": "definition",
+    "topic": "radioactive-decay"
+  },
+  {
+    "chapter": 42,
+    "page": 1337,
+    "column": 0,
+    "baseline": 219.8,
+    "text": "they spontaneously decay at a rate R(=−dN/dt) that is",
+    "kind": "definition",
+    "topic": "radioactive-decay"
+  },
+  {
+    "chapter": 42,
+    "page": 1337,
+    "column": 0,
+    "baseline": 267.8,
+    "text": "N=Ne,R=λN=Re",
+    "kind": "derived",
+    "topic": "radioactive-decay"
+  },
+  {
+    "chapter": 42,
+    "page": 1337,
+    "column": 0,
+    "baseline": 297.7,
+    "text": "The half-lifeT=(ln 2)/λof a radioactive nuclide is the time re-",
+    "kind": "derived",
+    "topic": "radioactive-decay"
+  },
+  {
+    "chapter": 43,
+    "page": 1365,
+    "column": 1,
+    "baseline": 451.8,
+    "text": "outlined in Fig.43-11.Elements up to A≈56 (the peak of the",
+    "kind": "reference",
+    "topic": "nuclear-size-fusion"
+  },
+  {
+    "chapter": 43,
+    "page": 1365,
+    "column": 0,
+    "baseline": 459.0,
+    "text": "released in such a fission event is Q≈200MeV.",
+    "kind": "reference",
+    "topic": "nuclear-energy"
+  }
+]

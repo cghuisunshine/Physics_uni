@@ -1,0 +1,5110 @@
+[
+  {
+    "chapter": 1,
+    "slug": "units-and-dimensions",
+    "title": "Why unit conversions work",
+    "file": "derivations/units-and-dimensions.html",
+    "summaryAnchor": "chapter-1--units-and-dimensions",
+    "branches": [
+      {
+        "step": 4,
+        "target": "constant-acceleration"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "definition",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 1,
+    "slug": "density",
+    "title": "Density: a definition and its consequences",
+    "file": "derivations/density.html",
+    "summaryAnchor": "chapter-1--density",
+    "branches": [
+      {
+        "step": 3,
+        "target": "integrals"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "definition",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "definition",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "slug": "constant-acceleration",
+    "title": "Derive the constant-acceleration equations",
+    "file": "derivations/constant-acceleration.html",
+    "summaryAnchor": "chapter-2--constant-acceleration",
+    "branches": [
+      {
+        "step": 1,
+        "target": "integrals"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "slug": "rates-of-change",
+    "title": "Velocity and acceleration from derivatives",
+    "file": "derivations/rates-of-change.html",
+    "summaryAnchor": "chapter-2--rates-of-change",
+    "branches": [
+      {
+        "step": 4,
+        "target": "integrals"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "definition",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "definition",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "definition",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "slug": "vector-components",
+    "title": "Why vector components use sine and cosine",
+    "file": "derivations/vector-components.html",
+    "summaryAnchor": "chapter-3--vector-components",
+    "branches": [
+      {
+        "step": 3,
+        "target": "vector-products"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "definition",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "slug": "vector-products",
+    "title": "Dot and cross products: what they measure",
+    "file": "derivations/vector-products.html",
+    "summaryAnchor": "chapter-3--vector-products",
+    "branches": [
+      {
+        "step": 4,
+        "target": "angular-momentum"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "definition",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "definition",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "slug": "projectile-motion",
+    "title": "Derive the projectile trajectory",
+    "file": "derivations/projectile-motion.html",
+    "summaryAnchor": "chapter-4--projectile-motion",
+    "branches": [
+      {
+        "step": 1,
+        "target": "vector-components"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "slug": "centripetal-acceleration",
+    "title": "Why circular acceleration is v²/r",
+    "file": "derivations/centripetal-acceleration.html",
+    "summaryAnchor": "chapter-4--centripetal-acceleration",
+    "branches": [
+      {
+        "step": 4,
+        "target": "newtons-second-law"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "slug": "newtons-second-law",
+    "title": "What Newton’s second law assumes",
+    "file": "derivations/newtons-second-law.html",
+    "summaryAnchor": "chapter-5--newtons-second-law",
+    "branches": [
+      {
+        "step": 3,
+        "target": "vector-components"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "law",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "slug": "inclined-plane",
+    "title": "Derive the acceleration down an incline",
+    "file": "derivations/inclined-plane.html",
+    "summaryAnchor": "chapter-5--inclined-plane",
+    "branches": [
+      {
+        "step": 2,
+        "target": "vector-components"
+      },
+      {
+        "step": 4,
+        "target": "friction"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "slug": "friction",
+    "title": "Static and kinetic friction on an incline",
+    "file": "derivations/friction.html",
+    "summaryAnchor": "chapter-6--friction",
+    "branches": [
+      {
+        "step": 1,
+        "target": "inclined-plane"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "model",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "slug": "terminal-speed",
+    "title": "Derive terminal speed with quadratic drag",
+    "file": "derivations/terminal-speed.html",
+    "summaryAnchor": "chapter-6--terminal-speed",
+    "branches": [
+      {
+        "step": 2,
+        "target": "newtons-second-law"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "model",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "slug": "work-energy",
+    "title": "Derive the work–kinetic energy theorem",
+    "file": "derivations/work-energy.html",
+    "summaryAnchor": "chapter-7--work-energy",
+    "branches": [
+      {
+        "step": 1,
+        "target": "vector-products"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "slug": "spring-work",
+    "title": "Why spring work contains ½kx²",
+    "file": "derivations/spring-work.html",
+    "summaryAnchor": "chapter-7--spring-work",
+    "branches": [
+      {
+        "step": 3,
+        "target": "integrals"
+      },
+      {
+        "step": 4,
+        "target": "potential-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "model",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "slug": "potential-energy",
+    "title": "Derive force from potential energy",
+    "file": "derivations/potential-energy.html",
+    "summaryAnchor": "chapter-8--potential-energy",
+    "branches": [
+      {
+        "step": 2,
+        "target": "work-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "definition",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "slug": "mechanical-energy",
+    "title": "When is mechanical energy conserved?",
+    "file": "derivations/mechanical-energy.html",
+    "summaryAnchor": "chapter-8--mechanical-energy",
+    "branches": [
+      {
+        "step": 1,
+        "target": "work-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "slug": "momentum-and-impulse",
+    "title": "Derive impulse and momentum conservation",
+    "file": "derivations/momentum-and-impulse.html",
+    "summaryAnchor": "chapter-9--momentum-and-impulse",
+    "branches": [
+      {
+        "step": 1,
+        "target": "integrals"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "slug": "center-of-mass",
+    "title": "Why a system’s centre of mass obeys Newton’s law",
+    "file": "derivations/center-of-mass.html",
+    "summaryAnchor": "chapter-9--center-of-mass",
+    "branches": [
+      {
+        "step": 3,
+        "target": "momentum-and-impulse"
+      },
+      {
+        "step": 4,
+        "target": "density"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "slug": "rotational-energy",
+    "title": "Derive rotational kinetic energy and moment of inertia",
+    "file": "derivations/rotational-energy.html",
+    "summaryAnchor": "chapter-10--rotational-energy",
+    "branches": [
+      {
+        "step": 2,
+        "target": "work-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "definition",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "slug": "parallel-axis",
+    "title": "Derive the parallel-axis theorem",
+    "file": "derivations/parallel-axis.html",
+    "summaryAnchor": "chapter-10--parallel-axis",
+    "branches": [
+      {
+        "step": 2,
+        "target": "rotational-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "slug": "angular-momentum",
+    "title": "Derive torque as the rate of angular momentum",
+    "file": "derivations/angular-momentum.html",
+    "summaryAnchor": "chapter-11--angular-momentum",
+    "branches": [
+      {
+        "step": 1,
+        "target": "vector-products"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "slug": "rolling",
+    "title": "Derive the speed of an object rolling downhill",
+    "file": "derivations/rolling.html",
+    "summaryAnchor": "chapter-11--rolling",
+    "branches": [
+      {
+        "step": 2,
+        "target": "rotational-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 12,
+    "slug": "static-equilibrium",
+    "title": "Why equilibrium needs both force and torque balance",
+    "file": "derivations/static-equilibrium.html",
+    "summaryAnchor": "chapter-12--static-equilibrium",
+    "branches": [
+      {
+        "step": 2,
+        "target": "angular-momentum"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 12,
+    "slug": "elasticity",
+    "title": "Derive the elastic extension of a rod",
+    "file": "derivations/elasticity.html",
+    "summaryAnchor": "chapter-12--elasticity",
+    "branches": [
+      {
+        "step": 4,
+        "target": "spring-work"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "definition",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "model",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 13,
+    "slug": "orbital-speed",
+    "title": "Derive circular-orbit speed and Kepler’s third law",
+    "file": "derivations/orbital-speed.html",
+    "summaryAnchor": "chapter-13--orbital-speed",
+    "branches": [
+      {
+        "step": 2,
+        "target": "centripetal-acceleration"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 13,
+    "slug": "escape-speed",
+    "title": "Derive gravitational potential and escape speed",
+    "file": "derivations/escape-speed.html",
+    "summaryAnchor": "chapter-13--escape-speed",
+    "branches": [
+      {
+        "step": 2,
+        "target": "potential-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 14,
+    "slug": "hydrostatic-pressure",
+    "title": "Derive pressure with depth and buoyancy",
+    "file": "derivations/hydrostatic-pressure.html",
+    "summaryAnchor": "chapter-14--hydrostatic-pressure",
+    "branches": [
+      {
+        "step": 3,
+        "target": "integrals"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 14,
+    "slug": "bernoulli",
+    "title": "Derive continuity and Bernoulli’s equation",
+    "file": "derivations/bernoulli.html",
+    "summaryAnchor": "chapter-14--bernoulli",
+    "branches": [
+      {
+        "step": 3,
+        "target": "work-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "slug": "simple-harmonic-motion",
+    "title": "Derive simple harmonic motion from a spring",
+    "file": "derivations/simple-harmonic-motion.html",
+    "summaryAnchor": "chapter-15--simple-harmonic-motion",
+    "branches": [
+      {
+        "step": 3,
+        "target": "rates-of-change"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "slug": "pendulum",
+    "title": "Derive the small-angle pendulum period",
+    "file": "derivations/pendulum.html",
+    "summaryAnchor": "chapter-15--pendulum",
+    "branches": [
+      {
+        "step": 3,
+        "target": "simple-harmonic-motion"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 16,
+    "slug": "wave-speed",
+    "title": "Derive wave speed on a stretched string",
+    "file": "derivations/wave-speed.html",
+    "summaryAnchor": "chapter-16--wave-speed",
+    "branches": [
+      {
+        "step": 4,
+        "target": "rates-of-change"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 16,
+    "slug": "standing-waves",
+    "title": "Derive the allowed frequencies of a fixed string",
+    "file": "derivations/standing-waves.html",
+    "summaryAnchor": "chapter-16--standing-waves",
+    "branches": [
+      {
+        "step": 4,
+        "target": "wave-speed"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 17,
+    "slug": "sound-speed",
+    "title": "Why sound speed is √(B/ρ)",
+    "file": "derivations/sound-speed.html",
+    "summaryAnchor": "chapter-17--sound-speed",
+    "branches": [
+      {
+        "step": 4,
+        "target": "adiabatic-gas"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "model",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 17,
+    "slug": "doppler",
+    "title": "Derive the sound Doppler formula",
+    "file": "derivations/doppler.html",
+    "summaryAnchor": "chapter-17--doppler",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 18,
+    "slug": "first-law",
+    "title": "The first law and work by an expanding gas",
+    "file": "derivations/first-law.html",
+    "summaryAnchor": "chapter-18--first-law",
+    "branches": [
+      {
+        "step": 3,
+        "target": "integrals"
+      },
+      {
+        "step": 5,
+        "target": "heat-capacities"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 18,
+    "slug": "isothermal-work",
+    "title": "Derive the logarithm in isothermal gas work",
+    "file": "derivations/isothermal-work.html",
+    "summaryAnchor": "chapter-18--isothermal-work",
+    "branches": [
+      {
+        "step": 1,
+        "target": "ideal-gas"
+      },
+      {
+        "step": 4,
+        "target": "first-law"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "slug": "ideal-gas",
+    "title": "Derive pV = nRT from molecular collisions",
+    "file": "derivations/ideal-gas.html",
+    "summaryAnchor": "chapter-19--ideal-gas",
+    "branches": [
+      {
+        "step": 4,
+        "target": "equipartition"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "slug": "adiabatic-gas",
+    "title": "Derive pVᵞ = constant for an ideal gas",
+    "file": "derivations/adiabatic-gas.html",
+    "summaryAnchor": "chapter-19--adiabatic-gas",
+    "branches": [
+      {
+        "step": 1,
+        "target": "first-law"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 20,
+    "slug": "entropy",
+    "title": "Why entropy uses δQrev/T",
+    "file": "derivations/entropy.html",
+    "summaryAnchor": "chapter-20--entropy",
+    "branches": [
+      {
+        "step": 1,
+        "target": "clausius"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 20,
+    "slug": "carnot",
+    "title": "Derive the Carnot heat ratio and efficiency",
+    "file": "derivations/carnot.html",
+    "summaryAnchor": "chapter-20--carnot",
+    "branches": [
+      {
+        "step": 2,
+        "target": "isothermal-work"
+      },
+      {
+        "step": 3,
+        "target": "adiabatic-gas"
+      },
+      {
+        "step": 5,
+        "target": "clausius"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 21,
+    "slug": "coulomb",
+    "title": "Coulomb’s law and superposition",
+    "file": "derivations/coulomb.html",
+    "summaryAnchor": "chapter-21--coulomb",
+    "branches": [
+      {
+        "step": 3,
+        "target": "vector-components"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "law",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 21,
+    "slug": "charge-conservation",
+    "title": "Charge conservation and quantization",
+    "file": "derivations/charge-conservation.html",
+    "summaryAnchor": "chapter-21--charge-conservation",
+    "branches": [
+      {
+        "step": 3,
+        "target": "current-drift"
+      },
+      {
+        "step": 4,
+        "target": "coulomb"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "law",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 22,
+    "slug": "electric-field",
+    "title": "Derive the field on the axis of a charged ring",
+    "file": "derivations/electric-field.html",
+    "summaryAnchor": "chapter-22--electric-field",
+    "branches": [
+      {
+        "step": 1,
+        "target": "coulomb"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 22,
+    "slug": "electric-dipole",
+    "title": "Derive the torque and energy of an electric dipole",
+    "file": "derivations/electric-dipole.html",
+    "summaryAnchor": "chapter-22--electric-dipole",
+    "branches": [
+      {
+        "step": 3,
+        "target": "angular-momentum"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 23,
+    "slug": "gauss-sphere",
+    "title": "Use Gauss’s law to derive a spherical electric field",
+    "file": "derivations/gauss-sphere.html",
+    "summaryAnchor": "chapter-23--gauss-sphere",
+    "branches": [
+      {
+        "step": 3,
+        "target": "coulomb"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 23,
+    "slug": "gauss-cylinder-plane",
+    "title": "Derive fields of an infinite line and sheet",
+    "file": "derivations/gauss-cylinder-plane.html",
+    "summaryAnchor": "chapter-23--gauss-cylinder-plane",
+    "branches": [
+      {
+        "step": 2,
+        "target": "gauss-sphere"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 24,
+    "slug": "electric-potential",
+    "title": "Derive potential from an electric field",
+    "file": "derivations/electric-potential.html",
+    "summaryAnchor": "chapter-24--electric-potential",
+    "branches": [
+      {
+        "step": 1,
+        "target": "potential-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 24,
+    "slug": "electric-energy",
+    "title": "Build the potential energy of a charge arrangement",
+    "file": "derivations/electric-energy.html",
+    "summaryAnchor": "chapter-24--electric-energy",
+    "branches": [
+      {
+        "step": 2,
+        "target": "electric-potential"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 25,
+    "slug": "parallel-plate-capacitance",
+    "title": "Derive parallel-plate capacitance",
+    "file": "derivations/parallel-plate-capacitance.html",
+    "summaryAnchor": "chapter-25--parallel-plate-capacitance",
+    "branches": [
+      {
+        "step": 2,
+        "target": "gauss-cylinder-plane"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 25,
+    "slug": "capacitor-energy",
+    "title": "Derive energy stored in a capacitor",
+    "file": "derivations/capacitor-energy.html",
+    "summaryAnchor": "chapter-25--capacitor-energy",
+    "branches": [
+      {
+        "step": 3,
+        "target": "integrals"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 26,
+    "slug": "current-drift",
+    "title": "Derive current from carrier drift",
+    "file": "derivations/current-drift.html",
+    "summaryAnchor": "chapter-26--current-drift",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      }
+    ]
+  },
+  {
+    "chapter": 26,
+    "slug": "resistance",
+    "title": "Derive R = ρL/A and Joule heating",
+    "file": "derivations/resistance.html",
+    "summaryAnchor": "chapter-26--resistance",
+    "branches": [
+      {
+        "step": 4,
+        "target": "current-drift"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "model",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "definition",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 27,
+    "slug": "kirchhoff",
+    "title": "Derive Kirchhoff rules and equivalent resistance",
+    "file": "derivations/kirchhoff.html",
+    "summaryAnchor": "chapter-27--kirchhoff",
+    "branches": [
+      {
+        "step": 3,
+        "target": "resistance"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 27,
+    "slug": "rc-circuit",
+    "title": "Derive exponential charging of an RC circuit",
+    "file": "derivations/rc-circuit.html",
+    "summaryAnchor": "chapter-27--rc-circuit",
+    "branches": [
+      {
+        "step": 1,
+        "target": "kirchhoff"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 28,
+    "slug": "magnetic-orbit",
+    "title": "Derive a charged particle’s magnetic orbit radius",
+    "file": "derivations/magnetic-orbit.html",
+    "summaryAnchor": "chapter-28--magnetic-orbit",
+    "branches": [
+      {
+        "step": 2,
+        "target": "work-energy"
+      },
+      {
+        "step": 3,
+        "target": "centripetal-acceleration"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 28,
+    "slug": "magnetic-wire",
+    "title": "Derive force and torque on a current loop",
+    "file": "derivations/magnetic-wire.html",
+    "summaryAnchor": "chapter-28--magnetic-wire",
+    "branches": [
+      {
+        "step": 1,
+        "target": "current-drift"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 29,
+    "slug": "ampere-wire",
+    "title": "Derive the magnetic field of a long straight wire",
+    "file": "derivations/ampere-wire.html",
+    "summaryAnchor": "chapter-29--ampere-wire",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 29,
+    "slug": "solenoid",
+    "title": "Derive the ideal solenoid field",
+    "file": "derivations/solenoid.html",
+    "summaryAnchor": "chapter-29--solenoid",
+    "branches": [
+      {
+        "step": 3,
+        "target": "ampere-wire"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 30,
+    "slug": "faraday",
+    "title": "Faraday’s law, Lenz’s law, and motional emf",
+    "file": "derivations/faraday.html",
+    "summaryAnchor": "chapter-30--faraday",
+    "branches": [
+      {
+        "step": 4,
+        "target": "resistance"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "law",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 30,
+    "slug": "inductor-energy",
+    "title": "Derive inductance and magnetic energy storage",
+    "file": "derivations/inductor-energy.html",
+    "summaryAnchor": "chapter-30--inductor-energy",
+    "branches": [
+      {
+        "step": 2,
+        "target": "faraday"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 31,
+    "slug": "lc-oscillations",
+    "title": "Derive LC oscillation frequency",
+    "file": "derivations/lc-oscillations.html",
+    "summaryAnchor": "chapter-31--lc-oscillations",
+    "branches": [
+      {
+        "step": 3,
+        "target": "simple-harmonic-motion"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 31,
+    "slug": "ac-impedance",
+    "title": "Derive impedance and resonance in a series RLC circuit",
+    "file": "derivations/ac-impedance.html",
+    "summaryAnchor": "chapter-31--ac-impedance",
+    "branches": [
+      {
+        "step": 4,
+        "target": "lc-oscillations"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 32,
+    "slug": "displacement-current",
+    "title": "Why Maxwell added displacement current",
+    "file": "derivations/displacement-current.html",
+    "summaryAnchor": "chapter-32--displacement-current",
+    "branches": [
+      {
+        "step": 2,
+        "target": "parallel-plate-capacitance"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 32,
+    "slug": "em-wave-equation",
+    "title": "Derive the electromagnetic wave speed from Maxwell’s equations",
+    "file": "derivations/em-wave-equation.html",
+    "summaryAnchor": "chapter-32--em-wave-equation",
+    "branches": [
+      {
+        "step": 1,
+        "target": "displacement-current"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 33,
+    "slug": "em-intensity",
+    "title": "Derive electromagnetic-wave intensity",
+    "file": "derivations/em-intensity.html",
+    "summaryAnchor": "chapter-33--em-intensity",
+    "branches": [
+      {
+        "step": 1,
+        "target": "em-wave-equation"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 33,
+    "slug": "radiation-pressure",
+    "title": "Derive radiation pressure from momentum transfer",
+    "file": "derivations/radiation-pressure.html",
+    "summaryAnchor": "chapter-33--radiation-pressure",
+    "branches": [
+      {
+        "step": 1,
+        "target": "photons"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 34,
+    "slug": "thin-lens",
+    "title": "Derive the thin-lens imaging equation",
+    "file": "derivations/thin-lens.html",
+    "summaryAnchor": "chapter-34--thin-lens",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      }
+    ]
+  },
+  {
+    "chapter": 34,
+    "slug": "spherical-mirror",
+    "title": "Derive the paraxial spherical-mirror equation",
+    "file": "derivations/spherical-mirror.html",
+    "summaryAnchor": "chapter-34--spherical-mirror",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 35,
+    "slug": "double-slit",
+    "title": "Derive the double-slit interference pattern",
+    "file": "derivations/double-slit.html",
+    "summaryAnchor": "chapter-35--double-slit",
+    "branches": [
+      {
+        "step": 4,
+        "target": "single-slit"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 35,
+    "slug": "thin-film",
+    "title": "Derive thin-film interference conditions",
+    "file": "derivations/thin-film.html",
+    "summaryAnchor": "chapter-35--thin-film",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 36,
+    "slug": "single-slit",
+    "title": "Derive the single-slit diffraction envelope",
+    "file": "derivations/single-slit.html",
+    "summaryAnchor": "chapter-36--single-slit",
+    "branches": [
+      {
+        "step": 2,
+        "target": "integrals"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 36,
+    "slug": "diffraction-grating",
+    "title": "Derive grating maxima and resolving power",
+    "file": "derivations/diffraction-grating.html",
+    "summaryAnchor": "chapter-36--diffraction-grating",
+    "branches": [
+      {
+        "step": 2,
+        "target": "double-slit"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 37,
+    "slug": "time-dilation",
+    "title": "Derive time dilation with a light clock",
+    "file": "derivations/time-dilation.html",
+    "summaryAnchor": "chapter-37--time-dilation",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 37,
+    "slug": "relativistic-energy",
+    "title": "Derive the relativistic energy–momentum relation",
+    "file": "derivations/relativistic-energy.html",
+    "summaryAnchor": "chapter-37--relativistic-energy",
+    "branches": [
+      {
+        "step": 4,
+        "target": "work-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 38,
+    "slug": "photons",
+    "title": "Photon energy, momentum and the photoelectric effect",
+    "file": "derivations/photons.html",
+    "summaryAnchor": "chapter-38--photons",
+    "branches": [
+      {
+        "step": 2,
+        "target": "relativistic-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 38,
+    "slug": "compton",
+    "title": "Derive the Compton wavelength shift",
+    "file": "derivations/compton.html",
+    "summaryAnchor": "chapter-38--compton",
+    "branches": [
+      {
+        "step": 3,
+        "target": "relativistic-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 39,
+    "slug": "particle-in-box",
+    "title": "Derive the energy levels of a particle in a box",
+    "file": "derivations/particle-in-box.html",
+    "summaryAnchor": "chapter-39--particle-in-box",
+    "branches": [
+      {
+        "step": 4,
+        "target": "standing-waves"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 39,
+    "slug": "tunneling",
+    "title": "Why tunnelling probability decays exponentially",
+    "file": "derivations/tunneling.html",
+    "summaryAnchor": "chapter-39--tunneling",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 40,
+    "slug": "hydrogen",
+    "title": "Derive hydrogen’s energy scale with the Bohr model",
+    "file": "derivations/hydrogen.html",
+    "summaryAnchor": "chapter-40--hydrogen",
+    "branches": [
+      {
+        "step": 4,
+        "target": "electric-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "model",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 40,
+    "slug": "atomic-transitions",
+    "title": "From atomic levels to spectral lines",
+    "file": "derivations/atomic-transitions.html",
+    "summaryAnchor": "chapter-40--atomic-transitions",
+    "branches": [
+      {
+        "step": 1,
+        "target": "hydrogen"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      }
+    ]
+  },
+  {
+    "chapter": 41,
+    "slug": "drude",
+    "title": "Derive conductivity in the Drude model",
+    "file": "derivations/drude.html",
+    "summaryAnchor": "chapter-41--drude",
+    "branches": [
+      {
+        "step": 3,
+        "target": "current-drift"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "model",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 41,
+    "slug": "fermi-dirac",
+    "title": "Why electrons follow the Fermi–Dirac occupation rule",
+    "file": "derivations/fermi-dirac.html",
+    "summaryAnchor": "chapter-41--fermi-dirac",
+    "branches": [
+      {
+        "step": 2,
+        "target": "boltzmann-weights"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 42,
+    "slug": "radioactive-decay",
+    "title": "Derive exponential radioactive decay and half-life",
+    "file": "derivations/radioactive-decay.html",
+    "summaryAnchor": "chapter-42--radioactive-decay",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 42,
+    "slug": "binding-energy",
+    "title": "Derive nuclear binding energy from mass defect",
+    "file": "derivations/binding-energy.html",
+    "summaryAnchor": "chapter-42--binding-energy",
+    "branches": [
+      {
+        "step": 3,
+        "target": "relativistic-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      }
+    ]
+  },
+  {
+    "chapter": 43,
+    "slug": "nuclear-energy",
+    "title": "Calculate energy released by fission or fusion",
+    "file": "derivations/nuclear-energy.html",
+    "summaryAnchor": "chapter-43--nuclear-energy",
+    "branches": [
+      {
+        "step": 2,
+        "target": "binding-energy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 43,
+    "slug": "chain-reaction",
+    "title": "Derive the simplest chain-reaction growth law",
+    "file": "derivations/chain-reaction.html",
+    "summaryAnchor": "chapter-43--chain-reaction",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 44,
+    "slug": "quark-charges",
+    "title": "Build proton and neutron charge from quarks",
+    "file": "derivations/quark-charges.html",
+    "summaryAnchor": "chapter-44--quark-charges",
+    "branches": [
+      {
+        "step": 4,
+        "target": "charge-conservation"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "model",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 44,
+    "slug": "cosmological-redshift",
+    "title": "Connect expansion, redshift and Hubble’s law",
+    "file": "derivations/cosmological-redshift.html",
+    "summaryAnchor": "chapter-44--cosmological-redshift",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "model",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "slug": "integrals",
+    "title": "Why an integral accumulates a rate",
+    "file": "derivations/integrals.html",
+    "summaryAnchor": "chapter-2--integrals",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "definition",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "slug": "equipartition",
+    "title": "Derive ½kBT per quadratic degree of freedom",
+    "file": "derivations/equipartition.html",
+    "summaryAnchor": "chapter-19--equipartition",
+    "branches": [
+      {
+        "step": 1,
+        "target": "boltzmann-weights"
+      },
+      {
+        "step": 5,
+        "target": "ideal-gas"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 20,
+    "slug": "clausius",
+    "title": "Why the reversible Clausius cyclic integral is zero",
+    "file": "derivations/clausius.html",
+    "summaryAnchor": "chapter-20--clausius",
+    "branches": [
+      {
+        "step": 2,
+        "target": "carnot"
+      },
+      {
+        "step": 5,
+        "target": "integrals"
+      },
+      {
+        "step": 6,
+        "target": "entropy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      },
+      {
+        "location": "step-6",
+        "kind": "derived",
+        "proof": "proof-step-6"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "slug": "relative-motion",
+    "title": "Derive Galilean relative velocity and acceleration",
+    "file": "derivations/relative-motion.html",
+    "summaryAnchor": "chapter-4--relative-motion",
+    "branches": [
+      {
+        "step": 4,
+        "target": "lorentz-transform"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "slug": "power",
+    "title": "Derive translational and rotational power",
+    "file": "derivations/power.html",
+    "summaryAnchor": "chapter-7--power",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "slug": "elastic-collisions",
+    "title": "Derive one-dimensional elastic collision velocities",
+    "file": "derivations/elastic-collisions.html",
+    "summaryAnchor": "chapter-9--elastic-collisions",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "slug": "rocket",
+    "title": "Derive the ideal rocket equation and momentum flux",
+    "file": "derivations/rocket.html",
+    "summaryAnchor": "chapter-9--rocket",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "slug": "rotational-kinematics",
+    "title": "Derive the rotational kinematic equations",
+    "file": "derivations/rotational-kinematics.html",
+    "summaryAnchor": "chapter-10--rotational-kinematics",
+    "branches": [
+      {
+        "step": 2,
+        "target": "integrals"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "slug": "gyroscope",
+    "title": "Derive rolling acceleration and slow gyroscopic precession",
+    "file": "derivations/gyroscope.html",
+    "summaryAnchor": "chapter-11--gyroscope",
+    "branches": [
+      {
+        "step": 4,
+        "target": "angular-momentum"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 13,
+    "slug": "gravity-sphere-orbits",
+    "title": "Derive spherical gravity and orbital energy",
+    "file": "derivations/gravity-sphere-orbits.html",
+    "summaryAnchor": "chapter-13--gravity-sphere-orbits",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "slug": "physical-pendulums",
+    "title": "Derive torsion and physical-pendulum periods",
+    "file": "derivations/physical-pendulums.html",
+    "summaryAnchor": "chapter-15--physical-pendulums",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "slug": "damped-driven",
+    "title": "Derive damped oscillations and resonance",
+    "file": "derivations/damped-driven.html",
+    "summaryAnchor": "chapter-15--damped-driven",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 16,
+    "slug": "travelling-wave-energy",
+    "title": "Derive travelling-wave phase, speed and energy flow",
+    "file": "derivations/travelling-wave-energy.html",
+    "summaryAnchor": "chapter-16--travelling-wave-energy",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 17,
+    "slug": "sound-energy-pipes",
+    "title": "Derive sound intensity, pipe modes, beats and Mach angle",
+    "file": "derivations/sound-energy-pipes.html",
+    "summaryAnchor": "chapter-17--sound-energy-pipes",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      },
+      {
+        "location": "step-6",
+        "kind": "derived",
+        "proof": "proof-step-6"
+      },
+      {
+        "location": "step-7",
+        "kind": "derived",
+        "proof": "proof-step-7"
+      }
+    ]
+  },
+  {
+    "chapter": 18,
+    "slug": "thermal-expansion",
+    "title": "Derive finite expansion and heat-capacity formulas",
+    "file": "derivations/thermal-expansion.html",
+    "summaryAnchor": "chapter-18--thermal-expansion",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 18,
+    "slug": "heat-conduction",
+    "title": "Derive heat conduction through a slab",
+    "file": "derivations/heat-conduction.html",
+    "summaryAnchor": "chapter-18--heat-conduction",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "model",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "slug": "gas-statistics",
+    "title": "Derive Maxwell speeds and mean free path",
+    "file": "derivations/gas-statistics.html",
+    "summaryAnchor": "chapter-19--gas-statistics",
+    "branches": [
+      {
+        "step": 1,
+        "target": "equipartition"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "slug": "heat-capacities",
+    "title": "Derive ideal-gas internal energy and heat capacities",
+    "file": "derivations/heat-capacities.html",
+    "summaryAnchor": "chapter-19--heat-capacities",
+    "branches": [
+      {
+        "step": 1,
+        "target": "equipartition"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "definition",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 20,
+    "slug": "refrigerator",
+    "title": "Derive Carnot refrigerator performance",
+    "file": "derivations/refrigerator.html",
+    "summaryAnchor": "chapter-20--refrigerator",
+    "branches": [
+      {
+        "step": 3,
+        "target": "clausius"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 20,
+    "slug": "statistical-entropy",
+    "title": "Derive multiplicity and the logarithmic entropy form",
+    "file": "derivations/statistical-entropy.html",
+    "summaryAnchor": "chapter-20--statistical-entropy",
+    "branches": [
+      {
+        "step": 4,
+        "target": "entropy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "model",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 22,
+    "slug": "charge-distributions",
+    "title": "Derive point-charge, dipole and disk fields and potentials",
+    "file": "derivations/charge-distributions.html",
+    "summaryAnchor": "chapter-22--charge-distributions",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 25,
+    "slug": "capacitor-geometries",
+    "title": "Derive cylindrical and spherical capacitances",
+    "file": "derivations/capacitor-geometries.html",
+    "summaryAnchor": "chapter-25--capacitor-geometries",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 25,
+    "slug": "capacitor-networks",
+    "title": "Derive capacitor combinations and dielectric Gauss law",
+    "file": "derivations/capacitor-networks.html",
+    "summaryAnchor": "chapter-25--capacitor-networks",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 26,
+    "slug": "current-flux",
+    "title": "Derive current as charge flux and local continuity",
+    "file": "derivations/current-flux.html",
+    "summaryAnchor": "chapter-26--current-flux",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 27,
+    "slug": "battery-discharge",
+    "title": "Derive terminal voltage, battery power and RC discharge",
+    "file": "derivations/battery-discharge.html",
+    "summaryAnchor": "chapter-27--battery-discharge",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 29,
+    "slug": "magnetic-geometries",
+    "title": "Derive arc, toroid, dipole fields and wire forces",
+    "file": "derivations/magnetic-geometries.html",
+    "summaryAnchor": "chapter-29--magnetic-geometries",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 30,
+    "slug": "rl-mutual",
+    "title": "Derive RL transients, mutual emf and magnetic energy density",
+    "file": "derivations/rl-mutual.html",
+    "summaryAnchor": "chapter-30--rl-mutual",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 31,
+    "slug": "ac-power-transformers",
+    "title": "Derive RLC damping, AC power and transformer ratios",
+    "file": "derivations/ac-power-transformers.html",
+    "summaryAnchor": "chapter-31--ac-power-transformers",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 32,
+    "slug": "magnetic-moments",
+    "title": "Derive orbital and spin magnetic-moment consequences",
+    "file": "derivations/magnetic-moments.html",
+    "summaryAnchor": "chapter-32--magnetic-moments",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "model",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 32,
+    "slug": "curie-law",
+    "title": "Derive Curie’s law in the weak-field dipole model",
+    "file": "derivations/curie-law.html",
+    "summaryAnchor": "chapter-32--curie-law",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "definition",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 33,
+    "slug": "polarization-refraction",
+    "title": "Derive Malus’s law, Snell’s law and special angles",
+    "file": "derivations/polarization-refraction.html",
+    "summaryAnchor": "chapter-33--polarization-refraction",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 34,
+    "slug": "refracting-instruments",
+    "title": "Derive spherical refraction, lensmaker and instrument magnification",
+    "file": "derivations/refracting-instruments.html",
+    "summaryAnchor": "chapter-34--refracting-instruments",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 36,
+    "slug": "apertures-bragg",
+    "title": "Derive circular diffraction, two-slit envelopes and Bragg angles",
+    "file": "derivations/apertures-bragg.html",
+    "summaryAnchor": "chapter-36--apertures-bragg",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 37,
+    "slug": "lorentz-transform",
+    "title": "Derive the Lorentz transform, length contraction and velocity addition",
+    "file": "derivations/lorentz-transform.html",
+    "summaryAnchor": "chapter-37--lorentz-transform",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 37,
+    "slug": "light-doppler",
+    "title": "Derive longitudinal and transverse light Doppler shifts",
+    "file": "derivations/light-doppler.html",
+    "summaryAnchor": "chapter-37--light-doppler",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 38,
+    "slug": "planck-radiation",
+    "title": "Derive Planck radiation, Wien’s maximum and the T⁴ law",
+    "file": "derivations/planck-radiation.html",
+    "summaryAnchor": "chapter-38--planck-radiation",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 38,
+    "slug": "quantum-foundations",
+    "title": "Schrödinger dynamics, matter waves and the uncertainty bound",
+    "file": "derivations/quantum-foundations.html",
+    "summaryAnchor": "chapter-38--quantum-foundations",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 39,
+    "slug": "quantum-normalization",
+    "title": "Derive wavefunction normalization and multidimensional box states",
+    "file": "derivations/quantum-normalization.html",
+    "summaryAnchor": "chapter-39--quantum-normalization",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 40,
+    "slug": "quantum-angular",
+    "title": "Derive angular-momentum eigenvalues and magnetic projections",
+    "file": "derivations/quantum-angular.html",
+    "summaryAnchor": "chapter-40--quantum-angular",
+    "branches": [
+      {
+        "step": 5,
+        "target": "hydrogen-quantum"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 41,
+    "slug": "electron-gas-states",
+    "title": "Derive the electron density of states and Fermi energy",
+    "file": "derivations/electron-gas-states.html",
+    "summaryAnchor": "chapter-41--electron-gas-states",
+    "branches": [
+      {
+        "step": 4,
+        "target": "fermi-dirac"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      }
+    ]
+  },
+  {
+    "chapter": 42,
+    "slug": "nuclear-size-fusion",
+    "title": "Derive nuclear radius scaling and a fusion confinement criterion",
+    "file": "derivations/nuclear-size-fusion.html",
+    "summaryAnchor": "chapter-42--nuclear-size-fusion",
+    "branches": [],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 39,
+    "slug": "hydrogen-quantum",
+    "title": "Derive hydrogen energies from the radial Schrödinger equation",
+    "file": "derivations/hydrogen-quantum.html",
+    "summaryAnchor": "chapter-39--hydrogen-quantum",
+    "branches": [
+      {
+        "step": 1,
+        "target": "quantum-foundations"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "derived",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "slug": "boltzmann-weights",
+    "title": "Derive Boltzmann weights from a thermal reservoir",
+    "file": "derivations/boltzmann-weights.html",
+    "summaryAnchor": "chapter-19--boltzmann-weights",
+    "branches": [
+      {
+        "step": 3,
+        "target": "entropy"
+      }
+    ],
+    "equations": [
+      {
+        "location": "main",
+        "kind": "derived",
+        "proof": "proof-main"
+      },
+      {
+        "location": "step-1",
+        "kind": "law",
+        "proof": "proof-step-1"
+      },
+      {
+        "location": "step-2",
+        "kind": "derived",
+        "proof": "proof-step-2"
+      },
+      {
+        "location": "step-3",
+        "kind": "derived",
+        "proof": "proof-step-3"
+      },
+      {
+        "location": "step-4",
+        "kind": "derived",
+        "proof": "proof-step-4"
+      },
+      {
+        "location": "step-5",
+        "kind": "derived",
+        "proof": "proof-step-5"
+      },
+      {
+        "location": "step-6",
+        "kind": "derived",
+        "proof": "proof-step-6"
+      }
+    ]
+  }
+]

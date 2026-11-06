@@ -1,7 +1,8 @@
 # University Physics
 
 - [Practice Studio](physics-practice.html): 4,170 original end-of-chapter problems from all 44 chapters, with matching original worked solutions, chapter/topic selection, drawing tools, progress tracking, review queues, and optional AI assistance.
-- [Review and Summary](Physics_Review_and_Summary_Tutorial.html): the textbook's 44 chapter summaries, with an Original image / Selectable text switch and a Copy text button.
+- [Review and Summary](Physics_Review_and_Summary_Tutorial.html): the textbook's 44 chapter summaries, with an Original image / Selectable text switch, a Copy text button, and linked formula explanations.
+- [Formula explanations](derivations/index.html): 131 original notes across all 44 chapters, with equation-level proof links, explicit starting assumptions, worked examples, and deeper branches at the steps that use them.
 - [Contents](content.html)
 
 The practice layout and controls reuse the Physics11 practice studio. The content comes from `Physics text (TOC).pdf`; original worked solutions come from `Physics answer (TOC).pdf`. Shared table exercises remain individually selectable. Expand **Original pages, diagrams & tables** to see context and diagrams that lie outside the problem crop.
@@ -38,3 +39,22 @@ node tools/review/check_review.mjs
 ```
 
 The selectable version uses real SVG text and embedded fonts reconstructed from the PDF glyph outlines. Original vector artwork and equation layout are preserved. Legacy math encodings are mapped to Unicode; copying reconstructs column order, superscripts, subscripts, and recognized fractions. All 65 original image payloads remain intact. `content/review-text-audit.json` records the source pages and glyph coverage.
+
+## Formula explanations and follow-up branches
+
+Each chapter has an **Explain & derive** panel. Matching source headings also link to the notes in both the original-image and selectable-text versions. Follow-up links occur at the exact derivation step that needs the additional explanation; the return link goes back to that step. Each note also links to its exact formula entry in the chapter summary. Existing interactive centripetal-acceleration links are retained.
+
+Edit `tools/review/derivation_content.py` to extend the explanations and their step-level branches. Rebuild without PDFs or additional Python dependencies:
+
+```sh
+python3 tools/review/build_derivations.py
+node tools/review/check_derivations.mjs
+```
+
+In environments where Chrome cannot launch, `node tools/review/check_derivations.mjs --static-only` checks every file, asset and return fragment. With `jsdom` installed, `node --test tools/review/derivation-navigation.test.cjs` additionally checks the actual navigation scripts, search, summary restoration and reader controls without a browser. Browser layout and screenshot checks still require Chrome.
+
+Every displayed equation in the notes has a status and a link to its own explanation. Derived results open proof sections with the argument and links to earlier results; definitions, fundamental postulates, constitutive models and reference values are explicitly distinguished. Matching links are attached directly to equation-bearing rows in both textbook reading modes, including numbered and unnumbered relations. Returning from a textbook equation opens the same chapter and equation location.
+
+`content/equation-provenance.json` records the equation audit. Numbered-source destinations are reviewed in `tools/review/equation_provenance.py`; unnumbered rows are reviewed individually in `content/review-unnumbered-equations.json`. New source equations without a reviewed assignment stop the build. `tools/review/derivation_supplements.py` contains the additional arguments needed beyond the initial selected-formula notes.
+
+The full review builder also generates these notes and links. Equations are selectable Unicode text and the CSS/JavaScript is local, so the pages work offline. `content/derivations.json` records topic files, proof anchors, equation statuses, return anchors and branch targets. Examples of deeper chains include ideal gas → equipartition → Boltzmann weights → reservoir counting and the statistical postulate, and quantum hydrogen → Schrödinger dynamics and angular-momentum algebra.
