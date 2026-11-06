@@ -28,6 +28,9 @@ test('every derivation has its own exact summary return and complete teaching se
     assert.ok(document.querySelector('#example p').textContent.length > 30);
     assert.equal(document.querySelector('.summary-return a').hash, `#${topic.summaryAnchor}`);
     assert.equal(document.querySelectorAll('.equation').length, topic.equations.length);
+    assert.equal(document.querySelectorAll('details.equation-proof').length,0);
+    assert.equal(document.querySelectorAll('.proof-library').length,1);
+    assert.ok(!document.body.textContent.includes('Earlier results used in this argument:'));
     for (const equation of topic.equations) {
       const block = document.getElementById(`equation-${equation.location}`);
       assert.equal(block.dataset.kind, equation.kind);
@@ -37,7 +40,10 @@ test('every derivation has its own exact summary return and complete teaching se
       assert.ok(proof.querySelector('.proof-body').textContent.length > 100);
       assert.equal(proof.dataset.kind, equation.kind);
       link.click();
-      assert.equal(proof.open,true);
+      assert.equal(proof.dataset.currentProof,'true');
+      assert.equal(document.querySelectorAll('[data-current-proof]').length,1);
+      assert.equal(document.activeElement,proof);
+      assert.equal(proof.hidden,false);
     }
     for (const branch of topic.branches) {
       const link = document.querySelector(`#step-${branch.step} .branch`);
@@ -51,6 +57,25 @@ test('every derivation has its own exact summary return and complete teaching se
     }
     dom.window.close();
   }
+});
+
+test('the Carnot argument reads through the cancellation, with equations and illustrations in context', () => {
+  const dom=note('carnot'), d=dom.window.document;
+  const reading=d.querySelector('#proof-main');
+  assert.ok(reading.querySelector('.reading-body>.concept-figure'));
+  assert.ok(reading.querySelector('.reading-body>p').textContent.includes('adiabatic legs'));
+  const explanation=d.querySelector('#proof-step-4 .proof-body');
+  assert.equal(explanation.firstElementChild.tagName,'P');
+  assert.ok(explanation.firstElementChild.textContent.includes('logarithms cancel'));
+  const equation=explanation.querySelector('.equation');
+  assert.ok(equation.previousElementSibling.textContent.includes('What remains'));
+  assert.ok(equation.nextElementSibling.textContent.includes('without using an entropy formula'));
+  const figure=d.querySelector('#step-3 .concept-figure');
+  assert.ok(figure);
+  const question=d.querySelector('#step-3 .branch');
+  assert.ok(question.textContent.includes('adiabatic relation'));
+  assert.equal(new URL(question.href).searchParams.get('step'),'step-3');
+  dom.window.close();
 });
 
 test('malformed return contexts cannot replace the default summary destination', () => {
@@ -110,7 +135,7 @@ test('summary deep links restore the correct chapter and exact formula without b
   assert.ok(visibleSource);
   assert.equal(visibleSource.dataset.kind,'derived');
   const child = note(source.topic,`?review=${source.id}#proof-main`);
-  assert.equal(child.window.document.querySelector('#proof-main').open,true);
+  assert.equal(child.window.document.querySelector('#proof-main').dataset.currentProof,'true');
   assert.equal(child.window.document.querySelector('[data-context-return]').hash,`#${source.id}`);
   child.window.close();
   d.querySelector('#next').click();

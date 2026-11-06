@@ -16,19 +16,23 @@
       link.textContent = '← Return to this exact equation in the summary';
     }
   }
-  function openProof() {
-    const id = location.hash.slice(1);
+  function revealArgument(id = location.hash.slice(1), focus = false) {
+    if (!/^proof-(?:main|step-[1-9]\d*)$/.test(id)) return;
     const target = document.getElementById(id);
-    if (target?.matches('details.equation-proof')) target.open = true;
+    if (!target?.matches('.equation-proof')) return;
+    for (const previous of document.querySelectorAll('[data-current-proof]')) {
+      previous.removeAttribute('data-current-proof');
+    }
+    target.dataset.currentProof = 'true';
+    if (focus) target.focus({preventScroll:true});
   }
   document.addEventListener('click', event => {
     const link = event.target.closest?.('a[data-proof-link]');
     if (!link) return;
-    const target = document.getElementById(link.hash.slice(1));
-    if (target?.matches('details.equation-proof')) target.open = true;
+    revealArgument(link.hash.slice(1), true);
   });
-  window.addEventListener('hashchange', openProof);
-  openProof();
+  window.addEventListener('hashchange', () => revealArgument());
+  revealArgument();
   const search = document.getElementById('topic-search');
   if (search) search.addEventListener('input', () => {
     const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);

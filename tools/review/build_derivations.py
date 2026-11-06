@@ -12,6 +12,7 @@ import re
 
 from derivation_content import TOPICS
 from derivation_diagrams import DIAGRAMS, build_diagrams, diagrams_for, figure_html
+from derivation_reading import READINGS
 from equation_provenance import NOTE_INPUTS, LABELS
 from source_equations import annotate as annotate_source, strip_generated_links, AUDIT as SOURCE_AUDIT
 
@@ -97,7 +98,7 @@ def equation(text, topic, location, main=False):
     if not text:
         return ''
     kind = NOTE_INPUTS.get(topic['slug'], {}).get(location, 'derived')
-    label = 'See the derivation' if kind == 'derived' else 'Why this is a starting point'
+    label = ('Follow the reasoning ↓' if main else 'Read the reasoning above ↑') if kind == 'derived' else 'About this starting point'
     return (f'<div class="equation{" main-equation" if main else ""}" id="equation-{location}" data-kind="{kind}">'
             f'<span class="equation-status">{LABELS[kind]}</span>'
             f'<a class="equation-value" data-proof-link href="#proof-{location}">{escape(text)}</a>'
@@ -105,55 +106,58 @@ def equation(text, topic, location, main=False):
 
 
 def proof_sections(t):
-    blocks = [('main', t['formula'], None)] + [(f'step-{i}',s['equation'],i)
-              for i,s in enumerate(t['steps'],1) if s['equation']]
-    out = ['<section class="proof-library"><h2>Where each equation comes from</h2>'
-           '<p>Derived equations link to an argument below. Definitions, physical postulates and constitutive models are identified as the inputs of that argument.</p>']
-    for location, formula, number in blocks:
-        kind = NOTE_INPUTS.get(t['slug'],{}).get(location,'derived')
-        title = 'Derivation of the main result' if number is None else f'Equation in step {number}'
-        out.append(f'<details class="equation-proof" id="proof-{location}" data-kind="{kind}">'
-                   f'<summary>{title}<span>{LABELS[kind]}</span></summary><div class="proof-body">')
-        if kind != 'derived':
-            out.append(f'<p><strong>{LABELS[kind]}.</strong> '
-                       'This relation is an explicit input at this level of the model, rather than a result proved by the equations that use it.</p>')
-            out.append(f'<p>{escape(t["meaning"] if number is None else t["steps"][number-1]["text"])}</p>')
-            out.append(f'<p><strong>Scope:</strong> {escape(t["assumptions"])}</p>')
-        elif number is None:
-            out.append(f'<p><strong>Conditions:</strong> {escape(t["assumptions"])}</p><ol class="proof-steps">')
-            for i,s in enumerate(t['steps'],1):
-                out.append(f'<li><strong>{escape(s["title"])}.</strong> {escape(s["text"])}')
-                if s['equation']:
-                    out.append(f' <a data-proof-link href="#proof-step-{i}">Explain the equation used in step {i} ↗</a>')
-                if s['branch']:
-                    out.append(f' <a href="{s["branch"][1]}.html?from={t["slug"]}&amp;step=proof-main#proof-main">{escape(s["branch"][0])} ↗</a>')
-                out.append('</li>')
-            out.append('</ol>')
-        else:
-            s = t['steps'][number-1]
-            out.append(f'<p><strong>What is being shown:</strong> {escape(s["title"])}</p>'
-                       f'<p>{escape(s["text"])}</p>')
-            prior = [(i,p) for i,p in enumerate(t['steps'][:number-1],1) if p['equation']]
-            if prior:
-                out.append('<p><strong>Earlier results used in this argument:</strong></p><ul>')
-                for i,p in prior:
-                    status = NOTE_INPUTS.get(t['slug'],{}).get(f'step-{i}','derived')
-                    out.append(f'<li><a data-proof-link href="#proof-step-{i}">{escape(p["equation"])}</a> '
-                               f'<small>({LABELS[status]})</small></li>')
-                out.append('</ul>')
-            else:
-                out.append(f'<p><strong>Starting conditions and inputs:</strong> {escape(t["assumptions"])}</p>')
-            if s['branch']:
-                out.append(f'<p><a href="{s["branch"][1]}.html?from={t["slug"]}&amp;step=proof-{location}#proof-main">'
-                           f'{escape(s["branch"][0])} ↗</a></p>')
-        out.append(f'<p><a class="proof-return" href="#equation-{location}">← Return to this equation</a></p></div></details>')
-    return ''.join(out)+'</section>'
+    """One readable argument, with stable anchors at the relevant paragraphs.
+
+    The equations and their explanations live together. A proof link returns to
+    the reasoning that produces the equation instead of opening a duplicate.
+    """
+    reading = READINGS.get(t['slug'], {})
+    main_kind = NOTE_INPUTS.get(t['slug'], {}).get('main', 'derived')
+    heading = reading.get('title', 'Understanding the relation' if main_kind != 'derived' else 'Developing the argument')
+    out = [f'<section class="proof-library derivation-reading equation-proof" id="proof-main" '
+           f'data-kind="{main_kind}" tabindex="-1" aria-labelledby="argument-title">'
+           f'<h2 id="argument-title">{escape(heading)}</h2><div class="reading-body">']
+    def paragraphs(text):
+        return ''.join(f'<p>{escape(p)}</p>' for p in text.split('\n\n') if p)
+    if reading.get('opening'):
+        out.append(paragraphs(reading['opening']))
+    if main_kind != 'derived':
+        explanations = {
+            'definition': 'Here the starting relation defines the quantity being discussed. We can understand that definition and derive its consequences, while keeping the definition itself distinct from those consequences.',
+            'law': 'The starting relation is a physical law used in this description. The argument below explains what it means and how its consequences follow under the stated assumptions.',
+            'model': 'The starting relation describes the behavior assumed for this model or material. Within its range of validity, we can use it to work out the consequences below.',
+            'reference': 'The starting relation fixes the reference values or conditions for this discussion. With that choice made, the following reasoning explains the resulting relationships.',
+            'notation': 'The starting relation specifies the mathematical notation used here. The following argument explains how that notation connects to the physical quantities.',
+        }
+        out.append(f'<p class="starting-point">{escape(explanations[main_kind])}</p>')
+    out.extend(figure_html(d) for d in diagrams_for(t['slug']))
+    for i, step in enumerate(t['steps'], 1):
+        edited = reading.get('steps', {}).get(i, {})
+        title = edited.get('title', step['title'])
+        location = f'step-{i}'
+        kind = NOTE_INPUTS.get(t['slug'], {}).get(location, 'derived')
+        out.append(f'<section class="step" id="{location}"><div class="equation-proof" '
+                   f'id="proof-{location}" data-kind="{kind}" tabindex="-1" aria-labelledby="step-title-{i}">'
+                   f'<h3 id="step-title-{i}">{escape(title)}</h3><div class="proof-body">')
+        out.append(paragraphs(edited.get('text', step['text'])))
+        out.append(equation(step['equation'], t, location))
+        if not step['equation'] and any(c in edited.get('text', step['text']) for c in '=≈≥≤'):
+            out.append(f'<a class="prose-equation-link" data-proof-link href="#proof-{location}">Read the argument for these relations ↑</a>')
+        if edited.get('after'):
+            out.append(paragraphs(edited['after']))
+        out.extend(figure_html(d) for d in diagrams_for(t['slug'], i))
+        if step['branch']:
+            out.append(branch(*step['branch'], t['slug'], i))
+        out.append('</div></div></section>')
+    if reading.get('closing'):
+        out.append(f'<p class="argument-closing">{escape(reading["closing"])}</p>')
+    return ''.join(out)+'</div></section>'
 
 
 def branch(question, target, source, step):
     return (f'<a class="branch" href="{target}.html?from={source}&amp;step=step-{step}">'
-            '<span class="branch-label">Go deeper at this step</span>'
-            f'<strong>{escape(question)}</strong><span class="branch-target">'
+            '<span class="branch-label">A closer look</span>'
+            f'<strong>{escape(question)} ↗</strong><span class="branch-target">'
             f'{escape(BY_SLUG[target]["title"])} <span aria-hidden="true">↗</span></span></a>')
 
 
@@ -164,7 +168,8 @@ def shell(title, body, chapters, sidebar='', index=False):
             f'<title>{escape(title)} · Physics Inquiry</title>'
             '<meta name="description" content="Step-by-step physics explanations with assumptions, '
             'worked examples and follow-up branches at the exact step that needs them.">'
-            '<link rel="stylesheet" href="assets/inquiry.css"></head><body>'
+            '<link rel="stylesheet" href="assets/inquiry.css">'
+            '<link rel="stylesheet" href="assets/reading.css"></head><body>'
             '<a class="skip" href="#main">Skip to explanation</a>'
             '<header><a class="brand" href="index.html"><span aria-hidden="true">φ</span>'
             '<span>Physics <small>Follow the question</small></span></a>'
@@ -186,23 +191,12 @@ def render_topic(t, chapters):
             + equation(t['formula'], t, 'main', True)
             + '<section class="setup" aria-labelledby="symbols"><h2 id="symbols">What the symbols mean</h2>'
             f'<p>{escape(t["symbols"])}</p><h2>When this applies</h2><p>{escape(t["assumptions"])}</p></section>')
-    body += ''.join(figure_html(d) for d in diagrams_for(t['slug']))
-    toc = []
-    for i, step in enumerate(t['steps'], 1):
-        toc.append(f'<li><a href="#step-{i}">{escape(step["title"])}</a></li>')
-        body += (f'<section class="step" id="step-{i}" aria-labelledby="step-title-{i}">'
-                 f'<div class="step-number" aria-hidden="true">{i:02}</div><h2 id="step-title-{i}">{escape(step["title"])}</h2>'
-                 f'<p>{escape(step["text"])}</p>{equation(step["equation"],t,f"step-{i}")}')
-        if not step['equation'] and any(c in step['text'] for c in '=≈≥≤'):
-            body += '<a class="prose-equation-link" data-proof-link href="#proof-main">Explain the relations used here ↗</a>'
-        body += ''.join(figure_html(d) for d in diagrams_for(t['slug'],i))
-        if step['branch']:
-            body += branch(*step['branch'], t['slug'], i)
-        body += '</section>'
+    toc = [f'<li><a href="#step-{i}">{escape(READINGS.get(t["slug"],{}).get("steps",{}).get(i,{}).get("title",s["title"]))}</a></li>'
+           for i,s in enumerate(t['steps'],1)]
+    body += proof_sections(t)
     if t['slug'] == 'centripetal-acceleration':
         body += ('<a class="branch" href="../centripetal-acceleration-proof.html">'
                  '<span class="branch-label">Explore visually</span><strong>Open the interactive circular-motion proof ↗</strong></a>')
-    body += proof_sections(t)
     body += ('<section class="example" id="example"><div class="eyebrow">Check the result</div>'
              f'<h2>A worked example</h2><p>{escape(t["example"])}</p>'
              '<a class="prose-equation-link" data-proof-link href="#proof-main">Derivation behind this calculation ↗</a></section>'
@@ -238,7 +232,7 @@ def build_pages():
     chapters = {int(c['title'].split()[0]): c['title'].split(' ', 1)[1]
                 for c in json.loads((ROOT/'content/review-chapters.json').read_text())}
     (OUT/'assets').mkdir(parents=True, exist_ok=True)
-    for name in ['inquiry.css', 'inquiry.js']:
+    for name in ['inquiry.css', 'reading.css', 'inquiry.js']:
         (OUT/'assets'/name).write_text((ROOT/'tools/review'/name).read_text())
     for t in TOPICS:
         (OUT/f'{t["slug"]}.html').write_text(render_topic(t, chapters))
@@ -251,7 +245,8 @@ def build_pages():
     body = (f'<div class="hero"><div class="eyebrow">44 chapters · {len(TOPICS)} explanations</div>'
             '<h1>Follow the formula.<br>Understand every step.</h1>'
             '<p class="lead">Start from a chapter summary, open a formula, and follow the question behind any step. '
-            'Each explanation includes a labeled diagram, assumptions, a derivation or physical starting point, and a worked example.</p></div>'
+            'Read the reasoning as a connected explanation, with diagrams beside the ideas they illustrate '
+            'and deeper questions beside the paragraphs that raise them.</p></div>'
             '<label class="search-label" for="topic-search">Find a formula or question</label>'
             '<input id="topic-search" type="search" placeholder="Try entropy, force, photon…" autocomplete="off">'
             f'<p id="search-status" role="status" aria-live="polite">{len(TOPICS)} explanations</p>'
