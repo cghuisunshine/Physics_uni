@@ -13,6 +13,7 @@ import re
 from derivation_content import TOPICS
 from derivation_diagrams import DIAGRAMS, build_diagrams, diagrams_for, figure_html
 from derivation_reading import READINGS
+from math_rendering import math_html, math_text, rendered_math, review_styles, write_layout_fixture
 from equation_provenance import NOTE_INPUTS, LABELS
 from source_equations import annotate as annotate_source, strip_generated_links, AUDIT as SOURCE_AUDIT
 
@@ -34,8 +35,8 @@ def chapter_resources(chapter):
     topics = BY_CHAPTER[chapter]
     rows = ''.join(
         f'<li id="{anchor(t)}"><a class="formula-link" href="derivations/{t["slug"]}.html">'
-        f'<span><strong>{escape(t["title"])}</strong>'
-        f'<span class="formula-preview">{escape(t["formula"])}</span></span>'
+        f'<span><strong>{math_text(t["title"])}</strong>'
+        f'<span class="formula-preview math-preview">{math_html(t["slug"],inline=True)}</span></span>'
         '<span class="formula-arrow" aria-hidden="true">↗</span></a></li>'
         for t in topics)
     return (f'<section class="derivation-resources" aria-labelledby="derive-title-{chapter}">'
@@ -101,7 +102,7 @@ def equation(text, topic, location, main=False):
     label = ('Follow the reasoning ↓' if main else 'Read the reasoning above ↑') if kind == 'derived' else 'About this starting point'
     return (f'<div class="equation{" main-equation" if main else ""}" id="equation-{location}" data-kind="{kind}">'
             f'<span class="equation-status">{LABELS[kind]}</span>'
-            f'<a class="equation-value" data-proof-link href="#proof-{location}">{escape(text)}</a>'
+            f'<a class="equation-value" data-proof-link href="#proof-{location}" data-plain-math="{escape(text,quote=True)}">{math_html(topic["slug"],location)}</a>'
             f'<a class="equation-action" data-proof-link href="#proof-{location}">{label}</a></div>')
 
 
@@ -118,7 +119,7 @@ def proof_sections(t):
            f'data-kind="{main_kind}" tabindex="-1" aria-labelledby="argument-title">'
            f'<h2 id="argument-title">{escape(heading)}</h2><div class="reading-body">']
     def paragraphs(text):
-        return ''.join(f'<p>{escape(p)}</p>' for p in text.split('\n\n') if p)
+        return ''.join(f'<p>{math_text(p)}</p>' for p in text.split('\n\n') if p)
     if reading.get('opening'):
         out.append(paragraphs(reading['opening']))
     if main_kind != 'derived':
@@ -157,7 +158,7 @@ def proof_sections(t):
 def branch(question, target, source, step):
     return (f'<a class="branch" href="{target}.html?from={source}&amp;step=step-{step}">'
             '<span class="branch-label">A closer look</span>'
-            f'<strong>{escape(question)} ↗</strong></a>')
+            f'<strong>{math_text(question)} ↗</strong></a>')
 
 
 def shell(title, body, chapters, sidebar='', index=False):
@@ -168,7 +169,9 @@ def shell(title, body, chapters, sidebar='', index=False):
             '<meta name="description" content="Step-by-step physics explanations with assumptions, '
             'worked examples and follow-up branches at the exact step that needs them.">'
             '<link rel="stylesheet" href="assets/inquiry.css">'
-            '<link rel="stylesheet" href="assets/reading.css"></head><body>'
+            '<link rel="stylesheet" href="assets/reading.css">'
+            '<link rel="stylesheet" href="../assets/math/katex.min.css">'
+            '<link rel="stylesheet" href="../assets/math/physics-math.css"></head><body>'
             '<a class="skip" href="#main">Skip to explanation</a>'
             '<header><a class="brand" href="index.html"><span aria-hidden="true">φ</span>'
             '<span>Physics <small>Follow the question</small></span></a>'
@@ -183,13 +186,13 @@ def render_topic(t, chapters):
     ch = t['chapter']
     summary = f'../Physics_Review_and_Summary_Tutorial.html#{anchor(t)}'
     body = (f'<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{summary}">Chapter {ch:02}</a>'
-            f'<span aria-hidden="true">›</span><span>{escape(t["title"])}</span></nav>'
+            f'<span aria-hidden="true">›</span><span>{math_text(t["title"])}</span></nav>'
             f'<a class="context-return" data-context-return href="{summary}">← Return to this formula in the summary</a>'
             f'<div class="hero"><div class="eyebrow">Chapter {ch:02} · {escape(chapters[ch])}</div>'
-            f'<h1>{escape(t["title"])}</h1><p class="lead">{escape(t["meaning"])}</p></div>'
+            f'<h1 data-plain-text="{escape(t["title"],quote=True)}">{math_text(t["title"])}</h1><p class="lead">{math_text(t["meaning"])}</p></div>'
             + equation(t['formula'], t, 'main', True)
             + '<section class="setup" aria-labelledby="symbols"><h2 id="symbols">What the symbols mean</h2>'
-            f'<p>{escape(t["symbols"])}</p><h2>When this applies</h2><p>{escape(t["assumptions"])}</p></section>')
+            f'<p>{math_text(t["symbols"])}</p><h2>When this applies</h2><p>{math_text(t["assumptions"])}</p></section>')
     toc = [f'<li><a href="#step-{i}">{escape(READINGS.get(t["slug"],{}).get("steps",{}).get(i,{}).get("title",s["title"]))}</a></li>'
            for i,s in enumerate(t['steps'],1)]
     body += proof_sections(t)
@@ -197,13 +200,13 @@ def render_topic(t, chapters):
         body += ('<a class="branch" href="../centripetal-acceleration-proof.html">'
                  '<span class="branch-label">Explore visually</span><strong>Open the interactive circular-motion proof ↗</strong></a>')
     body += ('<section class="example" id="example"><div class="eyebrow">Check the result</div>'
-             f'<h2>A worked example</h2><p>{escape(t["example"])}</p>'
+             f'<h2>A worked example</h2><p>{math_text(t["example"])}</p>'
              '<a class="prose-equation-link" data-proof-link href="#proof-main">Derivation behind this calculation ↗</a></section>'
-             f'<section class="caution"><h2>A point to keep straight</h2><p>{escape(t["caution"])}</p>'
+             f'<section class="caution"><h2>A point to keep straight</h2><p>{math_text(t["caution"])}</p>'
              '<a class="prose-equation-link" data-proof-link href="#proof-main">Check the assumptions and derivation ↗</a></section>'
              f'<a class="return" data-context-return href="{summary}">← Return to this formula in the summary</a>'
              f'<p class="summary-return"><a href="{summary}">Back to Chapter {ch:02} summary</a></p>')
-    siblings = ''.join(f'<li><a href="{s["slug"]}.html">{escape(s["title"])}</a></li>'
+    siblings = ''.join(f'<li><a href="{s["slug"]}.html">{math_text(s["title"])}</a></li>'
                        for s in BY_CHAPTER[ch] if s != t)
     sidebar = ('<aside><div class="side-card"><div class="eyebrow">On this page</div>'
                f'<ol>{"".join(toc)}</ol><a href="#example">Worked example ↓</a></div>'
@@ -227,6 +230,7 @@ def validate_content():
 
 def build_pages():
     validate_content()
+    rendered_math()
     build_diagrams(ROOT, TOPICS)
     chapters = {int(c['title'].split()[0]): c['title'].split(' ', 1)[1]
                 for c in json.loads((ROOT/'content/review-chapters.json').read_text())}
@@ -238,8 +242,8 @@ def build_pages():
     sections = []
     for ch, title in chapters.items():
         items = ''.join(f'<li data-search="{escape((t["title"]+" "+t["formula"]+" "+t["meaning"]).casefold(), quote=True)}">'
-                        f'<a href="{t["slug"]}.html"><strong>{escape(t["title"])}</strong>'
-                        f'<span>{escape(t["formula"])}</span></a></li>' for t in BY_CHAPTER[ch])
+                        f'<a href="{t["slug"]}.html"><strong>{math_text(t["title"])}</strong>'
+                        f'<span class="math-preview">{math_html(t["slug"],inline=True)}</span></a></li>' for t in BY_CHAPTER[ch])
         sections.append(f'<section class="directory-chapter"><h2><span>{ch:02}</span> {escape(title)}</h2><ul>{items}</ul></section>')
     body = (f'<div class="hero"><div class="eyebrow">44 chapters · {len(TOPICS)} explanations</div>'
             '<h1>Follow the formula.<br>Understand every step.</h1>'
@@ -260,6 +264,7 @@ def build_pages():
                      equations=[dict(location=loc,kind=NOTE_INPUTS.get(t['slug'],{}).get(loc,'derived'),proof=f'proof-{loc}')
                                 for loc in ['main']+[f'step-{i}' for i,s in enumerate(t['steps'],1) if s['equation']]]) for t in TOPICS]
     (ROOT/'content/derivations.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n')
+    write_layout_fixture(TOPICS)
 
 
 def update_reader():
@@ -289,6 +294,8 @@ def update_reader():
     text = re.sub(r'<article\b.*?</article>', article_replace, text, flags=re.S)
     if 'href="assets/review-derivations.css"' not in text:
         text = text.replace('</head>', '<link rel="stylesheet" href="assets/review-derivations.css">\n</head>', 1)
+    if 'href="assets/math/katex.min.css"' not in text:
+        text = text.replace('</head>', review_styles()+'\n</head>', 1)
     if 'href="derivations/index.html"' not in text:
         text = text.replace('<div class="header-actions">', '<div class="header-actions"><a class="explanations-index" href="derivations/index.html">Formula explanations ↗</a>', 1)
     # Install the hash behavior from its maintained source on subsequent builds too.
@@ -297,6 +304,18 @@ def update_reader():
     text = re.sub(r"window.addEventListener\('hashchange',.*?\nsetTextMode\(textMode,false,false\);.*?\n", lambda _: maintained_init(), text, flags=re.S)
     REVIEW.write_text(text)
     write_equation_audit()
+
+
+def update_review_math():
+    """Refresh summary formulas without regenerating or altering source SVGs."""
+    text = REVIEW.read_text()
+    text, count = re.subn(r'<!-- derivations:chapter-(\d+):start -->.*?<!-- derivations:chapter-\1:end -->',
+                         lambda m: f'<!-- derivations:chapter-{m[1]}:start -->'+chapter_resources(int(m[1]))+f'<!-- derivations:chapter-{m[1]}:end -->',
+                         text, flags=re.S)
+    assert count == 44, 'Expected one formula panel per review chapter'
+    if 'href="assets/math/katex.min.css"' not in text:
+        text = text.replace('</head>', review_styles()+'\n</head>', 1)
+    REVIEW.write_text(text)
 
 
 def write_equation_audit():
@@ -322,8 +341,11 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--pages-only', action='store_true', help='Do not update the review reader')
+    parser.add_argument('--math-only-review', action='store_true', help='Update summary math while preserving embedded source pages')
     args = parser.parse_args()
     build_pages()
-    if not args.pages_only:
+    if args.math_only_review:
+        update_review_math()
+    elif not args.pages_only:
         update_reader()
     print(f'Built {len(TOPICS)} explanations across {len(BY_CHAPTER)} chapters and a searchable index.')

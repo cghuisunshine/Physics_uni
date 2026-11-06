@@ -1,4 +1,4 @@
-"""Original teaching notes. Equations are Unicode text so they work offline and copy.
+"""Original teaching notes. Readable formula sources have reviewed TeX renderings.
 
 Each branch belongs to the particular step that needs the prerequisite, rather
 than to an unrelated reading list. Edit here, then run build_derivations.py.
@@ -878,7 +878,7 @@ T(39, 'tunneling', 'Why tunnelling probability decays exponentially', 'κ = √(
   'U₀: rectangular barrier height; E < U₀: incoming energy; a: barrier width; κ: decay constant; T: transmission probability.',
   'One-dimensional stationary nonrelativistic scattering by a rectangular barrier, with the same constant potential on the two exterior sides. The exponential scaling is the thick-barrier limit.', [
     S('Use the Schrödinger equation inside the barrier', 'Rearrange the stationary equation with U = U₀. Because U₀ − E is positive, the second derivative has the same sign as ψ.', 'ψ″ = [2m(U₀ − E)/ℏ²]ψ = κ²ψ'),
-    S('Solve the constant-coefficient equation', 'Functions e±κx have second derivative κ² times themselves. Both terms are needed inside a finite barrier when matching boundaries.', 'ψbarrier = A eκx + B e⁻κx'),
+    S('Solve the constant-coefficient equation', 'Functions exp(±κx) have second derivative κ² times themselves. Both terms are needed inside a finite barrier when matching boundaries.', 'ψbarrier = A exp(κx) + B exp(−κx)'),
     S('Match both boundaries', 'Continuity of ψ and ψ′ for a finite step relates incoming, reflected, internal and transmitted waves. This matching produces a nonzero transmitted amplitude.', 'T = [1 + U₀² sinh²(κa)/(4E(U₀ − E))]⁻¹'),
     S('Extract the thick-barrier limit', 'For κa much greater than one, sinh²(κa) ≈ e²κa/4. The dominant width dependence is therefore e⁻²κa; the squared exponent comes from probability rather than amplitude.', 'T ≈ [16E(U₀ − E)/U₀²]e⁻²κa'),
   ], 'For an electron 1 eV below the top of a barrier, κ is about 5.12 nm⁻¹. Increasing width by 0.10 nm multiplies thick-barrier transmission by about e⁻¹·⁰²⁴ ≈ 0.36.',

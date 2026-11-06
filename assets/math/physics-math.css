@@ -1,0 +1,15 @@
+/* Keep tall expressions intact and let long ones scroll within their own line. */
+.equation-value{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:10px 3px 12px;white-space:normal;overflow-wrap:normal;text-decoration:none}
+.typeset-math{display:inline-block;vertical-align:middle;white-space:nowrap;overflow-wrap:normal;text-indent:0;text-align:initial}
+.equation-value>.typeset-math{min-width:min-content}
+.typeset-math .katex-display{margin:.25em 0 .4em;overflow:visible}
+.typeset-math .katex{font-size:1.05em;line-height:1.25;white-space:nowrap;overflow-wrap:normal;text-indent:0}
+.equation .equation-value{font-size:20px;line-height:1.5}
+.main-equation .equation-value{font-size:23px}
+.equation .katex-display>.katex{text-align:center}
+.math-preview{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden;white-space:normal;overflow-wrap:normal;padding:6px 1px 8px}
+.math-preview .katex{font-size:1em}
+.equation-value:focus-visible{outline:2px solid #4a8da8;outline-offset:-2px}
+.equation[data-overflow] .equation-action::after{content:' · Scroll sideways to read the full equation';display:block;font-size:10px;margin-top:7px;color:#63766d}
+@media(max-width:500px){.equation .equation-value{font-size:18px}.main-equation .equation-value{font-size:20px}.equation{padding-left:8px;padding-right:8px}}
+@media print{.equation-value,.math-preview{overflow:visible;white-space:normal}.equation .equation-value{font-size:12pt}.main-equation .equation-value{font-size:13pt}.equation[data-overflow] .equation-action::after{display:none}}

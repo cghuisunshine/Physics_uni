@@ -33,6 +33,17 @@
   });
   window.addEventListener('hashchange', () => revealArgument());
   revealArgument();
+  function markLongEquations() {
+    for (const equation of document.querySelectorAll('.equation')) {
+      const line=equation.querySelector('.equation-value');
+      if (!line) continue;
+      if (line.scrollWidth>line.clientWidth+2) equation.setAttribute('data-overflow','');
+      else equation.removeAttribute('data-overflow');
+    }
+  }
+  window.addEventListener('resize', markLongEquations);
+  if (document.fonts?.ready) document.fonts.ready.then(markLongEquations);
+  else markLongEquations();
   const search = document.getElementById('topic-search');
   if (search) search.addEventListener('input', () => {
     const terms = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);

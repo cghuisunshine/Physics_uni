@@ -1,0 +1,3962 @@
+[
+  {
+    "topic": "units-and-dimensions",
+    "location": "main",
+    "source": "quantity = numerical value × unit",
+    "tex": "\\text{quantity}=\\text{numerical value}\\times\\text{unit}"
+  },
+  {
+    "topic": "units-and-dimensions",
+    "location": "step-1",
+    "source": "1 km / (1000 m) = 1",
+    "tex": "\\frac{1\\,\\mathrm{km}}{1000\\,\\mathrm m}=1"
+  },
+  {
+    "topic": "units-and-dimensions",
+    "location": "step-2",
+    "source": "72 km/h × (1000 m/km) × (1 h/3600 s) = 20 m/s",
+    "tex": "72\\,\\frac{\\mathrm{km}}{\\mathrm h}\\times\\frac{1000\\,\\mathrm m}{1\\,\\mathrm{km}}\\times\\frac{1\\,\\mathrm h}{3600\\,\\mathrm s}=20\\,\\frac{\\mathrm m}{\\mathrm s}"
+  },
+  {
+    "topic": "units-and-dimensions",
+    "location": "step-3",
+    "source": "[v₀t] = (L/T)T = L;  [at²] = (L/T²)T² = L",
+    "tex": "[v_0t]=\\frac LT T=L;[at^2]=\\frac L{T^2}T^2=L"
+  },
+  {
+    "topic": "units-and-dimensions",
+    "location": "step-4",
+    "source": "x − x₀ = v₀t + ½at²",
+    "tex": "x-x_0=v_0t+\\frac12at^2"
+  },
+  {
+    "topic": "density",
+    "location": "main",
+    "source": "ρ = m/V;  dm = ρ dV",
+    "tex": "\\rho=\\frac mV;\\dd m=\\rho\\,\\dd V"
+  },
+  {
+    "topic": "density",
+    "location": "step-1",
+    "source": "ρavg = m/V",
+    "tex": "\\rho_{\\mathrm{avg}}=\\frac mV"
+  },
+  {
+    "topic": "density",
+    "location": "step-2",
+    "source": "ρ = lim(ΔV → 0) Δm/ΔV;  dm = ρ dV",
+    "tex": "\\rho=\\lim_{\\Delta V\\to0}\\frac{\\Delta m}{\\Delta V};\\dd m=\\rho\\,\\dd V"
+  },
+  {
+    "topic": "density",
+    "location": "step-3",
+    "source": "m = ∫volume ρ dV = ρV  (uniform density)",
+    "tex": "m=\\int_{\\mathrm{volume}}\\rho\\,\\dd V=\\rho V\\quad\\text{(uniform density)}"
+  },
+  {
+    "topic": "density",
+    "location": "step-4",
+    "source": "ρ(2V) = (2m)/(2V) = ρ",
+    "tex": "\\rho(2V)=\\frac{2m}{2V}=\\rho"
+  },
+  {
+    "topic": "constant-acceleration",
+    "location": "main",
+    "source": "v = v₀ + at;  x = x₀ + v₀t + ½at²;  v² = v₀² + 2a(x − x₀)",
+    "tex": "v=v_0+at;x=x_0+v_0t+\\frac12at^2;v^2=v_0^2+2a(x-x_0)"
+  },
+  {
+    "topic": "constant-acceleration",
+    "location": "step-1",
+    "source": "v − v₀ = ∫₀ᵗ a dt′ = at",
+    "tex": "v-v_0=\\int_0^t a\\,\\dd t'=at"
+  },
+  {
+    "topic": "constant-acceleration",
+    "location": "step-2",
+    "source": "x − x₀ = ∫₀ᵗ (v₀ + at′) dt′ = v₀t + ½at²",
+    "tex": "x-x_0=\\int_0^t(v_0+at')\\,\\dd t'=v_0t+\\frac12at^2"
+  },
+  {
+    "topic": "constant-acceleration",
+    "location": "step-3",
+    "source": "2a(x − x₀) = (v + v₀)(v − v₀) = v² − v₀²",
+    "tex": "2a(x-x_0)=(v+v_0)(v-v_0)=v^2-v_0^2"
+  },
+  {
+    "topic": "constant-acceleration",
+    "location": "step-4",
+    "source": "a = 0 ⇒ v = v₀,  x − x₀ = v₀t",
+    "tex": "a=0\\ \\Rightarrow\\ v=v_0,\\quad x-x_0=v_0t"
+  },
+  {
+    "topic": "rates-of-change",
+    "location": "main",
+    "source": "vₓ = dx/dt;  aₓ = dvₓ/dt = d²x/dt²",
+    "tex": "v_x=\\frac{\\dd x}{\\dd t};a_x=\\frac{\\dd v_x}{\\dd t}=\\frac{\\dd^2x}{\\dd t^2}"
+  },
+  {
+    "topic": "rates-of-change",
+    "location": "step-1",
+    "source": "vavg,x = [x(t + Δt) − x(t)]/Δt",
+    "tex": "v_{\\mathrm{avg},x}=\\frac{x(t+\\Delta t)-x(t)}{\\Delta t}"
+  },
+  {
+    "topic": "rates-of-change",
+    "location": "step-2",
+    "source": "vₓ(t) = lim(Δt → 0) [x(t + Δt) − x(t)]/Δt",
+    "tex": "v_x(t)=\\lim_{\\Delta t\\to0}\\frac{x(t+\\Delta t)-x(t)}{\\Delta t}"
+  },
+  {
+    "topic": "rates-of-change",
+    "location": "step-3",
+    "source": "aₓ = lim(Δt → 0) [vₓ(t + Δt) − vₓ(t)]/Δt",
+    "tex": "a_x=\\lim_{\\Delta t\\to0}\\frac{v_x(t+\\Delta t)-v_x(t)}{\\Delta t}"
+  },
+  {
+    "topic": "rates-of-change",
+    "location": "step-4",
+    "source": "vₓ(t) = vₓ(0) + ∫₀ᵗ aₓ(t′) dt′",
+    "tex": "v_x(t)=v_x(0)+\\int_0^t a_x(t')\\,\\dd t'"
+  },
+  {
+    "topic": "vector-components",
+    "location": "main",
+    "source": "aₓ = a cos θ;  aᵧ = a sin θ;  a = √(aₓ² + aᵧ²)",
+    "tex": "a_x=a\\cos\\theta;a_y=a\\sin\\theta;a=\\sqrt{a_x^2+a_y^2}"
+  },
+  {
+    "topic": "vector-components",
+    "location": "step-1",
+    "source": "cos θ = aₓ/a;  sin θ = aᵧ/a",
+    "tex": "\\cos\\theta=\\frac{a_x}a;\\sin\\theta=\\frac{a_y}a"
+  },
+  {
+    "topic": "vector-components",
+    "location": "step-2",
+    "source": "𝐚 = aₓ î + aᵧ ĵ",
+    "tex": "\\vb a=a_x\\hat{\\imath}+a_y\\hat{\\jmath}"
+  },
+  {
+    "topic": "vector-components",
+    "location": "step-3",
+    "source": "𝐚 · 𝐚 = aₓ² + aᵧ² = a²",
+    "tex": "\\vb a\\cdot\\vb a=a_x^2+a_y^2=a^2"
+  },
+  {
+    "topic": "vector-components",
+    "location": "step-4",
+    "source": "(𝐚 + 𝐛)ₓ = aₓ + bₓ;  (𝐚 + 𝐛)ᵧ = aᵧ + bᵧ",
+    "tex": "(\\vb a+\\vb b)_x=a_x+b_x;(\\vb a+\\vb b)_y=a_y+b_y"
+  },
+  {
+    "topic": "vector-products",
+    "location": "main",
+    "source": "𝐚 · 𝐛 = ab cos θ;  |𝐚 × 𝐛| = ab sin θ",
+    "tex": "\\vb a\\cdot\\vb b=ab\\cos\\theta;|\\vb a\\times\\vb b|=ab\\sin\\theta"
+  },
+  {
+    "topic": "vector-products",
+    "location": "step-1",
+    "source": "𝐚 · 𝐛 = (a cos θ)b = aₓbₓ + aᵧbᵧ + a_zb_z",
+    "tex": "\\vb a\\cdot\\vb b=(a\\cos\\theta)b=a_xb_x+a_yb_y+a_zb_z"
+  },
+  {
+    "topic": "vector-products",
+    "location": "step-2",
+    "source": "θ = 90° ⇒ 𝐚 · 𝐛 = 0",
+    "tex": "\\theta=90^\\circ\\ \\Rightarrow\\ \\vb a\\cdot\\vb b=0"
+  },
+  {
+    "topic": "vector-products",
+    "location": "step-3",
+    "source": "|𝐚 × 𝐛| = a(b sin θ)",
+    "tex": "|\\vb a\\times\\vb b|=a(b\\sin\\theta)"
+  },
+  {
+    "topic": "vector-products",
+    "location": "step-4",
+    "source": "𝐫 × 𝐅 = 𝛕;  τ = rF sin θ",
+    "tex": "\\vb r\\times\\vb F=\\vb\\tau;\\tau=rF\\sin\\theta"
+  },
+  {
+    "topic": "projectile-motion",
+    "location": "main",
+    "source": "y = y₀ + (x − x₀)tan θ − g(x − x₀)²/(2v₀² cos² θ)",
+    "tex": "y=y_0+(x-x_0)\\tan\\theta-\\frac{g(x-x_0)^2}{2v_0^2\\cos^2\\theta}"
+  },
+  {
+    "topic": "projectile-motion",
+    "location": "step-1",
+    "source": "v₀ₓ = v₀ cos θ;  v₀ᵧ = v₀ sin θ",
+    "tex": "v_{0x}=v_0\\cos\\theta;v_{0y}=v_0\\sin\\theta"
+  },
+  {
+    "topic": "projectile-motion",
+    "location": "step-2",
+    "source": "x − x₀ = v₀ cos θ t;  y − y₀ = v₀ sin θ t − ½gt²",
+    "tex": "x-x_0=v_0\\cos\\theta\\,t;y-y_0=v_0\\sin\\theta\\,t-\\frac12gt^2"
+  },
+  {
+    "topic": "projectile-motion",
+    "location": "step-3",
+    "source": "t = (x − x₀)/(v₀ cos θ)",
+    "tex": "t=\\frac{x-x_0}{v_0\\cos\\theta}"
+  },
+  {
+    "topic": "projectile-motion",
+    "location": "step-4",
+    "source": "tflight = 2v₀ sin θ/g;  R = v₀² sin(2θ)/g",
+    "tex": "t_{\\mathrm{flight}}=\\frac{2v_0\\sin\\theta}g;R=\\frac{v_0^2\\sin(2\\theta)}g"
+  },
+  {
+    "topic": "centripetal-acceleration",
+    "location": "main",
+    "source": "aᵣ = v²/r = ω²r",
+    "tex": "a_r=\\frac{v^2}r=\\omega^2r"
+  },
+  {
+    "topic": "centripetal-acceleration",
+    "location": "step-1",
+    "source": "|Δ𝐯| = 2v sin(Δθ/2)",
+    "tex": "|\\Delta\\vb v|=2v\\sin\\!\\left(\\frac{\\Delta\\theta}2\\right)"
+  },
+  {
+    "topic": "centripetal-acceleration",
+    "location": "step-2",
+    "source": "a = lim |Δ𝐯|/Δt = v(dθ/dt) = vω",
+    "tex": "a=\\lim_{\\Delta t\\to0}\\frac{|\\Delta\\vb v|}{\\Delta t}=v\\frac{\\dd\\theta}{\\dd t}=v\\omega"
+  },
+  {
+    "topic": "centripetal-acceleration",
+    "location": "step-3",
+    "source": "a = v(v/r) = v²/r",
+    "tex": "a=v\\frac vr=\\frac{v^2}r"
+  },
+  {
+    "topic": "centripetal-acceleration",
+    "location": "step-4",
+    "source": "Fnet,inward = mv²/r",
+    "tex": "F_{\\mathrm{net,inward}}=\\frac{mv^2}r"
+  },
+  {
+    "topic": "newtons-second-law",
+    "location": "main",
+    "source": "Σ𝐅ext = d𝐩/dt = m𝐚  (constant mass)",
+    "tex": "\\sum\\vb F_{\\mathrm{ext}}=\\frac{\\dd\\vb p}{\\dd t}=m\\vb a\\quad\\text{(constant mass)}"
+  },
+  {
+    "topic": "newtons-second-law",
+    "location": "step-2",
+    "source": "Σ𝐅ext = d(m𝐯)/dt = m d𝐯/dt",
+    "tex": "\\sum\\vb F_{\\mathrm{ext}}=\\frac{\\dd(m\\vb v)}{\\dd t}=m\\frac{\\dd\\vb v}{\\dd t}"
+  },
+  {
+    "topic": "newtons-second-law",
+    "location": "step-3",
+    "source": "ΣFₓ = maₓ;  ΣFᵧ = maᵧ",
+    "tex": "\\sum F_x=ma_x;\\sum F_y=ma_y"
+  },
+  {
+    "topic": "newtons-second-law",
+    "location": "step-4",
+    "source": "N − mg = 0 ⇒ N = mg  (this setup only)",
+    "tex": "N-mg=0\\ \\Rightarrow\\ N=mg\\quad\\text{(this setup only)}"
+  },
+  {
+    "topic": "inclined-plane",
+    "location": "main",
+    "source": "a = g sin θ  (frictionless incline)",
+    "tex": "a=g\\sin\\theta\\quad\\text{(frictionless incline)}"
+  },
+  {
+    "topic": "inclined-plane",
+    "location": "step-2",
+    "source": "W∥ = mg sin θ;  W⊥ = mg cos θ",
+    "tex": "W_{\\parallel}=mg\\sin\\theta;W_{\\perp}=mg\\cos\\theta"
+  },
+  {
+    "topic": "inclined-plane",
+    "location": "step-3",
+    "source": "N − mg cos θ = 0 ⇒ N = mg cos θ",
+    "tex": "N-mg\\cos\\theta=0\\ \\Rightarrow\\ N=mg\\cos\\theta"
+  },
+  {
+    "topic": "inclined-plane",
+    "location": "step-4",
+    "source": "ma = mg sin θ ⇒ a = g sin θ",
+    "tex": "ma=mg\\sin\\theta\\ \\Rightarrow\\ a=g\\sin\\theta"
+  },
+  {
+    "topic": "friction",
+    "location": "main",
+    "source": "fₛ ≤ μₛN;  fₖ = μₖN;  tan θcritical = μₛ",
+    "tex": "f_s\\le\\mu_sN;f_k=\\mu_kN;\\tan\\theta_{\\mathrm{critical}}=\\mu_s"
+  },
+  {
+    "topic": "friction",
+    "location": "step-1",
+    "source": "fₛ,required = mg sin θ;  N = mg cos θ",
+    "tex": "f_{s,\\mathrm{required}}=mg\\sin\\theta;N=mg\\cos\\theta"
+  },
+  {
+    "topic": "friction",
+    "location": "step-2",
+    "source": "mg sin θ ≤ μₛmg cos θ",
+    "tex": "mg\\sin\\theta\\le\\mu_smg\\cos\\theta"
+  },
+  {
+    "topic": "friction",
+    "location": "step-3",
+    "source": "tan θ ≤ μₛ;  θcritical = arctan μₛ",
+    "tex": "\\tan\\theta\\le\\mu_s;\\theta_{\\mathrm{critical}}=\\arctan\\mu_s"
+  },
+  {
+    "topic": "friction",
+    "location": "step-4",
+    "source": "ma = mg sin θ − μₖmg cos θ ⇒ a = g(sin θ − μₖ cos θ)",
+    "tex": "ma=mg\\sin\\theta-\\mu_kmg\\cos\\theta\\ \\Rightarrow\\ a=g(\\sin\\theta-\\mu_k\\cos\\theta)"
+  },
+  {
+    "topic": "terminal-speed",
+    "location": "main",
+    "source": "vterminal = √(2mg/(Cρair A))",
+    "tex": "v_{\\mathrm{terminal}}=\\sqrt{\\frac{2mg}{C\\rho_{\\mathrm{air}}A}}"
+  },
+  {
+    "topic": "terminal-speed",
+    "location": "step-1",
+    "source": "D = ½Cρair Av²",
+    "tex": "D=\\frac12C\\rho_{\\mathrm{air}}Av^2"
+  },
+  {
+    "topic": "terminal-speed",
+    "location": "step-2",
+    "source": "m dv/dt = mg − ½Cρair Av²",
+    "tex": "m\\frac{\\dd v}{\\dd t}=mg-\\frac12C\\rho_{\\mathrm{air}}Av^2"
+  },
+  {
+    "topic": "terminal-speed",
+    "location": "step-3",
+    "source": "mg = ½Cρair Avterminal²",
+    "tex": "mg=\\frac12C\\rho_{\\mathrm{air}}Av_{\\mathrm{terminal}}^2"
+  },
+  {
+    "topic": "work-energy",
+    "location": "main",
+    "source": "Wnet = ΔK;  K = ½mv²",
+    "tex": "W_{\\mathrm{net}}=\\Delta K;K=\\frac12mv^2"
+  },
+  {
+    "topic": "work-energy",
+    "location": "step-1",
+    "source": "dW = 𝐅 · d𝐫;  Wnet = ∫ Σ𝐅 · d𝐫",
+    "tex": "\\dd W=\\vb F\\cdot\\dd\\vb r;W_{\\mathrm{net}}=\\int\\sum\\vb F\\cdot\\dd\\vb r"
+  },
+  {
+    "topic": "work-energy",
+    "location": "step-2",
+    "source": "dWnet = m(d𝐯/dt) · 𝐯 dt = m𝐯 · d𝐯",
+    "tex": "\\dd W_{\\mathrm{net}}=m\\frac{\\dd\\vb v}{\\dd t}\\cdot\\vb v\\,\\dd t=m\\vb v\\cdot\\dd\\vb v"
+  },
+  {
+    "topic": "work-energy",
+    "location": "step-3",
+    "source": "Wnet = ½m(vf² − vi²)",
+    "tex": "W_{\\mathrm{net}}=\\frac12m(v_f^2-v_i^2)"
+  },
+  {
+    "topic": "work-energy",
+    "location": "step-4",
+    "source": "ΔK = Wnet",
+    "tex": "\\Delta K=W_{\\mathrm{net}}"
+  },
+  {
+    "topic": "spring-work",
+    "location": "main",
+    "source": "Ws = ½kxi² − ½kxf²;  Us = ½kx²",
+    "tex": "W_s=\\frac12kx_i^2-\\frac12kx_f^2;U_s=\\frac12kx^2"
+  },
+  {
+    "topic": "spring-work",
+    "location": "step-1",
+    "source": "Fₛ = −kx",
+    "tex": "F_s=-kx"
+  },
+  {
+    "topic": "spring-work",
+    "location": "step-2",
+    "source": "Ws = ∫ₓᵢˣᶠ (−kx) dx",
+    "tex": "W_s=\\int_{x_i}^{x_f}(-kx)\\,\\dd x"
+  },
+  {
+    "topic": "spring-work",
+    "location": "step-3",
+    "source": "Ws = −½k(xf² − xi²)",
+    "tex": "W_s=-\\frac12k(x_f^2-x_i^2)"
+  },
+  {
+    "topic": "spring-work",
+    "location": "step-4",
+    "source": "ΔUs = −Ws;  Us(x) = ½kx²",
+    "tex": "\\Delta U_s=-W_s;U_s(x)=\\frac12kx^2"
+  },
+  {
+    "topic": "potential-energy",
+    "location": "main",
+    "source": "ΔU = −∫ 𝐅conservative · d𝐫;  Fₓ = −dU/dx",
+    "tex": "\\Delta U=-\\int\\vb F_{\\mathrm{conservative}}\\cdot\\dd\\vb r;F_x=-\\frac{\\dd U}{\\dd x}"
+  },
+  {
+    "topic": "potential-energy",
+    "location": "step-2",
+    "source": "Uf − Ui = −Wconservative",
+    "tex": "U_f-U_i=-W_{\\mathrm{conservative}}"
+  },
+  {
+    "topic": "potential-energy",
+    "location": "step-3",
+    "source": "Fₓ = −dU/dx",
+    "tex": "F_x=-\\frac{\\dd U}{\\dd x}"
+  },
+  {
+    "topic": "potential-energy",
+    "location": "step-4",
+    "source": "dU/dx = 0 at equilibrium;  d²U/dx² > 0 implies a local stable minimum",
+    "tex": "\\frac{\\dd U}{\\dd x}=0\\quad\\text{at equilibrium};\\frac{\\dd^2U}{\\dd x^2}>0\\quad\\text{at a local stable minimum}"
+  },
+  {
+    "topic": "mechanical-energy",
+    "location": "main",
+    "source": "Δ(K + U) = Wnonconservative",
+    "tex": "\\Delta(K+U)=W_{\\mathrm{nonconservative}}"
+  },
+  {
+    "topic": "mechanical-energy",
+    "location": "step-1",
+    "source": "ΔK = Wconservative + Wnonconservative",
+    "tex": "\\Delta K=W_{\\mathrm{conservative}}+W_{\\mathrm{nonconservative}}"
+  },
+  {
+    "topic": "mechanical-energy",
+    "location": "step-2",
+    "source": "ΔK = −ΔU + Wnonconservative",
+    "tex": "\\Delta K=-\\Delta U+W_{\\mathrm{nonconservative}}"
+  },
+  {
+    "topic": "mechanical-energy",
+    "location": "step-3",
+    "source": "Wnonconservative = 0 ⇒ Ki + Ui = Kf + Uf",
+    "tex": "W_{\\mathrm{nonconservative}}=0\\ \\Rightarrow\\ K_i+U_i=K_f+U_f"
+  },
+  {
+    "topic": "mechanical-energy",
+    "location": "step-4",
+    "source": "Wfriction = −fₖd  (constant opposing sliding friction)",
+    "tex": "W_{\\mathrm{friction}}=-f_kd\\quad\\text{(constant opposing sliding friction)}"
+  },
+  {
+    "topic": "momentum-and-impulse",
+    "location": "main",
+    "source": "𝐉 = ∫ Σ𝐅ext dt = Δ𝐩;  Σ𝐅ext = 0 ⇒ 𝐏constant",
+    "tex": "\\vb J=\\int\\sum\\vb F_{\\mathrm{ext}}\\,\\dd t=\\Delta\\vb p;\\sum\\vb F_{\\mathrm{ext}}=0\\ \\Rightarrow\\ \\vb P=\\mathrm{constant}"
+  },
+  {
+    "topic": "momentum-and-impulse",
+    "location": "step-1",
+    "source": "∫[ti,tf] 𝐅 dt = 𝐩f − 𝐩i",
+    "tex": "\\int_{t_i}^{t_f}\\vb F\\,\\dd t=\\vb p_f-\\vb p_i"
+  },
+  {
+    "topic": "momentum-and-impulse",
+    "location": "step-2",
+    "source": "d𝐏/dt = Σ𝐅ext",
+    "tex": "\\frac{\\dd\\vb P}{\\dd t}=\\sum\\vb F_{\\mathrm{ext}}"
+  },
+  {
+    "topic": "momentum-and-impulse",
+    "location": "step-3",
+    "source": "Σmi𝐯i,before = Σmi𝐯i,after",
+    "tex": "\\sum_i m_i\\vb v_{i,\\mathrm{before}}=\\sum_i m_i\\vb v_{i,\\mathrm{after}}"
+  },
+  {
+    "topic": "momentum-and-impulse",
+    "location": "step-4",
+    "source": "m₁u₁ + m₂u₂ = (m₁ + m₂)v  (sticking, one dimension)",
+    "tex": "m_1u_1+m_2u_2=(m_1+m_2)v\\quad\\text{(sticking, one dimension)}"
+  },
+  {
+    "topic": "center-of-mass",
+    "location": "main",
+    "source": "𝐑cm = (Σmi𝐫i)/M;  M𝐀cm = Σ𝐅ext",
+    "tex": "\\vb R_{\\mathrm{cm}}=\\frac{\\sum_i m_i\\vb r_i}{M};M\\vb A_{\\mathrm{cm}}=\\sum\\vb F_{\\mathrm{ext}}"
+  },
+  {
+    "topic": "center-of-mass",
+    "location": "step-1",
+    "source": "M𝐑cm = Σmi𝐫i",
+    "tex": "M\\vb R_{\\mathrm{cm}}=\\sum_i m_i\\vb r_i"
+  },
+  {
+    "topic": "center-of-mass",
+    "location": "step-2",
+    "source": "M𝐕cm = Σmi𝐯i = 𝐏",
+    "tex": "M\\vb V_{\\mathrm{cm}}=\\sum_i m_i\\vb v_i=\\vb P"
+  },
+  {
+    "topic": "center-of-mass",
+    "location": "step-3",
+    "source": "M𝐀cm = d𝐏/dt = Σ𝐅ext",
+    "tex": "M\\vb A_{\\mathrm{cm}}=\\frac{\\dd\\vb P}{\\dd t}=\\sum\\vb F_{\\mathrm{ext}}"
+  },
+  {
+    "topic": "center-of-mass",
+    "location": "step-4",
+    "source": "𝐑cm = (1/M) ∫ 𝐫 dm",
+    "tex": "\\vb R_{\\mathrm{cm}}=\\frac1M\\int\\vb r\\,\\dd m"
+  },
+  {
+    "topic": "rotational-energy",
+    "location": "main",
+    "source": "Krot = ½Iω²;  I = ∫ r⊥² dm",
+    "tex": "K_{\\mathrm{rot}}=\\frac12I\\omega^2;I=\\int r_{\\perp}^2\\,\\dd m"
+  },
+  {
+    "topic": "rotational-energy",
+    "location": "step-1",
+    "source": "vi = ωr⊥,i",
+    "tex": "v_i=\\omega r_{\\perp,i}"
+  },
+  {
+    "topic": "rotational-energy",
+    "location": "step-2",
+    "source": "K = Σ½mi(ωr⊥,i)² = ½ω²Σmi r⊥,i²",
+    "tex": "K=\\sum_i\\frac12m_i(\\omega r_{\\perp,i})^2=\\frac12\\omega^2\\sum_i m_i r_{\\perp,i}^2"
+  },
+  {
+    "topic": "rotational-energy",
+    "location": "step-3",
+    "source": "I = Σmi r⊥,i² = ∫ r⊥² dm",
+    "tex": "I=\\sum_i m_i r_{\\perp,i}^2=\\int r_{\\perp}^2\\,\\dd m"
+  },
+  {
+    "topic": "rotational-energy",
+    "location": "step-4",
+    "source": "I = 2πσ ∫₀ᴿ r³ dr = ½MR²",
+    "tex": "I=2\\pi\\sigma\\int_0^R r^3\\,\\dd r=\\frac12MR^2"
+  },
+  {
+    "topic": "parallel-axis",
+    "location": "main",
+    "source": "I = Icm + Md²",
+    "tex": "I=I_{\\mathrm{cm}}+Md^2"
+  },
+  {
+    "topic": "parallel-axis",
+    "location": "step-1",
+    "source": "rnew² = (x − d)² + y²",
+    "tex": "r_{\\mathrm{new}}^2=(x-d)^2+y^2"
+  },
+  {
+    "topic": "parallel-axis",
+    "location": "step-2",
+    "source": "I = ∫ (x² + y² − 2dx + d²) dm",
+    "tex": "I=\\int(x^2+y^2-2dx+d^2)\\,\\dd m"
+  },
+  {
+    "topic": "parallel-axis",
+    "location": "step-3",
+    "source": "∫ x dm = Mxcm = 0",
+    "tex": "\\int x\\,\\dd m=Mx_{\\mathrm{cm}}=0"
+  },
+  {
+    "topic": "parallel-axis",
+    "location": "step-4",
+    "source": "I = Icm + d²∫dm = Icm + Md²",
+    "tex": "I=I_{\\mathrm{cm}}+d^2\\int\\dd m=I_{\\mathrm{cm}}+Md^2"
+  },
+  {
+    "topic": "angular-momentum",
+    "location": "main",
+    "source": "𝐋 = 𝐫 × 𝐩;  𝛕ext = d𝐋/dt",
+    "tex": "\\vb L=\\vb r\\times\\vb p;\\vb\\tau_{\\mathrm{ext}}=\\frac{\\dd\\vb L}{\\dd t}"
+  },
+  {
+    "topic": "angular-momentum",
+    "location": "step-1",
+    "source": "𝐋 = 𝐫 × m𝐯",
+    "tex": "\\vb L=\\vb r\\times m\\vb v"
+  },
+  {
+    "topic": "angular-momentum",
+    "location": "step-2",
+    "source": "d𝐋/dt = 𝐯 × m𝐯 + 𝐫 × d𝐩/dt = 𝐫 × 𝐅",
+    "tex": "\\frac{\\dd\\vb L}{\\dd t}=\\vb v\\times m\\vb v+\\vb r\\times\\frac{\\dd\\vb p}{\\dd t}=\\vb r\\times\\vb F"
+  },
+  {
+    "topic": "angular-momentum",
+    "location": "step-3",
+    "source": "d𝐋/dt = 𝛕",
+    "tex": "\\frac{\\dd\\vb L}{\\dd t}=\\vb\\tau"
+  },
+  {
+    "topic": "angular-momentum",
+    "location": "step-4",
+    "source": "τaxis = Iα;  Iᵢωᵢ = Ifωf  (zero external torque about that axis)",
+    "tex": "\\tau_{\\mathrm{axis}}=I\\alpha;I_i\\omega_i=I_f\\omega_f\\quad\\text{(zero external torque about that axis)}"
+  },
+  {
+    "topic": "rolling",
+    "location": "main",
+    "source": "v² = 2gh/(1 + Icm/(mR²))",
+    "tex": "v^2=\\frac{2gh}{1+I_{\\mathrm{cm}}/(mR^2)}"
+  },
+  {
+    "topic": "rolling",
+    "location": "step-1",
+    "source": "v = ωR",
+    "tex": "v=\\omega R"
+  },
+  {
+    "topic": "rolling",
+    "location": "step-2",
+    "source": "K = ½mv² + ½Icmω²",
+    "tex": "K=\\frac12mv^2+\\frac12I_{\\mathrm{cm}}\\omega^2"
+  },
+  {
+    "topic": "rolling",
+    "location": "step-3",
+    "source": "mgh = ½mv² + ½Icm(v/R)²",
+    "tex": "mgh=\\frac12mv^2+\\frac12I_{\\mathrm{cm}}\\left(\\frac vR\\right)^2"
+  },
+  {
+    "topic": "rolling",
+    "location": "step-4",
+    "source": "v² = 2gh/[1 + Icm/(mR²)]",
+    "tex": "v^2=\\frac{2gh}{1+I_{\\mathrm{cm}}/(mR^2)}"
+  },
+  {
+    "topic": "static-equilibrium",
+    "location": "main",
+    "source": "Σ𝐅ext = 0;  Σ𝛕ext = 0",
+    "tex": "\\sum\\vb F_{\\mathrm{ext}}=0;\\sum\\vb\\tau_{\\mathrm{ext}}=0"
+  },
+  {
+    "topic": "static-equilibrium",
+    "location": "step-1",
+    "source": "M𝐀cm = Σ𝐅ext = 0",
+    "tex": "M\\vb A_{\\mathrm{cm}}=\\sum\\vb F_{\\mathrm{ext}}=0"
+  },
+  {
+    "topic": "static-equilibrium",
+    "location": "step-2",
+    "source": "d𝐋/dt = Σ𝛕ext = 0",
+    "tex": "\\frac{\\dd\\vb L}{\\dd t}=\\sum\\vb\\tau_{\\mathrm{ext}}=0"
+  },
+  {
+    "topic": "static-equilibrium",
+    "location": "step-3",
+    "source": "τ = ±Fr⊥",
+    "tex": "\\tau=\\pm Fr_{\\perp}"
+  },
+  {
+    "topic": "static-equilibrium",
+    "location": "step-4",
+    "source": "Σ𝛕new = Σ𝛕old − 𝐚 × Σ𝐅ext",
+    "tex": "\\sum\\vb\\tau_{\\mathrm{new}}=\\sum\\vb\\tau_{\\mathrm{old}}-\\vb a\\times\\sum\\vb F_{\\mathrm{ext}}"
+  },
+  {
+    "topic": "elasticity",
+    "location": "main",
+    "source": "ΔL = FL/(AY)",
+    "tex": "\\Delta L=\\frac{FL}{AY}"
+  },
+  {
+    "topic": "elasticity",
+    "location": "step-1",
+    "source": "stress = F/A",
+    "tex": "\\text{stress}=\\frac FA"
+  },
+  {
+    "topic": "elasticity",
+    "location": "step-2",
+    "source": "strain = ΔL/L",
+    "tex": "\\text{strain}=\\frac{\\Delta L}L"
+  },
+  {
+    "topic": "elasticity",
+    "location": "step-3",
+    "source": "F/A = Y(ΔL/L)",
+    "tex": "\\frac FA=Y\\frac{\\Delta L}L"
+  },
+  {
+    "topic": "elasticity",
+    "location": "step-4",
+    "source": "F = (YA/L)ΔL;  keffective = YA/L",
+    "tex": "F=\\frac{YA}L\\Delta L;k_{\\mathrm{effective}}=\\frac{YA}L"
+  },
+  {
+    "topic": "orbital-speed",
+    "location": "main",
+    "source": "v = √(GM/r);  T² = 4π²r³/(GM)",
+    "tex": "v=\\sqrt{\\frac{GM}r};T^2=\\frac{4\\pi^2r^3}{GM}"
+  },
+  {
+    "topic": "orbital-speed",
+    "location": "step-1",
+    "source": "Fg = GMm/r²",
+    "tex": "F_g=\\frac{GMm}{r^2}"
+  },
+  {
+    "topic": "orbital-speed",
+    "location": "step-2",
+    "source": "GMm/r² = mv²/r",
+    "tex": "\\frac{GMm}{r^2}=\\frac{mv^2}r"
+  },
+  {
+    "topic": "orbital-speed",
+    "location": "step-3",
+    "source": "v² = GM/r;  T = 2πr/v",
+    "tex": "v^2=\\frac{GM}r;T=\\frac{2\\pi r}v"
+  },
+  {
+    "topic": "orbital-speed",
+    "location": "step-4",
+    "source": "T² = 4π²r²/(GM/r) = 4π²r³/(GM)",
+    "tex": "T^2=\\frac{4\\pi^2r^2}{GM/r}=\\frac{4\\pi^2r^3}{GM}"
+  },
+  {
+    "topic": "escape-speed",
+    "location": "main",
+    "source": "U(r) = −GMm/r;  vescape = √(2GM/r)",
+    "tex": "U(r)=-\\frac{GMm}r;v_{\\mathrm{escape}}=\\sqrt{\\frac{2GM}r}"
+  },
+  {
+    "topic": "escape-speed",
+    "location": "step-1",
+    "source": "U(r) − U(∞) = −∫∞ʳ Fr dr′",
+    "tex": "U(r)-U(\\infty)=-\\int_{\\infty}^{r}F_r\\,\\dd r'"
+  },
+  {
+    "topic": "escape-speed",
+    "location": "step-2",
+    "source": "U(r) = −GMm/r",
+    "tex": "U(r)=-\\frac{GMm}r"
+  },
+  {
+    "topic": "escape-speed",
+    "location": "step-3",
+    "source": "½mvescape² − GMm/r = 0",
+    "tex": "\\frac12mv_{\\mathrm{escape}}^2-\\frac{GMm}r=0"
+  },
+  {
+    "topic": "escape-speed",
+    "location": "step-4",
+    "source": "vescape² = 2GM/r = 2vcircular²",
+    "tex": "v_{\\mathrm{escape}}^2=\\frac{2GM}r=2v_{\\mathrm{circular}}^2"
+  },
+  {
+    "topic": "hydrostatic-pressure",
+    "location": "main",
+    "source": "p = p₀ + ρgh;  Fb = ρfluid gVdisplaced",
+    "tex": "p=p_0+\\rho gh;F_b=\\rho_{\\mathrm{fluid}}gV_{\\mathrm{displaced}}"
+  },
+  {
+    "topic": "hydrostatic-pressure",
+    "location": "step-1",
+    "source": "p(z)A − p(z + dz)A − ρgA dz = 0",
+    "tex": "p(z)A-p(z+\\dd z)A-\\rho gA\\,\\dd z=0"
+  },
+  {
+    "topic": "hydrostatic-pressure",
+    "location": "step-2",
+    "source": "dp/dz = −ρg",
+    "tex": "\\frac{\\dd p}{\\dd z}=-\\rho g"
+  },
+  {
+    "topic": "hydrostatic-pressure",
+    "location": "step-3",
+    "source": "pbelow − p₀ = ρgh",
+    "tex": "p_{\\mathrm{below}}-p_0=\\rho gh"
+  },
+  {
+    "topic": "hydrostatic-pressure",
+    "location": "step-4",
+    "source": "Fb = mdisplacedg = ρfluidVdisplacedg",
+    "tex": "F_b=m_{\\mathrm{displaced}}g=\\rho_{\\mathrm{fluid}}V_{\\mathrm{displaced}}g"
+  },
+  {
+    "topic": "bernoulli",
+    "location": "main",
+    "source": "Av = constant;  p + ½ρv² + ρgy = constant",
+    "tex": "Av=\\mathrm{constant};p+\\frac12\\rho v^2+\\rho gy=\\mathrm{constant}"
+  },
+  {
+    "topic": "bernoulli",
+    "location": "step-1",
+    "source": "ρ₁A₁v₁ = ρ₂A₂v₂;  A₁v₁ = A₂v₂  (constant ρ)",
+    "tex": "\\rho_1A_1v_1=\\rho_2A_2v_2;A_1v_1=A_2v_2\\quad\\text{(constant density)}"
+  },
+  {
+    "topic": "bernoulli",
+    "location": "step-3",
+    "source": "(p₁ − p₂)dV = ½ρdV(v₂² − v₁²) + ρdVg(y₂ − y₁)",
+    "tex": "(p_1-p_2)\\dd V=\\frac12\\rho\\,\\dd V(v_2^2-v_1^2)+\\rho g\\,\\dd V(y_2-y_1)"
+  },
+  {
+    "topic": "bernoulli",
+    "location": "step-4",
+    "source": "p₁ + ½ρv₁² + ρgy₁ = p₂ + ½ρv₂² + ρgy₂",
+    "tex": "p_1+\\frac12\\rho v_1^2+\\rho gy_1=p_2+\\frac12\\rho v_2^2+\\rho gy_2"
+  },
+  {
+    "topic": "simple-harmonic-motion",
+    "location": "main",
+    "source": "x = A cos(ωt + φ);  ω = √(k/m);  T = 2π√(m/k)",
+    "tex": "x=A\\cos(\\omega t+\\phi);\\omega=\\sqrt{\\frac km};T=2\\pi\\sqrt{\\frac mk}"
+  },
+  {
+    "topic": "simple-harmonic-motion",
+    "location": "step-1",
+    "source": "m d²x/dt² = −kx",
+    "tex": "m\\frac{\\dd^2x}{\\dd t^2}=-kx"
+  },
+  {
+    "topic": "simple-harmonic-motion",
+    "location": "step-2",
+    "source": "d²x/dt² = −ω²x",
+    "tex": "\\frac{\\dd^2x}{\\dd t^2}=-\\omega^2x"
+  },
+  {
+    "topic": "simple-harmonic-motion",
+    "location": "step-3",
+    "source": "v = −Aω sin(ωt + φ);  a = −Aω² cos(ωt + φ)",
+    "tex": "v=-A\\omega\\sin(\\omega t+\\phi);a=-A\\omega^2\\cos(\\omega t+\\phi)"
+  },
+  {
+    "topic": "simple-harmonic-motion",
+    "location": "step-4",
+    "source": "T = 2π/ω = 2π√(m/k)",
+    "tex": "T=\\frac{2\\pi}{\\omega}=2\\pi\\sqrt{\\frac mk}"
+  },
+  {
+    "topic": "pendulum",
+    "location": "main",
+    "source": "T ≈ 2π√(ℓ/g)",
+    "tex": "T\\approx2\\pi\\sqrt{\\frac\\ell g}"
+  },
+  {
+    "topic": "pendulum",
+    "location": "step-1",
+    "source": "τ = −mgℓ sin θ",
+    "tex": "\\tau=-mg\\ell\\sin\\theta"
+  },
+  {
+    "topic": "pendulum",
+    "location": "step-2",
+    "source": "mℓ² d²θ/dt² = −mgℓ sin θ",
+    "tex": "m\\ell^2\\frac{\\dd^2\\theta}{\\dd t^2}=-mg\\ell\\sin\\theta"
+  },
+  {
+    "topic": "pendulum",
+    "location": "step-3",
+    "source": "d²θ/dt² ≈ −(g/ℓ)θ",
+    "tex": "\\frac{\\dd^2\\theta}{\\dd t^2}\\approx-\\frac g\\ell\\theta"
+  },
+  {
+    "topic": "pendulum",
+    "location": "step-4",
+    "source": "ω ≈ √(g/ℓ);  T ≈ 2π√(ℓ/g)",
+    "tex": "\\omega\\approx\\sqrt{\\frac g\\ell};T\\approx2\\pi\\sqrt{\\frac\\ell g}"
+  },
+  {
+    "topic": "wave-speed",
+    "location": "main",
+    "source": "v = √(𝒯/μ);  ∂²y/∂t² = (𝒯/μ)∂²y/∂x²",
+    "tex": "v=\\sqrt{\\frac{\\mathcal T}\\mu};\\frac{\\partial^2y}{\\partial t^2}=\\frac{\\mathcal T}\\mu\\frac{\\partial^2y}{\\partial x^2}"
+  },
+  {
+    "topic": "wave-speed",
+    "location": "step-2",
+    "source": "Fᵧ ≈ 𝒯(∂²y/∂x²)dx",
+    "tex": "F_y\\approx\\mathcal T\\frac{\\partial^2y}{\\partial x^2}\\dd x"
+  },
+  {
+    "topic": "wave-speed",
+    "location": "step-3",
+    "source": "μdx(∂²y/∂t²) = 𝒯dx(∂²y/∂x²)",
+    "tex": "\\mu\\,\\dd x\\frac{\\partial^2y}{\\partial t^2}=\\mathcal T\\,\\dd x\\frac{\\partial^2y}{\\partial x^2}"
+  },
+  {
+    "topic": "wave-speed",
+    "location": "step-4",
+    "source": "v²f″ = (𝒯/μ)f″ ⇒ v = √(𝒯/μ)",
+    "tex": "v^2f''=\\frac{\\mathcal T}\\mu f''\\ \\Rightarrow\\ v=\\sqrt{\\frac{\\mathcal T}\\mu}"
+  },
+  {
+    "topic": "standing-waves",
+    "location": "main",
+    "source": "λn = 2L/n;  fn = nv/(2L),  n = 1, 2, 3, …",
+    "tex": "\\lambda_n=\\frac{2L}n;f_n=\\frac{nv}{2L},\\quad n=1,2,3,\\ldots"
+  },
+  {
+    "topic": "standing-waves",
+    "location": "step-1",
+    "source": "y(x,t) = 2A sin(kx) cos(ωt)",
+    "tex": "y(x,t)=2A\\sin(kx)\\cos(\\omega t)"
+  },
+  {
+    "topic": "standing-waves",
+    "location": "step-2",
+    "source": "sin(kL) = 0 ⇒ kL = nπ",
+    "tex": "\\sin(kL)=0\\ \\Rightarrow\\ kL=n\\pi"
+  },
+  {
+    "topic": "standing-waves",
+    "location": "step-3",
+    "source": "2πL/λn = nπ ⇒ λn = 2L/n",
+    "tex": "\\frac{2\\pi L}{\\lambda_n}=n\\pi\\ \\Rightarrow\\ \\lambda_n=\\frac{2L}n"
+  },
+  {
+    "topic": "standing-waves",
+    "location": "step-4",
+    "source": "fn = v/λn = nv/(2L)",
+    "tex": "f_n=\\frac v{\\lambda_n}=\\frac{nv}{2L}"
+  },
+  {
+    "topic": "sound-speed",
+    "location": "main",
+    "source": "v = √(B/ρ)",
+    "tex": "v=\\sqrt{\\frac B\\rho}"
+  },
+  {
+    "topic": "sound-speed",
+    "location": "step-1",
+    "source": "δp = −B ∂ξ/∂x",
+    "tex": "\\delta p=-B\\frac{\\partial\\xi}{\\partial x}"
+  },
+  {
+    "topic": "sound-speed",
+    "location": "step-3",
+    "source": "ρ ∂²ξ/∂t² = −∂δp/∂x = B ∂²ξ/∂x²",
+    "tex": "\\rho\\frac{\\partial^2\\xi}{\\partial t^2}=-\\frac{\\partial\\delta p}{\\partial x}=B\\frac{\\partial^2\\xi}{\\partial x^2}"
+  },
+  {
+    "topic": "sound-speed",
+    "location": "step-4",
+    "source": "v² = B/ρ;  videal gas = √(γp/ρ)",
+    "tex": "v^2=\\frac B\\rho;v_{\\mathrm{ideal\\ gas}}=\\sqrt{\\frac{\\gamma p}\\rho}"
+  },
+  {
+    "topic": "doppler",
+    "location": "main",
+    "source": "fobserved = fsource (v + uobserver)/(v − usource)",
+    "tex": "f_{\\mathrm{observed}}=f_{\\mathrm{source}}\\frac{v+u_{\\mathrm{observer}}}{v-u_{\\mathrm{source}}}"
+  },
+  {
+    "topic": "doppler",
+    "location": "step-1",
+    "source": "λahead = (v − usource)Ts",
+    "tex": "\\lambda_{\\mathrm{ahead}}=(v-u_{\\mathrm{source}})T_s"
+  },
+  {
+    "topic": "doppler",
+    "location": "step-2",
+    "source": "frest observer = vfs/(v − usource)",
+    "tex": "f_{\\mathrm{rest\\ observer}}=\\frac{vf_s}{v-u_{\\mathrm{source}}}"
+  },
+  {
+    "topic": "doppler",
+    "location": "step-3",
+    "source": "fobserved = (v + uobserver)/λahead",
+    "tex": "f_{\\mathrm{observed}}=\\frac{v+u_{\\mathrm{observer}}}{\\lambda_{\\mathrm{ahead}}}"
+  },
+  {
+    "topic": "doppler",
+    "location": "step-4",
+    "source": "fobserved = fs(v + uobserver)/(v − usource)",
+    "tex": "f_{\\mathrm{observed}}=f_s\\frac{v+u_{\\mathrm{observer}}}{v-u_{\\mathrm{source}}}"
+  },
+  {
+    "topic": "first-law",
+    "location": "main",
+    "source": "ΔEint = Q − Wby;  Wby = ∫ pext dV",
+    "tex": "\\Delta E_{\\mathrm{int}}=Q-W_{\\mathrm{by}};W_{\\mathrm{by}}=\\int p_{\\mathrm{ext}}\\,\\dd V"
+  },
+  {
+    "topic": "first-law",
+    "location": "step-1",
+    "source": "ΔEint = Q − Wby",
+    "tex": "\\Delta E_{\\mathrm{int}}=Q-W_{\\mathrm{by}}"
+  },
+  {
+    "topic": "first-law",
+    "location": "step-2",
+    "source": "δWby = (pextA)dx = pext dV",
+    "tex": "\\delta W_{\\mathrm{by}}=(p_{\\mathrm{ext}}A)\\dd x=p_{\\mathrm{ext}}\\,\\dd V"
+  },
+  {
+    "topic": "first-law",
+    "location": "step-3",
+    "source": "Wby = ∫ᵥᵢᵛᶠ pext dV",
+    "tex": "W_{\\mathrm{by}}=\\int_{V_i}^{V_f}p_{\\mathrm{ext}}\\,\\dd V"
+  },
+  {
+    "topic": "first-law",
+    "location": "step-4",
+    "source": "dEint = δQ − δWby",
+    "tex": "\\dd E_{\\mathrm{int}}=\\delta Q-\\delta W_{\\mathrm{by}}"
+  },
+  {
+    "topic": "first-law",
+    "location": "step-5",
+    "source": "constant V: ΔU = Q;  cycle: Q = Wby;  insulated free expansion: ΔU = 0;  ideal gas ⇒ Tf = Ti and pfVf = piVi",
+    "tex": "\\text{Constant }V:\\ \\Delta U=Q;\\text{Cycle: }Q=W_{\\mathrm{by}};\\text{Insulated free expansion: }\\Delta U=0;\\text{Ideal gas: }T_f=T_i,\\quad p_fV_f=p_iV_i"
+  },
+  {
+    "topic": "isothermal-work",
+    "location": "main",
+    "source": "Wby = nRT ln(Vf/Vi)  (reversible isothermal ideal gas)",
+    "tex": "W_{\\mathrm{by}}=nRT\\ln\\frac{V_f}{V_i};\\text{(reversible isothermal ideal gas)}"
+  },
+  {
+    "topic": "isothermal-work",
+    "location": "step-1",
+    "source": "p(V) = nRT/V",
+    "tex": "p(V)=\\frac{nRT}V"
+  },
+  {
+    "topic": "isothermal-work",
+    "location": "step-2",
+    "source": "Wby = ∫ᵥᵢᵛᶠ p(V)dV = nRT ∫ᵥᵢᵛᶠ dV/V",
+    "tex": "W_{\\mathrm{by}}=\\int_{V_i}^{V_f}p(V)\\,\\dd V=nRT\\int_{V_i}^{V_f}\\frac{\\dd V}V"
+  },
+  {
+    "topic": "isothermal-work",
+    "location": "step-3",
+    "source": "Wby = nRT(ln Vf − ln Vi) = nRT ln(Vf/Vi)",
+    "tex": "W_{\\mathrm{by}}=nRT(\\ln V_f-\\ln V_i)=nRT\\ln\\frac{V_f}{V_i}"
+  },
+  {
+    "topic": "isothermal-work",
+    "location": "step-4",
+    "source": "ΔEint = 0 ⇒ Q = Wby",
+    "tex": "\\Delta E_{\\mathrm{int}}=0\\ \\Rightarrow\\ Q=W_{\\mathrm{by}}"
+  },
+  {
+    "topic": "ideal-gas",
+    "location": "main",
+    "source": "pV = ⅓Nm⟨v²⟩ = NkBT = nRT",
+    "tex": "pV=\\frac13Nm\\avg{v^2}=Nk_{\\mathrm B}T=nRT"
+  },
+  {
+    "topic": "ideal-gas",
+    "location": "step-1",
+    "source": "Fone,average = (2m|vₓ|)/(2L/|vₓ|) = mvₓ²/L",
+    "tex": "F_{\\mathrm{one,avg}}=\\frac{2m|v_x|}{2L/|v_x|}=\\frac{mv_x^2}L"
+  },
+  {
+    "topic": "ideal-gas",
+    "location": "step-2",
+    "source": "pV = mΣvₓ,i² = Nm⟨vₓ²⟩",
+    "tex": "pV=m\\sum_i v_{x,i}^2=Nm\\avg{v_x^2}"
+  },
+  {
+    "topic": "ideal-gas",
+    "location": "step-3",
+    "source": "⟨vₓ²⟩ = ⟨v²⟩/3;  pV = ⅔N⟨Ktranslation⟩",
+    "tex": "\\avg{v_x^2}=\\frac{\\avg{v^2}}3;pV=\\frac23N\\avg{K_{\\mathrm{translation}}}"
+  },
+  {
+    "topic": "ideal-gas",
+    "location": "step-4",
+    "source": "⟨Ktranslation⟩ = 3kBT/2 ⇒ pV = NkBT",
+    "tex": "\\avg{K_{\\mathrm{translation}}}=\\frac32k_{\\mathrm B}T\\ \\Rightarrow\\ pV=Nk_{\\mathrm B}T"
+  },
+  {
+    "topic": "ideal-gas",
+    "location": "step-5",
+    "source": "N = nNA;  R = NAkB ⇒ pV = nRT",
+    "tex": "N=nN_{\\mathrm A};R=N_{\\mathrm A}k_{\\mathrm B}\\ \\Rightarrow\\ pV=nRT"
+  },
+  {
+    "topic": "adiabatic-gas",
+    "location": "main",
+    "source": "pVᵞ = constant;  TVᵞ⁻¹ = constant",
+    "tex": "pV^\\gamma=\\mathrm{constant};TV^{\\gamma-1}=\\mathrm{constant}"
+  },
+  {
+    "topic": "adiabatic-gas",
+    "location": "step-1",
+    "source": "nCV dT = −p dV",
+    "tex": "nC_V\\,\\dd T=-p\\,\\dd V"
+  },
+  {
+    "topic": "adiabatic-gas",
+    "location": "step-2",
+    "source": "dT/T = −(R/CV)dV/V",
+    "tex": "\\frac{\\dd T}T=-\\frac R{C_V}\\frac{\\dd V}V"
+  },
+  {
+    "topic": "adiabatic-gas",
+    "location": "step-3",
+    "source": "ln(Tf/Ti) = −(γ − 1)ln(Vf/Vi)",
+    "tex": "\\ln\\frac{T_f}{T_i}=-(\\gamma-1)\\ln\\frac{V_f}{V_i}"
+  },
+  {
+    "topic": "adiabatic-gas",
+    "location": "step-4",
+    "source": "TiViᵞ⁻¹ = TfVfᵞ⁻¹ ⇒ piViᵞ = pfVfᵞ",
+    "tex": "T_iV_i^{\\gamma-1}=T_fV_f^{\\gamma-1}\\ \\Rightarrow\\ p_iV_i^\\gamma=p_fV_f^\\gamma"
+  },
+  {
+    "topic": "entropy",
+    "location": "main",
+    "source": "dS = δQrev/T;  ΔS = ∫rev δQ/T",
+    "tex": "\\dd S=\\frac{\\delta Q_{\\mathrm{rev}}}T;\\Delta S=\\int_{\\mathrm{rev}}\\frac{\\delta Q}T"
+  },
+  {
+    "topic": "entropy",
+    "location": "step-1",
+    "source": "∮rev δQ/T = 0",
+    "tex": "\\oint_{\\mathrm{rev}}\\frac{\\delta Q}T=0"
+  },
+  {
+    "topic": "entropy",
+    "location": "step-3",
+    "source": "ΔSisothermal,rev = Qrev/T",
+    "tex": "\\Delta S_{\\mathrm{isothermal,rev}}=\\frac{Q_{\\mathrm{rev}}}T"
+  },
+  {
+    "topic": "entropy",
+    "location": "step-4",
+    "source": "ΔS = ∫actual δQ/Tb + Sgenerated;  Sgenerated ≥ 0",
+    "tex": "\\Delta S=\\int_{\\mathrm{actual}}\\frac{\\delta Q}{T_b}+S_{\\mathrm{generated}};S_{\\mathrm{generated}}\\ge0"
+  },
+  {
+    "topic": "entropy",
+    "location": "step-5",
+    "source": "ΔS = nCV ln(Tf/Ti) + nR ln(Vf/Vi)",
+    "tex": "\\Delta S=nC_V\\ln\\frac{T_f}{T_i}+nR\\ln\\frac{V_f}{V_i}"
+  },
+  {
+    "topic": "carnot",
+    "location": "main",
+    "source": "Qc/Qh = Tc/Th;  ηCarnot = 1 − Tc/Th",
+    "tex": "\\frac{Q_c}{Q_h}=\\frac{T_c}{T_h};\\eta_{\\mathrm{Carnot}}=1-\\frac{T_c}{T_h}"
+  },
+  {
+    "topic": "carnot",
+    "location": "step-2",
+    "source": "Qh = nRTh ln(V₂/V₁);  Qc = nRTc ln(V₃/V₄)",
+    "tex": "Q_h=nRT_h\\ln\\frac{V_2}{V_1};Q_c=nRT_c\\ln\\frac{V_3}{V_4}"
+  },
+  {
+    "topic": "carnot",
+    "location": "step-3",
+    "source": "ThV₂ᵞ⁻¹ = TcV₃ᵞ⁻¹;  ThV₁ᵞ⁻¹ = TcV₄ᵞ⁻¹",
+    "tex": "T_hV_2^{\\gamma-1}=T_cV_3^{\\gamma-1};T_hV_1^{\\gamma-1}=T_cV_4^{\\gamma-1}"
+  },
+  {
+    "topic": "carnot",
+    "location": "step-4",
+    "source": "Qc/Qh = Tc/Th",
+    "tex": "\\frac{Q_c}{Q_h}=\\frac{T_c}{T_h}"
+  },
+  {
+    "topic": "carnot",
+    "location": "step-5",
+    "source": "η = Wout/Qh = 1 − Qc/Qh = 1 − Tc/Th",
+    "tex": "\\eta=\\frac{W_{\\mathrm{out}}}{Q_h}=1-\\frac{Q_c}{Q_h}=1-\\frac{T_c}{T_h}"
+  },
+  {
+    "topic": "coulomb",
+    "location": "main",
+    "source": "𝐅₁←₂ = ke q₁q₂(𝐫₁ − 𝐫₂)/|𝐫₁ − 𝐫₂|³",
+    "tex": "\\vb F_{1\\leftarrow2}=k_e\\frac{q_1q_2(\\vb r_1-\\vb r_2)}{|\\vb r_1-\\vb r_2|^3}"
+  },
+  {
+    "topic": "coulomb",
+    "location": "step-1",
+    "source": "F = ke|q₁q₂|/r²",
+    "tex": "F=k_e\\frac{|q_1q_2|}{r^2}"
+  },
+  {
+    "topic": "coulomb",
+    "location": "step-2",
+    "source": "r = |𝐫₁ − 𝐫₂|",
+    "tex": "r=|\\vb r_1-\\vb r_2|"
+  },
+  {
+    "topic": "coulomb",
+    "location": "step-3",
+    "source": "𝐅net,on 1 = Σj≠1 𝐅₁←ⱼ",
+    "tex": "\\vb F_{\\mathrm{net,on}\\,1}=\\sum_{j\\ne1}\\vb F_{1\\leftarrow j}"
+  },
+  {
+    "topic": "coulomb",
+    "location": "step-4",
+    "source": "𝐅on q = keq ∫ (𝐫 − 𝐫′) dq/|𝐫 − 𝐫′|³",
+    "tex": "\\vb F_{\\mathrm{on}\\,q}=k_eq\\int\\frac{(\\vb r-\\vb r')\\,\\dd q}{|\\vb r-\\vb r'|^3}"
+  },
+  {
+    "topic": "charge-conservation",
+    "location": "main",
+    "source": "q = ne;  Σqbefore = Σqafter",
+    "tex": "q=ne;\\sum q_{\\mathrm{before}}=\\sum q_{\\mathrm{after}}"
+  },
+  {
+    "topic": "charge-conservation",
+    "location": "step-1",
+    "source": "q = (Np − Ne)e",
+    "tex": "q=(N_p-N_e)e"
+  },
+  {
+    "topic": "charge-conservation",
+    "location": "step-2",
+    "source": "ΔqA = +e;  ΔqB = −e",
+    "tex": "\\Delta q_A=+e;\\Delta q_B=-e"
+  },
+  {
+    "topic": "charge-conservation",
+    "location": "step-3",
+    "source": "dQinside/dt = −Iout",
+    "tex": "\\frac{\\dd Q_{\\mathrm{inside}}}{\\dd t}=-I_{\\mathrm{out}}"
+  },
+  {
+    "topic": "charge-conservation",
+    "location": "step-4",
+    "source": "F = ke|q₁q₂|/r²",
+    "tex": "F=k_e\\frac{|q_1q_2|}{r^2}"
+  },
+  {
+    "topic": "electric-field",
+    "location": "main",
+    "source": "Eaxis = keQz/(z² + R²)³ᐟ²",
+    "tex": "E_{\\mathrm{axis}}=\\frac{k_eQz}{(z^2+R^2)^{3/2}}"
+  },
+  {
+    "topic": "electric-field",
+    "location": "step-1",
+    "source": "𝐄 = 𝐅/q;  dE = ke dq/(R² + z²)",
+    "tex": "\\vb E=\\frac{\\vb F}q;\\dd E=\\frac{k_e\\,\\dd q}{R^2+z^2}"
+  },
+  {
+    "topic": "electric-field",
+    "location": "step-3",
+    "source": "dEaxis = ke z dq/(R² + z²)³ᐟ²",
+    "tex": "\\dd E_{\\mathrm{axis}}=\\frac{k_ez\\,\\dd q}{(R^2+z^2)^{3/2}}"
+  },
+  {
+    "topic": "electric-field",
+    "location": "step-4",
+    "source": "Eaxis = [ke z/(R² + z²)³ᐟ²] ∫dq",
+    "tex": "E_{\\mathrm{axis}}=\\frac{k_ez}{(R^2+z^2)^{3/2}}\\int\\dd q"
+  },
+  {
+    "topic": "electric-dipole",
+    "location": "main",
+    "source": "𝛕 = 𝐩 × 𝐄;  U = −𝐩 · 𝐄",
+    "tex": "\\vb\\tau=\\vb p\\times\\vb E;U=-\\vb p\\cdot\\vb E"
+  },
+  {
+    "topic": "electric-dipole",
+    "location": "step-1",
+    "source": "𝐅net = q𝐄 − q𝐄 = 0",
+    "tex": "\\vb F_{\\mathrm{net}}=q\\vb E-q\\vb E=0"
+  },
+  {
+    "topic": "electric-dipole",
+    "location": "step-2",
+    "source": "τmagnitude = 2(qE)(d/2)sin θ = pE sin θ",
+    "tex": "\\tau_{\\mathrm{magnitude}}=2(qE)\\frac d2\\sin\\theta=pE\\sin\\theta"
+  },
+  {
+    "topic": "electric-dipole",
+    "location": "step-3",
+    "source": "𝛕 = 𝐩 × 𝐄",
+    "tex": "\\vb\\tau=\\vb p\\times\\vb E"
+  },
+  {
+    "topic": "electric-dipole",
+    "location": "step-4",
+    "source": "U = −pE cos θ = −𝐩 · 𝐄",
+    "tex": "U=-pE\\cos\\theta=-\\vb p\\cdot\\vb E"
+  },
+  {
+    "topic": "gauss-sphere",
+    "location": "main",
+    "source": "∮𝐄 · d𝐀 = Qenc/ε₀;  Eoutside = Q/(4πε₀r²)",
+    "tex": "\\oint\\vb E\\cdot\\dd\\vb A=\\frac{Q_{\\mathrm{enc}}}{\\varepsilon_0};E_{\\mathrm{outside}}=\\frac{Q}{4\\pi\\varepsilon_0r^2}"
+  },
+  {
+    "topic": "gauss-sphere",
+    "location": "step-1",
+    "source": "ΦE = ∮𝐄 · d𝐀 = Qenc/ε₀",
+    "tex": "\\Phi_E=\\oint\\vb E\\cdot\\dd\\vb A=\\frac{Q_{\\mathrm{enc}}}{\\varepsilon_0}"
+  },
+  {
+    "topic": "gauss-sphere",
+    "location": "step-2",
+    "source": "ΦE = Er(r) ∮dA = Er(r)4πr²",
+    "tex": "\\Phi_E=E_r(r)\\oint\\dd A=E_r(r)4\\pi r^2"
+  },
+  {
+    "topic": "gauss-sphere",
+    "location": "step-3",
+    "source": "Er(r) = Q/(4πε₀r²)",
+    "tex": "E_r(r)=\\frac Q{4\\pi\\varepsilon_0r^2}"
+  },
+  {
+    "topic": "gauss-sphere",
+    "location": "step-4",
+    "source": "Qenc = Qr³/R³ ⇒ Er = Qr/(4πε₀R³)  (r < R)",
+    "tex": "Q_{\\mathrm{enc}}=\\frac{Qr^3}{R^3}\\ \\Rightarrow\\ E_r=\\frac{Qr}{4\\pi\\varepsilon_0R^3}\\quad(r<R)"
+  },
+  {
+    "topic": "gauss-cylinder-plane",
+    "location": "main",
+    "source": "Eline = |λ|/(2πε₀r);  Esheet = |σ|/(2ε₀)",
+    "tex": "E_{\\mathrm{line}}=\\frac{|\\lambda|}{2\\pi\\varepsilon_0r};E_{\\mathrm{sheet}}=\\frac{|\\sigma|}{2\\varepsilon_0}"
+  },
+  {
+    "topic": "gauss-cylinder-plane",
+    "location": "step-1",
+    "source": "ΦE = E(2πrℓ);  |Qenc| = |λ|ℓ",
+    "tex": "\\Phi_E=E(2\\pi r\\ell);|Q_{\\mathrm{enc}}|=|\\lambda|\\ell"
+  },
+  {
+    "topic": "gauss-cylinder-plane",
+    "location": "step-2",
+    "source": "Eline = |λ|/(2πε₀r)",
+    "tex": "E_{\\mathrm{line}}=\\frac{|\\lambda|}{2\\pi\\varepsilon_0r}"
+  },
+  {
+    "topic": "gauss-cylinder-plane",
+    "location": "step-3",
+    "source": "ΦE = 2EA;  |Qenc| = |σ|A",
+    "tex": "\\Phi_E=2EA;|Q_{\\mathrm{enc}}|=|\\sigma|A"
+  },
+  {
+    "topic": "gauss-cylinder-plane",
+    "location": "step-4",
+    "source": "Esheet = |σ|/(2ε₀)",
+    "tex": "E_{\\mathrm{sheet}}=\\frac{|\\sigma|}{2\\varepsilon_0}"
+  },
+  {
+    "topic": "electric-potential",
+    "location": "main",
+    "source": "Vb − Va = −∫ₐᵇ 𝐄 · d𝐥;  Vpoint = keQ/r",
+    "tex": "V_b-V_a=-\\int_a^b\\vb E\\cdot\\dd\\vb l;V_{\\mathrm{point}}=\\frac{k_eQ}r"
+  },
+  {
+    "topic": "electric-potential",
+    "location": "step-1",
+    "source": "ΔU = −q ∫ₐᵇ 𝐄 · d𝐥",
+    "tex": "\\Delta U=-q\\int_a^b\\vb E\\cdot\\dd\\vb l"
+  },
+  {
+    "topic": "electric-potential",
+    "location": "step-2",
+    "source": "ΔV = −∫ₐᵇ 𝐄 · d𝐥",
+    "tex": "\\Delta V=-\\int_a^b\\vb E\\cdot\\dd\\vb l"
+  },
+  {
+    "topic": "electric-potential",
+    "location": "step-3",
+    "source": "V(r) = −∫∞ʳ keQ/r′² dr′ = keQ/r",
+    "tex": "V(r)=-\\int_{\\infty}^r\\frac{k_eQ}{r'^2}\\dd r'=\\frac{k_eQ}r"
+  },
+  {
+    "topic": "electric-potential",
+    "location": "step-4",
+    "source": "Eₓ = −∂V/∂x;  𝐄 = −∇V",
+    "tex": "E_x=-\\frac{\\partial V}{\\partial x};\\vb E=-\\nabla V"
+  },
+  {
+    "topic": "electric-energy",
+    "location": "main",
+    "source": "U = Σi<j keqiqj/rij = ½Σi qiVothers(𝐫i)",
+    "tex": "U=\\sum_{i<j}\\frac{k_eq_iq_j}{r_{ij}}=\\frac12\\sum_i q_iV_{\\mathrm{others}}(\\vb r_i)"
+  },
+  {
+    "topic": "electric-energy",
+    "location": "step-2",
+    "source": "U₁₂ = q₂V₁ = keq₁q₂/r₁₂",
+    "tex": "U_{12}=q_2V_1=\\frac{k_eq_1q_2}{r_{12}}"
+  },
+  {
+    "topic": "electric-energy",
+    "location": "step-3",
+    "source": "Uthree = ke(q₁q₂/r₁₂ + q₁q₃/r₁₃ + q₂q₃/r₂₃)",
+    "tex": "U_{\\mathrm{three}}=k_e\\left(\\frac{q_1q_2}{r_{12}}+\\frac{q_1q_3}{r_{13}}+\\frac{q_2q_3}{r_{23}}\\right)"
+  },
+  {
+    "topic": "electric-energy",
+    "location": "step-4",
+    "source": "U = ½Σi qiVothers(𝐫i)",
+    "tex": "U=\\frac12\\sum_i q_iV_{\\mathrm{others}}(\\vb r_i)"
+  },
+  {
+    "topic": "parallel-plate-capacitance",
+    "location": "main",
+    "source": "C = Q/ΔV = εA/d",
+    "tex": "C=\\frac Q{\\Delta V}=\\frac{\\varepsilon A}d"
+  },
+  {
+    "topic": "parallel-plate-capacitance",
+    "location": "step-1",
+    "source": "σ = Q/A",
+    "tex": "\\sigma=\\frac QA"
+  },
+  {
+    "topic": "parallel-plate-capacitance",
+    "location": "step-2",
+    "source": "E = Q/(εA)",
+    "tex": "E=\\frac Q{\\varepsilon A}"
+  },
+  {
+    "topic": "parallel-plate-capacitance",
+    "location": "step-3",
+    "source": "ΔV = Ed = Qd/(εA)",
+    "tex": "\\Delta V=Ed=\\frac{Qd}{\\varepsilon A}"
+  },
+  {
+    "topic": "parallel-plate-capacitance",
+    "location": "step-4",
+    "source": "C = Q/ΔV = εA/d",
+    "tex": "C=\\frac Q{\\Delta V}=\\frac{\\varepsilon A}d"
+  },
+  {
+    "topic": "capacitor-energy",
+    "location": "main",
+    "source": "U = Q²/(2C) = ½QΔV = ½C(ΔV)²",
+    "tex": "U=\\frac{Q^2}{2C}=\\frac12Q\\Delta V=\\frac12C(\\Delta V)^2"
+  },
+  {
+    "topic": "capacitor-energy",
+    "location": "step-1",
+    "source": "ΔV(q) = q/C",
+    "tex": "\\Delta V(q)=\\frac qC"
+  },
+  {
+    "topic": "capacitor-energy",
+    "location": "step-2",
+    "source": "dU = (q/C)dq",
+    "tex": "\\dd U=\\frac qC\\dd q"
+  },
+  {
+    "topic": "capacitor-energy",
+    "location": "step-3",
+    "source": "U = ∫₀Q (q/C)dq = Q²/(2C)",
+    "tex": "U=\\int_0^Q\\frac qC\\dd q=\\frac{Q^2}{2C}"
+  },
+  {
+    "topic": "capacitor-energy",
+    "location": "step-4",
+    "source": "U = ½εE²(Ad) ⇒ uE = ½εE²",
+    "tex": "U=\\frac12\\varepsilon E^2(Ad)\\ \\Rightarrow\\ u_E=\\frac12\\varepsilon E^2"
+  },
+  {
+    "topic": "current-drift",
+    "location": "main",
+    "source": "I = nqAvd;  𝐉 = nq𝐯d",
+    "tex": "I=nqAv_d;\\vb J=nq\\vb v_d"
+  },
+  {
+    "topic": "current-drift",
+    "location": "step-1",
+    "source": "I = dQ/dt",
+    "tex": "I=\\frac{\\dd Q}{\\dd t}"
+  },
+  {
+    "topic": "current-drift",
+    "location": "step-2",
+    "source": "dN = nAvd dt",
+    "tex": "\\dd N=nAv_d\\,\\dd t"
+  },
+  {
+    "topic": "current-drift",
+    "location": "step-3",
+    "source": "dQ = qdN ⇒ 𝐉 = nq𝐯d",
+    "tex": "\\dd Q=q\\,\\dd N\\ \\Rightarrow\\ \\vb J=nq\\vb v_d"
+  },
+  {
+    "topic": "resistance",
+    "location": "main",
+    "source": "R = ρL/A;  P = IΔV = I²R = (ΔV)²/R",
+    "tex": "R=\\frac{\\rho L}A;P=I\\Delta V=I^2R=\\frac{(\\Delta V)^2}R"
+  },
+  {
+    "topic": "resistance",
+    "location": "step-1",
+    "source": "𝐉 = σ𝐄;  E = ρJ",
+    "tex": "\\vb J=\\sigma\\vb E;E=\\rho J"
+  },
+  {
+    "topic": "resistance",
+    "location": "step-2",
+    "source": "ΔV = EL = ρ(I/A)L",
+    "tex": "\\Delta V=EL=\\rho\\frac IA L"
+  },
+  {
+    "topic": "resistance",
+    "location": "step-3",
+    "source": "R = ρL/A",
+    "tex": "R=\\frac{\\rho L}A"
+  },
+  {
+    "topic": "resistance",
+    "location": "step-4",
+    "source": "P = ΔV(dQ/dt) = IΔV = I²R",
+    "tex": "P=\\Delta V\\frac{\\dd Q}{\\dd t}=I\\Delta V=I^2R"
+  },
+  {
+    "topic": "kirchhoff",
+    "location": "main",
+    "source": "ΣIin = ΣIout;  Σloop ΔV = 0",
+    "tex": "\\sum I_{\\mathrm{in}}=\\sum I_{\\mathrm{out}};\\sum_{\\mathrm{loop}}\\Delta V=0"
+  },
+  {
+    "topic": "kirchhoff",
+    "location": "step-1",
+    "source": "ΣIin − ΣIout = dQnode/dt = 0",
+    "tex": "\\sum I_{\\mathrm{in}}-\\sum I_{\\mathrm{out}}=\\frac{\\dd Q_{\\mathrm{node}}}{\\dd t}=0"
+  },
+  {
+    "topic": "kirchhoff",
+    "location": "step-2",
+    "source": "Σloop ΔV = 0",
+    "tex": "\\sum_{\\mathrm{loop}}\\Delta V=0"
+  },
+  {
+    "topic": "kirchhoff",
+    "location": "step-3",
+    "source": "Req,series = R₁ + R₂ + …",
+    "tex": "R_{\\mathrm{eq,series}}=R_1+R_2+\\cdots"
+  },
+  {
+    "topic": "kirchhoff",
+    "location": "step-4",
+    "source": "1/Req,parallel = 1/R₁ + 1/R₂ + …",
+    "tex": "\\frac1{R_{\\mathrm{eq,parallel}}}=\\frac1{R_1}+\\frac1{R_2}+\\cdots"
+  },
+  {
+    "topic": "rc-circuit",
+    "location": "main",
+    "source": "q(t) = Cℰ(1 − e⁻ᵗᐟᴿᶜ);  I(t) = (ℰ/R)e⁻ᵗᐟᴿᶜ",
+    "tex": "q(t)=C\\mathcal E(1-e^{-t/(RC)});I(t)=\\frac{\\mathcal E}R e^{-t/(RC)}"
+  },
+  {
+    "topic": "rc-circuit",
+    "location": "step-1",
+    "source": "ℰ − RI − q/C = 0;  I = dq/dt",
+    "tex": "\\mathcal E-RI-\\frac qC=0;I=\\frac{\\dd q}{\\dd t}"
+  },
+  {
+    "topic": "rc-circuit",
+    "location": "step-2",
+    "source": "dq/dt = (Cℰ − q)/(RC)",
+    "tex": "\\frac{\\dd q}{\\dd t}=\\frac{C\\mathcal E-q}{RC}"
+  },
+  {
+    "topic": "rc-circuit",
+    "location": "step-3",
+    "source": "u(t) = Cℰ e⁻ᵗᐟᴿᶜ ⇒ q(t) = Cℰ(1 − e⁻ᵗᐟᴿᶜ)",
+    "tex": "u(t)=C\\mathcal E e^{-t/(RC)}\\ \\Rightarrow\\ q(t)=C\\mathcal E(1-e^{-t/(RC)})"
+  },
+  {
+    "topic": "rc-circuit",
+    "location": "step-4",
+    "source": "I(t) = dq/dt = (ℰ/R)e⁻ᵗᐟᴿᶜ",
+    "tex": "I(t)=\\frac{\\dd q}{\\dd t}=\\frac{\\mathcal E}R e^{-t/(RC)}"
+  },
+  {
+    "topic": "magnetic-orbit",
+    "location": "main",
+    "source": "r = mv⊥/(|q|B);  ωc = |q|B/m",
+    "tex": "r=\\frac{mv_\\perp}{|q|B};\\omega_c=\\frac{|q|B}m"
+  },
+  {
+    "topic": "magnetic-orbit",
+    "location": "step-1",
+    "source": "𝐅B = q𝐯 × 𝐁;  FB = |q|v⊥B",
+    "tex": "\\vb F_B=q\\vb v\\times\\vb B;F_B=|q|v_\\perp B"
+  },
+  {
+    "topic": "magnetic-orbit",
+    "location": "step-2",
+    "source": "P = 𝐅B · 𝐯 = 0",
+    "tex": "P=\\vb F_B\\cdot\\vb v=0"
+  },
+  {
+    "topic": "magnetic-orbit",
+    "location": "step-3",
+    "source": "|q|v⊥B = mv⊥²/r",
+    "tex": "|q|v_\\perp B=\\frac{mv_\\perp^2}r"
+  },
+  {
+    "topic": "magnetic-orbit",
+    "location": "step-4",
+    "source": "r = mv⊥/(|q|B);  ωc = v⊥/r = |q|B/m",
+    "tex": "r=\\frac{mv_\\perp}{|q|B};\\omega_c=\\frac{v_\\perp}r=\\frac{|q|B}m"
+  },
+  {
+    "topic": "magnetic-wire",
+    "location": "main",
+    "source": "d𝐅 = I d𝐥 × 𝐁;  𝛕 = 𝛍 × 𝐁;  μ = NIA",
+    "tex": "\\dd\\vb F=I\\,\\dd\\vb l\\times\\vb B;\\vb\\tau=\\vb\\mu\\times\\vb B;\\mu=NIA"
+  },
+  {
+    "topic": "magnetic-wire",
+    "location": "step-1",
+    "source": "d𝐅 = I d𝐥 × 𝐁",
+    "tex": "\\dd\\vb F=I\\,\\dd\\vb l\\times\\vb B"
+  },
+  {
+    "topic": "magnetic-wire",
+    "location": "step-2",
+    "source": "𝐅 = I𝐋 × 𝐁",
+    "tex": "\\vb F=I\\vb L\\times\\vb B"
+  },
+  {
+    "topic": "magnetic-wire",
+    "location": "step-3",
+    "source": "τ = (IaB)(b sin θ) = IAB sin θ",
+    "tex": "\\tau=(IaB)(b\\sin\\theta)=IAB\\sin\\theta"
+  },
+  {
+    "topic": "magnetic-wire",
+    "location": "step-4",
+    "source": "𝛍 = NIA n̂;  𝛕 = 𝛍 × 𝐁;  U = −𝛍 · 𝐁",
+    "tex": "\\vb\\mu=NIA\\hat n;\\vb\\tau=\\vb\\mu\\times\\vb B;U=-\\vb\\mu\\cdot\\vb B"
+  },
+  {
+    "topic": "ampere-wire",
+    "location": "main",
+    "source": "B = μ₀I/(2πr)",
+    "tex": "B=\\frac{\\mu_0I}{2\\pi r}"
+  },
+  {
+    "topic": "ampere-wire",
+    "location": "step-1",
+    "source": "∮𝐁 · d𝐥 = μ₀Ienc",
+    "tex": "\\oint\\vb B\\cdot\\dd\\vb l=\\mu_0I_{\\mathrm{enc}}"
+  },
+  {
+    "topic": "ampere-wire",
+    "location": "step-3",
+    "source": "B(2πr) = μ₀I ⇒ B = μ₀I/(2πr)",
+    "tex": "B(2\\pi r)=\\mu_0I\\ \\Rightarrow\\ B=\\frac{\\mu_0I}{2\\pi r}"
+  },
+  {
+    "topic": "ampere-wire",
+    "location": "step-4",
+    "source": "Binside = μ₀Ir/(2πR²)  (r < R)",
+    "tex": "B_{\\mathrm{inside}}=\\frac{\\mu_0Ir}{2\\pi R^2}\\quad(r<R)"
+  },
+  {
+    "topic": "solenoid",
+    "location": "main",
+    "source": "Binside ≈ μ₀nI;  Boutside ≈ 0",
+    "tex": "B_{\\mathrm{inside}}\\approx\\mu_0nI;B_{\\mathrm{outside}}\\approx0"
+  },
+  {
+    "topic": "solenoid",
+    "location": "step-3",
+    "source": "∮𝐁 · d𝐥 ≈ Binside a = μ₀(na)I",
+    "tex": "\\oint\\vb B\\cdot\\dd\\vb l\\approx B_{\\mathrm{inside}}a=\\mu_0(na)I"
+  },
+  {
+    "topic": "solenoid",
+    "location": "step-4",
+    "source": "Binside ≈ μ₀nI",
+    "tex": "B_{\\mathrm{inside}}\\approx\\mu_0nI"
+  },
+  {
+    "topic": "faraday",
+    "location": "main",
+    "source": "ℰ = −N dΦB/dt;  |ℰrod| = Bℓv",
+    "tex": "\\mathcal E=-N\\frac{\\dd\\Phi_B}{\\dd t};|\\mathcal E_{\\mathrm{rod}}|=B\\ell v"
+  },
+  {
+    "topic": "faraday",
+    "location": "step-1",
+    "source": "ΦB = ∫surface 𝐁 · d𝐀",
+    "tex": "\\Phi_B=\\int_{\\mathrm{surface}}\\vb B\\cdot\\dd\\vb A"
+  },
+  {
+    "topic": "faraday",
+    "location": "step-2",
+    "source": "ℰ = ∮(𝐄 + 𝐯wire × 𝐁) · d𝐥 = −dΦB/dt",
+    "tex": "\\mathcal E=\\oint(\\vb E+\\vb v_{\\mathrm{wire}}\\times\\vb B)\\cdot\\dd\\vb l=-\\frac{\\dd\\Phi_B}{\\dd t}"
+  },
+  {
+    "topic": "faraday",
+    "location": "step-3",
+    "source": "|dΦB/dt| = Bℓv ⇒ |ℰ| = Bℓv",
+    "tex": "\\left|\\frac{\\dd\\Phi_B}{\\dd t}\\right|=B\\ell v\\ \\Rightarrow\\ |\\mathcal E|=B\\ell v"
+  },
+  {
+    "topic": "faraday",
+    "location": "step-4",
+    "source": "Fexternalv = ℰI = I²R  (steady ideal sliding-rod circuit)",
+    "tex": "F_{\\mathrm{external}}v=\\mathcal EI=I^2R;\\text{(steady ideal sliding-rod circuit)}"
+  },
+  {
+    "topic": "inductor-energy",
+    "location": "main",
+    "source": "ℰL = −L dI/dt;  UB = ½LI²",
+    "tex": "\\mathcal E_L=-L\\frac{\\dd I}{\\dd t};U_B=\\frac12LI^2"
+  },
+  {
+    "topic": "inductor-energy",
+    "location": "step-1",
+    "source": "NΦB = LI",
+    "tex": "N\\Phi_B=LI"
+  },
+  {
+    "topic": "inductor-energy",
+    "location": "step-2",
+    "source": "ℰL = −d(NΦB)/dt = −L dI/dt",
+    "tex": "\\mathcal E_L=-\\frac{\\dd(N\\Phi_B)}{\\dd t}=-L\\frac{\\dd I}{\\dd t}"
+  },
+  {
+    "topic": "inductor-energy",
+    "location": "step-3",
+    "source": "dUB = I(L dI/dt)dt = LI dI",
+    "tex": "\\dd U_B=I\\left(L\\frac{\\dd I}{\\dd t}\\right)\\dd t=LI\\,\\dd I"
+  },
+  {
+    "topic": "inductor-energy",
+    "location": "step-4",
+    "source": "UB = ∫₀ᴵ LI′ dI′ = ½LI²",
+    "tex": "U_B=\\int_0^I LI'\\,\\dd I'=\\frac12LI^2"
+  },
+  {
+    "topic": "lc-oscillations",
+    "location": "main",
+    "source": "d²q/dt² + q/(LC) = 0;  ω₀ = 1/√(LC)",
+    "tex": "\\frac{\\dd^2q}{\\dd t^2}+\\frac q{LC}=0;\\omega_0=\\frac1{\\sqrt{LC}}"
+  },
+  {
+    "topic": "lc-oscillations",
+    "location": "step-1",
+    "source": "q/C + L dI/dt = 0",
+    "tex": "\\frac qC+L\\frac{\\dd I}{\\dd t}=0"
+  },
+  {
+    "topic": "lc-oscillations",
+    "location": "step-2",
+    "source": "L d²q/dt² + q/C = 0",
+    "tex": "L\\frac{\\dd^2q}{\\dd t^2}+\\frac qC=0"
+  },
+  {
+    "topic": "lc-oscillations",
+    "location": "step-3",
+    "source": "ω₀² = 1/(LC);  T = 2π√(LC)",
+    "tex": "\\omega_0^2=\\frac1{LC};T=2\\pi\\sqrt{LC}"
+  },
+  {
+    "topic": "lc-oscillations",
+    "location": "step-4",
+    "source": "U = q²/(2C) + ½LI² = constant",
+    "tex": "U=\\frac{q^2}{2C}+\\frac12LI^2=\\mathrm{constant}"
+  },
+  {
+    "topic": "ac-impedance",
+    "location": "main",
+    "source": "Z = √(R² + (ωL − 1/(ωC))²);  Imax = Vmax/Z",
+    "tex": "Z=\\sqrt{R^2+\\left(\\omega L-\\frac1{\\omega C}\\right)^2};I_{\\max}=\\frac{V_{\\max}}Z"
+  },
+  {
+    "topic": "ac-impedance",
+    "location": "step-1",
+    "source": "VR,max = ImaxR;  VL,max = ImaxωL;  VC,max = Imax/(ωC)",
+    "tex": "V_{R,\\max}=I_{\\max}R;V_{L,\\max}=I_{\\max}\\omega L;V_{C,\\max}=\\frac{I_{\\max}}{\\omega C}"
+  },
+  {
+    "topic": "ac-impedance",
+    "location": "step-2",
+    "source": "X = XL − XC = ωL − 1/(ωC)",
+    "tex": "X=X_L-X_C=\\omega L-\\frac1{\\omega C}"
+  },
+  {
+    "topic": "ac-impedance",
+    "location": "step-3",
+    "source": "Vmax² = (ImaxR)² + (ImaxX)² ⇒ Z = √(R² + X²)",
+    "tex": "V_{\\max}^2=(I_{\\max}R)^2+(I_{\\max}X)^2\\ \\Rightarrow\\ Z=\\sqrt{R^2+X^2}"
+  },
+  {
+    "topic": "ac-impedance",
+    "location": "step-4",
+    "source": "ωres = 1/√(LC);  Zres = R",
+    "tex": "\\omega_{\\mathrm{res}}=\\frac1{\\sqrt{LC}};Z_{\\mathrm{res}}=R"
+  },
+  {
+    "topic": "displacement-current",
+    "location": "main",
+    "source": "∮𝐁 · d𝐥 = μ₀(Iconduction + ε₀ dΦE/dt)",
+    "tex": "\\oint\\vb B\\cdot\\dd\\vb l=\\mu_0\\left(I_{\\mathrm{conduction}}+\\varepsilon_0\\frac{\\dd\\Phi_E}{\\dd t}\\right)"
+  },
+  {
+    "topic": "displacement-current",
+    "location": "step-2",
+    "source": "ΦE = EA = Q/ε₀",
+    "tex": "\\Phi_E=EA=\\frac Q{\\varepsilon_0}"
+  },
+  {
+    "topic": "displacement-current",
+    "location": "step-3",
+    "source": "ε₀dΦE/dt = dQ/dt = I",
+    "tex": "\\varepsilon_0\\frac{\\dd\\Phi_E}{\\dd t}=\\frac{\\dd Q}{\\dd t}=I"
+  },
+  {
+    "topic": "displacement-current",
+    "location": "step-4",
+    "source": "∮𝐁 · d𝐥 = μ₀Ienc + μ₀ε₀dΦE/dt",
+    "tex": "\\oint\\vb B\\cdot\\dd\\vb l=\\mu_0I_{\\mathrm{enc}}+\\mu_0\\varepsilon_0\\frac{\\dd\\Phi_E}{\\dd t}"
+  },
+  {
+    "topic": "em-wave-equation",
+    "location": "main",
+    "source": "∇²𝐄 = μ₀ε₀ ∂²𝐄/∂t²;  c = 1/√(μ₀ε₀)",
+    "tex": "\\nabla^2\\vb E=\\mu_0\\varepsilon_0\\frac{\\partial^2\\vb E}{\\partial t^2};c=\\frac1{\\sqrt{\\mu_0\\varepsilon_0}}"
+  },
+  {
+    "topic": "em-wave-equation",
+    "location": "step-1",
+    "source": "∇×𝐄 = −∂𝐁/∂t;  ∇×𝐁 = μ₀ε₀ ∂𝐄/∂t",
+    "tex": "\\nabla\\times\\vb E=-\\frac{\\partial\\vb B}{\\partial t};\\nabla\\times\\vb B=\\mu_0\\varepsilon_0\\frac{\\partial\\vb E}{\\partial t}"
+  },
+  {
+    "topic": "em-wave-equation",
+    "location": "step-2",
+    "source": "∇×(∇×𝐄) = −μ₀ε₀ ∂²𝐄/∂t²",
+    "tex": "\\nabla\\times(\\nabla\\times\\vb E)=-\\mu_0\\varepsilon_0\\frac{\\partial^2\\vb E}{\\partial t^2}"
+  },
+  {
+    "topic": "em-wave-equation",
+    "location": "step-3",
+    "source": "−∇²𝐄 = −μ₀ε₀ ∂²𝐄/∂t²",
+    "tex": "-\\nabla^2\\vb E=-\\mu_0\\varepsilon_0\\frac{\\partial^2\\vb E}{\\partial t^2}"
+  },
+  {
+    "topic": "em-wave-equation",
+    "location": "step-4",
+    "source": "1/c² = μ₀ε₀ ⇒ c = 1/√(μ₀ε₀)",
+    "tex": "\\frac1{c^2}=\\mu_0\\varepsilon_0\\ \\Rightarrow\\ c=\\frac1{\\sqrt{\\mu_0\\varepsilon_0}}"
+  },
+  {
+    "topic": "em-intensity",
+    "location": "main",
+    "source": "⟨S⟩ = ½ε₀cEmax² = cBmax²/(2μ₀)",
+    "tex": "\\avg S=\\frac12\\varepsilon_0cE_{\\max}^2=\\frac{cB_{\\max}^2}{2\\mu_0}"
+  },
+  {
+    "topic": "em-intensity",
+    "location": "step-1",
+    "source": "Emax = cBmax",
+    "tex": "E_{\\max}=cB_{\\max}"
+  },
+  {
+    "topic": "em-intensity",
+    "location": "step-2",
+    "source": "𝐒 = (1/μ₀)𝐄 × 𝐁;  S = E²/(μ₀c)",
+    "tex": "\\vb S=\\frac1{\\mu_0}\\vb E\\times\\vb B;S=\\frac{E^2}{\\mu_0c}"
+  },
+  {
+    "topic": "em-intensity",
+    "location": "step-3",
+    "source": "S = ε₀cEmax² cos²(phase)",
+    "tex": "S=\\varepsilon_0cE_{\\max}^2\\cos^2(\\text{phase})"
+  },
+  {
+    "topic": "em-intensity",
+    "location": "step-4",
+    "source": "⟨S⟩ = ½ε₀cEmax² = ε₀cErms²",
+    "tex": "\\avg S=\\frac12\\varepsilon_0cE_{\\max}^2=\\varepsilon_0cE_{\\mathrm{rms}}^2"
+  },
+  {
+    "topic": "radiation-pressure",
+    "location": "main",
+    "source": "pabsorb = I/c;  preflect = 2I/c",
+    "tex": "p_{\\mathrm{absorb}}=\\frac Ic;p_{\\mathrm{reflect}}=\\frac{2I}c"
+  },
+  {
+    "topic": "radiation-pressure",
+    "location": "step-1",
+    "source": "Δpradiation = ΔE/c",
+    "tex": "\\Delta p_{\\mathrm{radiation}}=\\frac{\\Delta E}c"
+  },
+  {
+    "topic": "radiation-pressure",
+    "location": "step-2",
+    "source": "ΔE = IA dt",
+    "tex": "\\Delta E=IA\\,\\dd t"
+  },
+  {
+    "topic": "radiation-pressure",
+    "location": "step-3",
+    "source": "F = (IA dt/c)/dt = IA/c ⇒ p = I/c",
+    "tex": "F=\\frac{IA\\,\\dd t/c}{\\dd t}=\\frac{IA}c\\ \\Rightarrow\\ p=\\frac Ic"
+  },
+  {
+    "topic": "radiation-pressure",
+    "location": "step-4",
+    "source": "Δpsurface = 2ΔE/c ⇒ p = 2I/c",
+    "tex": "\\Delta p_{\\mathrm{surface}}=\\frac{2\\Delta E}c\\ \\Rightarrow\\ p=\\frac{2I}c"
+  },
+  {
+    "topic": "thin-lens",
+    "location": "main",
+    "source": "1/f = 1/do + 1/di;  m = −di/do",
+    "tex": "\\frac1f=\\frac1{d_o}+\\frac1{d_i};m=-\\frac{d_i}{d_o}"
+  },
+  {
+    "topic": "thin-lens",
+    "location": "step-1",
+    "source": "hi/ho = −di/do",
+    "tex": "\\frac{h_i}{h_o}=-\\frac{d_i}{d_o}"
+  },
+  {
+    "topic": "thin-lens",
+    "location": "step-2",
+    "source": "hi/ho = 1 − di/f",
+    "tex": "\\frac{h_i}{h_o}=1-\\frac{d_i}f"
+  },
+  {
+    "topic": "thin-lens",
+    "location": "step-3",
+    "source": "−di/do = 1 − di/f ⇒ 1/f = 1/do + 1/di",
+    "tex": "-\\frac{d_i}{d_o}=1-\\frac{d_i}f\\ \\Rightarrow\\ \\frac1f=\\frac1{d_o}+\\frac1{d_i}"
+  },
+  {
+    "topic": "spherical-mirror",
+    "location": "main",
+    "source": "f = R/2;  1/f = 1/do + 1/di",
+    "tex": "f=\\frac R2;\\frac1f=\\frac1{d_o}+\\frac1{d_i}"
+  },
+  {
+    "topic": "spherical-mirror",
+    "location": "step-1",
+    "source": "α ≈ h/R",
+    "tex": "\\alpha\\approx\\frac hR"
+  },
+  {
+    "topic": "spherical-mirror",
+    "location": "step-2",
+    "source": "h/f ≈ 2α ≈ 2h/R ⇒ f ≈ R/2",
+    "tex": "\\frac hf\\approx2\\alpha\\approx\\frac{2h}R\\ \\Rightarrow\\ f\\approx\\frac R2"
+  },
+  {
+    "topic": "spherical-mirror",
+    "location": "step-3",
+    "source": "h/do + h/di ≈ 2h/R",
+    "tex": "\\frac h{d_o}+\\frac h{d_i}\\approx\\frac{2h}R"
+  },
+  {
+    "topic": "spherical-mirror",
+    "location": "step-4",
+    "source": "1/do + 1/di = 2/R = 1/f",
+    "tex": "\\frac1{d_o}+\\frac1{d_i}=\\frac2R=\\frac1f"
+  },
+  {
+    "topic": "double-slit",
+    "location": "main",
+    "source": "d sin θ = mλ;  I = 4I₁ cos²(πd sin θ/λ)",
+    "tex": "d\\sin\\theta=m\\lambda;I=4I_1\\cos^2\\!\\left(\\frac{\\pi d\\sin\\theta}\\lambda\\right)"
+  },
+  {
+    "topic": "double-slit",
+    "location": "step-1",
+    "source": "Δℓ = d sin θ",
+    "tex": "\\Delta\\ell=d\\sin\\theta"
+  },
+  {
+    "topic": "double-slit",
+    "location": "step-2",
+    "source": "δ = 2πd sin θ/λ",
+    "tex": "\\delta=\\frac{2\\pi d\\sin\\theta}\\lambda"
+  },
+  {
+    "topic": "double-slit",
+    "location": "step-3",
+    "source": "I = 4I₁ cos²(δ/2)",
+    "tex": "I=4I_1\\cos^2\\!\\left(\\frac\\delta2\\right)"
+  },
+  {
+    "topic": "double-slit",
+    "location": "step-4",
+    "source": "d sin θ = mλ;  ym ≈ mλD/d",
+    "tex": "d\\sin\\theta=m\\lambda;y_m\\approx\\frac{m\\lambda D}d"
+  },
+  {
+    "topic": "thin-film",
+    "location": "main",
+    "source": "δ = (2π/λ₀)(2nt cos θt) + Δφreflection",
+    "tex": "\\delta=\\frac{2\\pi}{\\lambda_0}(2nt\\cos\\theta_t)+\\Delta\\phi_{\\mathrm{reflection}}"
+  },
+  {
+    "topic": "thin-film",
+    "location": "step-1",
+    "source": "Δoptical = 2nt cos θt",
+    "tex": "\\Delta_{\\mathrm{optical}}=2nt\\cos\\theta_t"
+  },
+  {
+    "topic": "thin-film",
+    "location": "step-2",
+    "source": "δ = 2πΔoptical/λ₀ + Δφreflection",
+    "tex": "\\delta=\\frac{2\\pi\\Delta_{\\mathrm{optical}}}{\\lambda_0}+\\Delta\\phi_{\\mathrm{reflection}}"
+  },
+  {
+    "topic": "thin-film",
+    "location": "step-3",
+    "source": "bright: 2nt = (m + ½)λ₀;  dark: 2nt = mλ₀",
+    "tex": "\\text{Bright: }2nt=\\left(m+\\frac12\\right)\\lambda_0;\\text{Dark: }2nt=m\\lambda_0"
+  },
+  {
+    "topic": "thin-film",
+    "location": "step-4",
+    "source": "Δφreflection = 0 ⇒ reflected bright: 2nt = mλ₀",
+    "tex": "\\Delta\\phi_{\\mathrm{reflection}}=0\\ \\Rightarrow\\ \\text{reflected bright: }2nt=m\\lambda_0"
+  },
+  {
+    "topic": "single-slit",
+    "location": "main",
+    "source": "I(θ) = I(0)(sin β/β)²;  β = πa sin θ/λ",
+    "tex": "I(\\theta)=I(0)\\left(\\frac{\\sin\\beta}\\beta\\right)^2;\\beta=\\frac{\\pi a\\sin\\theta}\\lambda"
+  },
+  {
+    "topic": "single-slit",
+    "location": "step-2",
+    "source": "E(θ)/E(0) = (1/a) ∫[−a/2,a/2] exp(i k y sin θ) dy = sin β/β",
+    "tex": "\\frac{E(\\theta)}{E(0)}=\\frac1a\\int_{-a/2}^{a/2}\\exp(iky\\sin\\theta)\\,\\dd y=\\frac{\\sin\\beta}\\beta"
+  },
+  {
+    "topic": "single-slit",
+    "location": "step-3",
+    "source": "I(θ)/I(0) = (sin β/β)²",
+    "tex": "\\frac{I(\\theta)}{I(0)}=\\left(\\frac{\\sin\\beta}\\beta\\right)^2"
+  },
+  {
+    "topic": "single-slit",
+    "location": "step-4",
+    "source": "a sin θ = mλ,  m = ±1, ±2, …",
+    "tex": "a\\sin\\theta=m\\lambda,\\quad m=\\pm1,\\pm2,\\ldots"
+  },
+  {
+    "topic": "diffraction-grating",
+    "location": "main",
+    "source": "d sin θ = mλ;  resolving power λ/Δλ ≈ mN",
+    "tex": "d\\sin\\theta=m\\lambda;\\text{Resolving power: }\\frac\\lambda{\\Delta\\lambda}\\approx mN"
+  },
+  {
+    "topic": "diffraction-grating",
+    "location": "step-1",
+    "source": "I ∝ [sin(Nδ/2)/sin(δ/2)]²",
+    "tex": "I\\propto\\left[\\frac{\\sin(N\\delta/2)}{\\sin(\\delta/2)}\\right]^2"
+  },
+  {
+    "topic": "diffraction-grating",
+    "location": "step-2",
+    "source": "d sin θm = mλ",
+    "tex": "d\\sin\\theta_m=m\\lambda"
+  },
+  {
+    "topic": "diffraction-grating",
+    "location": "step-3",
+    "source": "δθminimum ≈ λ/(Nd cos θm)",
+    "tex": "\\delta\\theta_{\\mathrm{minimum}}\\approx\\frac\\lambda{Nd\\cos\\theta_m}"
+  },
+  {
+    "topic": "diffraction-grating",
+    "location": "step-4",
+    "source": "mΔλ/(d cos θ) ≈ λ/(Nd cos θ) ⇒ λ/Δλ ≈ mN",
+    "tex": "\\frac{m\\Delta\\lambda}{d\\cos\\theta}\\approx\\frac\\lambda{Nd\\cos\\theta}\\ \\Rightarrow\\ \\frac\\lambda{\\Delta\\lambda}\\approx mN"
+  },
+  {
+    "topic": "time-dilation",
+    "location": "main",
+    "source": "Δt = γΔτ;  γ = 1/√(1 − v²/c²)",
+    "tex": "\\Delta t=\\gamma\\Delta\\tau;\\gamma=\\frac1{\\sqrt{1-v^2/c^2}}"
+  },
+  {
+    "topic": "time-dilation",
+    "location": "step-1",
+    "source": "Δτ = 2ℓ/c",
+    "tex": "\\Delta\\tau=\\frac{2\\ell}c"
+  },
+  {
+    "topic": "time-dilation",
+    "location": "step-2",
+    "source": "(cΔt/2)² = ℓ² + (vΔt/2)²",
+    "tex": "\\left(\\frac{c\\Delta t}2\\right)^2=\\ell^2+\\left(\\frac{v\\Delta t}2\\right)^2"
+  },
+  {
+    "topic": "time-dilation",
+    "location": "step-3",
+    "source": "(c² − v²)Δt² = c²Δτ² ⇒ Δt = γΔτ",
+    "tex": "(c^2-v^2)\\Delta t^2=c^2\\Delta\\tau^2\\ \\Rightarrow\\ \\Delta t=\\gamma\\Delta\\tau"
+  },
+  {
+    "topic": "time-dilation",
+    "location": "step-4",
+    "source": "v = 0 ⇒ γ = 1;  0 < v < c ⇒ γ > 1",
+    "tex": "v=0\\ \\Rightarrow\\ \\gamma=1;0<v<c\\ \\Rightarrow\\ \\gamma>1"
+  },
+  {
+    "topic": "relativistic-energy",
+    "location": "main",
+    "source": "E² = p²c² + m²c⁴;  K = (γ − 1)mc²",
+    "tex": "E^2=p^2c^2+m^2c^4;K=(\\gamma-1)mc^2"
+  },
+  {
+    "topic": "relativistic-energy",
+    "location": "step-1",
+    "source": "E = γmc²;  p = γmv",
+    "tex": "E=\\gamma mc^2;p=\\gamma mv"
+  },
+  {
+    "topic": "relativistic-energy",
+    "location": "step-2",
+    "source": "E² − p²c² = γ²m²c⁴(1 − v²/c²)",
+    "tex": "E^2-p^2c^2=\\gamma^2m^2c^4\\left(1-\\frac{v^2}{c^2}\\right)"
+  },
+  {
+    "topic": "relativistic-energy",
+    "location": "step-3",
+    "source": "E² − p²c² = m²c⁴;  Erest = mc²",
+    "tex": "E^2-p^2c^2=m^2c^4;E_{\\mathrm{rest}}=mc^2"
+  },
+  {
+    "topic": "relativistic-energy",
+    "location": "step-4",
+    "source": "K = (γ − 1)mc² ≈ ½mv²",
+    "tex": "K=(\\gamma-1)mc^2\\approx\\frac12mv^2"
+  },
+  {
+    "topic": "relativistic-energy",
+    "location": "step-5",
+    "source": "m = 0 ⇒ E = pc",
+    "tex": "m=0\\ \\Rightarrow\\ E=pc"
+  },
+  {
+    "topic": "photons",
+    "location": "main",
+    "source": "E = hf;  p = h/λ;  Kmax = hf − φ",
+    "tex": "E=hf;p=\\frac h\\lambda;K_{\\max}=hf-\\phi"
+  },
+  {
+    "topic": "photons",
+    "location": "step-1",
+    "source": "Ephoton = hf",
+    "tex": "E_{\\mathrm{photon}}=hf"
+  },
+  {
+    "topic": "photons",
+    "location": "step-2",
+    "source": "p = E/c = hf/c = h/λ",
+    "tex": "p=\\frac Ec=\\frac{hf}c=\\frac h\\lambda"
+  },
+  {
+    "topic": "photons",
+    "location": "step-3",
+    "source": "hf = φ + Kmax",
+    "tex": "hf=\\phi+K_{\\max}"
+  },
+  {
+    "topic": "photons",
+    "location": "step-4",
+    "source": "fthreshold = φ/h;  eVs = hf − φ",
+    "tex": "f_{\\mathrm{threshold}}=\\frac\\phi h;eV_s=hf-\\phi"
+  },
+  {
+    "topic": "compton",
+    "location": "main",
+    "source": "λ′ − λ = (h/(mec))(1 − cos θ)",
+    "tex": "\\lambda'-\\lambda=\\frac h{m_ec}(1-\\cos\\theta)"
+  },
+  {
+    "topic": "compton",
+    "location": "step-1",
+    "source": "Ee = mec² + E − E′",
+    "tex": "E_e=m_ec^2+E-E'"
+  },
+  {
+    "topic": "compton",
+    "location": "step-2",
+    "source": "pe²c² = E² + E′² − 2EE′cos θ",
+    "tex": "p_e^2c^2=E^2+E'^2-2EE'\\cos\\theta"
+  },
+  {
+    "topic": "compton",
+    "location": "step-3",
+    "source": "mec²(E − E′) = EE′(1 − cos θ)",
+    "tex": "m_ec^2(E-E')=EE'(1-\\cos\\theta)"
+  },
+  {
+    "topic": "compton",
+    "location": "step-4",
+    "source": "1/E′ − 1/E = (1 − cos θ)/(mec²)",
+    "tex": "\\frac1{E'}-\\frac1E=\\frac{1-\\cos\\theta}{m_ec^2}"
+  },
+  {
+    "topic": "particle-in-box",
+    "location": "main",
+    "source": "En = n²π²ℏ²/(2mL²) = n²h²/(8mL²)",
+    "tex": "E_n=\\frac{n^2\\pi^2\\hbar^2}{2mL^2}=\\frac{n^2h^2}{8mL^2}"
+  },
+  {
+    "topic": "particle-in-box",
+    "location": "step-1",
+    "source": "−(ℏ²/(2m))ψ″ = Eψ;  ψ = A sin kx + B cos kx",
+    "tex": "-\\frac{\\hbar^2}{2m}\\psi''=E\\psi;\\psi=A\\sin(kx)+B\\cos(kx)"
+  },
+  {
+    "topic": "particle-in-box",
+    "location": "step-2",
+    "source": "ψ(0) = 0 ⇒ B = 0",
+    "tex": "\\psi(0)=0\\ \\Rightarrow\\ B=0"
+  },
+  {
+    "topic": "particle-in-box",
+    "location": "step-3",
+    "source": "kn = nπ/L",
+    "tex": "k_n=\\frac{n\\pi}L"
+  },
+  {
+    "topic": "particle-in-box",
+    "location": "step-4",
+    "source": "En = n²π²ℏ²/(2mL²);  ψn = √(2/L)sin(nπx/L)",
+    "tex": "E_n=\\frac{n^2\\pi^2\\hbar^2}{2mL^2};\\psi_n=\\sqrt{\\frac2L}\\sin\\!\\left(\\frac{n\\pi x}L\\right)"
+  },
+  {
+    "topic": "tunneling",
+    "location": "main",
+    "source": "κ = √(2m(U₀ − E))/ℏ;  T ∝ e⁻²κa  (thick barrier)",
+    "tex": "\\kappa=\\frac{\\sqrt{2m(U_0-E)}}\\hbar;T\\propto e^{-2\\kappa a}\\quad\\text{(thick barrier)}"
+  },
+  {
+    "topic": "tunneling",
+    "location": "step-1",
+    "source": "ψ″ = [2m(U₀ − E)/ℏ²]ψ = κ²ψ",
+    "tex": "\\psi''=\\frac{2m(U_0-E)}{\\hbar^2}\\psi=\\kappa^2\\psi"
+  },
+  {
+    "topic": "tunneling",
+    "location": "step-2",
+    "source": "ψbarrier = A exp(κx) + B exp(−κx)",
+    "tex": "\\psi_{\\mathrm{barrier}}=Ae^{\\kappa x}+Be^{-\\kappa x}"
+  },
+  {
+    "topic": "tunneling",
+    "location": "step-3",
+    "source": "T = [1 + U₀² sinh²(κa)/(4E(U₀ − E))]⁻¹",
+    "tex": "T=\\left[1+\\frac{U_0^2\\sinh^2(\\kappa a)}{4E(U_0-E)}\\right]^{-1}"
+  },
+  {
+    "topic": "tunneling",
+    "location": "step-4",
+    "source": "T ≈ [16E(U₀ − E)/U₀²]e⁻²κa",
+    "tex": "T\\approx\\frac{16E(U_0-E)}{U_0^2}e^{-2\\kappa a}"
+  },
+  {
+    "topic": "hydrogen",
+    "location": "main",
+    "source": "En = −mee⁴/(8ε₀²h²n²) ≈ −13.6 eV/n²",
+    "tex": "E_n=-\\frac{m_ee^4}{8\\varepsilon_0^2h^2n^2}\\approx-\\frac{13.6\\,\\mathrm{eV}}{n^2}"
+  },
+  {
+    "topic": "hydrogen",
+    "location": "step-1",
+    "source": "mev²/r = kee²/r²",
+    "tex": "\\frac{m_ev^2}r=\\frac{k_ee^2}{r^2}"
+  },
+  {
+    "topic": "hydrogen",
+    "location": "step-2",
+    "source": "mevr = nℏ",
+    "tex": "m_evr=n\\hbar"
+  },
+  {
+    "topic": "hydrogen",
+    "location": "step-3",
+    "source": "rn = n²ℏ²/(mekee²)",
+    "tex": "r_n=\\frac{n^2\\hbar^2}{m_ek_ee^2}"
+  },
+  {
+    "topic": "hydrogen",
+    "location": "step-4",
+    "source": "En = −kee²/(2rn) = −me(kee²)²/(2n²ℏ²)",
+    "tex": "E_n=-\\frac{k_ee^2}{2r_n}=-\\frac{m_e(k_ee^2)^2}{2n^2\\hbar^2}"
+  },
+  {
+    "topic": "atomic-transitions",
+    "location": "main",
+    "source": "hf = Ei − Ef;  1/λ = RH(1/nf² − 1/ni²)",
+    "tex": "hf=E_i-E_f;\\frac1\\lambda=R_{\\mathrm H}\\left(\\frac1{n_f^2}-\\frac1{n_i^2}\\right)"
+  },
+  {
+    "topic": "atomic-transitions",
+    "location": "step-1",
+    "source": "En = −A/n²",
+    "tex": "E_n=-\\frac A{n^2}"
+  },
+  {
+    "topic": "atomic-transitions",
+    "location": "step-2",
+    "source": "Ephoton = Ei − Ef = A(1/nf² − 1/ni²)",
+    "tex": "E_{\\mathrm{photon}}=E_i-E_f=A\\left(\\frac1{n_f^2}-\\frac1{n_i^2}\\right)"
+  },
+  {
+    "topic": "atomic-transitions",
+    "location": "step-3",
+    "source": "1/λ = [A/(hc)](1/nf² − 1/ni²)",
+    "tex": "\\frac1\\lambda=\\frac A{hc}\\left(\\frac1{n_f^2}-\\frac1{n_i^2}\\right)"
+  },
+  {
+    "topic": "drude",
+    "location": "main",
+    "source": "σ = ne²τ/m;  ρ = m/(ne²τ)",
+    "tex": "\\sigma=\\frac{ne^2\\tau}m;\\rho=\\frac m{ne^2\\tau}"
+  },
+  {
+    "topic": "drude",
+    "location": "step-1",
+    "source": "m d𝐯d/dt = −e𝐄 − m𝐯d/τ",
+    "tex": "m\\frac{\\dd\\vb v_d}{\\dd t}=-e\\vb E-\\frac{m\\vb v_d}\\tau"
+  },
+  {
+    "topic": "drude",
+    "location": "step-2",
+    "source": "𝐯d = −(eτ/m)𝐄",
+    "tex": "\\vb v_d=-\\frac{e\\tau}m\\vb E"
+  },
+  {
+    "topic": "drude",
+    "location": "step-3",
+    "source": "𝐉 = n(−e)𝐯d = (ne²τ/m)𝐄",
+    "tex": "\\vb J=n(-e)\\vb v_d=\\frac{ne^2\\tau}m\\vb E"
+  },
+  {
+    "topic": "drude",
+    "location": "step-4",
+    "source": "σ = ne²τ/m;  ρ = 1/σ",
+    "tex": "\\sigma=\\frac{ne^2\\tau}m;\\rho=\\frac1\\sigma"
+  },
+  {
+    "topic": "fermi-dirac",
+    "location": "main",
+    "source": "f(E) = 1 / (exp[(E − μ)/(kBT)] + 1)",
+    "tex": "f(E)=\\frac1{\\exp\\!\\left(\\frac{E-\\mu}{k_{\\mathrm B}T}\\right)+1}"
+  },
+  {
+    "topic": "fermi-dirac",
+    "location": "step-1",
+    "source": "nstate = 0 or 1",
+    "tex": "n_{\\mathrm{state}}=0\\ \\text{or}\\ 1"
+  },
+  {
+    "topic": "fermi-dirac",
+    "location": "step-2",
+    "source": "w₀ = 1;  w₁ = exp[−(E − μ)/(kBT)]",
+    "tex": "w_0=1;w_1=\\exp\\!\\left[-\\frac{E-\\mu}{k_{\\mathrm B}T}\\right]"
+  },
+  {
+    "topic": "fermi-dirac",
+    "location": "step-3",
+    "source": "f(E) = w₁/(w₀ + w₁) = 1/[exp((E − μ)/(kBT)) + 1]",
+    "tex": "f(E)=\\frac{w_1}{w_0+w_1}=\\frac1{\\exp\\!\\left(\\frac{E-\\mu}{k_{\\mathrm B}T}\\right)+1}"
+  },
+  {
+    "topic": "fermi-dirac",
+    "location": "step-4",
+    "source": "E − μ ≫ kBT ⇒ f(E) ≈ exp[−(E − μ)/(kBT)]",
+    "tex": "E-\\mu\\gg k_{\\mathrm B}T\\ \\Rightarrow\\ f(E)\\approx\\exp\\!\\left[-\\frac{E-\\mu}{k_{\\mathrm B}T}\\right]"
+  },
+  {
+    "topic": "radioactive-decay",
+    "location": "main",
+    "source": "N(t) = N₀ exp(−λdt);  t½ = ln 2/λd",
+    "tex": "N(t)=N_0\\exp(-\\lambda_dt);t_{1/2}=\\frac{\\ln2}{\\lambda_d}"
+  },
+  {
+    "topic": "radioactive-decay",
+    "location": "step-1",
+    "source": "dN = −λdN dt",
+    "tex": "\\dd N=-\\lambda_dN\\,\\dd t"
+  },
+  {
+    "topic": "radioactive-decay",
+    "location": "step-2",
+    "source": "ln(N/N₀) = −λdt ⇒ N = N₀ exp(−λdt)",
+    "tex": "\\ln\\frac N{N_0}=-\\lambda_dt\\ \\Rightarrow\\ N=N_0\\exp(-\\lambda_dt)"
+  },
+  {
+    "topic": "radioactive-decay",
+    "location": "step-3",
+    "source": "A(t) = −dN/dt = λdN(t)",
+    "tex": "A(t)=-\\frac{\\dd N}{\\dd t}=\\lambda_dN(t)"
+  },
+  {
+    "topic": "radioactive-decay",
+    "location": "step-4",
+    "source": "t½ = ln 2/λd;  N(nt½) = N₀/2ⁿ",
+    "tex": "t_{1/2}=\\frac{\\ln2}{\\lambda_d};N(nt_{1/2})=\\frac{N_0}{2^n}"
+  },
+  {
+    "topic": "binding-energy",
+    "location": "main",
+    "source": "B = [Zmp + Nmn − mnucleus]c²;  Q = (mi − mf)c²",
+    "tex": "B=[Zm_p+Nm_n-m_{\\mathrm{nucleus}}]c^2;Q=(m_i-m_f)c^2"
+  },
+  {
+    "topic": "binding-energy",
+    "location": "step-1",
+    "source": "Eseparated = (Zmp + Nmn)c²",
+    "tex": "E_{\\mathrm{separated}}=(Zm_p+Nm_n)c^2"
+  },
+  {
+    "topic": "binding-energy",
+    "location": "step-2",
+    "source": "B = Eseparated − mnucleusc²",
+    "tex": "B=E_{\\mathrm{separated}}-m_{\\mathrm{nucleus}}c^2"
+  },
+  {
+    "topic": "binding-energy",
+    "location": "step-3",
+    "source": "Q = (Σminitial − Σmfinal)c²",
+    "tex": "Q=\\left(\\sum m_{\\mathrm{initial}}-\\sum m_{\\mathrm{final}}\\right)c^2"
+  },
+  {
+    "topic": "nuclear-energy",
+    "location": "main",
+    "source": "Q = (Σmreactants − Σmproducts)c²;  Etotal = NreactionsQ",
+    "tex": "Q=\\left(\\sum m_{\\mathrm{reactants}}-\\sum m_{\\mathrm{products}}\\right)c^2;E_{\\mathrm{total}}=N_{\\mathrm{reactions}}Q"
+  },
+  {
+    "topic": "nuclear-energy",
+    "location": "step-2",
+    "source": "Q = Δmc² = Bproducts,total − Breactants,total",
+    "tex": "Q=\\Delta m\\,c^2=B_{\\mathrm{products,total}}-B_{\\mathrm{reactants,total}}"
+  },
+  {
+    "topic": "nuclear-energy",
+    "location": "step-3",
+    "source": "Ntargets = (Msample/Mmol)NA",
+    "tex": "N_{\\mathrm{targets}}=\\frac{M_{\\mathrm{sample}}}{M_{\\mathrm{mol}}}N_{\\mathrm A}"
+  },
+  {
+    "topic": "nuclear-energy",
+    "location": "step-4",
+    "source": "1 MeV ≈ 1.602 × 10⁻¹³ J;  Etotal = NreactionsQ",
+    "tex": "1\\,\\mathrm{MeV}\\approx1.602\\times10^{-13}\\,\\mathrm J;E_{\\mathrm{total}}=N_{\\mathrm{reactions}}Q"
+  },
+  {
+    "topic": "chain-reaction",
+    "location": "main",
+    "source": "Nn = N₀keffⁿ",
+    "tex": "N_n=N_0k_{\\mathrm{eff}}^n"
+  },
+  {
+    "topic": "chain-reaction",
+    "location": "step-1",
+    "source": "Nn₊₁ = keffNn",
+    "tex": "N_{n+1}=k_{\\mathrm{eff}}N_n"
+  },
+  {
+    "topic": "chain-reaction",
+    "location": "step-2",
+    "source": "N₁ = keffN₀;  N₂ = keff²N₀;  Nn = keffⁿN₀",
+    "tex": "N_1=k_{\\mathrm{eff}}N_0;N_2=k_{\\mathrm{eff}}^2N_0;N_n=k_{\\mathrm{eff}}^nN_0"
+  },
+  {
+    "topic": "chain-reaction",
+    "location": "step-3",
+    "source": "keff < 1: subcritical;  keff = 1: critical;  keff > 1: supercritical",
+    "tex": "k_{\\mathrm{eff}}<1:\\ \\text{subcritical};k_{\\mathrm{eff}}=1:\\ \\text{critical};k_{\\mathrm{eff}}>1:\\ \\text{supercritical}"
+  },
+  {
+    "topic": "chain-reaction",
+    "location": "step-4",
+    "source": "N(t) = N₀ exp[(ln keff)t/ℓg]",
+    "tex": "N(t)=N_0\\exp\\!\\left[\\frac{(\\ln k_{\\mathrm{eff}})t}{\\ell_g}\\right]"
+  },
+  {
+    "topic": "quark-charges",
+    "location": "main",
+    "source": "qp = 2qu + qd = +e;  qn = qu + 2qd = 0",
+    "tex": "q_p=2q_u+q_d=+e;q_n=q_u+2q_d=0"
+  },
+  {
+    "topic": "quark-charges",
+    "location": "step-1",
+    "source": "p: uud;  n: udd",
+    "tex": "p:\\ uud;n:\\ udd"
+  },
+  {
+    "topic": "quark-charges",
+    "location": "step-2",
+    "source": "qp = (2/3 + 2/3 − 1/3)e = +e",
+    "tex": "q_p=\\left(\\frac23+\\frac23-\\frac13\\right)e=+e"
+  },
+  {
+    "topic": "quark-charges",
+    "location": "step-3",
+    "source": "qn = (2/3 − 1/3 − 1/3)e = 0",
+    "tex": "q_n=\\left(\\frac23-\\frac13-\\frac13\\right)e=0"
+  },
+  {
+    "topic": "quark-charges",
+    "location": "step-4",
+    "source": "Bnucleon = 1/3 + 1/3 + 1/3 = 1",
+    "tex": "B_{\\mathrm{nucleon}}=\\frac13+\\frac13+\\frac13=1"
+  },
+  {
+    "topic": "cosmological-redshift",
+    "location": "main",
+    "source": "1 + z = aobs/aemit;  v ≈ H₀d  (nearby galaxies)",
+    "tex": "1+z=\\frac{a_{\\mathrm{obs}}}{a_{\\mathrm{emit}}};v\\approx H_0d\\quad\\text{(nearby galaxies)}"
+  },
+  {
+    "topic": "cosmological-redshift",
+    "location": "step-1",
+    "source": "z = (λobs − λemit)/λemit",
+    "tex": "z=\\frac{\\lambda_{\\mathrm{obs}}-\\lambda_{\\mathrm{emit}}}{\\lambda_{\\mathrm{emit}}}"
+  },
+  {
+    "topic": "cosmological-redshift",
+    "location": "step-2",
+    "source": "λobs/λemit = aobs/aemit ⇒ 1 + z = aobs/aemit",
+    "tex": "\\frac{\\lambda_{\\mathrm{obs}}}{\\lambda_{\\mathrm{emit}}}=\\frac{a_{\\mathrm{obs}}}{a_{\\mathrm{emit}}}\\ \\Rightarrow\\ 1+z=\\frac{a_{\\mathrm{obs}}}{a_{\\mathrm{emit}}}"
+  },
+  {
+    "topic": "cosmological-redshift",
+    "location": "step-3",
+    "source": "ḋ = ȧχ = (ȧ/a)d = Hd",
+    "tex": "\\dot d=\\dot a\\chi=\\frac{\\dot a}a d=Hd"
+  },
+  {
+    "topic": "cosmological-redshift",
+    "location": "step-4",
+    "source": "cz ≈ H₀d  (small z)",
+    "tex": "cz\\approx H_0d\\quad\\text{(small }z\\text{)}"
+  },
+  {
+    "topic": "integrals",
+    "location": "main",
+    "source": "F(b) − F(a) = ∫ₐᵇ F′(t) dt",
+    "tex": "F(b)-F(a)=\\int_a^b F'(t)\\,\\dd t"
+  },
+  {
+    "topic": "integrals",
+    "location": "step-1",
+    "source": "ΔFtotal ≈ Σi r(ti)Δti",
+    "tex": "\\Delta F_{\\mathrm{total}}\\approx\\sum_i r(t_i)\\Delta t_i"
+  },
+  {
+    "topic": "integrals",
+    "location": "step-2",
+    "source": "∫ₐᵇ r(t)dt = lim Σi r(ti)Δti",
+    "tex": "\\int_a^b r(t)\\,\\dd t=\\lim_{\\max\\Delta t_i\\to0}\\sum_i r(t_i)\\Delta t_i"
+  },
+  {
+    "topic": "integrals",
+    "location": "step-3",
+    "source": "G′(t) = lim(h → 0) [∫ₜᵗ⁺ʰ r(s)ds]/h = r(t)",
+    "tex": "G'(t)=\\lim_{h\\to0}\\frac{\\int_t^{t+h}r(s)\\,\\dd s}h=r(t)"
+  },
+  {
+    "topic": "integrals",
+    "location": "step-4",
+    "source": "F(t) = F(a) + ∫ₐᵗ F′(s)ds",
+    "tex": "F(t)=F(a)+\\int_a^t F'(s)\\,\\dd s"
+  },
+  {
+    "topic": "integrals",
+    "location": "step-5",
+    "source": "∫₀ᵗ bs ds = ½bt²",
+    "tex": "\\int_0^t bs\\,\\dd s=\\frac12bt^2"
+  },
+  {
+    "topic": "equipartition",
+    "location": "main",
+    "source": "⟨pₓ²/(2m)⟩ = ½kBT;  ⟨Ktranslation⟩ = 3kBT/2",
+    "tex": "\\avg{\\frac{p_x^2}{2m}}=\\frac12k_{\\mathrm B}T;\\avg{K_{\\mathrm{translation}}}=\\frac32k_{\\mathrm B}T"
+  },
+  {
+    "topic": "equipartition",
+    "location": "step-1",
+    "source": "w(pₓ) ∝ exp[−βpₓ²/(2m)]",
+    "tex": "w(p_x)\\propto\\exp\\!\\left[-\\frac{\\beta p_x^2}{2m}\\right]"
+  },
+  {
+    "topic": "equipartition",
+    "location": "step-2",
+    "source": "⟨pₓ²/(2m)⟩ = [∫ (pₓ²/(2m))e⁻ᵝᵖₓ²ᐟ⁽²ᵐ⁾ dpₓ]/[∫ e⁻ᵝᵖₓ²ᐟ⁽²ᵐ⁾ dpₓ]",
+    "tex": "\\avg{\\frac{p_x^2}{2m}}=\\frac{\\int\\frac{p_x^2}{2m}e^{-\\beta p_x^2/(2m)}\\,\\dd p_x}{\\int e^{-\\beta p_x^2/(2m)}\\,\\dd p_x}"
+  },
+  {
+    "topic": "equipartition",
+    "location": "step-3",
+    "source": "∫ e⁻ᵝᵖ²ᐟ⁽²ᵐ⁾ dp = (β/m) ∫ p²e⁻ᵝᵖ²ᐟ⁽²ᵐ⁾ dp",
+    "tex": "\\int e^{-\\beta p^2/(2m)}\\,\\dd p=\\frac\\beta m\\int p^2e^{-\\beta p^2/(2m)}\\,\\dd p"
+  },
+  {
+    "topic": "equipartition",
+    "location": "step-4",
+    "source": "⟨pₓ²⟩ = m/β ⇒ ⟨Kₓ⟩ = 1/(2β) = ½kBT",
+    "tex": "\\avg{p_x^2}=\\frac m\\beta\\ \\Rightarrow\\ \\avg{K_x}=\\frac1{2\\beta}=\\frac12k_{\\mathrm B}T"
+  },
+  {
+    "topic": "equipartition",
+    "location": "step-5",
+    "source": "⟨Ktranslation⟩ = ⟨Kₓ + Kᵧ + Kz⟩ = 3kBT/2",
+    "tex": "\\avg{K_{\\mathrm{translation}}}=\\avg{K_x+K_y+K_z}=\\frac32k_{\\mathrm B}T"
+  },
+  {
+    "topic": "clausius",
+    "location": "main",
+    "source": "∮rev δQ/T = 0",
+    "tex": "\\oint_{\\mathrm{rev}}\\frac{\\delta Q}T=0"
+  },
+  {
+    "topic": "clausius",
+    "location": "step-2",
+    "source": "Qh/Th + Qcold,signed/Tc = 0",
+    "tex": "\\frac{Q_h}{T_h}+\\frac{Q_{\\mathrm{cold,signed}}}{T_c}=0"
+  },
+  {
+    "topic": "clausius",
+    "location": "step-3",
+    "source": "Q₀ = T₀Σi Qi/Ti",
+    "tex": "Q_0=T_0\\sum_i\\frac{Q_i}{T_i}"
+  },
+  {
+    "topic": "clausius",
+    "location": "step-4",
+    "source": "Σi Qi/Ti = 0",
+    "tex": "\\sum_i\\frac{Q_i}{T_i}=0"
+  },
+  {
+    "topic": "clausius",
+    "location": "step-5",
+    "source": "∮rev δQ/T = 0",
+    "tex": "\\oint_{\\mathrm{rev}}\\frac{\\delta Q}T=0"
+  },
+  {
+    "topic": "clausius",
+    "location": "step-6",
+    "source": "SB − SA ≡ ∫ₐᵇ,rev δQ/T",
+    "tex": "S_B-S_A\\equiv\\int_{A}^{B}\\frac{\\delta Q_{\\mathrm{rev}}}T"
+  },
+  {
+    "topic": "relative-motion",
+    "location": "main",
+    "source": "𝐯PA = 𝐯PB + 𝐯BA;  𝐚PA = 𝐚PB  (constant 𝐯BA)",
+    "tex": "\\vb v_{PA}=\\vb v_{PB}+\\vb v_{BA};\\vb a_{PA}=\\vb a_{PB}\\quad\\text{(constant }\\vb v_{BA}\\text{)}"
+  },
+  {
+    "topic": "relative-motion",
+    "location": "step-1",
+    "source": "𝐫PA = 𝐫BA + 𝐫PB",
+    "tex": "\\vb r_{PA}=\\vb r_{BA}+\\vb r_{PB}"
+  },
+  {
+    "topic": "relative-motion",
+    "location": "step-2",
+    "source": "𝐯PA = d𝐫BA/dt + d𝐫PB/dt = 𝐯BA + 𝐯PB",
+    "tex": "\\vb v_{PA}=\\frac{\\dd\\vb r_{BA}}{\\dd t}+\\frac{\\dd\\vb r_{PB}}{\\dd t}=\\vb v_{BA}+\\vb v_{PB}"
+  },
+  {
+    "topic": "relative-motion",
+    "location": "step-3",
+    "source": "𝐚PA = 𝐚BA + 𝐚PB = 𝐚PB",
+    "tex": "\\vb a_{PA}=\\vb a_{BA}+\\vb a_{PB}=\\vb a_{PB}"
+  },
+  {
+    "topic": "power",
+    "location": "main",
+    "source": "P = 𝐅 · 𝐯;  dW = τ dθ;  Paxis = τω",
+    "tex": "P=\\vb F\\cdot\\vb v;\\dd W=\\tau\\,\\dd\\theta;P_{\\mathrm{axis}}=\\tau\\omega"
+  },
+  {
+    "topic": "power",
+    "location": "step-1",
+    "source": "dW = 𝐅 · d𝐫;  P ≡ dW/dt",
+    "tex": "\\dd W=\\vb F\\cdot\\dd\\vb r;P\\equiv\\frac{\\dd W}{\\dd t}"
+  },
+  {
+    "topic": "power",
+    "location": "step-2",
+    "source": "P = 𝐅 · (d𝐫/dt) = 𝐅 · 𝐯",
+    "tex": "P=\\vb F\\cdot\\frac{\\dd\\vb r}{\\dd t}=\\vb F\\cdot\\vb v"
+  },
+  {
+    "topic": "power",
+    "location": "step-3",
+    "source": "dW = Ft r dθ = τ dθ",
+    "tex": "\\dd W=F_t r\\,\\dd\\theta=\\tau\\,\\dd\\theta"
+  },
+  {
+    "topic": "power",
+    "location": "step-4",
+    "source": "W = ∫ τ dθ;  Wconstant τ = τΔθ;  P = τ dθ/dt = τω",
+    "tex": "W=\\int\\tau\\,\\dd\\theta;W_{\\mathrm{constant}\\,\\tau}=\\tau\\Delta\\theta;P=\\tau\\frac{\\dd\\theta}{\\dd t}=\\tau\\omega"
+  },
+  {
+    "topic": "elastic-collisions",
+    "location": "main",
+    "source": "v₁ = [(m₁ − m₂)u₁ + 2m₂u₂]/(m₁ + m₂);  v₂ = [2m₁u₁ + (m₂ − m₁)u₂]/(m₁ + m₂)",
+    "tex": "v_1=\\frac{(m_1-m_2)u_1+2m_2u_2}{m_1+m_2};v_2=\\frac{2m_1u_1+(m_2-m_1)u_2}{m_1+m_2}"
+  },
+  {
+    "topic": "elastic-collisions",
+    "location": "step-1",
+    "source": "m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂;  m₁u₁² + m₂u₂² = m₁v₁² + m₂v₂²",
+    "tex": "m_1u_1+m_2u_2=m_1v_1+m_2v_2;m_1u_1^2+m_2u_2^2=m_1v_1^2+m_2v_2^2"
+  },
+  {
+    "topic": "elastic-collisions",
+    "location": "step-2",
+    "source": "u₁ + v₁ = u₂ + v₂",
+    "tex": "u_1+v_1=u_2+v_2"
+  },
+  {
+    "topic": "elastic-collisions",
+    "location": "step-3",
+    "source": "v₂ − v₁ = u₁ − u₂",
+    "tex": "v_2-v_1=u_1-u_2"
+  },
+  {
+    "topic": "elastic-collisions",
+    "location": "step-4",
+    "source": "u₂ = 0 ⇒ v₁ = (m₁ − m₂)u₁/(m₁ + m₂),  v₂ = 2m₁u₁/(m₁ + m₂)",
+    "tex": "u_2=0\\ \\Rightarrow\\ v_1=\\frac{(m_1-m_2)u_1}{m_1+m_2},\\quad v_2=\\frac{2m_1u_1}{m_1+m_2}"
+  },
+  {
+    "topic": "rocket",
+    "location": "main",
+    "source": "M dv = −vrel dM;  Δv = vrel ln(Mi/Mf)",
+    "tex": "M\\,\\dd v=-v_{\\mathrm{rel}}\\,\\dd M;\\Delta v=v_{\\mathrm{rel}}\\ln\\frac{M_i}{M_f}"
+  },
+  {
+    "topic": "rocket",
+    "location": "step-1",
+    "source": "Mv = (M + dM)(v + dv) + (−dM)(v − vrel)",
+    "tex": "Mv=(M+\\dd M)(v+\\dd v)+(-\\dd M)(v-v_{\\mathrm{rel}})"
+  },
+  {
+    "topic": "rocket",
+    "location": "step-2",
+    "source": "M dv = −vrel dM",
+    "tex": "M\\,\\dd v=-v_{\\mathrm{rel}}\\,\\dd M"
+  },
+  {
+    "topic": "rocket",
+    "location": "step-3",
+    "source": "Ma = Rvrel",
+    "tex": "Ma=Rv_{\\mathrm{rel}}"
+  },
+  {
+    "topic": "rocket",
+    "location": "step-4",
+    "source": "vf − vi = −vrel ∫[Mi,Mf] dM/M = vrel ln(Mi/Mf)",
+    "tex": "v_f-v_i=-v_{\\mathrm{rel}}\\int_{M_i}^{M_f}\\frac{\\dd M}M=v_{\\mathrm{rel}}\\ln\\frac{M_i}{M_f}"
+  },
+  {
+    "topic": "rocket",
+    "location": "step-5",
+    "source": "Ftarget = −(Δm/Δt)Δvstream",
+    "tex": "F_{\\mathrm{target}}=-\\frac{\\Delta m}{\\Delta t}\\Delta v_{\\mathrm{stream}}"
+  },
+  {
+    "topic": "rotational-kinematics",
+    "location": "main",
+    "source": "ω = ω₀ + αt;  θ − θ₀ = ω₀t + ½αt²;  ω² − ω₀² = 2α(θ − θ₀)",
+    "tex": "\\omega=\\omega_0+\\alpha t;\\theta-\\theta_0=\\omega_0t+\\frac12\\alpha t^2;\\omega^2-\\omega_0^2=2\\alpha(\\theta-\\theta_0)"
+  },
+  {
+    "topic": "rotational-kinematics",
+    "location": "step-1",
+    "source": "θ ≡ s/r;  ω ≡ dθ/dt;  α ≡ dω/dt",
+    "tex": "\\theta\\equiv\\frac sr;\\omega\\equiv\\frac{\\dd\\theta}{\\dd t};\\alpha\\equiv\\frac{\\dd\\omega}{\\dd t}"
+  },
+  {
+    "topic": "rotational-kinematics",
+    "location": "step-2",
+    "source": "ω = ω₀ + αt;  Δθ = ω₀t + ½αt²",
+    "tex": "\\omega=\\omega_0+\\alpha t;\\Delta\\theta=\\omega_0t+\\frac12\\alpha t^2"
+  },
+  {
+    "topic": "rotational-kinematics",
+    "location": "step-3",
+    "source": "Δθ = ½(ω₀ + ω)t = ωt − ½αt²;  2αΔθ = ω² − ω₀²",
+    "tex": "\\Delta\\theta=\\frac12(\\omega_0+\\omega)t=\\omega t-\\frac12\\alpha t^2;2\\alpha\\Delta\\theta=\\omega^2-\\omega_0^2"
+  },
+  {
+    "topic": "rotational-kinematics",
+    "location": "step-4",
+    "source": "v = rω;  at = rα;  ar = v²/r = rω²;  T = 2π/ω",
+    "tex": "v=r\\omega;a_t=r\\alpha;a_r=\\frac{v^2}r=r\\omega^2;T=\\frac{2\\pi}\\omega"
+  },
+  {
+    "topic": "gyroscope",
+    "location": "main",
+    "source": "adown = g sin θ/[1 + I/(MR²)];  Ω = Mgr/(Iω)",
+    "tex": "a_{\\mathrm{down}}=\\frac{g\\sin\\theta}{1+I/(MR^2)};\\Omega=\\frac{Mgr}{I\\omega}"
+  },
+  {
+    "topic": "gyroscope",
+    "location": "step-1",
+    "source": "Ma = Mg sin θ − f;  fR = Iα;  a = Rα",
+    "tex": "Ma=Mg\\sin\\theta-f;fR=I\\alpha;a=R\\alpha"
+  },
+  {
+    "topic": "gyroscope",
+    "location": "step-2",
+    "source": "a(M + I/R²) = Mg sin θ",
+    "tex": "a\\left(M+\\frac I{R^2}\\right)=Mg\\sin\\theta"
+  },
+  {
+    "topic": "gyroscope",
+    "location": "step-3",
+    "source": "|d𝐋/dt| = LΩ",
+    "tex": "\\left|\\frac{\\dd\\vb L}{\\dd t}\\right|=L\\Omega"
+  },
+  {
+    "topic": "gyroscope",
+    "location": "step-4",
+    "source": "Mgr = IωΩ ⇒ Ω = Mgr/(Iω)",
+    "tex": "Mgr=I\\omega\\Omega\\ \\Rightarrow\\ \\Omega=\\frac{Mgr}{I\\omega}"
+  },
+  {
+    "topic": "gravity-sphere-orbits",
+    "location": "main",
+    "source": "goutside = GM/r²;  Finside = GMmr/R³;  Eellipse = −GMm/(2a)",
+    "tex": "g_{\\mathrm{outside}}=\\frac{GM}{r^2};F_{\\mathrm{inside}}=\\frac{GMmr}{R^3};E_{\\mathrm{ellipse}}=-\\frac{GMm}{2a}"
+  },
+  {
+    "topic": "gravity-sphere-orbits",
+    "location": "step-1",
+    "source": "Uoutside = −GMm/r;  Uinside shell = −GMm/R",
+    "tex": "U_{\\mathrm{outside}}=-\\frac{GMm}r;U_{\\mathrm{inside\\ shell}}=-\\frac{GMm}R"
+  },
+  {
+    "topic": "gravity-sphere-orbits",
+    "location": "step-2",
+    "source": "Finside = GmMenc/r² = GMmr/R³;  goutside = F/m = GM/r²",
+    "tex": "F_{\\mathrm{inside}}=\\frac{GmM_{\\mathrm{enc}}}{r^2}=\\frac{GMmr}{R^3};g_{\\mathrm{outside}}=\\frac Fm=\\frac{GM}{r^2}"
+  },
+  {
+    "topic": "gravity-sphere-orbits",
+    "location": "step-3",
+    "source": "Ecircular = −GMm/(2r)",
+    "tex": "E_{\\mathrm{circular}}=-\\frac{GMm}{2r}"
+  },
+  {
+    "topic": "gravity-sphere-orbits",
+    "location": "step-4",
+    "source": "rp + ra = 2a ⇒ E = −GMm/(2a)",
+    "tex": "r_p+r_a=2a\\ \\Rightarrow\\ E=-\\frac{GMm}{2a}"
+  },
+  {
+    "topic": "gravity-sphere-orbits",
+    "location": "step-5",
+    "source": "U = −Σ[i<j] Gmimj/rij",
+    "tex": "U=-\\sum_{i<j}\\frac{Gm_im_j}{r_{ij}}"
+  },
+  {
+    "topic": "physical-pendulums",
+    "location": "main",
+    "source": "Ttorsion = 2π√(I/κ);  Tphysical ≈ 2π√(I/(Mgh))",
+    "tex": "T_{\\mathrm{torsion}}=2\\pi\\sqrt{\\frac I\\kappa};T_{\\mathrm{physical}}\\approx2\\pi\\sqrt{\\frac I{Mgh}}"
+  },
+  {
+    "topic": "physical-pendulums",
+    "location": "step-1",
+    "source": "Iθ̈ = τ",
+    "tex": "I\\ddot\\theta=\\tau"
+  },
+  {
+    "topic": "physical-pendulums",
+    "location": "step-2",
+    "source": "ωtorsion² = κ/I ⇒ Ttorsion = 2π√(I/κ)",
+    "tex": "\\omega_{\\mathrm{torsion}}^2=\\frac\\kappa I\\ \\Rightarrow\\ T_{\\mathrm{torsion}}=2\\pi\\sqrt{\\frac I\\kappa}"
+  },
+  {
+    "topic": "physical-pendulums",
+    "location": "step-3",
+    "source": "Iθ̈ ≈ −Mghθ",
+    "tex": "I\\ddot\\theta\\approx-Mgh\\theta"
+  },
+  {
+    "topic": "physical-pendulums",
+    "location": "step-4",
+    "source": "ωphysical² = Mgh/I ⇒ Tphysical = 2π√(I/(Mgh))",
+    "tex": "\\omega_{\\mathrm{physical}}^2=\\frac{Mgh}I\\ \\Rightarrow\\ T_{\\mathrm{physical}}=2\\pi\\sqrt{\\frac I{Mgh}}"
+  },
+  {
+    "topic": "damped-driven",
+    "location": "main",
+    "source": "x = A exp(−bt/(2m))cos(ω′t + φ);  ω′² = k/m − b²/(4m²)",
+    "tex": "x=A\\exp\\!\\left(-\\frac{bt}{2m}\\right)\\cos(\\omega't+\\phi);\\omega'^2=\\frac km-\\frac{b^2}{4m^2}"
+  },
+  {
+    "topic": "damped-driven",
+    "location": "step-1",
+    "source": "mẍ + bẋ + kx = F₀ cos(ωdt)",
+    "tex": "m\\ddot x+b\\dot x+kx=F_0\\cos(\\omega_dt)"
+  },
+  {
+    "topic": "damped-driven",
+    "location": "step-2",
+    "source": "s = −b/(2m) ± i√(k/m − b²/(4m²))",
+    "tex": "s=-\\frac b{2m}\\pm i\\sqrt{\\frac km-\\frac{b^2}{4m^2}}"
+  },
+  {
+    "topic": "damped-driven",
+    "location": "step-3",
+    "source": "⟨E⟩ ≈ ½kA² exp(−bt/m)",
+    "tex": "\\avg E\\approx\\frac12kA^2\\exp\\!\\left(-\\frac{bt}m\\right)"
+  },
+  {
+    "topic": "damped-driven",
+    "location": "step-4",
+    "source": "X = F₀/√[(k − mωd²)² + b²ωd²]",
+    "tex": "X=\\frac{F_0}{\\sqrt{(k-m\\omega_d^2)^2+b^2\\omega_d^2}}"
+  },
+  {
+    "topic": "damped-driven",
+    "location": "step-5",
+    "source": "ωvelocity,max = √(k/m);  ωdisplacement,max² = k/m − b²/(2m²)",
+    "tex": "\\omega_{\\mathrm{velocity,max}}=\\sqrt{\\frac km};\\omega_{\\mathrm{displacement,max}}^2=\\frac km-\\frac{b^2}{2m^2}"
+  },
+  {
+    "topic": "travelling-wave-energy",
+    "location": "main",
+    "source": "v = ω/k = fλ;  Pavg,string = ½μvω²A²",
+    "tex": "v=\\frac\\omega k=f\\lambda;P_{\\mathrm{avg,string}}=\\frac12\\mu v\\omega^2A^2"
+  },
+  {
+    "topic": "travelling-wave-energy",
+    "location": "step-1",
+    "source": "v = dx/dt = ω/k;  kλ = 2π;  ωT = 2π",
+    "tex": "v=\\frac{\\dd x}{\\dd t}=\\frac\\omega k;k\\lambda=2\\pi;\\omega T=2\\pi"
+  },
+  {
+    "topic": "travelling-wave-energy",
+    "location": "step-2",
+    "source": "∂y/∂t = −Aω cos(phase);  ∂y/∂x = Ak cos(phase)",
+    "tex": "\\frac{\\partial y}{\\partial t}=-A\\omega\\cos(\\text{phase});\\frac{\\partial y}{\\partial x}=Ak\\cos(\\text{phase})"
+  },
+  {
+    "topic": "travelling-wave-energy",
+    "location": "step-3",
+    "source": "Pavg = ½𝒯Ak Aω = ½μvω²A²",
+    "tex": "P_{\\mathrm{avg}}=\\frac12\\mathcal T AkA\\omega=\\frac12\\mu v\\omega^2A^2"
+  },
+  {
+    "topic": "travelling-wave-energy",
+    "location": "step-4",
+    "source": "ysame direction = 2A cos(φ/2)sin(kx − ωt + φ/2);  ystanding = 2A sin(kx)cos(ωt)",
+    "tex": "y_{\\mathrm{same\\ direction}}=2A\\cos\\!\\left(\\frac\\phi2\\right)\\sin\\!\\left(kx-\\omega t+\\frac\\phi2\\right);y_{\\mathrm{standing}}=2A\\sin(kx)\\cos(\\omega t)"
+  },
+  {
+    "topic": "sound-energy-pipes",
+    "location": "main",
+    "source": "I = ½ρvω²sm²;  fopen = nv/(2L);  fone closed = nv/(4L), n odd",
+    "tex": "I=\\frac12\\rho v\\omega^2s_m^2;f_{\\mathrm{open}}=\\frac{nv}{2L};f_{\\mathrm{one\\ closed}}=\\frac{nv}{4L},\\quad n\\text{ odd}"
+  },
+  {
+    "topic": "sound-energy-pipes",
+    "location": "step-1",
+    "source": "Δp = Bksm sin(phase);  Δpm = ρvωsm",
+    "tex": "\\Delta p=Bks_m\\sin(\\text{phase});\\Delta p_m=\\rho v\\omega s_m"
+  },
+  {
+    "topic": "sound-energy-pipes",
+    "location": "step-2",
+    "source": "I = ⟨Δp ∂s/∂t⟩ = ½ρvω²sm²",
+    "tex": "I=\\avg{\\Delta p\\frac{\\partial s}{\\partial t}}=\\frac12\\rho v\\omega^2s_m^2"
+  },
+  {
+    "topic": "sound-energy-pipes",
+    "location": "step-3",
+    "source": "I(r) = Ps/(4πr²)",
+    "tex": "I(r)=\\frac{P_s}{4\\pi r^2}"
+  },
+  {
+    "topic": "sound-energy-pipes",
+    "location": "step-4",
+    "source": "λopen = 2L/n;  λone closed = 4L/n, n = 1,3,5,…",
+    "tex": "\\lambda_{\\mathrm{open}}=\\frac{2L}n;\\lambda_{\\mathrm{one\\ closed}}=\\frac{4L}n,\\quad n=1,3,5,\\ldots"
+  },
+  {
+    "topic": "sound-energy-pipes",
+    "location": "step-5",
+    "source": "δ = 2πΔL/λ;  constructive: ΔL = mλ;  destructive: ΔL = (m + ½)λ",
+    "tex": "\\delta=\\frac{2\\pi\\Delta L}\\lambda;\\text{Constructive: }\\Delta L=m\\lambda;\\text{Destructive: }\\Delta L=\\left(m+\\frac12\\right)\\lambda"
+  },
+  {
+    "topic": "sound-energy-pipes",
+    "location": "step-6",
+    "source": "fbeat = |f₁ − f₂|",
+    "tex": "f_{\\mathrm{beat}}=|f_1-f_2|"
+  },
+  {
+    "topic": "sound-energy-pipes",
+    "location": "step-7",
+    "source": "sin θ = vt/(vst) = v/vs",
+    "tex": "\\sin\\theta=\\frac{vt}{v_st}=\\frac v{v_s}"
+  },
+  {
+    "topic": "thermal-expansion",
+    "location": "main",
+    "source": "ΔL ≈ αLΔT;  β ≈ 3α;  Q = ∫ C(T)dT",
+    "tex": "\\Delta L\\approx\\alpha L\\Delta T;\\beta\\approx3\\alpha;Q=\\int C(T)\\,\\dd T"
+  },
+  {
+    "topic": "thermal-expansion",
+    "location": "step-1",
+    "source": "α ≡ (1/L)dL/dT ⇒ ΔL ≈ αLΔT",
+    "tex": "\\alpha\\equiv\\frac1L\\frac{\\dd L}{\\dd T}\\ \\Rightarrow\\ \\Delta L\\approx\\alpha L\\Delta T"
+  },
+  {
+    "topic": "thermal-expansion",
+    "location": "step-2",
+    "source": "Vf = Vi(1 + αΔT)³ ≈ Vi(1 + 3αΔT)",
+    "tex": "V_f=V_i(1+\\alpha\\Delta T)^3\\approx V_i(1+3\\alpha\\Delta T)"
+  },
+  {
+    "topic": "thermal-expansion",
+    "location": "step-3",
+    "source": "Q = ∫[Ti,Tf] C(T)dT ⇒ Qconstant C = CΔT = mcΔT",
+    "tex": "Q=\\int_{T_i}^{T_f}C(T)\\,\\dd T\\ \\Rightarrow\\ Q_{\\mathrm{constant}\\,C}=C\\Delta T=mc\\Delta T"
+  },
+  {
+    "topic": "thermal-expansion",
+    "location": "step-4",
+    "source": "Qtransition = mL",
+    "tex": "Q_{\\mathrm{transition}}=mL"
+  },
+  {
+    "topic": "heat-conduction",
+    "location": "main",
+    "source": "P = kA(TH − TC)/L",
+    "tex": "P=\\frac{kA(T_H-T_C)}L"
+  },
+  {
+    "topic": "heat-conduction",
+    "location": "step-1",
+    "source": "jx = −k dT/dx",
+    "tex": "j_x=-k\\frac{\\dd T}{\\dd x}"
+  },
+  {
+    "topic": "heat-conduction",
+    "location": "step-2",
+    "source": "P = Ajx = −kA dT/dx = constant",
+    "tex": "P=Aj_x=-kA\\frac{\\dd T}{\\dd x}=\\mathrm{constant}"
+  },
+  {
+    "topic": "heat-conduction",
+    "location": "step-3",
+    "source": "TC − TH = −PL/(kA)",
+    "tex": "T_C-T_H=-\\frac{PL}{kA}"
+  },
+  {
+    "topic": "heat-conduction",
+    "location": "step-4",
+    "source": "P = (TH − TC)/[L/(kA)]",
+    "tex": "P=\\frac{T_H-T_C}{L/(kA)}"
+  },
+  {
+    "topic": "gas-statistics",
+    "location": "main",
+    "source": "vrms = √(3kBT/m);  vavg = √(8kBT/(πm));  vp = √(2kBT/m);  λ = 1/(√2πd²nN)",
+    "tex": "v_{\\mathrm{rms}}=\\sqrt{\\frac{3k_{\\mathrm B}T}m};v_{\\mathrm{avg}}=\\sqrt{\\frac{8k_{\\mathrm B}T}{\\pi m}};v_p=\\sqrt{\\frac{2k_{\\mathrm B}T}m};\\lambda=\\frac1{\\sqrt2\\pi d^2n_N}"
+  },
+  {
+    "topic": "gas-statistics",
+    "location": "step-1",
+    "source": "f(𝐯) = (a/π)³ᐟ² exp(−av²)",
+    "tex": "f(\\vb v)=\\left(\\frac a\\pi\\right)^{3/2}\\exp(-av^2)"
+  },
+  {
+    "topic": "gas-statistics",
+    "location": "step-2",
+    "source": "P(v) = 4π(a/π)³ᐟ²v² exp(−av²)",
+    "tex": "P(v)=4\\pi\\left(\\frac a\\pi\\right)^{3/2}v^2\\exp(-av^2)"
+  },
+  {
+    "topic": "gas-statistics",
+    "location": "step-3",
+    "source": "vavg = 2/(√π√a);  vrms = √(3/(2a));  vp = 1/√a",
+    "tex": "v_{\\mathrm{avg}}=\\frac2{\\sqrt\\pi\\sqrt a};v_{\\mathrm{rms}}=\\sqrt{\\frac3{2a}};v_p=\\frac1{\\sqrt a}"
+  },
+  {
+    "topic": "gas-statistics",
+    "location": "step-4",
+    "source": "collision rate = √2 nNπd²vavg",
+    "tex": "\\text{Collision rate}=\\sqrt2\\,n_N\\pi d^2v_{\\mathrm{avg}}"
+  },
+  {
+    "topic": "gas-statistics",
+    "location": "step-5",
+    "source": "λ = vavg/(√2 nNπd²vavg) = 1/(√2 nNπd²)",
+    "tex": "\\lambda=\\frac{v_{\\mathrm{avg}}}{\\sqrt2\\,n_N\\pi d^2v_{\\mathrm{avg}}}=\\frac1{\\sqrt2\\,n_N\\pi d^2}"
+  },
+  {
+    "topic": "heat-capacities",
+    "location": "main",
+    "source": "U = (f/2)nRT;  CV = fR/2;  CP = CV + R",
+    "tex": "U=\\frac f2nRT;C_V=\\frac{fR}2;C_P=C_V+R"
+  },
+  {
+    "topic": "heat-capacities",
+    "location": "step-1",
+    "source": "U = Nf kBT/2 = nfRT/2",
+    "tex": "U=\\frac12Nfk_{\\mathrm B}T=\\frac12nfRT"
+  },
+  {
+    "topic": "heat-capacities",
+    "location": "step-2",
+    "source": "CV ≡ (1/n)(∂U/∂T)V = fR/2",
+    "tex": "C_V\\equiv\\frac1n\\left(\\frac{\\partial U}{\\partial T}\\right)_V=\\frac{fR}2"
+  },
+  {
+    "topic": "heat-capacities",
+    "location": "step-3",
+    "source": "nCPΔT = nCVΔT + nRΔT ⇒ CP = CV + R",
+    "tex": "nC_P\\Delta T=nC_V\\Delta T+nR\\Delta T\\ \\Rightarrow\\ C_P=C_V+R"
+  },
+  {
+    "topic": "heat-capacities",
+    "location": "step-4",
+    "source": "ΔU = n∫ CV(T)dT;  constant CV ⇒ ΔU = nCVΔT",
+    "tex": "\\Delta U=n\\int C_V(T)\\,\\dd T;\\text{Constant }C_V\\ \\Rightarrow\\ \\Delta U=nC_V\\Delta T"
+  },
+  {
+    "topic": "refrigerator",
+    "location": "main",
+    "source": "COPrev = Tc/(Th − Tc)",
+    "tex": "\\mathrm{COP}_{\\mathrm{rev}}=\\frac{T_c}{T_h-T_c}"
+  },
+  {
+    "topic": "refrigerator",
+    "location": "step-1",
+    "source": "COP ≡ Qc/Win",
+    "tex": "\\mathrm{COP}\\equiv\\frac{Q_c}{W_{\\mathrm{in}}}"
+  },
+  {
+    "topic": "refrigerator",
+    "location": "step-2",
+    "source": "Qh = Qc + Win",
+    "tex": "Q_h=Q_c+W_{\\mathrm{in}}"
+  },
+  {
+    "topic": "refrigerator",
+    "location": "step-3",
+    "source": "Qh = Qc Th/Tc",
+    "tex": "Q_h=Q_c\\frac{T_h}{T_c}"
+  },
+  {
+    "topic": "refrigerator",
+    "location": "step-4",
+    "source": "COPrev = 1/(Th/Tc − 1) = Tc/(Th − Tc)",
+    "tex": "\\mathrm{COP}_{\\mathrm{rev}}=\\frac1{T_h/T_c-1}=\\frac{T_c}{T_h-T_c}"
+  },
+  {
+    "topic": "statistical-entropy",
+    "location": "main",
+    "source": "W = N!/(n₁!n₂!);  S = kB ln W",
+    "tex": "W=\\frac{N!}{n_1!n_2!};S=k_{\\mathrm B}\\ln W"
+  },
+  {
+    "topic": "statistical-entropy",
+    "location": "step-1",
+    "source": "W = binomial(N,n₁) = N!/[n₁!(N − n₁)!]",
+    "tex": "W=\\binom N{n_1}=\\frac{N!}{n_1!(N-n_1)!}"
+  },
+  {
+    "topic": "statistical-entropy",
+    "location": "step-2",
+    "source": "WAB = WA WB;  SAB = SA + SB",
+    "tex": "W_{AB}=W_AW_B;S_{AB}=S_A+S_B"
+  },
+  {
+    "topic": "statistical-entropy",
+    "location": "step-3",
+    "source": "S(W) = C ln W + reference constant",
+    "tex": "S(W)=C\\ln W+\\text{reference constant}"
+  },
+  {
+    "topic": "statistical-entropy",
+    "location": "step-4",
+    "source": "S = kB ln W",
+    "tex": "S=k_{\\mathrm B}\\ln W"
+  },
+  {
+    "topic": "charge-distributions",
+    "location": "main",
+    "source": "Edipole,axis ≈ 2kep/z³;  Edisk = σ[1 − z/√(z² + R²)]/(2ε₀);  Vdipole ≈ kep cos θ/r²",
+    "tex": "E_{\\mathrm{dipole,axis}}\\approx\\frac{2k_ep}{z^3};E_{\\mathrm{disk}}=\\frac\\sigma{2\\varepsilon_0}\\left(1-\\frac z{\\sqrt{z^2+R^2}}\\right);V_{\\mathrm{dipole}}\\approx\\frac{k_ep\\cos\\theta}{r^2}"
+  },
+  {
+    "topic": "charge-distributions",
+    "location": "step-1",
+    "source": "𝐄point = keQ r̂/r²;  𝐅probe = q𝐄external",
+    "tex": "\\vb E_{\\mathrm{point}}=\\frac{k_eQ}{r^2}\\hat r;\\vb F_{\\mathrm{probe}}=q\\vb E_{\\mathrm{external}}"
+  },
+  {
+    "topic": "charge-distributions",
+    "location": "step-2",
+    "source": "Eaxis = keq[(z − d/2)⁻² − (z + d/2)⁻²] ≈ 2keqd/z³",
+    "tex": "E_{\\mathrm{axis}}=k_eq\\left[\\left(z-\\frac d2\\right)^{-2}-\\left(z+\\frac d2\\right)^{-2}\\right]\\approx\\frac{2k_eqd}{z^3}"
+  },
+  {
+    "topic": "charge-distributions",
+    "location": "step-3",
+    "source": "Edisk = 2πkeσz ∫[0,R] r dr/(z² + r²)³ᐟ² = σ[1 − z/√(z² + R²)]/(2ε₀)",
+    "tex": "E_{\\mathrm{disk}}=2\\pi k_e\\sigma z\\int_0^R\\frac{r\\,\\dd r}{(z^2+r^2)^{3/2}}=\\frac\\sigma{2\\varepsilon_0}\\left(1-\\frac z{\\sqrt{z^2+R^2}}\\right)"
+  },
+  {
+    "topic": "charge-distributions",
+    "location": "step-4",
+    "source": "V = Σkeqi/ri;  Vcontinuous = ke∫dq/r",
+    "tex": "V=\\sum_i\\frac{k_eq_i}{r_i};V_{\\mathrm{continuous}}=k_e\\int\\frac{\\dd q}r"
+  },
+  {
+    "topic": "charge-distributions",
+    "location": "step-5",
+    "source": "Vdipole = keq(1/r₊ − 1/r₋) ≈ kep cos θ/r²",
+    "tex": "V_{\\mathrm{dipole}}=k_eq\\left(\\frac1{r_+}-\\frac1{r_-}\\right)\\approx\\frac{k_ep\\cos\\theta}{r^2}"
+  },
+  {
+    "topic": "capacitor-geometries",
+    "location": "main",
+    "source": "Ccylinder = 2πεL/ln(b/a);  Csphere = 4πεab/(b − a);  Cisolated = 4πεR",
+    "tex": "C_{\\mathrm{cylinder}}=\\frac{2\\pi\\varepsilon L}{\\ln(b/a)};C_{\\mathrm{sphere}}=\\frac{4\\pi\\varepsilon ab}{b-a};C_{\\mathrm{isolated}}=4\\pi\\varepsilon R"
+  },
+  {
+    "topic": "capacitor-geometries",
+    "location": "step-1",
+    "source": "Ecylinder = Q/(2πεLr);  Esphere = Q/(4πεr²)",
+    "tex": "E_{\\mathrm{cylinder}}=\\frac Q{2\\pi\\varepsilon Lr};E_{\\mathrm{sphere}}=\\frac Q{4\\pi\\varepsilon r^2}"
+  },
+  {
+    "topic": "capacitor-geometries",
+    "location": "step-2",
+    "source": "ΔVcylinder = [Q/(2πεL)]∫[a,b]dr/r = Q ln(b/a)/(2πεL)",
+    "tex": "\\Delta V_{\\mathrm{cylinder}}=\\frac Q{2\\pi\\varepsilon L}\\int_a^b\\frac{\\dd r}r=\\frac{Q\\ln(b/a)}{2\\pi\\varepsilon L}"
+  },
+  {
+    "topic": "capacitor-geometries",
+    "location": "step-3",
+    "source": "ΔVsphere = [Q/(4πε)](1/a − 1/b)",
+    "tex": "\\Delta V_{\\mathrm{sphere}}=\\frac Q{4\\pi\\varepsilon}\\left(\\frac1a-\\frac1b\\right)"
+  },
+  {
+    "topic": "capacitor-geometries",
+    "location": "step-4",
+    "source": "C = Q/ΔV;  b → ∞ ⇒ Cisolated = 4πεR",
+    "tex": "C=\\frac Q{\\Delta V};b\\to\\infty\\ \\Rightarrow\\ C_{\\mathrm{isolated}}=4\\pi\\varepsilon R"
+  },
+  {
+    "topic": "capacitor-networks",
+    "location": "main",
+    "source": "Cparallel = ΣCi;  1/Cseries = Σ1/Ci;  ∮𝐃 · d𝐀 = Qfree",
+    "tex": "C_{\\mathrm{parallel}}=\\sum_i C_i;\\frac1{C_{\\mathrm{series}}}=\\sum_i\\frac1{C_i};\\oint\\vb D\\cdot\\dd\\vb A=Q_{\\mathrm{free}}"
+  },
+  {
+    "topic": "capacitor-networks",
+    "location": "step-1",
+    "source": "Qtotal = ΣCiΔV ⇒ Cparallel = ΣCi",
+    "tex": "Q_{\\mathrm{total}}=\\sum_i C_i\\Delta V\\ \\Rightarrow\\ C_{\\mathrm{parallel}}=\\sum_i C_i"
+  },
+  {
+    "topic": "capacitor-networks",
+    "location": "step-2",
+    "source": "ΔVtotal = QΣ1/Ci ⇒ 1/Cseries = Σ1/Ci",
+    "tex": "\\Delta V_{\\mathrm{total}}=Q\\sum_i\\frac1{C_i}\\ \\Rightarrow\\ \\frac1{C_{\\mathrm{series}}}=\\sum_i\\frac1{C_i}"
+  },
+  {
+    "topic": "capacitor-networks",
+    "location": "step-3",
+    "source": "∇·(ε₀𝐄 + 𝐏) = ρfree",
+    "tex": "\\nabla\\cdot(\\varepsilon_0\\vb E+\\vb P)=\\rho_{\\mathrm{free}}"
+  },
+  {
+    "topic": "capacitor-networks",
+    "location": "step-4",
+    "source": "∮κε₀𝐄 · d𝐀 = Qfree;  Cfilled = κCvacuum",
+    "tex": "\\oint\\kappa\\varepsilon_0\\vb E\\cdot\\dd\\vb A=Q_{\\mathrm{free}};C_{\\mathrm{filled}}=\\kappa C_{\\mathrm{vacuum}}"
+  },
+  {
+    "topic": "current-flux",
+    "location": "main",
+    "source": "I = ∫𝐉 · d𝐀;  ∂ρcharge/∂t + ∇·𝐉 = 0",
+    "tex": "I=\\int\\vb J\\cdot\\dd\\vb A;\\frac{\\partial\\rho_{\\mathrm{charge}}}{\\partial t}+\\nabla\\cdot\\vb J=0"
+  },
+  {
+    "topic": "current-flux",
+    "location": "step-1",
+    "source": "dVcross/dt = 𝐮 · d𝐀",
+    "tex": "\\frac{\\dd V_{\\mathrm{cross}}}{\\dd t}=\\vb u\\cdot\\dd\\vb A"
+  },
+  {
+    "topic": "current-flux",
+    "location": "step-2",
+    "source": "dI = ρcharge𝐮 · d𝐀 = 𝐉 · d𝐀",
+    "tex": "\\dd I=\\rho_{\\mathrm{charge}}\\vb u\\cdot\\dd\\vb A=\\vb J\\cdot\\dd\\vb A"
+  },
+  {
+    "topic": "current-flux",
+    "location": "step-3",
+    "source": "I = ∫surface 𝐉 · d𝐀",
+    "tex": "I=\\int_{\\mathrm{surface}}\\vb J\\cdot\\dd\\vb A"
+  },
+  {
+    "topic": "current-flux",
+    "location": "step-4",
+    "source": "dQinside/dt = −∮𝐉 · d𝐀 ⇒ ∂ρcharge/∂t = −∇·𝐉",
+    "tex": "\\frac{\\dd Q_{\\mathrm{inside}}}{\\dd t}=-\\oint\\vb J\\cdot\\dd\\vb A\\ \\Rightarrow\\ \\frac{\\partial\\rho_{\\mathrm{charge}}}{\\partial t}=-\\nabla\\cdot\\vb J"
+  },
+  {
+    "topic": "battery-discharge",
+    "location": "main",
+    "source": "I = ℰ/(R + r);  Vterminal = ℰ − Ir;  qdischarge = q₀ exp(−t/(RC))",
+    "tex": "I=\\frac{\\mathcal E}{R+r};V_{\\mathrm{terminal}}=\\mathcal E-Ir;q_{\\mathrm{discharge}}=q_0\\exp\\!\\left(-\\frac t{RC}\\right)"
+  },
+  {
+    "topic": "battery-discharge",
+    "location": "step-1",
+    "source": "ℰ − I(R + r) = 0;  Vterminal = IR = ℰ − Ir",
+    "tex": "\\mathcal E-I(R+r)=0;V_{\\mathrm{terminal}}=IR=\\mathcal E-Ir"
+  },
+  {
+    "topic": "battery-discharge",
+    "location": "step-2",
+    "source": "ℰI = I²r + Vterminal I",
+    "tex": "\\mathcal EI=I^2r+V_{\\mathrm{terminal}}I"
+  },
+  {
+    "topic": "battery-discharge",
+    "location": "step-3",
+    "source": "R dq/dt + q/C = 0",
+    "tex": "R\\frac{\\dd q}{\\dd t}+\\frac qC=0"
+  },
+  {
+    "topic": "battery-discharge",
+    "location": "step-4",
+    "source": "q = q₀ exp(−t/(RC));  I = −q₀ exp(−t/(RC))/(RC)",
+    "tex": "q=q_0\\exp\\!\\left(-\\frac t{RC}\\right);I=-\\frac{q_0}{RC}\\exp\\!\\left(-\\frac t{RC}\\right)"
+  },
+  {
+    "topic": "magnetic-geometries",
+    "location": "main",
+    "source": "Barc = μ₀Iφ/(4πR);  Btoroid = μ₀NI/(2πr);  F/L = μ₀I₁I₂/(2πd)",
+    "tex": "B_{\\mathrm{arc}}=\\frac{\\mu_0I\\varphi}{4\\pi R};B_{\\mathrm{toroid}}=\\frac{\\mu_0NI}{2\\pi r};\\frac FL=\\frac{\\mu_0I_1I_2}{2\\pi d}"
+  },
+  {
+    "topic": "magnetic-geometries",
+    "location": "step-1",
+    "source": "B = [μ₀I/(4πR²)]∫ds = μ₀Iφ/(4πR)",
+    "tex": "B=\\frac{\\mu_0I}{4\\pi R^2}\\int\\dd s=\\frac{\\mu_0I\\varphi}{4\\pi R}"
+  },
+  {
+    "topic": "magnetic-geometries",
+    "location": "step-2",
+    "source": "B(2πr) = μ₀NI ⇒ B = μ₀NI/(2πr)",
+    "tex": "B(2\\pi r)=\\mu_0NI\\ \\Rightarrow\\ B=\\frac{\\mu_0NI}{2\\pi r}"
+  },
+  {
+    "topic": "magnetic-geometries",
+    "location": "step-3",
+    "source": "F = I₂LB₁ = μ₀LI₁I₂/(2πd)",
+    "tex": "F=I_2LB_1=\\frac{\\mu_0LI_1I_2}{2\\pi d}"
+  },
+  {
+    "topic": "magnetic-geometries",
+    "location": "step-4",
+    "source": "Bz,far ≈ μ₀μ/(2πz³)",
+    "tex": "B_{z,\\mathrm{far}}\\approx\\frac{\\mu_0\\mu}{2\\pi z^3}"
+  },
+  {
+    "topic": "rl-mutual",
+    "location": "main",
+    "source": "Irise = (ℰ/R)[1 − exp(−Rt/L)];  Idecay = I₀ exp(−Rt/L);  uB = B²/(2μ₀)",
+    "tex": "I_{\\mathrm{rise}}=\\frac{\\mathcal E}R\\left[1-\\exp\\!\\left(-\\frac{Rt}L\\right)\\right];I_{\\mathrm{decay}}=I_0\\exp\\!\\left(-\\frac{Rt}L\\right);u_B=\\frac{B^2}{2\\mu_0}"
+  },
+  {
+    "topic": "rl-mutual",
+    "location": "step-1",
+    "source": "I(t) = ℰ/R + [I(0) − ℰ/R]exp(−Rt/L)",
+    "tex": "I(t)=\\frac{\\mathcal E}R+\\left[I(0)-\\frac{\\mathcal E}R\\right]\\exp\\!\\left(-\\frac{Rt}L\\right)"
+  },
+  {
+    "topic": "rl-mutual",
+    "location": "step-2",
+    "source": "I(t) = I₀ exp(−t/τL);  τL = L/R",
+    "tex": "I(t)=I_0\\exp\\!\\left(-\\frac t{\\tau_L}\\right);\\tau_L=\\frac LR"
+  },
+  {
+    "topic": "rl-mutual",
+    "location": "step-3",
+    "source": "L = (nℓ)(μ₀nI)A/I = μ₀n²Aℓ",
+    "tex": "L=\\frac{(n\\ell)(\\mu_0nI)A}I=\\mu_0n^2A\\ell"
+  },
+  {
+    "topic": "rl-mutual",
+    "location": "step-4",
+    "source": "uB = ½μ₀n²I² = B²/(2μ₀)",
+    "tex": "u_B=\\frac12\\mu_0n^2I^2=\\frac{B^2}{2\\mu_0}"
+  },
+  {
+    "topic": "rl-mutual",
+    "location": "step-5",
+    "source": "ℰ₂ = −M dI₁/dt;  ℰ₁ = −M dI₂/dt",
+    "tex": "\\mathcal E_2=-M\\frac{\\dd I_1}{\\dd t};\\mathcal E_1=-M\\frac{\\dd I_2}{\\dd t}"
+  },
+  {
+    "topic": "ac-power-transformers",
+    "location": "main",
+    "source": "Pavg = Irms²R = VrmsIrms cos φ;  Vs/Vp = Ns/Np;  Req = (Np/Ns)²Rload",
+    "tex": "P_{\\mathrm{avg}}=I_{\\mathrm{rms}}^2R=V_{\\mathrm{rms}}I_{\\mathrm{rms}}\\cos\\phi;\\frac{V_s}{V_p}=\\frac{N_s}{N_p};R_{\\mathrm{eq}}=\\left(\\frac{N_p}{N_s}\\right)^2R_{\\mathrm{load}}"
+  },
+  {
+    "topic": "ac-power-transformers",
+    "location": "step-1",
+    "source": "Lq̈ + Rq̇ + q/C = 0;  q = Qexp(−Rt/(2L))cos(ω′t + φ);  ω′² = 1/(LC) − R²/(4L²)",
+    "tex": "L\\ddot q+R\\dot q+\\frac qC=0;q=Q\\exp\\!\\left(-\\frac{Rt}{2L}\\right)\\cos(\\omega't+\\phi);\\omega'^2=\\frac1{LC}-\\frac{R^2}{4L^2}"
+  },
+  {
+    "topic": "ac-power-transformers",
+    "location": "step-2",
+    "source": "Pavg = VrmsIrms cos φ = Irms²R",
+    "tex": "P_{\\mathrm{avg}}=V_{\\mathrm{rms}}I_{\\mathrm{rms}}\\cos\\phi=I_{\\mathrm{rms}}^2R"
+  },
+  {
+    "topic": "ac-power-transformers",
+    "location": "step-3",
+    "source": "tan φ = (ωL − 1/(ωC))/R",
+    "tex": "\\tan\\phi=\\frac{\\omega L-1/(\\omega C)}R"
+  },
+  {
+    "topic": "ac-power-transformers",
+    "location": "step-4",
+    "source": "Vp/Np = Vs/Ns = |dΦ/dt|",
+    "tex": "\\frac{V_p}{N_p}=\\frac{V_s}{N_s}=\\left|\\frac{\\dd\\Phi}{\\dd t}\\right|"
+  },
+  {
+    "topic": "ac-power-transformers",
+    "location": "step-5",
+    "source": "Is/Ip = Np/Ns;  Vp/Ip = (Np/Ns)²(Vs/Is)",
+    "tex": "\\frac{I_s}{I_p}=\\frac{N_p}{N_s};\\frac{V_p}{I_p}=\\left(\\frac{N_p}{N_s}\\right)^2\\frac{V_s}{I_s}"
+  },
+  {
+    "topic": "magnetic-moments",
+    "location": "main",
+    "source": "𝛍orb = −e𝐋/(2m);  𝛍spin ≈ −e𝐒/m;  Fz = μz ∂B/∂z",
+    "tex": "\\vb\\mu_{\\mathrm{orb}}=-\\frac e{2m}\\vb L;\\vb\\mu_{\\mathrm{spin}}\\approx-\\frac em\\vb S;F_z=\\mu_z\\frac{\\partial B}{\\partial z}"
+  },
+  {
+    "topic": "magnetic-moments",
+    "location": "step-1",
+    "source": "μorb/L = q/(2m) ⇒ 𝛍orb = −e𝐋/(2m)",
+    "tex": "\\frac{\\mu_{\\mathrm{orb}}}L=\\frac q{2m}\\ \\Rightarrow\\ \\vb\\mu_{\\mathrm{orb}}=-\\frac e{2m}\\vb L"
+  },
+  {
+    "topic": "magnetic-moments",
+    "location": "step-2",
+    "source": "𝛍spin = −g(e/(2m))𝐒,  g ≈ 2",
+    "tex": "\\vb\\mu_{\\mathrm{spin}}=-g\\frac e{2m}\\vb S,\\quad g\\approx2"
+  },
+  {
+    "topic": "magnetic-moments",
+    "location": "step-3",
+    "source": "μorb,z = −mℓμB;  μspin,z ≈ −2msμB,  ms = ±½",
+    "tex": "\\mu_{\\mathrm{orb},z}=-m_\\ell\\mu_{\\mathrm B};\\mu_{\\mathrm{spin},z}\\approx-2m_s\\mu_{\\mathrm B},\\quad m_s=\\pm\\frac12"
+  },
+  {
+    "topic": "magnetic-moments",
+    "location": "step-4",
+    "source": "Fz = μz∂B/∂z;  ΔE = 2|μz|B;  hfresonance = ΔE",
+    "tex": "F_z=\\mu_z\\frac{\\partial B}{\\partial z};\\Delta E=2|\\mu_z|B;hf_{\\mathrm{resonance}}=\\Delta E"
+  },
+  {
+    "topic": "curie-law",
+    "location": "main",
+    "source": "M ≈ nμ²B/(3kBT)",
+    "tex": "M\\approx\\frac{n\\mu^2B}{3k_{\\mathrm B}T}"
+  },
+  {
+    "topic": "curie-law",
+    "location": "step-1",
+    "source": "𝐌 ≡ (Σ𝛍i)/V",
+    "tex": "\\vb M\\equiv\\frac{\\sum_i\\vb\\mu_i}V"
+  },
+  {
+    "topic": "curie-law",
+    "location": "step-2",
+    "source": "⟨cos θ⟩ = [∫[−1,1] u exp(bu)du]/[∫[−1,1] exp(bu)du]",
+    "tex": "\\avg{\\cos\\theta}=\\frac{\\int_{-1}^1u\\exp(bu)\\,\\dd u}{\\int_{-1}^1\\exp(bu)\\,\\dd u}"
+  },
+  {
+    "topic": "curie-law",
+    "location": "step-3",
+    "source": "⟨cos θ⟩ ≈ b/3",
+    "tex": "\\avg{\\cos\\theta}\\approx\\frac b3"
+  },
+  {
+    "topic": "curie-law",
+    "location": "step-4",
+    "source": "M = nμ⟨cos θ⟩ ≈ nμ²B/(3kBT)",
+    "tex": "M=n\\mu\\avg{\\cos\\theta}\\approx\\frac{n\\mu^2B}{3k_{\\mathrm B}T}"
+  },
+  {
+    "topic": "polarization-refraction",
+    "location": "main",
+    "source": "I = I₀cos²θ;  n₁sin θ₁ = n₂sin θ₂;  sin θc = n₂/n₁;  tan θB = n₂/n₁",
+    "tex": "I=I_0\\cos^2\\theta;n_1\\sin\\theta_1=n_2\\sin\\theta_2;\\sin\\theta_c=\\frac{n_2}{n_1};\\tan\\theta_{\\mathrm B}=\\frac{n_2}{n_1}"
+  },
+  {
+    "topic": "polarization-refraction",
+    "location": "step-1",
+    "source": "Etransmitted = E₀cos θ ⇒ I = I₀cos²θ",
+    "tex": "E_{\\mathrm{transmitted}}=E_0\\cos\\theta\\ \\Rightarrow\\ I=I_0\\cos^2\\theta"
+  },
+  {
+    "topic": "polarization-refraction",
+    "location": "step-2",
+    "source": "Iunpolarized,out = I₀/2",
+    "tex": "I_{\\mathrm{unpolarized,out}}=\\frac{I_0}2"
+  },
+  {
+    "topic": "polarization-refraction",
+    "location": "step-3",
+    "source": "k₁sin θ₁ = k₂sin θ₂ ⇒ n₁sin θ₁ = n₂sin θ₂",
+    "tex": "k_1\\sin\\theta_1=k_2\\sin\\theta_2\\ \\Rightarrow\\ n_1\\sin\\theta_1=n_2\\sin\\theta_2"
+  },
+  {
+    "topic": "polarization-refraction",
+    "location": "step-4",
+    "source": "sin θc = n₂/n₁;  λmedium = λ₀/n",
+    "tex": "\\sin\\theta_c=\\frac{n_2}{n_1};\\lambda_{\\mathrm{medium}}=\\frac{\\lambda_0}n"
+  },
+  {
+    "topic": "polarization-refraction",
+    "location": "step-5",
+    "source": "rp = (n₂cos θ₁ − n₁cos θ₂)/(n₂cos θ₁ + n₁cos θ₂);  rp(θB) = 0",
+    "tex": "r_p=\\frac{n_2\\cos\\theta_1-n_1\\cos\\theta_2}{n_2\\cos\\theta_1+n_1\\cos\\theta_2};r_p(\\theta_{\\mathrm B})=0"
+  },
+  {
+    "topic": "refracting-instruments",
+    "location": "main",
+    "source": "n₁/p + n₂/i = (n₂ − n₁)/R;  1/f = (n − 1)(1/R₁ − 1/R₂)",
+    "tex": "\\frac{n_1}p+\\frac{n_2}i=\\frac{n_2-n_1}R;\\frac1f=(n-1)\\left(\\frac1{R_1}-\\frac1{R_2}\\right)"
+  },
+  {
+    "topic": "refracting-instruments",
+    "location": "step-1",
+    "source": "n₁/p + n₂/i = (n₂ − n₁)/R",
+    "tex": "\\frac{n_1}p+\\frac{n_2}i=\\frac{n_2-n_1}R"
+  },
+  {
+    "topic": "refracting-instruments",
+    "location": "step-2",
+    "source": "1/p + 1/i = (n − 1)(1/R₁ − 1/R₂) = 1/f",
+    "tex": "\\frac1p+\\frac1i=(n-1)\\left(\\frac1{R_1}-\\frac1{R_2}\\right)=\\frac1f"
+  },
+  {
+    "topic": "refracting-instruments",
+    "location": "step-3",
+    "source": "m ≡ hi/ho = −i/p",
+    "tex": "m\\equiv\\frac{h_i}{h_o}=-\\frac ip"
+  },
+  {
+    "topic": "refracting-instruments",
+    "location": "step-4",
+    "source": "mθ ≈ (h/f)/(h/D) = D/f",
+    "tex": "m_\\theta\\approx\\frac{h/f}{h/D}=\\frac Df"
+  },
+  {
+    "topic": "refracting-instruments",
+    "location": "step-5",
+    "source": "Mmicroscope ≈ −(s/fob)(D/fey);  mtelescope = −fob/fey",
+    "tex": "M_{\\mathrm{microscope}}\\approx-\\frac{s}{f_{\\mathrm{ob}}}\\frac D{f_{\\mathrm{ey}}};m_{\\mathrm{telescope}}=-\\frac{f_{\\mathrm{ob}}}{f_{\\mathrm{ey}}}"
+  },
+  {
+    "topic": "apertures-bragg",
+    "location": "main",
+    "source": "sin θfirst = 1.22λ/D;  Idouble ∝ cos²β (sin α/α)²;  2d sin θ = mλ",
+    "tex": "\\sin\\theta_{\\mathrm{first}}=\\frac{1.22\\lambda}D;I_{\\mathrm{double}}\\propto\\cos^2\\beta\\left(\\frac{\\sin\\alpha}\\alpha\\right)^2;2d\\sin\\theta=m\\lambda"
+  },
+  {
+    "topic": "apertures-bragg",
+    "location": "step-1",
+    "source": "E(θ)/E(0) = 2J₁(u)/u;  u = πD sin θ/λ",
+    "tex": "\\frac{E(\\theta)}{E(0)}=\\frac{2J_1(u)}u;u=\\frac{\\pi D\\sin\\theta}\\lambda"
+  },
+  {
+    "topic": "apertures-bragg",
+    "location": "step-2",
+    "source": "sin θfirst = (3.831706/π)λ/D ≈ 1.22λ/D",
+    "tex": "\\sin\\theta_{\\mathrm{first}}=\\frac{3.831706}\\pi\\frac\\lambda D\\approx\\frac{1.22\\lambda}D"
+  },
+  {
+    "topic": "apertures-bragg",
+    "location": "step-3",
+    "source": "θRayleigh ≈ 1.22λ/D",
+    "tex": "\\theta_{\\mathrm{Rayleigh}}\\approx\\frac{1.22\\lambda}D"
+  },
+  {
+    "topic": "apertures-bragg",
+    "location": "step-4",
+    "source": "I(θ) = Icentral cos²β (sin α/α)²",
+    "tex": "I(\\theta)=I_{\\mathrm{central}}\\cos^2\\beta\\left(\\frac{\\sin\\alpha}\\alpha\\right)^2"
+  },
+  {
+    "topic": "apertures-bragg",
+    "location": "step-5",
+    "source": "Δpath = 2d sin θ = mλ",
+    "tex": "\\Delta_{\\mathrm{path}}=2d\\sin\\theta=m\\lambda"
+  },
+  {
+    "topic": "lorentz-transform",
+    "location": "main",
+    "source": "x′ = γ(x − vt);  t′ = γ(t − vx/c²);  u = (u′ + v)/(1 + u′v/c²)",
+    "tex": "x'=\\gamma(x-vt);t'=\\gamma\\left(t-\\frac{vx}{c^2}\\right);u=\\frac{u'+v}{1+u'v/c^2}"
+  },
+  {
+    "topic": "lorentz-transform",
+    "location": "step-1",
+    "source": "x′ = A(x − vt);  t′ = A(t − vx/c²)",
+    "tex": "x'=A(x-vt);t'=A\\left(t-\\frac{vx}{c^2}\\right)"
+  },
+  {
+    "topic": "lorentz-transform",
+    "location": "step-2",
+    "source": "A = γ;  y′ = y;  z′ = z",
+    "tex": "A=\\gamma;y'=y;z'=z"
+  },
+  {
+    "topic": "lorentz-transform",
+    "location": "step-3",
+    "source": "L = Δx = L₀/γ",
+    "tex": "L=\\Delta x=\\frac{L_0}\\gamma"
+  },
+  {
+    "topic": "lorentz-transform",
+    "location": "step-4",
+    "source": "u = dx/dt = (u′ + v)/(1 + u′v/c²)",
+    "tex": "u=\\frac{\\dd x}{\\dd t}=\\frac{u'+v}{1+u'v/c^2}"
+  },
+  {
+    "topic": "light-doppler",
+    "location": "main",
+    "source": "λreceding/λ₀ = √[(1 + β)/(1 − β)];  ftransverse = f₀/γ",
+    "tex": "\\frac{\\lambda_{\\mathrm{receding}}}{\\lambda_0}=\\sqrt{\\frac{1+\\beta}{1-\\beta}};f_{\\mathrm{transverse}}=\\frac{f_0}\\gamma"
+  },
+  {
+    "topic": "light-doppler",
+    "location": "step-1",
+    "source": "ω₀ = γω(1 − βcos θ)",
+    "tex": "\\omega_0=\\gamma\\omega(1-\\beta\\cos\\theta)"
+  },
+  {
+    "topic": "light-doppler",
+    "location": "step-2",
+    "source": "λ/λ₀ = γ(1 + β) = √[(1 + β)/(1 − β)]",
+    "tex": "\\frac\\lambda{\\lambda_0}=\\gamma(1+\\beta)=\\sqrt{\\frac{1+\\beta}{1-\\beta}}"
+  },
+  {
+    "topic": "light-doppler",
+    "location": "step-3",
+    "source": "|Δλ|/λ₀ ≈ |v|/c",
+    "tex": "\\frac{|\\Delta\\lambda|}{\\lambda_0}\\approx\\frac{|v|}c"
+  },
+  {
+    "topic": "light-doppler",
+    "location": "step-4",
+    "source": "f = f₀/γ = f₀√(1 − β²)",
+    "tex": "f=\\frac{f_0}\\gamma=f_0\\sqrt{1-\\beta^2}"
+  },
+  {
+    "topic": "planck-radiation",
+    "location": "main",
+    "source": "Mλ = [2πhc²/λ⁵]/[exp(hc/(λkBT)) − 1];  M = σT⁴",
+    "tex": "M_\\lambda=\\frac{2\\pi hc^2}{\\lambda^5\\left[\\exp\\!\\left(\\frac{hc}{\\lambda k_{\\mathrm B}T}\\right)-1\\right]};M=\\sigma T^4"
+  },
+  {
+    "topic": "planck-radiation",
+    "location": "step-1",
+    "source": "uν = (8πhν³/c³)/[exp(hν/(kBT)) − 1]",
+    "tex": "u_\\nu=\\frac{8\\pi h\\nu^3}{c^3\\left[\\exp\\!\\left(\\frac{h\\nu}{k_{\\mathrm B}T}\\right)-1\\right]}"
+  },
+  {
+    "topic": "planck-radiation",
+    "location": "step-2",
+    "source": "Mλ = (c/4)uν |dν/dλ| = [2πhc²/λ⁵]/[exp(hc/(λkBT)) − 1]",
+    "tex": "M_\\lambda=\\frac c4u_\\nu\\left|\\frac{\\dd\\nu}{\\dd\\lambda}\\right|=\\frac{2\\pi hc^2}{\\lambda^5\\left[\\exp\\!\\left(\\frac{hc}{\\lambda k_{\\mathrm B}T}\\right)-1\\right]}"
+  },
+  {
+    "topic": "planck-radiation",
+    "location": "step-3",
+    "source": "λmaxT = hc/(4.965114kB) ≈ 2.898 × 10⁻³ m·K",
+    "tex": "\\lambda_{\\max}T=\\frac{hc}{4.965114k_{\\mathrm B}}\\approx2.898\\times10^{-3}\\,\\mathrm{m\\cdot K}"
+  },
+  {
+    "topic": "planck-radiation",
+    "location": "step-4",
+    "source": "M = [2πkB⁴T⁴/(h³c²)]∫[0,∞] x³/(exp(x) − 1)dx = [2π⁵kB⁴/(15h³c²)]T⁴",
+    "tex": "M=\\frac{2\\pi k_{\\mathrm B}^4T^4}{h^3c^2}\\int_0^\\infty\\frac{x^3}{e^x-1}\\dd x=\\frac{2\\pi^5k_{\\mathrm B}^4}{15h^3c^2}T^4"
+  },
+  {
+    "topic": "planck-radiation",
+    "location": "step-5",
+    "source": "Pnet,out = εAσ(T⁴ − Tenv⁴)",
+    "tex": "P_{\\mathrm{net,out}}=\\varepsilon A\\sigma(T^4-T_{\\mathrm{env}}^4)"
+  },
+  {
+    "topic": "quantum-foundations",
+    "location": "main",
+    "source": "iℏ∂Ψ/∂t = ĤΨ;  ΔxΔpx ≥ ℏ/2;  λ = h/p",
+    "tex": "i\\hbar\\frac{\\partial\\Psi}{\\partial t}=\\hat H\\Psi;\\Delta x\\Delta p_x\\ge\\frac\\hbar2;\\lambda=\\frac hp"
+  },
+  {
+    "topic": "quantum-foundations",
+    "location": "step-1",
+    "source": "Ĥ = −ℏ²∇²/(2m) + U",
+    "tex": "\\hat H=-\\frac{\\hbar^2}{2m}\\nabla^2+U"
+  },
+  {
+    "topic": "quantum-foundations",
+    "location": "step-2",
+    "source": "−ℏ²ψ″/(2m) + Uψ = Eψ",
+    "tex": "-\\frac{\\hbar^2}{2m}\\psi''+U\\psi=E\\psi"
+  },
+  {
+    "topic": "quantum-foundations",
+    "location": "step-3",
+    "source": "p = ℏk;  λ = 2π/k ⇒ λ = h/p",
+    "tex": "p=\\hbar k;\\lambda=\\frac{2\\pi}k\\ \\Rightarrow\\ \\lambda=\\frac hp"
+  },
+  {
+    "topic": "quantum-foundations",
+    "location": "step-4",
+    "source": "ΔxΔpx ≥ ½|iℏ| = ℏ/2",
+    "tex": "\\Delta x\\Delta p_x\\ge\\frac12|i\\hbar|=\\frac\\hbar2"
+  },
+  {
+    "topic": "quantum-foundations",
+    "location": "step-5",
+    "source": "R + T = 1 ⇒ T = 1 − R",
+    "tex": "R+T=1\\ \\Rightarrow\\ T=1-R"
+  },
+  {
+    "topic": "quantum-normalization",
+    "location": "main",
+    "source": "ψn = √(2/L)sin(nπx/L);  Enx,ny = h²(nx²/Lx² + ny²/Ly²)/(8m)",
+    "tex": "\\psi_n=\\sqrt{\\frac2L}\\sin\\!\\left(\\frac{n\\pi x}L\\right);E_{n_x,n_y}=\\frac{h^2}{8m}\\left(\\frac{n_x^2}{L_x^2}+\\frac{n_y^2}{L_y^2}\\right)"
+  },
+  {
+    "topic": "quantum-normalization",
+    "location": "step-1",
+    "source": "∫all space |ψ|²dV = 1",
+    "tex": "\\int_{\\mathrm{all\\ space}}|\\psi|^2\\,\\dd V=1"
+  },
+  {
+    "topic": "quantum-normalization",
+    "location": "step-2",
+    "source": "A = √(2/L)",
+    "tex": "A=\\sqrt{\\frac2L}"
+  },
+  {
+    "topic": "quantum-normalization",
+    "location": "step-3",
+    "source": "ψnx,ny = ψnx(x)ψny(y);  E = Ex + Ey",
+    "tex": "\\psi_{n_x,n_y}=\\psi_{n_x}(x)\\psi_{n_y}(y);E=E_x+E_y"
+  },
+  {
+    "topic": "quantum-normalization",
+    "location": "step-4",
+    "source": "P(r) = r²|R(r)|²;  Prob(r₁ < r < r₂) = ∫[r₁,r₂] P(r)dr",
+    "tex": "P(r)=r^2|R(r)|^2;\\operatorname{Prob}(r_1<r<r_2)=\\int_{r_1}^{r_2}P(r)\\,\\dd r"
+  },
+  {
+    "topic": "quantum-angular",
+    "location": "main",
+    "source": "L² = ℓ(ℓ + 1)ℏ²;  Lz = mℓℏ;  S² = s(s + 1)ℏ²",
+    "tex": "L^2=\\ell(\\ell+1)\\hbar^2;L_z=m_\\ell\\hbar;S^2=s(s+1)\\hbar^2"
+  },
+  {
+    "topic": "quantum-angular",
+    "location": "step-1",
+    "source": "Jz|j,m⟩ = mℏ|j,m⟩",
+    "tex": "J_z|j,m\\rangle=m\\hbar|j,m\\rangle"
+  },
+  {
+    "topic": "quantum-angular",
+    "location": "step-2",
+    "source": "J² = j(j + 1)ℏ²",
+    "tex": "J^2=j(j+1)\\hbar^2"
+  },
+  {
+    "topic": "quantum-angular",
+    "location": "step-3",
+    "source": "m = −j, −j + 1, …, j;  orbital ℓ = 0,1,2,…",
+    "tex": "m=-j,-j+1,\\ldots,j;\\text{Orbital }\\ell=0,1,2,\\ldots"
+  },
+  {
+    "topic": "quantum-angular",
+    "location": "step-4",
+    "source": "|μorb| = μB√[ℓ(ℓ + 1)];  μorb,z = −mℓμB;  μspin,z ≈ −2msμB",
+    "tex": "|\\mu_{\\mathrm{orb}}|=\\mu_{\\mathrm B}\\sqrt{\\ell(\\ell+1)};\\mu_{\\mathrm{orb},z}=-m_\\ell\\mu_{\\mathrm B};\\mu_{\\mathrm{spin},z}\\approx-2m_s\\mu_{\\mathrm B}"
+  },
+  {
+    "topic": "quantum-angular",
+    "location": "step-5",
+    "source": "ℓ = 0, 1, …, n − 1",
+    "tex": "\\ell=0,1,\\ldots,n-1"
+  },
+  {
+    "topic": "electron-gas-states",
+    "location": "main",
+    "source": "g(E) = (8√2πm³ᐟ²/h³)√E;  EF = ℏ²(3π²n)²ᐟ³/(2m)",
+    "tex": "g(E)=\\frac{8\\sqrt2\\pi m^{3/2}}{h^3}\\sqrt E;E_{\\mathrm F}=\\frac{\\hbar^2(3\\pi^2n)^{2/3}}{2m}"
+  },
+  {
+    "topic": "electron-gas-states",
+    "location": "step-1",
+    "source": "Nstates(k)/V = k³/(3π²)",
+    "tex": "\\frac{N_{\\mathrm{states}}(k)}V=\\frac{k^3}{3\\pi^2}"
+  },
+  {
+    "topic": "electron-gas-states",
+    "location": "step-2",
+    "source": "g(E) = (1/(2π²))(2m/ℏ²)³ᐟ²√E",
+    "tex": "g(E)=\\frac1{2\\pi^2}\\left(\\frac{2m}{\\hbar^2}\\right)^{3/2}\\sqrt E"
+  },
+  {
+    "topic": "electron-gas-states",
+    "location": "step-3",
+    "source": "n = (1/(3π²))(2mEF/ℏ²)³ᐟ² ⇒ EF = ℏ²(3π²n)²ᐟ³/(2m)",
+    "tex": "n=\\frac1{3\\pi^2}\\left(\\frac{2mE_{\\mathrm F}}{\\hbar^2}\\right)^{3/2}\\ \\Rightarrow\\ E_{\\mathrm F}=\\frac{\\hbar^2(3\\pi^2n)^{2/3}}{2m}"
+  },
+  {
+    "topic": "electron-gas-states",
+    "location": "step-4",
+    "source": "goccupied(E) = g(E)f(E);  n = ∫ g(E)f(E)dE",
+    "tex": "g_{\\mathrm{occupied}}(E)=g(E)f(E);n=\\int g(E)f(E)\\,\\dd E"
+  },
+  {
+    "topic": "electron-gas-states",
+    "location": "step-5",
+    "source": "n = zρmassNA/Mmol;  λ ≈ hc/Eg",
+    "tex": "n=\\frac{z\\rho_{\\mathrm{mass}}N_{\\mathrm A}}{M_{\\mathrm{mol}}};\\lambda\\approx\\frac{hc}{E_g}"
+  },
+  {
+    "topic": "nuclear-size-fusion",
+    "location": "main",
+    "source": "R = r₀A¹ᐟ³;  nτ ≳ 12kBT/(⟨σv⟩Eα)  (idealized D–T self-heating)",
+    "tex": "R=r_0A^{1/3};n\\tau\\gtrsim\\frac{12k_{\\mathrm B}T}{\\avg{\\sigma v}E_\\alpha};\\text{(idealized D--T self-heating)}"
+  },
+  {
+    "topic": "nuclear-size-fusion",
+    "location": "step-1",
+    "source": "4πR³/3 = A vnucleon ⇒ R = [3vnucleon/(4π)]¹ᐟ³ A¹ᐟ³",
+    "tex": "\\frac{4\\pi R^3}3=Av_{\\mathrm{nucleon}}\\ \\Rightarrow\\ R=\\left(\\frac{3v_{\\mathrm{nucleon}}}{4\\pi}\\right)^{1/3}A^{1/3}"
+  },
+  {
+    "topic": "nuclear-size-fusion",
+    "location": "step-2",
+    "source": "Palpha/volume = (n²/4)⟨σv⟩Eα",
+    "tex": "\\frac{P_\\alpha}{\\mathrm{volume}}=\\frac{n^2}4\\avg{\\sigma v}E_\\alpha"
+  },
+  {
+    "topic": "nuclear-size-fusion",
+    "location": "step-3",
+    "source": "Ploss/volume = 3nkBT/τ",
+    "tex": "\\frac{P_{\\mathrm{loss}}}{\\mathrm{volume}}=\\frac{3nk_{\\mathrm B}T}\\tau"
+  },
+  {
+    "topic": "nuclear-size-fusion",
+    "location": "step-4",
+    "source": "nτ ≥ 12kBT/(⟨σv⟩Eα)",
+    "tex": "n\\tau\\ge\\frac{12k_{\\mathrm B}T}{\\avg{\\sigma v}E_\\alpha}"
+  },
+  {
+    "topic": "hydrogen-quantum",
+    "location": "main",
+    "source": "En = −μ(kee²)²/(2ℏ²n²);  n = nr + ℓ + 1",
+    "tex": "E_n=-\\frac{\\mu(k_ee^2)^2}{2\\hbar^2n^2};n=n_r+\\ell+1"
+  },
+  {
+    "topic": "hydrogen-quantum",
+    "location": "step-1",
+    "source": "u″ + [−κ² + 2/(a₀r) − ℓ(ℓ + 1)/r²]u = 0",
+    "tex": "u''+\\left[-\\kappa^2+\\frac2{a_0r}-\\frac{\\ell(\\ell+1)}{r^2}\\right]u=0"
+  },
+  {
+    "topic": "hydrogen-quantum",
+    "location": "step-2",
+    "source": "ρF″ + (2ℓ + 2 − ρ)F′ + [1/(κa₀) − ℓ − 1]F = 0",
+    "tex": "\\rho F''+(2\\ell+2-\\rho)F'+\\left[\\frac1{\\kappa a_0}-\\ell-1\\right]F=0"
+  },
+  {
+    "topic": "hydrogen-quantum",
+    "location": "step-3",
+    "source": "1/(κa₀) = nr + ℓ + 1 ≡ n",
+    "tex": "\\frac1{\\kappa a_0}=n_r+\\ell+1\\equiv n"
+  },
+  {
+    "topic": "hydrogen-quantum",
+    "location": "step-4",
+    "source": "En = −ℏ²/(2μa₀²n²) = −μ(kee²)²/(2ℏ²n²)",
+    "tex": "E_n=-\\frac{\\hbar^2}{2\\mu a_0^2n^2}=-\\frac{\\mu(k_ee^2)^2}{2\\hbar^2n^2}"
+  },
+  {
+    "topic": "boltzmann-weights",
+    "location": "main",
+    "source": "Pi ∝ exp(−Ei/(kBT));  wi,N ∝ exp[−(Ei − μN)/(kBT)]",
+    "tex": "P_i\\propto\\exp\\!\\left(-\\frac{E_i}{k_{\\mathrm B}T}\\right);w_{i,N}\\propto\\exp\\!\\left[-\\frac{E_i-\\mu N}{k_{\\mathrm B}T}\\right]"
+  },
+  {
+    "topic": "boltzmann-weights",
+    "location": "step-1",
+    "source": "Ptotal,micro = 1/Ωtotal",
+    "tex": "P_{\\mathrm{total,micro}}=\\frac1{\\Omega_{\\mathrm{total}}}"
+  },
+  {
+    "topic": "boltzmann-weights",
+    "location": "step-2",
+    "source": "Pi ∝ Ωbath(Etotal − Ei)",
+    "tex": "P_i\\propto\\Omega_{\\mathrm{bath}}(E_{\\mathrm{total}}-E_i)"
+  },
+  {
+    "topic": "boltzmann-weights",
+    "location": "step-3",
+    "source": "ln Ωbath(Etotal − Ei) ≈ S₀/kB − Ei/(kBT)",
+    "tex": "\\ln\\Omega_{\\mathrm{bath}}(E_{\\mathrm{total}}-E_i)\\approx\\frac{S_0}{k_{\\mathrm B}}-\\frac{E_i}{k_{\\mathrm B}T}"
+  },
+  {
+    "topic": "boltzmann-weights",
+    "location": "step-4",
+    "source": "Pi = exp(−βEi)/Z;  Z = Σi exp(−βEi);  β = 1/(kBT)",
+    "tex": "P_i=\\frac{\\exp(-\\beta E_i)}Z;Z=\\sum_i\\exp(-\\beta E_i);\\beta=\\frac1{k_{\\mathrm B}T}"
+  },
+  {
+    "topic": "boltzmann-weights",
+    "location": "step-5",
+    "source": "wi,N ∝ exp[−β(Ei − μN)]",
+    "tex": "w_{i,N}\\propto\\exp[-\\beta(E_i-\\mu N)]"
+  },
+  {
+    "topic": "boltzmann-weights",
+    "location": "step-6",
+    "source": "ffermion = 1/[exp(β(E − μ)) + 1];  nboson = 1/[exp(β(E − μ)) − 1]",
+    "tex": "f_{\\mathrm{fermion}}=\\frac1{\\exp[\\beta(E-\\mu)]+1};n_{\\mathrm{boson}}=\\frac1{\\exp[\\beta(E-\\mu)]-1}"
+  }
+]

@@ -22,7 +22,7 @@ test('every derivation has its own exact summary return and complete teaching se
   for (const topic of topics) {
     const dom = note(topic.slug);
     const document = dom.window.document;
-    assert.equal(document.querySelector('h1').textContent, topic.title);
+    assert.equal(document.querySelector('h1').dataset.plainText, topic.title);
     assert.ok(document.querySelectorAll('.step').length >= 4);
     assert.ok(document.querySelector('.setup').textContent.includes('When this applies'));
     assert.ok(document.querySelector('#example p').textContent.length > 30);
