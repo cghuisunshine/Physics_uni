@@ -102,7 +102,7 @@ def equation(text, topic, location, main=False):
     return (f'<div class="equation{" main-equation" if main else ""}" id="equation-{location}" data-kind="{kind}">'
             f'<span class="equation-status">{LABELS[kind]}</span>'
             f'<a class="equation-value" data-proof-link href="#proof-{location}">{escape(text)}</a>'
-            f'<a class="equation-action" data-proof-link href="#proof-{location}">{label} ↓</a></div>')
+            f'<a class="equation-action" data-proof-link href="#proof-{location}">{label}</a></div>')
 
 
 def proof_sections(t):
@@ -157,8 +157,7 @@ def proof_sections(t):
 def branch(question, target, source, step):
     return (f'<a class="branch" href="{target}.html?from={source}&amp;step=step-{step}">'
             '<span class="branch-label">A closer look</span>'
-            f'<strong>{escape(question)} ↗</strong><span class="branch-target">'
-            f'{escape(BY_SLUG[target]["title"])} <span aria-hidden="true">↗</span></span></a>')
+            f'<strong>{escape(question)} ↗</strong></a>')
 
 
 def shell(title, body, chapters, sidebar='', index=False):

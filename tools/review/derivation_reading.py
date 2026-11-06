@@ -46,7 +46,7 @@ READINGS = {
     },
     'carnot': {
         'title': 'How the two heats become a temperature ratio',
-        'opening': 'The key question is why the details of the expansion disappear from the final heat ratio. For an ideal gas, each isothermal heat contains both a temperature and a logarithm of a volume ratio. The adiabatic legs make those two logarithms equal.\n\nFollow the four states in the cycle diagram while we establish that connection. Qh and Qc will both denote positive heat magnitudes.',
+        'opening': 'The key question is why the details of the expansion disappear from the final heat ratio. For an ideal gas, each isothermal heat contains both a temperature and a logarithm of a volume ratio. The adiabatic legs make those two logarithms equal.\n\nWe will follow the gas through four equilibrium states. Throughout the argument, Qh and Qc denote positive heat magnitudes.',
         'steps': {
             1: {'title': 'Follow the gas around the cycle',
                 'text': 'Begin at state 1 on the hot isotherm. The gas absorbs heat while expanding to state 2. It then expands without heat transfer until it reaches the cold temperature at state 3.\n\nAt the cold temperature, compression from 3 to 4 releases heat. A final adiabatic compression raises the temperature back to its initial value and closes the cycle. The adiabatic legs exchange work but no heat.'},
