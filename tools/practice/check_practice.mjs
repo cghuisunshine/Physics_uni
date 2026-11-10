@@ -118,6 +118,22 @@ try{
   await evaluate('document.getElementById("followup-enabled").checked=false;document.getElementById("followup-enabled").dispatchEvent(new Event("change"))');
   check(await evaluate('document.getElementById("followup").hidden && localStorage.getItem("physicsUniPracticeFollowUp")==="false"'),'The practice settings can disable automatic similar questions');
   await click('settings-button');
+  await change('chapter-question','uni-ch1-p2');
+  check(await evaluate('document.getElementById("check-expression").disabled && document.getElementById("dock-check-expression").disabled'),'Expression checks require a typed answer');
+  const expression='0.50 gry² × ((72 point/in) / (120 gry/in))^2';
+  const calculation='0.50 × (72 / 120)^2 point² = 0.18 point².';
+  await evaluate(`Object.defineProperty(navigator,'onLine',{value:true,configurable:true});window.expressionRequests=[];window.fetch=async(url,options)=>{
+    window.expressionRequests.push(JSON.parse(options.body));
+    return {ok:true,json:async()=>({verdict:'correct',confidence:'high',feedback:'The conversion is correct.',answer_check:window.expressionRequests.length>1?${JSON.stringify(calculation)}:''})};
+  };const input=document.getElementById('dock-response');input.value=${JSON.stringify(expression)};input.dispatchEvent(new Event('input'))`);
+  await click('dock-check-expression');
+  await waitFor('!document.getElementById("verify-retry").hidden');
+  check(await evaluate('!document.getElementById("solution").hidden && !document.getElementById("solution").open'),'Expression checks make the model solution available in a collapsed panel');
+  check(await evaluate('document.getElementById("feedback").textContent.includes("did not return a calculation") && JSON.parse(JSON.parse(localStorage.getItem("physicsUniPractice.v1:practice%20qa")).state).attempts.length===3'),'A missing calculation offers a retry without recording a score');
+  await click('verify-retry');
+  await waitFor('document.getElementById("feedback").textContent.includes("AI checked against the model answer: Correct")');
+  check(await evaluate(`expressionRequests.length===2 && expressionRequests.every(({message})=>message.includes('perform the calculation yourself')&&JSON.parse(message.split('\\n').at(-1)).studentExpression===${JSON.stringify(expression)})`),'Pinned expression check and retry send the original unevaluated expression for calculation');
+  check(await evaluate(`(()=>{const attempt=JSON.parse(JSON.parse(localStorage.getItem("physicsUniPractice.v1:practice%20qa")).state).attempts.at(-1);return attempt.correct && attempt.choice===${JSON.stringify(expression)} && attempt.answerVerification.answer_check===${JSON.stringify(calculation)} && document.getElementById('feedback').textContent.includes(${JSON.stringify(calculation)})})()`),'A verified expression earns credit and the displayed calculation is saved');
   await evaluate('Object.defineProperty(navigator,"onLine",{value:false,configurable:true})');
  }
  await cdp('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});

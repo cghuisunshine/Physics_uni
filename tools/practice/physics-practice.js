@@ -476,11 +476,12 @@ function inkPreview(ink){
 }
 function syncAnswerTools(){
   const input=$('response-input');if(input)input.readOnly=checked||revealed||!!reviewRequest;
+  $('check-expression').disabled=!input?.value.trim()||input.readOnly;
 }
 function buildAnswerInput(problem){
   const box=$('choice-list');
-  const label=document.createElement('label');label.id='response-label';label.htmlFor='response-input';label.textContent='Type your answer with units and direction, and/or write it in Show your steps below.';
-  const input=document.createElement('textarea');input.id='response-input';input.rows=3;input.maxLength=12000;input.placeholder='Your answer and reasoning…';input.setAttribute('aria-label','Your written answer');
+  const label=document.createElement('label');label.id='response-label';label.htmlFor='response-input';label.textContent='Type your answer with units and direction, or enter an expression like ½ × 2 kg × (3 m/s)^2. You can also write in Show your steps.';
+  const input=document.createElement('textarea');input.id='response-input';input.rows=3;input.maxLength=12000;input.placeholder='Your answer and reasoning…';input.setAttribute('aria-label','Your written answer');input.setAttribute('aria-describedby','response-label');
   input.oninput=()=>{selected=input.value;const dock=$('dock-response');if(dock&&dock.value!==input.value)dock.value=input.value;updatePhotoControls();};box.append(label,input);
   const previous=state.attempts.filter(a=>a.id===problem.id).at(-1);
   if(previous&&(previous.choice||previous.answerInk)){const details=document.createElement('details');details.className='previous-answer';details.id='previous-response';const summary=document.createElement('summary');summary.textContent='Your previous answer · '+(previous.assessment==='ai'?'AI checked · ':'self-rated · ')+(previous.correct?'correct':'needs practice');details.append(summary);if(previous.choice){const p=document.createElement('p');p.textContent=previous.choice;details.append(p);}const preview=inkPreview(previous.answerInk);if(preview)details.append(preview);box.append(details);}
@@ -495,6 +496,7 @@ function show(p,reason,fromLive=false){
   refreshChapterControls();
   $('feedback').hidden=true;$('self-rating').hidden=true;$('verify-retry').hidden=true;$('solution').hidden=true;$('solution').open=false;$('solution-body').replaceChildren();$('image-warning').hidden=true;
   $('check').hidden=!p;$('check').disabled=false;$('check').textContent='Show answer';$('next').hidden=true;$('skip').hidden=!p;$('choices').hidden=!p;$('flag').hidden=!p;$('share-question').hidden=!p;$('photo-section').hidden=!p;
+  $('check-expression').hidden=!p;
   $('share-live').hidden=!p||live.role==='follower'||['host','ending'].includes(live.role);
   $('choice-list').replaceChildren();$('statement').replaceChildren();$('source').hidden=true;$('source').removeAttribute('href');live.publish(p).catch(()=>{});
   $('badge').classList.toggle('generated-badge',!!p?.generatedData);
@@ -540,19 +542,22 @@ function next(reset=false,persistSelection=true){
   const p=P.chooseExam(scopedQuestions(),state,'',current?.id);
   show(p,p?`${topicName(p.topic)}: an unseen ${P.levels[p.level-1].toLowerCase()} question. Topics with lower recent accuracy receive more practice.`:'You have attempted every available textbook question in this selection. Review your misses or try random questions.');
 }
-$('check').onclick=()=>{
+function submitAnswer(asExpression=false){
   if(!current||checked||revealed)return;
+  if(asExpression&&(reviewRequest||!$('response-input').value.trim()))return;
   resetFollowUp();cancelGeneration();
   cancelReview();stopCamera();drawing.finish();
-  try{submittedAnswer=captureAnswer();}catch(error){$('feedback').hidden=false;$('feedback').className='wrong';$('feedback').textContent=error.message;return;}
+  try{submittedAnswer=captureAnswer(asExpression);}catch(error){$('feedback').hidden=false;$('feedback').className='wrong';$('feedback').textContent=error.message;return;}
   revealed=true;selected=submittedAnswer.choice;
-  $('solution-body').innerHTML=current.solution;$('solution').hidden=false;$('solution').open=true;
-  $('check').hidden=true;$('self-rating').hidden=true;$('feedback').hidden=false;$('feedback').className='';
+  $('solution-body').innerHTML=current.solution;$('solution').hidden=false;$('solution').open=!asExpression;
+  $('check').hidden=true;$('check-expression').hidden=true;$('self-rating').hidden=true;$('feedback').hidden=false;$('feedback').className='';
   updatePhotoControls();
   if($('question-dock').hidden)$('solution').scrollIntoView({block:'start'});
   if(submittedAnswer.hasAnswer)verifyAnswer();
   else verificationFallback('No answer was submitted. The model solution is shown below. Self-check if you worked elsewhere.');
-};
+}
+$('check').onclick=()=>submitAnswer();
+$('check-expression').onclick=()=>submitAnswer(true);
 function captureWorking(){
   const answerInk=drawing.snapshot();
   if(answerInk&&!P.normalizeInk(answerInk))throw Error('This drawing is too large to save. Please shorten it or upload a photo of your work.');
@@ -561,9 +566,10 @@ function captureWorking(){
   if(photo)work.push({...photo});
   return {answerInk,work,drawVersion:drawVersion};
 }
-function captureAnswer(){
-  const choice=$('response-input').value,working=captureWorking();
-  return {choice,...working,hasAnswer:!!(choice.trim()||working.work.length),seconds:Math.round((Date.now()-started)/1000)};
+function captureAnswer(asExpression){
+  const choice=$('response-input').value;
+  const working=asExpression?{answerInk:null,work:[],drawVersion:null}:captureWorking();
+  return {choice,...working,asExpression,hasAnswer:!!(choice.trim()||working.work.length),seconds:Math.round((Date.now()-started)/1000)};
 }
 function verificationFallback(message){
   if(!current||checked||!revealed)return;
@@ -579,7 +585,8 @@ function recordSubmittedAnswer(correct,assessment='self',verification=null){
   save();dashboard();$('response-input').readOnly=true;const dock=$('dock-response');if(dock)dock.readOnly=true;
   $('self-rating').hidden=true;$('feedback').hidden=false;$('feedback').className=correct?'':'wrong';
   const verdict=verification?{correct:'Correct',partly_correct:'Partly correct',incorrect:'Incorrect'}[verification.verdict]:'';
-  $('feedback').textContent=(verification?'AI checked against the model answer: '+verdict+'. '+(verification.answer_check||verification.feedback).slice(0,400):correct?'Self-rated correct.':'Self-rated as needing practice.')+(correct?' Saved.':' Saved to your review queue.')+' Time spent: '+describeDuration(activeAttempt.seconds)+'.';
+  const comparison=verification&&(response.asExpression?verification.answer_check:(verification.answer_check||verification.feedback).slice(0,400));
+  $('feedback').textContent=(verification?'AI checked against the model answer: '+verdict+'. '+comparison:correct?'Self-rated correct.':'Self-rated as needing practice.')+(correct?' Saved.':' Saved to your review queue.')+' Time spent: '+describeDuration(activeAttempt.seconds)+'.';
   $('next').hidden=false;$('skip').hidden=true;updatePhotoControls();
   if($('mode').value==='coach')$('adaptive-status').textContent='Answer saved. Choose Next question for practice based on this result.';
   if(!correct&&current.kind==='textbook'&&live.role!=='follower'&&$('followup-enabled').checked)startFollowUp(activeAttempt);
@@ -594,7 +601,7 @@ async function verifyAnswer(){
   if(navigator.onLine===false){verificationFallback('Offline: automatic verification needs an internet connection. The model solution is available below.');return;}
   const problem=current,response=submittedAnswer,controller=new AbortController(),request={kind:'verify',problem,student,controller,started:Date.now(),timedOut:false};
   reviewRequest=request;$('self-rating').hidden=true;$('verify-retry').hidden=true;$('feedback').hidden=false;$('feedback').className='';
-  const status=()=>{const text='Model answer is ready above. AI verification is running in the background… '+Math.round((Date.now()-request.started)/1000)+' seconds';$('feedback').textContent=text;$('ai-status').textContent=text;};
+  const status=()=>{const text=(response.asExpression?'AI is checking and evaluating your expression… ':'Model answer is ready above. AI verification is running in the background… ')+Math.round((Date.now()-request.started)/1000)+' seconds';$('feedback').textContent=text;$('ai-status').textContent=text;};
   status();request.ticker=setInterval(()=>{if(reviewRequest===request)status();},1000);
   request.timer=setTimeout(()=>{request.timedOut=true;controller.abort();},120000);updatePhotoControls();
   try{
@@ -607,16 +614,17 @@ async function verifyAnswer(){
     if(controller.signal.aborted)throw new DOMException('Verification canceled.','AbortError');
     if(reviewRequest!==request||current!==problem||student!==request.student)return;
     const choice=response.choice+(response.work.length?'\n[Show your steps work attached under STUDENT WORK; combine it with the typed answer]':'');
-    const message=AI.verificationPrompt(problem,choice,readableHTML(problem.html),readableHTML(problem.solution));
+    const prompt=response.asExpression?AI.expressionPrompt:AI.verificationPrompt;
+    const message=prompt(problem,choice,readableHTML(problem.html),readableHTML(problem.solution));
     const result=await fetch(AI.endpoint,{method:'POST',mode:'cors',credentials:'omit',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({message,image:image.image,mime_type:image.mime_type,filename:image.filename})});
     if(!result.ok)throw Error(result.status===413?'The submitted images are too large for verification.':'The verification service returned HTTP '+result.status+'.');
     const review=AI.parseResponse(await result.json());
     if(controller.signal.aborted||reviewRequest!==request||current!==problem||student!==request.student)return;
-    if(AI.canVerify(review)){
+    if(AI.canVerify(review)&&(!response.asExpression||review.answer_check)){
       if(recordSubmittedAnswer(review.verdict==='correct','ai',review)){renderAIReview(review,$('ai-feedback'),'Answer verification against the model solution');$('ai-status').textContent='Answer verified and saved automatically.';}
     }else{
       renderAIReview(review,$('ai-feedback'),'Answer verification needs your review',true);
-      verificationFallback(review.verdict==='unreadable'?'The submitted answer could not be read reliably.':'The service could not give a confident verdict.');
+      verificationFallback(review.verdict==='unreadable'?'The submitted answer could not be read reliably.':response.asExpression&&!review.answer_check?'The service did not return a calculation or comparison.':'The service could not give a confident verdict.');
       $('ai-status').textContent='No automatic score was recorded.';
     }
   }catch(error){
@@ -927,13 +935,13 @@ canvas.addEventListener('touchend',e=>{if(!tap||e.touches.length)return;const qu
     d.value=real.value;d.readOnly=real.readOnly;
 
   };
-const syncButtons=()=>{for(const id of ['check','next','skip','verify-retry']){const r=$(id),d=$('dock-'+id);d.hidden=r.hidden;d.disabled=r.disabled;d.textContent=r.textContent;if(r.hasAttribute('aria-busy'))d.setAttribute('aria-busy',r.getAttribute('aria-busy'));else d.removeAttribute('aria-busy');}
+const syncButtons=()=>{for(const id of ['check','check-expression','next','skip','verify-retry']){const r=$(id),d=$('dock-'+id);d.hidden=r.hidden;d.disabled=r.disabled;d.textContent=r.textContent;if(r.hasAttribute('aria-busy'))d.setAttribute('aria-busy',r.getAttribute('aria-busy'));else d.removeAttribute('aria-busy');}
     for(const id of ['rate-correct','rate-practice'])$('dock-'+id).disabled=$(id).disabled;
     $('dock-self-rating').hidden=$('self-rating').hidden;
     const f=$('feedback'),df=$('dock-feedback');df.hidden=f.hidden;df.className='dock-feedback'+(f.classList.contains('wrong')?' wrong':'');df.textContent=f.textContent;};
-  for(const id of ['check','next','skip','rate-correct','rate-practice','verify-retry'])$('dock-'+id).onclick=()=>$(id).click();
+  for(const id of ['check','check-expression','next','skip','rate-correct','rate-practice','verify-retry'])$('dock-'+id).onclick=()=>$(id).click();
   new MutationObserver(syncResponse).observe($('choice-list'),{childList:true,subtree:true,attributes:true,attributeFilter:['readonly']});
-  const mo=new MutationObserver(syncButtons);for(const id of ['check','next','skip','self-rating','rate-correct','rate-practice','verify-retry'])mo.observe($(id),{attributes:true,childList:true});
+  const mo=new MutationObserver(syncButtons);for(const id of ['check','check-expression','next','skip','self-rating','rate-correct','rate-practice','verify-retry'])mo.observe($(id),{attributes:true,childList:true});
   mo.observe($('feedback'),{attributes:true,childList:true,subtree:true,characterData:true});syncResponse();syncButtons();
 })();
 // The pinned copy mirrors "Understand the solution": same content, opened when the main one opens after a check.
